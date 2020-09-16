@@ -1,0 +1,50 @@
+2020-09-16 10:16:52 info: Portfolio server running on-undefined
+2020-09-16 10:16:53 info: DB CONNECTION SUCCESS
+2020-09-16 10:17:54 info: Portfolio server running on-3001
+2020-09-16 10:17:54 info: DB CONNECTION SUCCESS
+2020-09-16 10:19:28 info: Portfolio server running on-3001
+2020-09-16 10:19:29 info: DB CONNECTION SUCCESS
+2020-09-16 10:19:37 info: GET / 500 5.299 ms - 2168
+2020-09-16 10:20:24 info: Portfolio server running on-3001
+2020-09-16 10:20:24 info: DB CONNECTION SUCCESS
+2020-09-16 10:20:27 info: GET / 404 2.864 ms - 40
+2020-09-16 10:20:28 info: GET /favicon.ico 404 0.416 ms - 51
+2020-09-16 10:20:45 info: Portfolio server running on-3001
+2020-09-16 10:20:45 info: DB CONNECTION SUCCESS
+2020-09-16 10:20:46 info: GET / 200 3.742 ms - 2
+2020-09-16 10:21:23 info: Portfolio server running on-3001
+2020-09-16 10:21:24 info: DB CONNECTION SUCCESS
+2020-09-16 10:21:26 info: GET / 304 4.466 ms - -
+2020-09-16 10:21:27 info: GET / 304 0.931 ms - -
+2020-09-16 10:21:27 info: GET / 304 0.501 ms - -
+2020-09-16 10:21:28 info: GET / 304 0.407 ms - -
+2020-09-16 10:21:28 info: GET / 304 0.417 ms - -
+2020-09-16 10:21:31 info: Portfolio server running on-3001
+2020-09-16 10:21:31 info: DB CONNECTION SUCCESS
+2020-09-16 10:21:32 info: Portfolio server running on-3001
+2020-09-16 10:21:32 info: DB CONNECTION SUCCESS
+2020-09-16 10:21:41 info: Portfolio server running on-3001
+2020-09-16 10:21:41 info: DB CONNECTION SUCCESS
+2020-09-16 10:21:44 info: Portfolio server running on-3001
+2020-09-16 10:21:45 info: DB CONNECTION SUCCESS
+2020-09-16 10:21:45 info: GET / 304 4.156 ms - -
+2020-09-16 10:22:16 info: Portfolio server running on-3001
+2020-09-16 10:22:16 info: DB CONNECTION SUCCESS
+2020-09-16 10:22:19 info: GET / 304 3.071 ms - -
+2020-09-16 10:22:20 info: GET / 304 0.601 ms - -
+2020-09-16 10:22:20 info: GET / 304 0.467 ms - -
+2020-09-16 10:22:20 info: GET / 304 0.540 ms - -
+2020-09-16 10:22:20 info: GET / 304 0.715 ms - -
+2020-09-16 10:23:17 info: Portfolio server running on-3001
+2020-09-16 10:23:17 info: Portfolio server running on-3001
+2020-09-16 10:23:18 info: DB CONNECTION SUCCESS
+2020-09-16 10:23:24 info: GET /api 200 5.063 ms - 2
+2020-09-16 10:24:08 info: Portfolio server running on-3001
+2020-09-16 10:24:08 info: DB CONNECTION SUCCESS
+2020-09-16 10:24:09 info: GET /api 304 4.281 ms - -
+2020-09-16 10:24:25 info: Portfolio server running on-3001
+2020-09-16 10:24:25 info: DB CONNECTION SUCCESS
+2020-09-16 10:24:27 info: GET /api 304 5.587 ms - -
+2020-09-16 10:24:47 info: Portfolio server running on-3001
+2020-09-16 10:24:47 info: DB CONNECTION SUCCESS
+2020-09-16 10:24:49 info: GET /api 200 3.983 ms - 24

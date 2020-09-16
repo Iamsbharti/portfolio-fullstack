@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const logger = require("./library/logger");
 
 exports.initdb = () => {
-  mongoose.connect(process.allowedNodeEnvironmentFlags.DB_CONNECT, {
+  mongoose.connect(process.env.DB_CONNECT, {
     useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true,

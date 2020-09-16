@@ -4,9 +4,10 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const { notFound, handleError } = require("./middlewares/errorHandler");
 const httpLogger = require("./middlewares/httpLogger");
-const initdb = require("./initdb");
-
-let port = process.env.PORT || process.env.API_PORT;
+const logger = require("./library/logger");
+const { initdb } = require("./initdb");
+const { formatResponse } = require("./library/formatResponse");
+let port = process.env.PORT || 3001;
 
 /**config env */
 dotenv.config();
@@ -28,8 +29,11 @@ app.use(function (req, res, next) {
   );
   next();
 });
+app.get("/api", (req, res) => {
+  console.log("./api route");
+  res.status(200).send("Welcome to port`de - API");
+});
 app.use(notFound);
 app.use(handleError);
-
 initdb();
-app.listen(port, () => console.log(`Portfolio server running on-${port}`));
+app.listen(port, () => logger.info(`Portfolio server running on-${port}`));
