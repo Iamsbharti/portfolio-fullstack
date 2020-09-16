@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const { notFound, handleError } = require("./middlewares/errorHandler");
 const httpLogger = require("./middlewares/httpLogger");
+const initdb = require("./initdb");
+
 let port = process.env.PORT || process.env.API_PORT;
 
 /**config env */
@@ -29,4 +31,5 @@ app.use(function (req, res, next) {
 app.use(notFound);
 app.use(handleError);
 
+initdb();
 app.listen(port, () => console.log(`Portfolio server running on-${port}`));
