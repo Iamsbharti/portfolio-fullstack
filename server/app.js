@@ -30,7 +30,6 @@ app.use(function (req, res, next) {
   next();
 });
 app.get("/api", (req, res) => {
-  console.log("./api route");
   res.status(200).send("Welcome to port`de - API");
 });
 app.use(notFound);
