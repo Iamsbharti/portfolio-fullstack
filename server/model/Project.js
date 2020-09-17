@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const Images = require("./Images");
 const projectSchema = new mongoose.Schema({
   projectId: {
     type: String,
@@ -17,8 +18,8 @@ const projectSchema = new mongoose.Schema({
     required: true,
   },
   image: {
-    type: String,
-    required: true,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Images",
   },
   type: {
     type: String,

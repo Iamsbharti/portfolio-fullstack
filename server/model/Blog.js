@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+const Images = require("./Images");
 const blogSchema = new mongoose.Schema({
   blogId: {
     type: String,
@@ -18,8 +18,8 @@ const blogSchema = new mongoose.Schema({
     required: true,
   },
   image: {
-    type: String,
-    required: true,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Images",
   },
 });
 module.exports = mongoose.model("Blog", blogSchema);
