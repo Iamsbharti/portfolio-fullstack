@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const Images = require("./Images");
-const projectSchema = new mongoose.Schema({
+const projectSchema = mongoose.Schema({
   projectId: {
     type: String,
     required: true,
