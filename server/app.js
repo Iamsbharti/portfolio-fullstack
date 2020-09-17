@@ -8,7 +8,7 @@ const logger = require("./library/logger");
 const { initdb } = require("./initdb");
 const { formatResponse } = require("./library/formatResponse");
 let port = process.env.PORT || 3001;
-
+const router = require("./router/router");
 /**config env */
 dotenv.config();
 
@@ -32,6 +32,7 @@ app.use(function (req, res, next) {
 app.get("/api", (req, res) => {
   res.status(200).send("Welcome to port`de - API");
 });
+app.use(process.env.API_VERSION, router);
 app.use(notFound);
 app.use(handleError);
 initdb();

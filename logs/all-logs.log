@@ -284,3 +284,46 @@
 2020-09-17 10:46:51 info: DB CONNECTION SUCCESS
 2020-09-17 10:47:11 info: Portfolio server running on-3001
 2020-09-17 10:47:12 info: DB CONNECTION SUCCESS
+2020-09-17 10:47:51 info: Portfolio server running on-3001
+2020-09-17 10:47:52 info: DB CONNECTION SUCCESS
+2020-09-17 10:48:13 info: Portfolio server running on-3001
+2020-09-17 10:48:15 info: DB CONNECTION SUCCESS
+2020-09-17 10:49:41 info: Portfolio server running on-3001
+2020-09-17 10:49:43 info: DB CONNECTION SUCCESS
+2020-09-17 10:49:47 info: Portfolio server running on-3001
+2020-09-17 10:49:48 info: DB CONNECTION SUCCESS
+2020-09-17 10:50:03 info: Portfolio server running on-3001
+2020-09-17 10:50:04 info: DB CONNECTION SUCCESS
+2020-09-17 10:51:06 info: Portfolio server running on-3001
+2020-09-17 10:51:08 info: DB CONNECTION SUCCESS
+2020-09-17 11:08:15 info: Portfolio server running on-3001
+2020-09-17 11:08:17 info: DB CONNECTION SUCCESS
+2020-09-17 11:09:38 info: create user control
+2020-09-17 11:09:38 info: schema: {
+  _id: 5f62f69a7d2a077be6680261,
+  firstName: 'Saurabh',
+  lastName: 'Bharti',
+  userId: 'Lr4D4Ptmt'
+}
+2020-09-17 11:10:10 info: Portfolio server running on-3001
+2020-09-17 11:10:11 info: DB CONNECTION SUCCESS
+2020-09-17 11:10:26 info: Portfolio server running on-3001
+2020-09-17 11:10:30 info: Portfolio server running on-3001
+2020-09-17 11:10:32 info: DB CONNECTION SUCCESS
+2020-09-17 11:10:32 info: create user control
+2020-09-17 11:10:33 info: schema: {
+  _id: 5f62f6d1877fc67ca8a9ca0c,
+  firstName: 'Saurabh',
+  lastName: 'Bharti',
+  userId: 'SGY2aQSFv',
+  password: '$2b$11$If3vGBinVGc6uo/y5aQOP.RmBCyVx3mnQQPciGpkfOiCkbAc9lOdi'
+}
+2020-09-17 11:10:33 info: user created {
+  _id: 5f62f6d1877fc67ca8a9ca0c,
+  firstName: 'Saurabh',
+  lastName: 'Bharti',
+  userId: 'SGY2aQSFv',
+  password: '$2b$11$If3vGBinVGc6uo/y5aQOP.RmBCyVx3mnQQPciGpkfOiCkbAc9lOdi',
+  __v: 0
+}
+2020-09-17 11:10:33 info: POST /api/v1/portfolio/createUser 200 285.416 ms - 179
