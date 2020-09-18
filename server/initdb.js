@@ -33,7 +33,6 @@ mongoose.connection.once("open", () => {
   gfs.collection("images");
 });
 //create storage engine
-console.log(process.env.DB_CONNECT);
 const storage = new GridFsStorage({
   url: process.env.DB_CONNECT,
   file: (req, file) => {

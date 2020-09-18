@@ -27,3 +27,6 @@ const createPost = async (req, res) => {
       .json(formatResponse(true, 500, "Internal Server Error", null));
   }
 };
+module.exports = {
+  createPost,
+};
