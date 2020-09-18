@@ -3,7 +3,6 @@ const shortid = require("shortid");
 const logger = require("./logger");
 
 const getToken = async (userdata, cb) => {
-  logger.info("generating token");
   try {
     let token = {
       jwtid: shortid.generate(),
@@ -16,7 +15,6 @@ const getToken = async (userdata, cb) => {
     let generatedToken = {
       authToken: jwt.sign(token, process.env.TOKEN_SECRET),
     };
-    logger.info(generatedToken);
     cb(null, generatedToken);
   } catch (error) {
     logger.info(`Error Generating Token ${error.message}`);

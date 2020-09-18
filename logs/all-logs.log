@@ -664,3 +664,8 @@
 2020-09-18 10:13:04 info: generating token
 2020-09-18 10:13:04 info: [object Object]
 2020-09-18 10:13:04 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 206.865 ms - 486
+2020-09-18 10:13:35 info: Portfolio server running on-3001
+2020-09-18 10:13:35 info: DB CONNECTION SUCCESS
+2020-09-18 10:13:40 info: Portfolio server running on-3001
+2020-09-18 10:13:41 info: Portfolio server running on-3001
+2020-09-18 10:13:41 info: DB CONNECTION SUCCESS
