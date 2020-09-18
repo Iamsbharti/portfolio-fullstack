@@ -12,7 +12,7 @@ const upload = multer({
 /**projects route */
 //router.get("/portfolio/projects", getAllProject);
 router.post(
-  "/portfolio/updateProject",
+  "/portfolio/createProject",
   upload.single("file"),
   posts.createPost
 );

@@ -13,17 +13,20 @@ const createPost = async (req, res) => {
     code: code,
     type: type,
     description: description,
-    image: req.file,
+    image: req.file.id,
   });
   /**save new project */
   let savedProject = await Project.create(newProject);
+  let project = await Project.findOne({
+    projectId: savedProject.projectId,
+  }).populate("image");
   if (savedProject) {
     res
-      .staus(200)
-      .json(formatResponse(false, 200, "Project Created", savedProject));
+      .status(200)
+      .json(formatResponse(false, 200, "Project Created", project));
   } else {
     res
-      .staus(500)
+      .status(500)
       .json(formatResponse(true, 500, "Internal Server Error", null));
   }
 };
