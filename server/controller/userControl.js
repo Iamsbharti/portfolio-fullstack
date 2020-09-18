@@ -22,7 +22,7 @@ const createUser = async (req, res) => {
 };
 const adminLogin = async (req, res) => {
   logger.info("Admin Login Control");
-  const { userName, password } = req.body;
+  const { userName, password } = req.query;
   /**verify the username */
   let userFound = await User.findOne({ userName: userName });
   if (!userFound) {
@@ -32,18 +32,34 @@ const adminLogin = async (req, res) => {
   }
   /**authenticate user */
   let passwordMatch = await bcrypt.compare(password, userFound.password);
-  /**generate authtoken */
-  let userdata = userFound.toObject();
-  delete userdata.password;
-  let token = await getToken(userdata);
-  if (token) {
-    userdata = { ...userdata, token };
+  logger.info(`pwd match-${passwordMatch}`);
+
+  /**generate token */
+  if (userFound && passwordMatch) {
+    let userdata = userFound.toObject();
+    delete userdata._id;
+    delete userdata.__v;
+    delete userdata.password;
+
+    await getToken(userdata, (error, token) => {
+      if (error) {
+        res
+          .status(500)
+          .json(formatResponse(true, 500, "Internal Server Error", error));
+      } else {
+        res.header("authToken", token.authToken);
+        res.status(200).json(
+          formatResponse(false, 200, "User Authenticated", {
+            ...userdata,
+            ...token,
+          })
+        );
+      }
+    });
+  } else if (!passwordMatch) {
+    res
+      .status(400)
+      .json(formatResponse(true, 400, "Authentication Failed", null));
   }
-  logger.info(`userdata- ${userdata}`);
-  passwordMatch
-    ? res
-        .status(200)
-        .json(formatResponse(false, 200, "Authenticated", userdata))
-    : res.status(400).formatResponse(true, 400, "Authentication Failed", null);
 };
 module.exports = { createUser, adminLogin };

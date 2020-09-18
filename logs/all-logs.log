@@ -377,3 +377,290 @@
 2020-09-18 09:43:17 info: Portfolio server running on-3001
 2020-09-18 09:43:18 info: Portfolio server running on-3001
 2020-09-18 09:43:18 info: DB CONNECTION SUCCESS
+2020-09-18 09:43:37 info: create user control
+2020-09-18 09:43:37 info: schema: {
+  _id: 5f6433f156d9bf0f2912af10,
+  firstName: 'Saurabh',
+  lastName: 'Bharti',
+  userName: 'sb',
+  userId: '3SJTd1d-m',
+  password: '$2b$11$l7v3exPGQRr5503AO2DKaexh.3vxd6Tycp75AIE/RyJW0Xs7j4.1y'
+}
+2020-09-18 09:43:37 info: user created {
+  _id: 5f6433f156d9bf0f2912af10,
+  firstName: 'Saurabh',
+  lastName: 'Bharti',
+  userName: 'sb',
+  userId: '3SJTd1d-m',
+  password: '$2b$11$l7v3exPGQRr5503AO2DKaexh.3vxd6Tycp75AIE/RyJW0Xs7j4.1y',
+  __v: 0
+}
+2020-09-18 09:43:37 info: POST /api/v1/portfolio/createUser 200 275.557 ms - 195
+2020-09-18 09:44:20 info: Portfolio server running on-3001
+2020-09-18 09:44:27 info: DB CONNECTION SUCCESS
+2020-09-18 09:44:30 info: Portfolio server running on-3001
+2020-09-18 09:44:35 info: DB CONNECTION SUCCESS
+2020-09-18 09:44:37 info: Portfolio server running on-3001
+2020-09-18 09:44:38 info: DB CONNECTION SUCCESS
+2020-09-18 09:45:37 info: Admin Login Control
+2020-09-18 09:45:37 info: Error Generating Token cb is not a function
+2020-09-18 09:46:06 info: Portfolio server running on-3001
+2020-09-18 09:46:10 info: DB CONNECTION SUCCESS
+2020-09-18 09:46:12 info: Portfolio server running on-3001
+2020-09-18 09:46:18 info: DB CONNECTION SUCCESS
+2020-09-18 09:46:21 info: Admin Login Control
+2020-09-18 09:46:23 info: userdata- [object Object]
+2020-09-18 09:46:23 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 1476.992 ms - 2
+2020-09-18 09:46:52 info: Portfolio server running on-3001
+2020-09-18 09:46:56 info: DB CONNECTION SUCCESS
+2020-09-18 09:47:57 info: Portfolio server running on-3001
+2020-09-18 09:47:59 info: DB CONNECTION SUCCESS
+2020-09-18 09:48:13 info: Portfolio server running on-3001
+2020-09-18 09:48:16 info: Portfolio server running on-3001
+2020-09-18 09:48:21 info: DB CONNECTION SUCCESS
+2020-09-18 09:48:39 info: Portfolio server running on-3001
+2020-09-18 09:48:41 info: DB CONNECTION SUCCESS
+2020-09-18 09:48:45 info: Portfolio server running on-3001
+2020-09-18 09:48:52 info: DB CONNECTION SUCCESS
+2020-09-18 09:49:01 info: Admin Login Control
+2020-09-18 09:49:03 info: userdata-for token [object Object]
+2020-09-18 09:49:03 info: Error Generating Token res.status(...).formatResponse is not a function
+2020-09-18 09:49:03 info: userdata-post token [object Object]
+2020-09-18 09:49:03 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 1395.223 ms - 2
+2020-09-18 09:49:50 info: Portfolio server running on-3001
+2020-09-18 09:49:52 info: DB CONNECTION SUCCESS
+2020-09-18 09:49:56 info: Portfolio server running on-3001
+2020-09-18 09:49:57 info: DB CONNECTION SUCCESS
+2020-09-18 09:49:58 info: Admin Login Control
+2020-09-18 09:49:58 info: userfrom db {
+  _id: 5f6433f156d9bf0f2912af10,
+  firstName: 'Saurabh',
+  lastName: 'Bharti',
+  userName: 'sb',
+  userId: '3SJTd1d-m',
+  password: '$2b$11$l7v3exPGQRr5503AO2DKaexh.3vxd6Tycp75AIE/RyJW0Xs7j4.1y',
+  __v: 0
+}
+2020-09-18 09:49:58 info: userdata-for token [object Object]
+2020-09-18 09:49:58 info: Error Generating Token res.status(...).formatResponse is not a function
+2020-09-18 09:49:58 info: userdata-post token [object Object]
+2020-09-18 09:49:58 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 238.035 ms - 2
+2020-09-18 09:50:20 info: Portfolio server running on-3001
+2020-09-18 09:50:22 info: DB CONNECTION SUCCESS
+2020-09-18 09:50:23 info: Admin Login Control
+2020-09-18 09:50:23 info: userfrom db {
+  _id: 5f6433f156d9bf0f2912af10,
+  firstName: 'Saurabh',
+  lastName: 'Bharti',
+  userName: 'sb',
+  userId: '3SJTd1d-m',
+  password: '$2b$11$l7v3exPGQRr5503AO2DKaexh.3vxd6Tycp75AIE/RyJW0Xs7j4.1y',
+  __v: 0
+}
+2020-09-18 09:50:23 info: userdata-for token {
+  _id: 5f6433f156d9bf0f2912af10,
+  firstName: 'Saurabh',
+  lastName: 'Bharti',
+  userName: 'sb',
+  userId: '3SJTd1d-m',
+  password: '$2b$11$l7v3exPGQRr5503AO2DKaexh.3vxd6Tycp75AIE/RyJW0Xs7j4.1y',
+  __v: 0
+}
+2020-09-18 09:50:23 info: Error Generating Token res.status(...).formatResponse is not a function
+2020-09-18 09:50:23 info: userdata-post token [object Object]
+2020-09-18 09:50:23 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 490.459 ms - 2
+2020-09-18 09:51:04 info: Portfolio server running on-3001
+2020-09-18 09:51:07 info: DB CONNECTION SUCCESS
+2020-09-18 09:51:40 info: Portfolio server running on-3001
+2020-09-18 09:51:41 info: DB CONNECTION SUCCESS
+2020-09-18 09:51:48 info: Portfolio server running on-3001
+2020-09-18 09:51:51 info: DB CONNECTION SUCCESS
+2020-09-18 09:51:55 info: Admin Login Control
+2020-09-18 09:51:55 info: userfrom db {
+  _id: 5f6433f156d9bf0f2912af10,
+  firstName: 'Saurabh',
+  lastName: 'Bharti',
+  userName: 'sb',
+  userId: '3SJTd1d-m',
+  password: '$2b$11$l7v3exPGQRr5503AO2DKaexh.3vxd6Tycp75AIE/RyJW0Xs7j4.1y',
+  __v: 0
+}
+2020-09-18 09:51:55 info: userdata-for token {
+  _id: 5f6433f156d9bf0f2912af10,
+  firstName: 'Saurabh',
+  lastName: 'Bharti',
+  userName: 'sb',
+  userId: '3SJTd1d-m',
+  password: '$2b$11$l7v3exPGQRr5503AO2DKaexh.3vxd6Tycp75AIE/RyJW0Xs7j4.1y',
+  __v: 0
+}
+2020-09-18 09:51:55 info: userdata-post token {
+  _id: 5f6433f156d9bf0f2912af10,
+  firstName: 'Saurabh',
+  lastName: 'Bharti',
+  userName: 'sb',
+  userId: '3SJTd1d-m',
+  password: '$2b$11$l7v3exPGQRr5503AO2DKaexh.3vxd6Tycp75AIE/RyJW0Xs7j4.1y',
+  __v: 0
+}
+2020-09-18 09:51:55 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 733.535 ms - 2
+2020-09-18 09:52:30 info: Portfolio server running on-3001
+2020-09-18 09:52:32 info: DB CONNECTION SUCCESS
+2020-09-18 09:52:43 info: Portfolio server running on-3001
+2020-09-18 09:52:46 info: DB CONNECTION SUCCESS
+2020-09-18 09:52:52 info: Portfolio server running on-3001
+2020-09-18 09:52:53 info: Portfolio server running on-3001
+2020-09-18 09:52:56 info: DB CONNECTION SUCCESS
+2020-09-18 09:52:58 info: Portfolio server running on-3001
+2020-09-18 09:53:02 info: DB CONNECTION SUCCESS
+2020-09-18 09:53:18 info: Portfolio server running on-3001
+2020-09-18 09:53:23 info: DB CONNECTION SUCCESS
+2020-09-18 09:53:24 info: Admin Login Control
+2020-09-18 09:53:24 info: userdata-for token [object Object]
+2020-09-18 09:53:24 info: generating token
+2020-09-18 09:53:24 info: [object Object]
+2020-09-18 09:53:24 info: null
+2020-09-18 09:53:24 info: userdata-post token [object Object]
+2020-09-18 09:53:24 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 233.867 ms - 2
+2020-09-18 09:54:18 info: Portfolio server running on-3001
+2020-09-18 09:54:22 info: DB CONNECTION SUCCESS
+2020-09-18 09:54:37 info: Portfolio server running on-3001
+2020-09-18 09:54:39 info: Admin Login Control
+2020-09-18 09:54:43 info: DB CONNECTION SUCCESS
+2020-09-18 09:54:43 info: pwd match-true
+2020-09-18 09:54:43 info: userdata-for token [object Object]
+2020-09-18 09:54:43 info: generating token
+2020-09-18 09:54:43 info: [object Object]
+2020-09-18 09:54:43 info: null
+2020-09-18 09:54:43 info: userdata-post token [object Object]
+2020-09-18 09:54:43 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 4568.320 ms - 2
+2020-09-18 09:56:37 info: Portfolio server running on-3001
+2020-09-18 09:56:38 info: DB CONNECTION SUCCESS
+2020-09-18 09:56:47 info: Portfolio server running on-3001
+2020-09-18 09:56:51 info: DB CONNECTION SUCCESS
+2020-09-18 09:57:03 info: Portfolio server running on-3001
+2020-09-18 09:57:08 info: DB CONNECTION SUCCESS
+2020-09-18 09:57:14 info: Portfolio server running on-3001
+2020-09-18 09:57:19 info: DB CONNECTION SUCCESS
+2020-09-18 09:57:20 info: Portfolio server running on-3001
+2020-09-18 09:57:23 info: DB CONNECTION SUCCESS
+2020-09-18 09:57:27 info: Portfolio server running on-3001
+2020-09-18 09:57:29 info: DB CONNECTION SUCCESS
+2020-09-18 09:58:17 info: Portfolio server running on-3001
+2020-09-18 09:58:22 info: DB CONNECTION SUCCESS
+2020-09-18 09:59:12 info: Portfolio server running on-3001
+2020-09-18 09:59:20 info: DB CONNECTION SUCCESS
+2020-09-18 09:59:29 info: Portfolio server running on-3001
+2020-09-18 09:59:35 info: DB CONNECTION SUCCESS
+2020-09-18 10:00:20 info: Portfolio server running on-3001
+2020-09-18 10:00:24 info: DB CONNECTION SUCCESS
+2020-09-18 10:00:28 info: Admin Login Control
+2020-09-18 10:00:28 info: pwd match-true
+2020-09-18 10:00:28 info: generating token
+2020-09-18 10:00:28 info: [object Object]
+2020-09-18 10:00:28 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 500 700.183 ms - 2
+2020-09-18 10:01:00 info: Portfolio server running on-3001
+2020-09-18 10:01:04 info: DB CONNECTION SUCCESS
+2020-09-18 10:01:06 info: Admin Login Control
+2020-09-18 10:01:07 info: pwd match-true
+2020-09-18 10:01:07 info: generating token
+2020-09-18 10:01:07 info: [object Object]
+2020-09-18 10:01:07 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 694.445 ms - 2
+2020-09-18 10:01:30 info: Portfolio server running on-3001
+2020-09-18 10:01:35 info: Portfolio server running on-3001
+2020-09-18 10:01:42 info: DB CONNECTION SUCCESS
+2020-09-18 10:01:43 info: Admin Login Control
+2020-09-18 10:01:43 info: pwd match-true
+2020-09-18 10:01:43 info: generating token
+2020-09-18 10:01:43 info: [object Object]
+2020-09-18 10:01:43 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 237.083 ms - 2
+2020-09-18 10:02:15 info: Portfolio server running on-3001
+2020-09-18 10:02:22 info: DB CONNECTION SUCCESS
+2020-09-18 10:02:27 info: Admin Login Control
+2020-09-18 10:02:28 info: pwd match-true
+2020-09-18 10:02:28 info: generating token
+2020-09-18 10:02:28 info: [object Object]
+2020-09-18 10:02:28 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 463.425 ms - 2
+2020-09-18 10:03:22 info: Portfolio server running on-3001
+2020-09-18 10:03:23 info: DB CONNECTION SUCCESS
+2020-09-18 10:03:25 info: Admin Login Control
+2020-09-18 10:03:25 info: pwd match-true
+2020-09-18 10:03:25 info: generating token
+2020-09-18 10:03:25 info: [object Object]
+2020-09-18 10:03:25 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 227.608 ms - 2
+2020-09-18 10:03:54 info: Portfolio server running on-3001
+2020-09-18 10:03:56 info: DB CONNECTION SUCCESS
+2020-09-18 10:04:03 info: Portfolio server running on-3001
+2020-09-18 10:04:07 info: Admin Login Control
+2020-09-18 10:04:13 info: DB CONNECTION SUCCESS
+2020-09-18 10:04:13 info: pwd match-true
+2020-09-18 10:04:13 info: generating token
+2020-09-18 10:04:13 info: [object Object]
+2020-09-18 10:04:13 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 5988.745 ms - 2
+2020-09-18 10:05:43 info: Portfolio server running on-3001
+2020-09-18 10:05:46 info: Admin Login Control
+2020-09-18 10:05:46 info: DB CONNECTION SUCCESS
+2020-09-18 10:05:46 info: pwd match-true
+2020-09-18 10:05:46 info: generating token
+2020-09-18 10:05:46 info: [object Object]
+2020-09-18 10:05:46 info: Error Generating Token _loginResponse is not defined
+2020-09-18 10:05:46 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 500 601.623 ms - 2
+2020-09-18 10:06:00 info: Portfolio server running on-3001
+2020-09-18 10:06:03 info: Admin Login Control
+2020-09-18 10:06:08 info: DB CONNECTION SUCCESS
+2020-09-18 10:06:08 info: pwd match-true
+2020-09-18 10:06:08 info: generating token
+2020-09-18 10:06:08 info: [object Object]
+2020-09-18 10:06:08 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 5001.342 ms - 2
+2020-09-18 10:07:04 info: Portfolio server running on-3001
+2020-09-18 10:07:07 info: Admin Login Control
+2020-09-18 10:07:07 info: DB CONNECTION SUCCESS
+2020-09-18 10:07:07 info: pwd match-true
+2020-09-18 10:07:07 info: generating token
+2020-09-18 10:07:07 info: [object Object]
+2020-09-18 10:07:07 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 592.549 ms - 2
+2020-09-18 10:08:33 info: Portfolio server running on-3001
+2020-09-18 10:08:36 info: DB CONNECTION SUCCESS
+2020-09-18 10:08:40 info: Portfolio server running on-3001
+2020-09-18 10:08:42 info: DB CONNECTION SUCCESS
+2020-09-18 10:08:45 info: Admin Login Control
+2020-09-18 10:08:45 info: pwd match-true
+2020-09-18 10:08:45 info: generating token
+2020-09-18 10:08:45 info: [object Object]
+2020-09-18 10:08:45 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 221.101 ms - 2
+2020-09-18 10:09:45 info: Portfolio server running on-3001
+2020-09-18 10:09:47 info: DB CONNECTION SUCCESS
+2020-09-18 10:09:47 info: Admin Login Control
+2020-09-18 10:09:47 info: pwd match-true
+2020-09-18 10:09:47 info: generating token
+2020-09-18 10:09:47 info: [object Object]
+2020-09-18 10:09:47 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 231.221 ms - 2
+2020-09-18 10:11:02 info: Portfolio server running on-3001
+2020-09-18 10:11:02 info: DB CONNECTION SUCCESS
+2020-09-18 10:11:12 info: Portfolio server running on-3001
+2020-09-18 10:11:12 info: DB CONNECTION SUCCESS
+2020-09-18 10:11:15 info: Admin Login Control
+2020-09-18 10:11:15 info: pwd match-true
+2020-09-18 10:11:15 info: generating token
+2020-09-18 10:11:15 info: [object Object]
+2020-09-18 10:11:15 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 232.256 ms - 2
+2020-09-18 10:12:25 info: Portfolio server running on-3001
+2020-09-18 10:12:26 info: DB CONNECTION SUCCESS
+2020-09-18 10:12:30 info: Portfolio server running on-3001
+2020-09-18 10:12:30 info: DB CONNECTION SUCCESS
+2020-09-18 10:12:44 info: Admin Login Control
+2020-09-18 10:12:44 info: pwd match-true
+2020-09-18 10:12:44 info: generating token
+2020-09-18 10:12:44 info: [object Object]
+2020-09-18 10:12:44 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 221.572 ms - 486
+2020-09-18 10:12:56 info: Portfolio server running on-3001
+2020-09-18 10:12:56 info: DB CONNECTION SUCCESS
+2020-09-18 10:12:59 info: Portfolio server running on-3001
+2020-09-18 10:12:59 info: DB CONNECTION SUCCESS
+2020-09-18 10:13:02 info: Portfolio server running on-3001
+2020-09-18 10:13:02 info: DB CONNECTION SUCCESS
+2020-09-18 10:13:03 info: Admin Login Control
+2020-09-18 10:13:04 info: pwd match-true
+2020-09-18 10:13:04 info: generating token
+2020-09-18 10:13:04 info: [object Object]
+2020-09-18 10:13:04 info: GET /api/v1/portfolio/login?userName=sb&password=Saurabh@123 200 206.865 ms - 486
