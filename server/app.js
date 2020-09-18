@@ -5,7 +5,7 @@ const cors = require("cors");
 const { notFound, handleError } = require("./middlewares/errorHandler");
 const httpLogger = require("./middlewares/httpLogger");
 const logger = require("./library/logger");
-const { initdb } = require("./initdb");
+const db = require("./initdb");
 const { formatResponse } = require("./library/formatResponse");
 let port = process.env.PORT || 3001;
 const router = require("./router/router");
@@ -35,5 +35,5 @@ app.get("/api", (req, res) => {
 app.use(process.env.API_VERSION, router);
 app.use(notFound);
 app.use(handleError);
-initdb();
+db.initdb();
 app.listen(port, () => logger.info(`Portfolio server running on-${port}`));
