@@ -22,4 +22,4 @@ const getToken = async (userdata, cb) => {
   }
 };
 
-module.exports = getToken;
+module.exports = { getToken };
