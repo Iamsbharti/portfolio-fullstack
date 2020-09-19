@@ -32,6 +32,22 @@ const createPost = async (req, res) => {
       .json(formatResponse(true, 500, "Internal Server Error", null));
   }
 };
+const getProjects = async (req, res) => {
+  logger.info("Get Project Control");
+  Project.find()
+    .populate("image")
+    .lean()
+    .exec((error, allBlogs) => {
+      if (error) {
+        res
+          .status(500)
+          .json(formatResponse(true, 500, "Internal Server Error", error));
+      } else {
+        res.status(200).json(formatResponse(false, 200, "All Blogs", allBlogs));
+      }
+    });
+};
 module.exports = {
   createPost,
+  getProjects,
 };

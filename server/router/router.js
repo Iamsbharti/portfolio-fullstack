@@ -13,7 +13,7 @@ const upload = multer({
   fileFilter: db.fileFilter,
 });
 /**projects route */
-//router.get("/portfolio/projects", getAllProject);
+router.get("/portfolio/projects", auth.isAuthorized, posts.getProjects);
 router.post(
   "/portfolio/createProject",
   auth.isAuthorized,
