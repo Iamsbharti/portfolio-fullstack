@@ -22,7 +22,7 @@ const createUser = async (req, res) => {
 };
 const adminLogin = async (req, res) => {
   logger.info("Admin Login Control");
-  const { userName, password } = req.query;
+  const { userName, password } = req.body;
   /**verify the username */
   let userFound = await User.findOne({ userName: userName });
   if (!userFound) {
