@@ -1207,3 +1207,20 @@
 2020-09-19 20:21:51 info: GET /api/v1/portfolio/blogs?userId=3SJTd1d-m 200 92.481 ms - 853
 2020-09-19 20:23:00 info: Portfolio server running on-3001
 2020-09-19 20:23:00 info: DB CONNECTION SUCCESS
+2020-09-19 21:19:09 info: DB CONNECTION SUCCESS
+2020-09-19 21:40:50 info: Portfolio server running on-3001
+2020-09-19 21:40:51 info: DB CONNECTION SUCCESS
+2020-09-19 21:44:23 info: Portfolio server running on-3001
+2020-09-19 21:44:23 info: DB CONNECTION SUCCESS
+2020-09-19 21:44:33 info: Portfolio server running on-3001
+2020-09-19 21:44:34 info: DB CONNECTION SUCCESS
+2020-09-19 21:44:55 info: Portfolio server running on-3001
+2020-09-19 21:44:56 info: DB CONNECTION SUCCESS
+2020-09-19 21:45:22 info: Portfolio server running on-3001
+2020-09-19 21:45:23 info: DB CONNECTION SUCCESS
+2020-09-19 21:45:40 info: Portfolio server running on-3001
+2020-09-19 21:45:40 info: DB CONNECTION SUCCESS
+2020-09-19 21:46:33 info: Portfolio server running on-3001
+2020-09-19 21:46:34 info: DB CONNECTION SUCCESS
+2020-09-19 21:46:39 info: Portfolio server running on-3001
+2020-09-19 21:46:39 info: DB CONNECTION SUCCESS
