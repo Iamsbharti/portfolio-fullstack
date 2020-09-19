@@ -2,12 +2,15 @@ import React from "react";
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Profile from "./components/Profile";
+import Project from "./components/Project";
 import PageNotFound from "./components/PageNotFound";
 function App() {
   return (
     <div className="App">
       <Switch>
         <Route path="/" exact component={Profile} />
+        <Route path="/projects" exact component={Project} />
+        <Route path="/blogs" exact component={Blogs} />
         <Route component={PageNotFound} />
       </Switch>
     </div>
