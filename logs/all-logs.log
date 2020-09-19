@@ -1164,3 +1164,12 @@
 2020-09-19 20:09:12 info: Create Blog Control
 2020-09-19 20:09:12 info: populate image
 2020-09-19 20:09:12 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 345.704 ms - 455
+2020-09-19 20:10:29 info: Portfolio server running on-3001
+2020-09-19 20:10:30 info: DB CONNECTION SUCCESS
+2020-09-19 20:10:35 info: Authorizing user
+2020-09-19 20:10:35 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 400 12.767 ms - 69
+2020-09-19 20:10:39 info: Authorizing user
+2020-09-19 20:10:39 info: File Info:[object Object]
+2020-09-19 20:10:40 info: Create Blog Control
+2020-09-19 20:10:40 info: populate image
+2020-09-19 20:10:40 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 343.816 ms - 455
