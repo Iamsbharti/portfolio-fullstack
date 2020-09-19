@@ -941,3 +941,153 @@
 2020-09-19 18:43:49 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVzLU 404 0.846 ms - 84
 2020-09-19 19:17:50 info: Portfolio server running on-3001
 2020-09-19 19:17:50 info: DB CONNECTION SUCCESS
+2020-09-19 19:25:35 info: Portfolio server running on-3001
+2020-09-19 19:25:35 info: DB CONNECTION SUCCESS
+2020-09-19 19:25:47 info: Portfolio server running on-3001
+2020-09-19 19:25:47 info: DB CONNECTION SUCCESS
+2020-09-19 19:25:55 info: Portfolio server running on-3001
+2020-09-19 19:25:55 info: DB CONNECTION SUCCESS
+2020-09-19 19:25:58 info: Authorizing user
+2020-09-19 19:26:20 info: Admin Login Control
+2020-09-19 19:26:21 info: pwd match-true
+2020-09-19 19:26:21 info: GET /api/v1/portfolio/login 200 396.110 ms - 486
+2020-09-19 19:26:43 info: Portfolio server running on-3001
+2020-09-19 19:26:44 info: DB CONNECTION SUCCESS
+2020-09-19 19:26:46 info: Authorizing user
+2020-09-19 19:27:29 info: Portfolio server running on-3001
+2020-09-19 19:27:29 info: DB CONNECTION SUCCESS
+2020-09-19 19:27:39 info: Portfolio server running on-3001
+2020-09-19 19:27:40 info: DB CONNECTION SUCCESS
+2020-09-19 19:27:42 info: Authorizing user
+2020-09-19 19:27:42 info: auth-324--undefined
+2020-09-19 19:27:42 info: decoded-info-[object Object]
+2020-09-19 19:27:42 info: File Info:[object Object]
+2020-09-19 19:27:42 info: Create Post Control
+2020-09-19 19:28:07 info: Portfolio server running on-3001
+2020-09-19 19:28:08 info: DB CONNECTION SUCCESS
+2020-09-19 19:28:13 info: Authorizing user
+2020-09-19 19:29:54 info: Portfolio server running on-3001
+2020-09-19 19:29:54 info: DB CONNECTION SUCCESS
+2020-09-19 19:29:57 info: Portfolio server running on-3001
+2020-09-19 19:29:57 info: DB CONNECTION SUCCESS
+2020-09-19 19:30:00 info: Authorizing user
+2020-09-19 19:30:00 info: auth-324--undefined
+2020-09-19 19:30:00 info: decoded-info-[object Object]
+2020-09-19 19:30:00 info: File Info:[object Object]
+2020-09-19 19:30:00 info: Create Post Control
+2020-09-19 19:30:47 info: Portfolio server running on-3001
+2020-09-19 19:30:47 info: DB CONNECTION SUCCESS
+2020-09-19 19:30:52 info: Authorizing user
+2020-09-19 19:30:52 info: auth-324--undefined
+2020-09-19 19:30:52 info: decoded-info-[object Object]
+2020-09-19 19:30:52 info: File Info:[object Object]
+2020-09-19 19:30:52 info: Create Post Control
+2020-09-19 19:32:10 info: Portfolio server running on-3001
+2020-09-19 19:32:10 info: DB CONNECTION SUCCESS
+2020-09-19 19:32:14 info: Authorizing user
+2020-09-19 19:32:14 info: auth-324--undefined
+2020-09-19 19:32:14 info: decoded-info-[object Object]
+2020-09-19 19:32:14 info: File Info:[object Object]
+2020-09-19 19:32:14 info: Create Post Control
+2020-09-19 19:33:01 info: Portfolio server running on-3001
+2020-09-19 19:33:02 info: DB CONNECTION SUCCESS
+2020-09-19 19:33:09 info: Portfolio server running on-3001
+2020-09-19 19:33:09 info: DB CONNECTION SUCCESS
+2020-09-19 19:33:21 info: Portfolio server running on-3001
+2020-09-19 19:33:22 info: DB CONNECTION SUCCESS
+2020-09-19 19:33:25 info: Authorizing user
+2020-09-19 19:33:25 info: auth-324--undefined
+2020-09-19 19:33:25 info: decoded-info-[object Object]
+2020-09-19 19:33:25 info: File Info:[object Object]
+2020-09-19 19:33:25 info: Create Post Control
+2020-09-19 19:33:25 info: POST /api/v1/portfolio/createProject 200 360.659 ms - 507
+2020-09-19 19:34:03 info: Portfolio server running on-3001
+2020-09-19 19:34:04 info: DB CONNECTION SUCCESS
+2020-09-19 19:34:09 info: Portfolio server running on-3001
+2020-09-19 19:34:09 info: DB CONNECTION SUCCESS
+2020-09-19 19:34:11 info: Authorizing user
+2020-09-19 19:34:11 info: auth-324--undefined
+2020-09-19 19:34:11 info: decoded-info-[object Object]
+2020-09-19 19:34:11 info: File Info:[object Object]
+2020-09-19 19:34:11 info: Create Post Control
+2020-09-19 19:34:11 info: POST /api/v1/portfolio/createProject 200 332.688 ms - 507
+2020-09-19 19:34:32 info: Portfolio server running on-3001
+2020-09-19 19:34:33 info: DB CONNECTION SUCCESS
+2020-09-19 19:34:34 info: Authorizing user
+2020-09-19 19:34:34 info: auth-324--undefined
+2020-09-19 19:34:34 info: decoded-info-[object Object]
+2020-09-19 19:34:34 info: File Info:[object Object]
+2020-09-19 19:34:34 info: Create Post Control
+2020-09-19 19:34:34 info: POST /api/v1/portfolio/createProject 200 369.180 ms - 507
+2020-09-19 19:34:55 info: Portfolio server running on-3001
+2020-09-19 19:34:55 info: DB CONNECTION SUCCESS
+2020-09-19 19:35:04 info: Portfolio server running on-3001
+2020-09-19 19:35:04 info: DB CONNECTION SUCCESS
+2020-09-19 19:35:07 info: Authorizing user
+2020-09-19 19:35:07 info: auth-324--undefined
+2020-09-19 19:35:07 info: File Info:[object Object]
+2020-09-19 19:35:08 info: Create Post Control
+2020-09-19 19:35:08 info: POST /api/v1/portfolio/createProject 200 356.309 ms - 507
+2020-09-19 19:44:10 info: Portfolio server running on-3001
+2020-09-19 19:44:11 info: DB CONNECTION SUCCESS
+2020-09-19 19:44:17 info: POST /api/v1/portfolio/createProject&userId=3SJTd1d-m 404 6.386 ms - 87
+2020-09-19 19:44:58 info: Authorizing user
+2020-09-19 19:44:58 info: auth-324--undefined
+2020-09-19 19:44:58 info: File Info:[object Object]
+2020-09-19 19:44:58 info: Create Post Control
+2020-09-19 19:44:58 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 329.850 ms - 507
+2020-09-19 19:45:20 info: Portfolio server running on-3001
+2020-09-19 19:45:21 info: DB CONNECTION SUCCESS
+2020-09-19 19:45:22 info: Authorizing user
+2020-09-19 19:45:22 info: auth-324--undefined
+2020-09-19 19:45:22 info: File Info:[object Object]
+2020-09-19 19:45:22 info: Create Post Control
+2020-09-19 19:45:22 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 336.338 ms - 507
+2020-09-19 19:45:42 info: Portfolio server running on-3001
+2020-09-19 19:45:42 info: DB CONNECTION SUCCESS
+2020-09-19 19:45:46 info: Portfolio server running on-3001
+2020-09-19 19:45:46 info: DB CONNECTION SUCCESS
+2020-09-19 19:45:48 info: Authorizing user
+2020-09-19 19:45:48 info: auth-324--undefined
+2020-09-19 19:45:48 info: File Info:[object Object]
+2020-09-19 19:45:48 info: Create Post Control
+2020-09-19 19:45:48 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 333.061 ms - 507
+2020-09-19 19:46:12 info: Portfolio server running on-3001
+2020-09-19 19:46:12 info: DB CONNECTION SUCCESS
+2020-09-19 19:46:43 info: Portfolio server running on-3001
+2020-09-19 19:46:43 info: DB CONNECTION SUCCESS
+2020-09-19 19:46:51 info: Portfolio server running on-3001
+2020-09-19 19:46:52 info: DB CONNECTION SUCCESS
+2020-09-19 19:47:36 info: Portfolio server running on-3001
+2020-09-19 19:47:37 info: DB CONNECTION SUCCESS
+2020-09-19 19:47:38 info: Portfolio server running on-3001
+2020-09-19 19:47:38 info: DB CONNECTION SUCCESS
+2020-09-19 19:47:43 info: Authorizing user
+2020-09-19 19:47:43 info: auth-324--3SJTd1d-m
+2020-09-19 19:47:43 info: File Info:[object Object]
+2020-09-19 19:47:43 info: Create Post Control
+2020-09-19 19:47:44 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 351.433 ms - 507
+2020-09-19 19:47:53 info: Authorizing user
+2020-09-19 19:47:53 info: auth-324--3SJTd1d-
+2020-09-19 19:48:42 info: Portfolio server running on-3001
+2020-09-19 19:48:43 info: DB CONNECTION SUCCESS
+2020-09-19 19:48:44 info: Authorizing user
+2020-09-19 19:48:44 info: auth-324--3SJTd1d-
+2020-09-19 19:49:23 info: Portfolio server running on-3001
+2020-09-19 19:49:24 info: DB CONNECTION SUCCESS
+2020-09-19 19:49:26 info: Authorizing user
+2020-09-19 19:49:26 info: auth-324--3SJTd1d-
+2020-09-19 19:49:26 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d- 400 12.366 ms - 71
+2020-09-19 19:49:26 info: File Info:[object Object]
+2020-09-19 19:49:26 info: Create Post Control
+2020-09-19 19:49:32 info: Authorizing user
+2020-09-19 19:49:32 info: auth-324--3SJTd1d-m
+2020-09-19 19:49:32 info: File Info:[object Object]
+2020-09-19 19:49:32 info: Create Post Control
+2020-09-19 19:49:32 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 453.033 ms - 507
+2020-09-19 19:49:41 info: Portfolio server running on-3001
+2020-09-19 19:49:41 info: DB CONNECTION SUCCESS
+2020-09-19 19:49:45 info: Portfolio server running on-3001
+2020-09-19 19:49:45 info: DB CONNECTION SUCCESS
+2020-09-19 19:49:48 info: Portfolio server running on-3001
+2020-09-19 19:49:48 info: DB CONNECTION SUCCESS

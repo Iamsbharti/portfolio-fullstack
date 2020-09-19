@@ -4,8 +4,9 @@ const logger = require("../library/logger");
 const { formatResponse } = require("../library/formatResponse");
 
 const createPost = async (req, res) => {
-  const { name, demo, code, type, description } = req.body;
+  const { name, demo, code, type, description, userId } = req.body;
   logger.info("Create Post Control");
+  console.log(name, demo, code, type, description, userId);
   let newProject = new Project({
     projectId: shortid.generate(),
     name: name,
@@ -13,6 +14,7 @@ const createPost = async (req, res) => {
     code: code,
     type: type,
     description: description,
+    userId: userId,
     image: req.file.id,
   });
   /**save new project */

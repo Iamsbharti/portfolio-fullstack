@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const users = require("../controller/userControl");
 const posts = require("../controller/postControl");
+const auth = require("../middlewares/authorization");
 const db = require("../initdb");
 const multer = require("multer");
 
@@ -13,6 +14,7 @@ const upload = multer({
 //router.get("/portfolio/projects", getAllProject);
 router.post(
   "/portfolio/createProject",
+  auth.isAuthorized,
   upload.single("file"),
   posts.createPost
 );
