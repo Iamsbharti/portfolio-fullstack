@@ -31,7 +31,7 @@ router.post(
   blogs.createBlog
 );
 
-router.post("/portfolio/createUser", users.createUser);
+//router.post("/portfolio/createUser", users.createUser);
 router.get("/portfolio/login", users.adminLogin);
 
 module.exports = router;
