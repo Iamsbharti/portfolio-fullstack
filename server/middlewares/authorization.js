@@ -6,7 +6,7 @@ const isAuthorized = async (req, res, next) => {
   logger.info("Authorizing user");
   const authToken = req.header("authToken");
   const { userId } = req.query;
-
+  console.log(authToken, userId);
   let decoded = await jwt.verify(authToken, process.env.TOKEN_SECRET);
 
   if (decoded) {

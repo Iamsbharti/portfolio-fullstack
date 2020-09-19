@@ -1091,3 +1091,76 @@
 2020-09-19 19:49:45 info: DB CONNECTION SUCCESS
 2020-09-19 19:49:48 info: Portfolio server running on-3001
 2020-09-19 19:49:48 info: DB CONNECTION SUCCESS
+2020-09-19 19:50:46 info: Portfolio server running on-3001
+2020-09-19 19:50:47 info: DB CONNECTION SUCCESS
+2020-09-19 19:50:58 info: Portfolio server running on-3001
+2020-09-19 19:50:58 info: DB CONNECTION SUCCESS
+2020-09-19 19:51:10 info: Portfolio server running on-3001
+2020-09-19 19:51:10 info: DB CONNECTION SUCCESS
+2020-09-19 19:51:23 info: Portfolio server running on-3001
+2020-09-19 19:51:23 info: DB CONNECTION SUCCESS
+2020-09-19 19:51:37 info: Portfolio server running on-3001
+2020-09-19 19:51:38 info: DB CONNECTION SUCCESS
+2020-09-19 19:54:51 info: Portfolio server running on-3001
+2020-09-19 19:54:52 info: DB CONNECTION SUCCESS
+2020-09-19 19:55:30 info: Portfolio server running on-3001
+2020-09-19 19:55:31 info: DB CONNECTION SUCCESS
+2020-09-19 19:55:58 info: Portfolio server running on-3001
+2020-09-19 19:55:58 info: DB CONNECTION SUCCESS
+2020-09-19 19:56:33 info: Portfolio server running on-3001
+2020-09-19 19:56:33 info: DB CONNECTION SUCCESS
+2020-09-19 19:57:15 info: Portfolio server running on-3001
+2020-09-19 19:57:15 info: DB CONNECTION SUCCESS
+2020-09-19 19:57:18 info: Portfolio server running on-3001
+2020-09-19 19:57:19 info: DB CONNECTION SUCCESS
+2020-09-19 19:58:46 info: Portfolio server running on-3001
+2020-09-19 19:58:47 info: Portfolio server running on-3001
+2020-09-19 19:58:47 info: DB CONNECTION SUCCESS
+2020-09-19 19:58:54 info: Portfolio server running on-3001
+2020-09-19 19:58:54 info: DB CONNECTION SUCCESS
+2020-09-19 20:00:05 info: Portfolio server running on-3001
+2020-09-19 20:00:05 info: DB CONNECTION SUCCESS
+2020-09-19 20:00:13 info: Portfolio server running on-3001
+2020-09-19 20:00:14 info: DB CONNECTION SUCCESS
+2020-09-19 20:00:18 info: Portfolio server running on-3001
+2020-09-19 20:00:18 info: DB CONNECTION SUCCESS
+2020-09-19 20:00:25 info: Portfolio server running on-3001
+2020-09-19 20:00:25 info: DB CONNECTION SUCCESS
+2020-09-19 20:00:35 info: Portfolio server running on-3001
+2020-09-19 20:00:36 info: DB CONNECTION SUCCESS
+2020-09-19 20:00:48 info: Portfolio server running on-3001
+2020-09-19 20:00:49 info: DB CONNECTION SUCCESS
+2020-09-19 20:01:00 info: Portfolio server running on-3001
+2020-09-19 20:01:00 info: DB CONNECTION SUCCESS
+2020-09-19 20:01:55 info: Portfolio server running on-3001
+2020-09-19 20:01:55 info: DB CONNECTION SUCCESS
+2020-09-19 20:02:13 info: Portfolio server running on-3001
+2020-09-19 20:02:13 info: DB CONNECTION SUCCESS
+2020-09-19 20:02:21 info: Portfolio server running on-3001
+2020-09-19 20:02:22 info: DB CONNECTION SUCCESS
+2020-09-19 20:02:50 info: Portfolio server running on-3001
+2020-09-19 20:02:50 info: DB CONNECTION SUCCESS
+2020-09-19 20:03:06 info: Portfolio server running on-3001
+2020-09-19 20:03:06 info: DB CONNECTION SUCCESS
+2020-09-19 20:03:34 info: Portfolio server running on-3001
+2020-09-19 20:03:34 info: DB CONNECTION SUCCESS
+2020-09-19 20:03:49 info: Portfolio server running on-3001
+2020-09-19 20:03:50 info: DB CONNECTION SUCCESS
+2020-09-19 20:04:10 info: Portfolio server running on-3001
+2020-09-19 20:04:10 info: DB CONNECTION SUCCESS
+2020-09-19 20:04:36 info: Portfolio server running on-3001
+2020-09-19 20:04:37 info: DB CONNECTION SUCCESS
+2020-09-19 20:04:59 info: Portfolio server running on-3001
+2020-09-19 20:04:59 info: DB CONNECTION SUCCESS
+2020-09-19 20:06:59 info: Portfolio server running on-3001
+2020-09-19 20:06:59 info: DB CONNECTION SUCCESS
+2020-09-19 20:07:54 info: Authorizing user
+2020-09-19 20:08:55 info: Portfolio server running on-3001
+2020-09-19 20:08:55 info: DB CONNECTION SUCCESS
+2020-09-19 20:08:56 info: Authorizing user
+2020-09-19 20:09:10 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m - - ms - -
+2020-09-19 20:09:12 info: Authorizing user
+2020-09-19 20:09:12 info: File Info:[object Object]
+2020-09-19 20:09:12 info: Create Blog Control
+2020-09-19 20:09:12 info: populate image
+2020-09-19 20:09:12 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 345.704 ms - 455
