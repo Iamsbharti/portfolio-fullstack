@@ -892,3 +892,52 @@
 2020-09-19 18:28:24 info: DB CONNECTION SUCCESS
 2020-09-19 18:28:28 info: Portfolio server running on-3001
 2020-09-19 18:28:28 info: DB CONNECTION SUCCESS
+2020-09-19 18:28:59 info: Portfolio server running on-3001
+2020-09-19 18:29:00 info: DB CONNECTION SUCCESS
+2020-09-19 18:29:04 info: Portfolio server running on-3001
+2020-09-19 18:29:04 info: DB CONNECTION SUCCESS
+2020-09-19 18:29:20 info: Portfolio server running on-3001
+2020-09-19 18:29:21 info: DB CONNECTION SUCCESS
+2020-09-19 18:29:25 info: Portfolio server running on-3001
+2020-09-19 18:29:26 info: DB CONNECTION SUCCESS
+2020-09-19 18:34:12 info: Portfolio server running on-3001
+2020-09-19 18:34:12 info: DB CONNECTION SUCCESS
+2020-09-19 18:41:39 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVTZD 404 7.282 ms - 84
+2020-09-19 18:41:41 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVTyi 404 0.585 ms - 84
+2020-09-19 18:41:42 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVULt 404 0.890 ms - 84
+2020-09-19 18:41:47 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVVaB 404 0.367 ms - 84
+2020-09-19 18:41:52 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVWoR 404 0.842 ms - 84
+2020-09-19 18:41:57 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVY0n 404 0.935 ms - 84
+2020-09-19 18:42:02 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVZF8 404 0.886 ms - 84
+2020-09-19 18:42:03 info: OPTIONS /api/v1/user/login 204 0.621 ms - 0
+2020-09-19 18:42:03 info: POST /api/v1/user/login 404 47.239 ms - 57
+2020-09-19 18:42:07 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVaTV 404 0.880 ms - 84
+2020-09-19 18:42:12 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVbhq 404 0.810 ms - 84
+2020-09-19 18:42:16 info: OPTIONS /api/v1/user/login 204 0.473 ms - 0
+2020-09-19 18:42:16 info: POST /api/v1/user/login 404 1.183 ms - 57
+2020-09-19 18:42:17 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVcwA 404 0.838 ms - 84
+2020-09-19 18:42:22 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVe8W 404 0.576 ms - 84
+2020-09-19 18:42:27 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVfMx 404 0.697 ms - 84
+2020-09-19 18:42:28 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVfdV 404 0.590 ms - 84
+2020-09-19 18:42:30 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVfvb 404 0.408 ms - 84
+2020-09-19 18:42:31 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVgBo 404 3.064 ms - 84
+2020-09-19 18:42:34 info: OPTIONS /api/v1/user/login 204 0.214 ms - 0
+2020-09-19 18:42:34 info: POST /api/v1/user/login 404 0.923 ms - 57
+2020-09-19 18:42:34 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVh2d 404 0.958 ms - 84
+2020-09-19 18:42:39 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVi8k 404 0.932 ms - 84
+2020-09-19 18:42:44 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVjN5 404 0.506 ms - 84
+2020-09-19 18:42:49 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVkbh 404 0.607 ms - 84
+2020-09-19 18:42:54 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVlqK 404 0.717 ms - 84
+2020-09-19 18:42:59 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVn30 404 0.564 ms - 84
+2020-09-19 18:43:04 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVoHg 404 0.647 ms - 84
+2020-09-19 18:43:09 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVpWJ 404 0.566 ms - 84
+2020-09-19 18:43:14 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVql6 404 0.728 ms - 84
+2020-09-19 18:43:19 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVrzm 404 0.451 ms - 84
+2020-09-19 18:43:24 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVtCN 404 0.558 ms - 84
+2020-09-19 18:43:29 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVuR1 404 1.379 ms - 84
+2020-09-19 18:43:34 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVvfj 404 0.437 ms - 84
+2020-09-19 18:43:39 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVwuG 404 0.517 ms - 84
+2020-09-19 18:43:44 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVy6s 404 0.554 ms - 84
+2020-09-19 18:43:49 info: GET /socket.io/?EIO=3&transport=polling&t=NIcVzLU 404 0.846 ms - 84
+2020-09-19 19:17:50 info: Portfolio server running on-3001
+2020-09-19 19:17:50 info: DB CONNECTION SUCCESS
