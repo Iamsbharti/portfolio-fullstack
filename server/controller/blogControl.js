@@ -2,6 +2,7 @@ const Blog = require("../model/Blog");
 const shortid = require("shortid");
 const logger = require("../library/logger");
 const { formatResponse } = require("../library/formatResponse");
+const { format } = require("winston");
 
 const createBlog = async (req, res) => {
   logger.info("Create Blog Control");
@@ -32,5 +33,21 @@ const createBlog = async (req, res) => {
     }
   });
 };
-
-module.exports = { createBlog };
+const getBlogs = async (req, res) => {
+  logger.info("Get All Blog Control");
+  Blog.find()
+    .populate("image")
+    .lean()
+    .exec((error, blogs) => {
+      if (error) {
+        res
+          .status(500)
+          .json(formatResponse(true, 500, "Internal Server Error", error));
+      } else {
+        res
+          .status(200)
+          .json(formatResponse(false, 200, "Blogs Fetched", blogs));
+      }
+    });
+};
+module.exports = { createBlog, getBlogs };

@@ -12,6 +12,7 @@ const upload = multer({
   limits: 1024 * 1024 * 6,
   fileFilter: db.fileFilter,
 });
+
 /**projects route */
 router.get("/portfolio/projects", auth.isAuthorized, posts.getProjects);
 router.post(
@@ -21,11 +22,8 @@ router.post(
   posts.createPost
 );
 
-/*
-///Blog route
-router.get("/portfolio/blogs", getAllBlogs);
-
-*/
+/**blogs route */
+router.get("/portfolio/blogs", auth.isAuthorized, blogs.getBlogs);
 router.post(
   "/portfolio/createBlog",
   auth.isAuthorized,
