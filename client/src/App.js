@@ -3,6 +3,7 @@ import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Profile from "./components/Profile";
 import Project from "./components/Project";
+import Blogs from "./components/Blogs";
 import PageNotFound from "./components/PageNotFound";
 function App() {
   return (

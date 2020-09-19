@@ -1353,3 +1353,12 @@
 2020-09-19 22:12:40 info: DB CONNECTION SUCCESS
 2020-09-19 22:12:42 info: Portfolio server running on-3001
 2020-09-19 22:12:42 info: DB CONNECTION SUCCESS
+2020-09-19 22:14:01 info: Portfolio server running on-3001
+2020-09-19 22:14:01 info: DB CONNECTION SUCCESS
+2020-09-19 22:32:47 info: GET / 404 4.265 ms - 40
+2020-09-19 22:33:55 info: Portfolio server running on-3001
+2020-09-19 22:33:56 info: DB CONNECTION SUCCESS
+2020-09-19 22:34:34 info: Portfolio server running on-3001
+2020-09-19 22:34:35 info: DB CONNECTION SUCCESS
+2020-09-19 22:37:04 info: Portfolio server running on-3001
+2020-09-19 22:37:05 info: DB CONNECTION SUCCESS

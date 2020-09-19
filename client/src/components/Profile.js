@@ -6,7 +6,11 @@ const Profile = () => {
       <main>
         <section>
           <nav>
-            <img src={} alt="" className="header_icon" />
+            <img
+              src={process.env.PUBLIC_URL + "/header-icons.png"}
+              alt=""
+              className="header_icon"
+            />
             <ul>
               <li>Services</li>
               <li>Works</li>
