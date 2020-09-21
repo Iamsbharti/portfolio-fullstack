@@ -51,7 +51,30 @@ const Profile = () => {
                 Saurabhbharti9@gmail.com
               </a>
             </div>
-            <div className="quote">In The End it's You Vs You</div>
+            <div className="quote">
+              <p className="quote_1">In The End it's You Vs You.</p>
+              <p className="quote_2">
+                Don't be intimidated by success or failure, Instead get up and
+                start fullfilling your dreams again.
+              </p>
+              <div className="experience_projects_blogs">
+                <div>
+                  <p>
+                    <span>3</span> Years of Experience
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    <span>6</span> Projects
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    <span>6</span> Blogs
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

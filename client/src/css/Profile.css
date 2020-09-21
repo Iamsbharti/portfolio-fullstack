@@ -135,6 +135,7 @@ nav {
 .intro_details {
   margin-right: 52px;
   width: 300px;
+  font-weight: 800;
 }
 .intro_text {
   color: #9da9ce;
@@ -197,7 +198,7 @@ a:active {
 .contact_and_qoute {
   display: flex;
   justify-content: space-between;
-  color: white;
+  color: #fbfcff;
 }
 .contact {
   width: 219px;
@@ -217,6 +218,21 @@ a:active {
   color: yellow;
 }
 .quote {
+  width: 355px;
+}
+.quote_1 {
+  font-weight: 900;
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+.quote_2 {
+  font-weight: 500;
+  font-size: large;
+  margin-bottom: 10px;
+  width: 300px;
+}
+.experience_projects_blogs {
+  display: flex;
+  justify-content: space-evenly;
   margin-right: 90px;
-  padding-right: 84px;
 }
