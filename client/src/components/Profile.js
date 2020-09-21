@@ -42,6 +42,18 @@ const Profile = () => {
             </div>
           </div>
         </section>
+        <section className="profile_contact_section">
+          <div className="contact_and_qoute">
+            <div className="contact">
+              <p className="contact_text">- Contact</p>
+              <p className="contact_info">Any Type of Query & Discussion.</p>
+              <a href="#" className="contact_email">
+                Saurabhbharti9@gmail.com
+              </a>
+            </div>
+            <div className="quote">In The End it's You Vs You</div>
+          </div>
+        </section>
       </main>
     </div>
   );
