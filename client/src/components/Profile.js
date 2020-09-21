@@ -20,7 +20,11 @@ const Profile = () => {
           </nav>
           <div className="header_introduction">
             <div className="intro_name">
-              <span>Saurabh Bharti</span>
+              <p>Saurabh </p>
+              <p>
+                Bharti<span>.</span>
+              </p>
+              <div className="intro_name_ul"></div>
             </div>
             <div className="intro_details">
               <p className="intro_text">- Introduction</p>

@@ -8,7 +8,7 @@ main {
 }
 .profile__section {
   min-height: 60vh;
-  background-color: #08080d;
+  background-color: #344055;
   padding: 2rem 10rem;
 }
 .header_icon {
@@ -40,13 +40,32 @@ nav {
 }
 .intro_name {
   font-weight: 900;
-  font-size: 1.9rem;
+  font-size: 2.5rem;
+}
+
+.intro_name_ul {
+  width: 45px;
+  height: 6px;
+  background-color: yellow;
 }
 .intro_details {
-  padding-left: 3rem;
-  width: 400px;
+  margin-right: 52px;
+  width: 300px;
 }
 .intro_text {
   color: #9da9ce;
   margin-bottom: 1.1rem;
+}
+.intro_story {
+  margin-top: 10px;
+}
+.intro_story a {
+  color: yellow;
+}
+
+a:hover {
+  color: yellowgreen;
+}
+a:active {
+  color: yellow;
 }
