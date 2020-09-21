@@ -23,14 +23,18 @@ const Profile = () => {
               <span>Saurabh Bharti</span>
             </div>
             <div className="intro_details">
-              <span className="into_text">Introduction</span>
-              <span className="into_job_title">Consultant, Based In India</span>
-              <span className="into_job_details">
+              <p className="intro_text">- Introduction</p>
+              <div>
+                <span className="intro_job_title">
+                  Consultant and Full Stack Developer ,Based In India
+                </span>
+              </div>
+              <p className="intro_job_details">
                 Security Consultant, building FullStack applications
-              </span>
-              <span className="into_story">
+              </p>
+              <p className="intro_story">
                 <a href="#">My Story</a>
-              </span>
+              </p>
             </div>
           </div>
         </section>

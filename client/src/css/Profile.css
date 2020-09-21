@@ -9,7 +9,7 @@ main {
 .profile__section {
   min-height: 60vh;
   background-color: #08080d;
-  padding: 2rem 5rem;
+  padding: 2rem 10rem;
 }
 .header_icon {
   color: white;
@@ -31,4 +31,22 @@ nav {
   padding-left: 2rem;
   font-size: 1.2rem;
   font-weight: 600;
+}
+.header_introduction {
+  padding: 4rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.intro_name {
+  font-weight: 900;
+  font-size: 1.9rem;
+}
+.intro_details {
+  padding-left: 3rem;
+  width: 400px;
+}
+.intro_text {
+  color: #9da9ce;
+  margin-bottom: 1.1rem;
 }
