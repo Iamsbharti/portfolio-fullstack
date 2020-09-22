@@ -9,6 +9,7 @@
     "axios": "^0.20.0",
     "dateformat": "^3.0.3",
     "form-data": "^3.0.0",
+    "gsap": "^3.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",

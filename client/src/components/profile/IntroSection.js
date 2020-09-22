@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../../css/Profile.css";
+import { TweenMax, Power3 } from "gsap";
 const IntroSection = () => {
+  let navItems = useRef(null);
+  useEffect(() => {
+    TweenMax.to(navItems, 0.9, {
+      opacity: 3,
+      y: 10,
+      x: 10,
+      ease: Power3.easeOut,
+    });
+  }, []);
   return (
     <div>
       <main>
@@ -11,7 +21,12 @@ const IntroSection = () => {
               alt=""
               className="header_icon"
             />
-            <ul className="nav__links">
+            <ul
+              className="nav__links"
+              ref={(el) => {
+                navItems = el;
+              }}
+            >
               <li>Services</li>
               <li>Works</li>
               <li>Blog</li>

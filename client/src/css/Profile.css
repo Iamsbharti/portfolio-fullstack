@@ -123,6 +123,7 @@ nav {
   display: flex;
   list-style: none;
   justify-content: space-around;
+  opacity: 0;
 }
 .nav__links li {
   padding-left: 2rem;
