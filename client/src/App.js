@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Profile from "./components/Profile";
+import Profile from "./components/profile/Profile";
 import Project from "./components/Project";
 import Blogs from "./components/Blogs";
 import PageNotFound from "./components/PageNotFound";

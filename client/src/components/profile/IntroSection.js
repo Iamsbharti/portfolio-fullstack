@@ -1,6 +1,6 @@
 import React from "react";
-import "../css/Profile.css";
-const Profile = () => {
+import "../../css/Profile.css";
+const IntroSection = () => {
   return (
     <div>
       <main>
@@ -81,4 +81,5 @@ const Profile = () => {
     </div>
   );
 };
-export default Profile;
+
+export default IntroSection;
