@@ -6,9 +6,8 @@ const IntroSection = () => {
   useEffect(() => {
     TweenMax.to(navItems, 0.9, {
       opacity: 3,
-      y: 10,
-      x: 10,
-      ease: Power3.easeOut,
+      x: 30,
+      ease: Power3.easeInOut,
     });
   }, []);
   return (

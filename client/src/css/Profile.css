@@ -124,6 +124,7 @@ nav {
   list-style: none;
   justify-content: space-around;
   opacity: 0;
+  padding-right: 30px;
 }
 .nav__links li {
   padding-left: 2rem;
