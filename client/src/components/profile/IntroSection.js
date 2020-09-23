@@ -21,13 +21,10 @@ const IntroSection = () => {
     });
     TweenMax.to(fname, 0.9, {
       opacity: 3,
-      // y: -30,
-      ease: Power4.easeInOut,
-    });
-    TweenMax.to(lname, 0.9, {
-      opacity: 3,
-      // y: -30,
-      ease: lname.easeInOut,
+      y: -10,
+      x: 3,
+      ease: Power3.easeIn,
+      duration: 4,
     });
   }, []);
   return (
@@ -56,21 +53,14 @@ const IntroSection = () => {
             </ul>
           </nav>
           <div className="header_introduction">
-            <div className="intro_name">
-              <p
-                className="f_name"
-                ref={(el) => {
-                  fname = el;
-                }}
-              >
-                Saurabh{" "}
-              </p>
-              <p
-                className="l_name"
-                ref={(el) => {
-                  lname = el;
-                }}
-              >
+            <div
+              className="intro_name"
+              ref={(el) => {
+                fname = el;
+              }}
+            >
+              <p className="f_name">Saurabh </p>
+              <p className="l_name">
                 Bharti<span>.</span>
               </p>
               <div className="intro_name_ul"></div>
