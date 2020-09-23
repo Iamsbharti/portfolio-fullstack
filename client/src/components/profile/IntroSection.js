@@ -1,15 +1,19 @@
 import React, { useEffect, useRef } from "react";
 import "../../css/Profile.css";
-import { nameIntro, iconIntro, navIntro } from "../Animation";
+import { nameIntro, iconIntro, navIntro, intro } from "../Animation";
 const IntroSection = () => {
   let navItems = useRef(null);
   let navIcon = useRef(null);
   let fname = useRef(null);
-  let lname = useRef(null);
+  let intoduction = useRef(null);
+  let jobTitle = useRef(null);
+  let jobDetails = useRef(null);
+  let story = useRef(null);
   useEffect(() => {
     iconIntro(navIcon);
     navIntro(navItems);
     nameIntro(fname);
+    intro(intoduction);
   }, []);
   return (
     <div>
@@ -50,16 +54,38 @@ const IntroSection = () => {
               <div className="intro_name_ul"></div>
             </div>
             <div className="intro_details">
-              <p className="intro_text">- Introduction</p>
+              <p
+                className="intro_text"
+                ref={(ele) => {
+                  intoduction = ele;
+                }}
+              >
+                - Introduction
+              </p>
               <div>
-                <span className="intro_job_title">
+                <span
+                  className="intro_job_title"
+                  ref={(ele) => {
+                    jobTitle = ele;
+                  }}
+                >
                   Consultant and Full Stack Developer ,Based In India
                 </span>
               </div>
-              <p className="intro_job_details">
+              <p
+                className="intro_job_details"
+                ref={(ele) => {
+                  jobDetails = ele;
+                }}
+              >
                 Security Consultant, building FullStack applications
               </p>
-              <p className="intro_story">
+              <p
+                className="intro_story"
+                ref={(ele) => {
+                  story = ele;
+                }}
+              >
                 <a href="#">My Story</a>
               </p>
             </div>

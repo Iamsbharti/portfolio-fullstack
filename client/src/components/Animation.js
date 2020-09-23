@@ -31,3 +31,24 @@ export const nameIntro = (elem) => {
     ease: "back",
   });
 };
+
+//intoduction
+export const intro = (ele) => {
+  gsap.fromTo(
+    ele,
+    {
+      opacity: 0,
+      xPercent: 30,
+    },
+    {
+      opacity: 3,
+      xPercent: 0,
+      duration: 0.9,
+      ease: Power3.easeIn,
+    }
+  );
+};
+//jobTitle,jobdetails
+export const jobInto = (ele) => {};
+//story
+export const storyIntro = (ele) => {};
