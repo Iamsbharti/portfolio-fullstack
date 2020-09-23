@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import "../../css/Profile.css";
-import { TweenMax, Power3 } from "gsap";
+import { TweenMax, Power3, Power4 } from "gsap";
 const IntroSection = () => {
   let navItems = useRef(null);
   useEffect(() => {
     TweenMax.to(navItems, 0.9, {
       opacity: 3,
       x: 30,
-      ease: Power3.easeInOut,
+      ease: Power4.easeInOut,
     });
   }, []);
   return (
