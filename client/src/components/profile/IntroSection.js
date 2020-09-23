@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "../../css/Profile.css";
-import { TweenMax, Power3, Power4 } from "gsap";
+import { TweenMax, Power3, Power4, TimelineLite } from "gsap";
 const IntroSection = () => {
   let navItems = useRef(null);
   let navIcon = useRef(null);
@@ -15,14 +15,14 @@ const IntroSection = () => {
     TweenMax.to(navIcon, 0.9, {
       opacity: 3,
       y: -7,
-      x: 3,
+      x: 2,
       ease: Power4.easeInOut,
       duration: 6,
     });
     TweenMax.to(fname, 0.9, {
       opacity: 3,
-      y: -10,
-      x: 3,
+      y: -7,
+      x: 2,
       ease: Power3.easeIn,
       duration: 4,
     });
