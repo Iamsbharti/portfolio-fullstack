@@ -110,6 +110,7 @@ main {
 }
 .header_icon {
   color: white;
+  opacity: 0;
   height: 50px;
   width: 50px;
 }
@@ -141,7 +142,14 @@ nav {
   font-weight: 900;
   font-size: 2.5rem;
 }
-
+.fname {
+  margin-top: 30px;
+  opacity: 0;
+}
+.lname {
+  margin-top: 30px;
+  opacity: 0;
+}
 .intro_name_ul {
   width: 45px;
   height: 6px;

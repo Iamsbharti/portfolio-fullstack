@@ -3,11 +3,31 @@ import "../../css/Profile.css";
 import { TweenMax, Power3, Power4 } from "gsap";
 const IntroSection = () => {
   let navItems = useRef(null);
+  let navIcon = useRef(null);
+  let fname = useRef(null);
+  let lname = useRef(null);
   useEffect(() => {
     TweenMax.to(navItems, 0.9, {
       opacity: 3,
       x: 30,
       ease: Power4.easeInOut,
+    });
+    TweenMax.to(navIcon, 0.9, {
+      opacity: 3,
+      y: -7,
+      x: 3,
+      ease: Power4.easeInOut,
+      duration: 6,
+    });
+    TweenMax.to(fname, 0.9, {
+      opacity: 3,
+      // y: -30,
+      ease: Power4.easeInOut,
+    });
+    TweenMax.to(lname, 0.9, {
+      opacity: 3,
+      // y: -30,
+      ease: lname.easeInOut,
     });
   }, []);
   return (
@@ -19,6 +39,9 @@ const IntroSection = () => {
               src={process.env.PUBLIC_URL + "/header-icon.png"}
               alt=""
               className="header_icon"
+              ref={(el) => {
+                navIcon = el;
+              }}
             />
             <ul
               className="nav__links"
@@ -34,8 +57,20 @@ const IntroSection = () => {
           </nav>
           <div className="header_introduction">
             <div className="intro_name">
-              <p>Saurabh </p>
-              <p>
+              <p
+                className="f_name"
+                ref={(el) => {
+                  fname = el;
+                }}
+              >
+                Saurabh{" "}
+              </p>
+              <p
+                className="l_name"
+                ref={(el) => {
+                  lname = el;
+                }}
+              >
                 Bharti<span>.</span>
               </p>
               <div className="intro_name_ul"></div>
