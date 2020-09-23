@@ -1,31 +1,15 @@
 import React, { useEffect, useRef } from "react";
 import "../../css/Profile.css";
-import { TweenMax, Power3, Power4, TimelineLite } from "gsap";
+import { nameIntro, iconIntro, navIntro } from "../Animation";
 const IntroSection = () => {
   let navItems = useRef(null);
   let navIcon = useRef(null);
   let fname = useRef(null);
   let lname = useRef(null);
   useEffect(() => {
-    TweenMax.to(navItems, 0.9, {
-      opacity: 3,
-      x: 30,
-      ease: Power4.easeInOut,
-    });
-    TweenMax.to(navIcon, 0.9, {
-      opacity: 3,
-      y: -7,
-      x: 2,
-      ease: Power4.easeInOut,
-      duration: 6,
-    });
-    TweenMax.to(fname, 0.9, {
-      opacity: 3,
-      y: -7,
-      x: 2,
-      ease: Power3.easeIn,
-      duration: 4,
-    });
+    iconIntro(navIcon);
+    navIntro(navItems);
+    nameIntro(fname);
   }, []);
   return (
     <div>
@@ -59,8 +43,8 @@ const IntroSection = () => {
                 fname = el;
               }}
             >
-              <p className="f_name">Saurabh </p>
-              <p className="l_name">
+              <p>Saurabh </p>
+              <p>
                 Bharti<span>.</span>
               </p>
               <div className="intro_name_ul"></div>
