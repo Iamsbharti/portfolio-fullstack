@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "../../css/Profile.css";
 import {
   nameIntro,
@@ -14,6 +15,9 @@ import {
   quote1Intro,
   quote2Intro,
   detailsIntro,
+  hoverLink,
+  hoverExit,
+  staggerLinks,
 } from "../Animation";
 const IntroSection = () => {
   /**nav items */
@@ -41,6 +45,9 @@ const IntroSection = () => {
   let projects = useRef(null);
   let blogs = useRef(null);
 
+  let link1 = useRef(null);
+  let link2 = useRef(null);
+
   useEffect(() => {
     iconIntro(navIcon);
     navIntro(navItems);
@@ -59,6 +66,8 @@ const IntroSection = () => {
     quote1Intro(qoute1);
     quote2Intro(quote2);
     detailsIntro(exp, projects, blogs);
+
+    staggerLinks(link1, link2);
   }, []);
   return (
     <div>
@@ -131,7 +140,16 @@ const IntroSection = () => {
                   story = ele;
                 }}
               >
-                <a href="#">My Story</a>
+                <Link
+                  to="/story"
+                  onMouseEnter={(e) => hoverLink(e)}
+                  onMouseLeave={(e) => hoverExit(e)}
+                  ref={(ele) => {
+                    link1 = ele;
+                  }}
+                >
+                  My Story
+                </Link>
               </p>
             </div>
           </div>
@@ -160,9 +178,17 @@ const IntroSection = () => {
                   email = ele;
                 }}
               >
-                <a href="#" className="contact_email">
+                <Link
+                  to="/email"
+                  className="contact_email"
+                  onMouseEnter={(e) => hoverLink(e)}
+                  onMouseLeave={(e) => hoverExit(e)}
+                  ref={(ele) => {
+                    link2 = ele;
+                  }}
+                >
                   Saurabhbharti9@gmail.com
-                </a>
+                </Link>
               </p>
             </div>
             <div className="quote">
