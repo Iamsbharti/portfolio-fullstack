@@ -164,12 +164,7 @@ nav {
   color: #9da9ce;
   margin-bottom: 1.1rem;
 }
-.intro_job_title {
-  opacity: 0;
-}
-.intro_job_details {
-  opacity: 0;
-}
+
 .intro_story {
   margin-top: 10px;
   opacity: 0;

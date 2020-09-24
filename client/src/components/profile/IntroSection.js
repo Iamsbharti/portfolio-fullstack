@@ -1,6 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import "../../css/Profile.css";
-import { nameIntro, iconIntro, navIntro, intro } from "../Animation";
+import {
+  nameIntro,
+  iconIntro,
+  navIntro,
+  intro,
+  jobTitleIntro,
+  jobDetailsIntro,
+  storyIntro,
+} from "../Animation";
 const IntroSection = () => {
   let navItems = useRef(null);
   let navIcon = useRef(null);
@@ -14,6 +22,10 @@ const IntroSection = () => {
     navIntro(navItems);
     nameIntro(fname);
     intro(intoduction);
+    jobTitleIntro(jobTitle);
+    jobDetailsIntro(jobDetails);
+
+    storyIntro(story);
   }, []);
   return (
     <div>
@@ -63,14 +75,14 @@ const IntroSection = () => {
                 - Introduction
               </p>
               <div>
-                <span
+                <p
                   className="intro_job_title"
                   ref={(ele) => {
                     jobTitle = ele;
                   }}
                 >
                   Consultant and Full Stack Developer ,Based In India
-                </span>
+                </p>
               </div>
               <p
                 className="intro_job_details"

@@ -44,11 +44,53 @@ export const intro = (ele) => {
       opacity: 3,
       xPercent: 0,
       duration: 0.9,
-      ease: Power3.easeIn,
+      ease: "back",
     }
   );
 };
 //jobTitle,jobdetails
-export const jobInto = (ele) => {};
+export const jobTitleIntro = (ele) => {
+  gsap.fromTo(
+    ele,
+    {
+      opacity: 0,
+      xPercent: 30,
+      delay: 1,
+    },
+    {
+      opacity: 3,
+      xPercent: 0,
+      duration: 1.1,
+      ease: Power3.easeInOut,
+    }
+  );
+};
+export const jobDetailsIntro = (ele) => {
+  gsap.fromTo(
+    ele,
+    {
+      opacity: 0,
+      xPercent: 30,
+      delay: 2,
+    },
+    {
+      opacity: 3,
+      xPercent: 0,
+      duration: 1.2,
+      ease: Power3.easeIn,
+    }
+  );
+};
 //story
-export const storyIntro = (ele) => {};
+export const storyIntro = (ele) => {
+  gsap.fromTo(
+    ele,
+    { opacity: 0, xPercent: 35, delay: 3 },
+    {
+      opacity: 3,
+      xPercent: 0,
+      duration: 1.3,
+      ease: Power3.easeIn,
+    }
+  );
+};
