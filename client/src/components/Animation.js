@@ -94,3 +94,55 @@ export const storyIntro = (ele) => {
     }
   );
 };
+//contact
+export const contactIntro = (ele) => {
+  gsap.fromTo(
+    ele,
+    {
+      opacity: 0,
+      xPercent: 30,
+      yPercent: 50,
+    },
+    {
+      opacity: 3,
+      xPercent: 0,
+      yPercent: 0,
+      duration: 0.9,
+      ease: "back",
+    }
+  );
+};
+//contact_info
+export const contactInfoIntro = (ele) => {
+  gsap.fromTo(
+    ele,
+    {
+      opacity: 0,
+      xPercent: 30,
+      delay: 1,
+    },
+    {
+      opacity: 3,
+      xPercent: 0,
+      duration: 1.1,
+      ease: Power3.easeInOut,
+    }
+  );
+};
+//email
+export const emailIntro = (ele) => {
+  gsap.fromTo(
+    ele,
+    {
+      opacity: 0,
+      xPercent: 30,
+      delay: 2,
+    },
+    {
+      opacity: 3,
+      xPercent: 0,
+      duration: 1.2,
+      ease: Power3.easeInOut,
+    }
+  );
+};

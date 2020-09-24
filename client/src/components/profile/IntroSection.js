@@ -8,24 +8,43 @@ import {
   jobTitleIntro,
   jobDetailsIntro,
   storyIntro,
+  contactIntro,
+  contactInfoIntro,
+  emailIntro,
 } from "../Animation";
 const IntroSection = () => {
+  /**nav items */
   let navItems = useRef(null);
   let navIcon = useRef(null);
+
+  /**name header */
   let fname = useRef(null);
+
+  /**job details section */
   let intoduction = useRef(null);
   let jobTitle = useRef(null);
   let jobDetails = useRef(null);
   let story = useRef(null);
+
+  /**contact section */
+  let contact = useRef(null);
+  let contactInfo = useRef(null);
+  let email = useRef(null);
+
   useEffect(() => {
     iconIntro(navIcon);
     navIntro(navItems);
+
     nameIntro(fname);
+
     intro(intoduction);
     jobTitleIntro(jobTitle);
     jobDetailsIntro(jobDetails);
-
     storyIntro(story);
+
+    contactIntro(contact);
+    contactInfoIntro(contactInfo);
+    emailIntro(email);
   }, []);
   return (
     <div>
@@ -106,11 +125,31 @@ const IntroSection = () => {
         <section className="profile_contact_section">
           <div className="contact_and_qoute">
             <div className="contact">
-              <p className="contact_text">- Contact</p>
-              <p className="contact_info">Any Type of Query & Discussion.</p>
-              <a href="#" className="contact_email">
-                Saurabhbharti9@gmail.com
-              </a>
+              <p
+                className="contact_text"
+                ref={(ele) => {
+                  contact = ele;
+                }}
+              >
+                - Contact
+              </p>
+              <p
+                className="contact_info"
+                ref={(ele) => {
+                  contactInfo = ele;
+                }}
+              >
+                Any Type of Query & Discussion.
+              </p>
+              <p
+                ref={(ele) => {
+                  email = ele;
+                }}
+              >
+                <a href="#" className="contact_email">
+                  Saurabhbharti9@gmail.com
+                </a>
+              </p>
             </div>
             <div className="quote">
               <p className="quote_1">In The End it's You Vs You.</p>

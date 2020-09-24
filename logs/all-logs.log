@@ -1948,3 +1948,45 @@
 2020-09-24 10:20:36 info: Portfolio server running on-3001
 2020-09-24 10:21:02 info: Portfolio server running on-3001
 2020-09-24 10:21:26 info: Portfolio server running on-3001
+2020-09-24 10:22:41 error: Error Connencting DB: querySrv ETIMEOUT _mongodb._tcp.cluster0-5qtwd.mongodb.net
+2020-09-24 10:23:08 info: Portfolio server running on-3001
+2020-09-24 10:23:33 info: Portfolio server running on-3001
+2020-09-24 10:23:48 info: Portfolio server running on-3001
+2020-09-24 10:24:09 info: Portfolio server running on-3001
+2020-09-24 10:24:30 info: Portfolio server running on-3001
+2020-09-24 10:25:10 info: Portfolio server running on-3001
+2020-09-24 10:25:23 info: Portfolio server running on-3001
+2020-09-24 10:25:29 info: Portfolio server running on-3001
+2020-09-24 10:25:37 info: Portfolio server running on-3001
+2020-09-24 10:25:47 info: Portfolio server running on-3001
+2020-09-24 10:25:55 info: Portfolio server running on-3001
+2020-09-24 10:26:03 info: Portfolio server running on-3001
+2020-09-24 10:26:10 info: Portfolio server running on-3001
+2020-09-24 10:26:12 info: Portfolio server running on-3001
+2020-09-24 10:26:38 info: Portfolio server running on-3001
+2020-09-24 10:26:49 info: Portfolio server running on-3001
+2020-09-24 10:27:31 info: Portfolio server running on-3001
+2020-09-24 10:27:49 info: Portfolio server running on-3001
+2020-09-24 10:28:05 info: Portfolio server running on-3001
+2020-09-24 10:28:42 info: Portfolio server running on-3001
+2020-09-24 10:28:59 info: Portfolio server running on-3001
+2020-09-24 10:29:03 info: Portfolio server running on-3001
+2020-09-24 10:29:09 info: Portfolio server running on-3001
+2020-09-24 10:29:25 info: Portfolio server running on-3001
+2020-09-24 10:29:37 info: Portfolio server running on-3001
+2020-09-24 10:29:57 info: Portfolio server running on-3001
+2020-09-24 10:30:04 info: Portfolio server running on-3001
+2020-09-24 10:31:04 info: Portfolio server running on-3001
+2020-09-24 10:32:19 error: Error Connencting DB: querySrv ETIMEOUT _mongodb._tcp.cluster0-5qtwd.mongodb.net
+2020-09-24 10:32:58 info: Portfolio server running on-3001
+2020-09-24 10:33:04 info: Portfolio server running on-3001
+2020-09-24 10:34:19 error: Error Connencting DB: querySrv ETIMEOUT _mongodb._tcp.cluster0-5qtwd.mongodb.net
+2020-09-24 10:38:07 info: Portfolio server running on-3001
+2020-09-24 10:38:11 info: DB CONNECTION SUCCESS
+2020-09-24 10:38:33 info: Portfolio server running on-3001
+2020-09-24 10:38:39 info: Portfolio server running on-3001
+2020-09-24 10:38:44 info: DB CONNECTION SUCCESS
+2020-09-24 10:39:11 info: Portfolio server running on-3001
+2020-09-24 10:39:14 info: DB CONNECTION SUCCESS
+2020-09-24 10:39:24 info: Portfolio server running on-3001
+2020-09-24 10:39:25 info: DB CONNECTION SUCCESS
