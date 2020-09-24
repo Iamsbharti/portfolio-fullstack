@@ -18,7 +18,9 @@ import {
   hoverLink,
   hoverExit,
   staggerLinks,
+  sliderIntro,
 } from "../Animation";
+
 const IntroSection = () => {
   /**nav items */
   let navItems = useRef(null);
@@ -48,6 +50,11 @@ const IntroSection = () => {
   let link1 = useRef(null);
   let link2 = useRef(null);
 
+  /**slider intro */
+  let sliderText1 = useRef(null);
+  let sliderText2 = useRef(null);
+  let sliderText3 = useRef(null);
+
   useEffect(() => {
     iconIntro(navIcon);
     navIntro(navItems);
@@ -68,6 +75,8 @@ const IntroSection = () => {
     detailsIntro(exp, projects, blogs);
 
     staggerLinks(link1, link2);
+
+    sliderIntro(sliderText1, sliderText2, sliderText3);
   }, []);
   return (
     <div>
@@ -242,6 +251,41 @@ const IntroSection = () => {
           </div>
         </section>
       </main>
+      <div className="intro">
+        <div className="intro-text">
+          <h1 className="hide">
+            <span
+              className="text"
+              ref={(ele) => {
+                sliderText1 = ele;
+              }}
+            >
+              I am Saurabh Bharti
+            </span>
+          </h1>
+          <h1 className="hide">
+            <span
+              className="text"
+              ref={(ele) => {
+                sliderText2 = ele;
+              }}
+            >
+              Implementing
+            </span>
+          </h1>
+          <h1 className="hide">
+            <span
+              className="text"
+              ref={(ele) => {
+                sliderText3 = ele;
+              }}
+            >
+              Ideas.
+            </span>
+          </h1>
+        </div>
+      </div>
+      <div className="slider"></div>
     </div>
   );
 };

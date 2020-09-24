@@ -219,3 +219,8 @@ export const hoverExit = (e) => {
     ease: "power2.inOut",
   });
 };
+export const sliderIntro = (el1, el2, el3) => {
+  //text-span
+  const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+  tl.to([el1, el2, el3], { y: "0%", duration: 1, stagger: 0.25 });
+};
