@@ -11,6 +11,9 @@ import {
   contactIntro,
   contactInfoIntro,
   emailIntro,
+  quote1Intro,
+  quote2Intro,
+  detailsIntro,
 } from "../Animation";
 const IntroSection = () => {
   /**nav items */
@@ -31,6 +34,13 @@ const IntroSection = () => {
   let contactInfo = useRef(null);
   let email = useRef(null);
 
+  /**quoteSection */
+  let qoute1 = useRef(null);
+  let quote2 = useRef(null);
+  let exp = useRef(null);
+  let projects = useRef(null);
+  let blogs = useRef(null);
+
   useEffect(() => {
     iconIntro(navIcon);
     navIntro(navItems);
@@ -45,6 +55,10 @@ const IntroSection = () => {
     contactIntro(contact);
     contactInfoIntro(contactInfo);
     emailIntro(email);
+
+    quote1Intro(qoute1);
+    quote2Intro(quote2);
+    detailsIntro(exp, projects, blogs);
   }, []);
   return (
     <div>
@@ -152,24 +166,48 @@ const IntroSection = () => {
               </p>
             </div>
             <div className="quote">
-              <p className="quote_1">In The End it's You Vs You.</p>
-              <p className="quote_2">
+              <p
+                className="quote_1"
+                ref={(ele) => {
+                  qoute1 = ele;
+                }}
+              >
+                In The End it's You Vs You.
+              </p>
+              <p
+                className="quote_2"
+                ref={(ele) => {
+                  quote2 = ele;
+                }}
+              >
                 Don't be intimidated by success or failure, Instead get up and
                 start fullfilling your dreams again.
               </p>
               <div className="experience_projects_blogs">
                 <div>
-                  <p>
+                  <p
+                    ref={(ele) => {
+                      exp = ele;
+                    }}
+                  >
                     <span>3</span> Years of Experience
                   </p>
                 </div>
                 <div>
-                  <p>
+                  <p
+                    ref={(ele) => {
+                      projects = ele;
+                    }}
+                  >
                     <span>6</span> Projects
                   </p>
                 </div>
                 <div>
-                  <p>
+                  <p
+                    ref={(ele) => {
+                      blogs = ele;
+                    }}
+                  >
                     <span>6</span> Blogs
                   </p>
                 </div>

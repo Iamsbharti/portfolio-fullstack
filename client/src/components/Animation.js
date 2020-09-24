@@ -146,3 +146,44 @@ export const emailIntro = (ele) => {
     }
   );
 };
+//quote1
+export const quote1Intro = (ele) => {
+  gsap.fromTo(
+    ele,
+    {
+      opacity: 0,
+      xPercent: 30,
+    },
+    {
+      opacity: 3,
+      xPercent: 0,
+      duration: 1,
+      ease: "back",
+    }
+  );
+};
+//quote2
+export const quote2Intro = (ele) => {
+  gsap.fromTo(
+    ele,
+    { opacity: 0, xPercent: 30, delay: 1 },
+    { opacity: 3, xPercent: 0, duration: 1.2, ease: Power3.easeIn }
+  );
+};
+//exp,projects,blogs
+export const detailsIntro = (el1, el2, el3) => {
+  gsap.fromTo(
+    [el1, el2, el3],
+    {
+      opacity: 0,
+      xPercent: -30,
+      delay: 2,
+    },
+    {
+      opacity: 3,
+      xPercent: 0,
+      duration: 1.3,
+      ease: Power3.easeIn,
+    }
+  );
+};
