@@ -23,10 +23,10 @@ export const iconIntro = (ele) => {
   gsap.to(ele, {
     xPercent: -20,
     opacity: 3,
-    duration: 2,
+    duration: 3,
     scale: 1,
     ease: "power2.inOut",
-    delay: 2.5,
+    delay: 2.3,
   });
 };
 //nav items
@@ -36,7 +36,7 @@ export const navIntro = (ele) => {
     x: 30,
     ease: "back",
     duration: 2,
-    delay: 2.8,
+    delay: 2.4,
   });
 };
 //Name header
@@ -48,7 +48,7 @@ export const nameIntro = (elem) => {
     stagger: 0.35,
     duration: 1.5,
     //    scale: -1,
-    delay: 3.0,
+    delay: 2.5,
     ease: "back",
   });
 };
@@ -65,7 +65,7 @@ export const intro = (ele) => {
       opacity: 3,
       xPercent: 0,
       duration: 0.9,
-      delay: 3.1,
+      delay: 2.6,
       ease: "back",
     }
   );
@@ -82,7 +82,7 @@ export const jobTitleIntro = (ele) => {
       opacity: 3,
       xPercent: 0,
       duration: 1.1,
-      delay: 3.3,
+      delay: 2.7,
       ease: Power3.easeInOut,
     }
   );
@@ -98,7 +98,7 @@ export const jobDetailsIntro = (ele) => {
       opacity: 3,
       xPercent: 0,
       duration: 1.2,
-      delay: 3.4,
+      delay: 2.8,
       ease: Power3.easeIn,
     }
   );
@@ -115,7 +115,7 @@ export const storyIntro = (ele) => {
       opacity: 3,
       xPercent: 0,
       duration: 1.3,
-      delay: 3.5,
+      delay: 2.9,
       ease: Power3.easeIn,
     }
   );
@@ -134,7 +134,7 @@ export const contactIntro = (ele) => {
       xPercent: 0,
       yPercent: 0,
       duration: 1.0,
-      delay: 3.0,
+      delay: 2.1,
       ease: "back",
     }
   );
@@ -153,7 +153,7 @@ export const contactInfoIntro = (ele) => {
       xPercent: 0,
       yPercent: 0,
       duration: 1.2,
-      delay: 3.2,
+      delay: 2.3,
       ease: Power3.easeInOut,
     }
   );
@@ -172,7 +172,7 @@ export const emailIntro = (ele) => {
       xPercent: 0,
       yPercent: 0,
       duration: 1.2,
-      delay: 3.4,
+      delay: 2.3,
       ease: Power3.easeInOut,
     }
   );
@@ -189,7 +189,7 @@ export const quote1Intro = (ele) => {
       opacity: 3,
       xPercent: 0,
       duration: 1,
-      delay: 3.0,
+      delay: 2.1,
       ease: "back",
     }
   );
@@ -206,7 +206,7 @@ export const quote2Intro = (ele) => {
       opacity: 3,
       xPercent: 0,
       duration: 1.1,
-      delay: 3.2,
+      delay: 2.2,
       ease: Power3.easeIn,
     }
   );
@@ -223,7 +223,7 @@ export const detailsIntro = (el1, el2, el3) => {
       opacity: 3,
       xPercent: 0,
       duration: 1.2,
-      delay: 3.5,
+      delay: 2.3,
       ease: Power3.easeIn,
     }
   );
