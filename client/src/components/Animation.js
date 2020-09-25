@@ -15,7 +15,7 @@ export const sliderDivIntro = (ele) => {
 //hide the itro text
 export const hideIntroDiv = (ele) => {
   const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
-  tl.to(ele, { y: "-100%", duration: 1 }, 2.0);
+  tl.to(ele, { y: "-100%", duration: 1 }, 1.5);
 };
 
 //header icon
@@ -123,15 +123,15 @@ export const contactIntro = (ele) => {
     ele,
     {
       opacity: 0,
-      xPercent: 30,
-      yPercent: 50,
+      xPercent: -30,
+      yPercent: 20,
     },
     {
       opacity: 3,
       xPercent: 0,
       yPercent: 0,
-      duration: 0.9,
-      delay: 3.9,
+      duration: 1.0,
+      delay: 3.0,
       ease: "back",
     }
   );
@@ -142,13 +142,15 @@ export const contactInfoIntro = (ele) => {
     ele,
     {
       opacity: 0,
-      xPercent: 30,
+      xPercent: -30,
+      yPercent: 20,
     },
     {
       opacity: 3,
       xPercent: 0,
-      duration: 1.1,
-      delay: 4.0,
+      yPercent: 0,
+      duration: 1.2,
+      delay: 3.2,
       ease: Power3.easeInOut,
     }
   );
@@ -159,13 +161,15 @@ export const emailIntro = (ele) => {
     ele,
     {
       opacity: 0,
-      xPercent: 30,
+      xPercent: -30,
+      yPercent: 20,
     },
     {
       opacity: 3,
       xPercent: 0,
+      yPercent: 0,
       duration: 1.2,
-      delay: 4.2,
+      delay: 3.4,
       ease: Power3.easeInOut,
     }
   );
@@ -182,7 +186,7 @@ export const quote1Intro = (ele) => {
       opacity: 3,
       xPercent: 0,
       duration: 1,
-      delay: 4.3,
+      delay: 3.0,
       ease: "back",
     }
   );
@@ -191,8 +195,17 @@ export const quote1Intro = (ele) => {
 export const quote2Intro = (ele) => {
   gsap.fromTo(
     ele,
-    { opacity: 0, xPercent: 30 },
-    { opacity: 3, xPercent: 0, duration: 1.2, delay: 4.4, ease: Power3.easeIn }
+    {
+      opacity: 0,
+      xPercent: 30,
+    },
+    {
+      opacity: 3,
+      xPercent: 0,
+      duration: 1.1,
+      delay: 3.2,
+      ease: Power3.easeIn,
+    }
   );
 };
 //exp,projects,blogs
@@ -206,8 +219,8 @@ export const detailsIntro = (el1, el2, el3) => {
     {
       opacity: 3,
       xPercent: 0,
-      duration: 1.3,
-      delay: 4.5,
+      duration: 1.2,
+      delay: 3.5,
       ease: Power3.easeIn,
     }
   );
