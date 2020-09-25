@@ -1,5 +1,22 @@
 import { TweenMax, Power3, Power4, TimelineLite } from "gsap";
 import gsap from "gsap";
+import { text } from "body-parser";
+
+//slider text intro
+export const sliderIntro = (el1, el2, el3) => {
+  const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+  tl.to([el1, el2, el3], { y: "0%", duration: 1, stagger: 0.25 });
+};
+//slider upward transition
+export const sliderDivIntro = (ele) => {
+  const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+  tl.to(ele, { y: "-100%", duration: 1.0, delay: 1.0 });
+};
+//hide the itro text
+export const hideIntroDiv = (ele) => {
+  const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+  tl.to(ele, { y: "-100%", duration: 1 }, 2.0);
+};
 
 //header icon
 export const iconIntro = (ele) => {
@@ -9,6 +26,7 @@ export const iconIntro = (ele) => {
     duration: 2,
     scale: 1,
     ease: "power2.inOut",
+    delay: 2.5,
   });
 };
 //nav items
@@ -18,16 +36,19 @@ export const navIntro = (ele) => {
     x: 30,
     ease: "back",
     duration: 2,
+    delay: 2.8,
   });
 };
 //Name header
 export const nameIntro = (elem) => {
   gsap.from(elem, {
     xPercent: -20,
+    yPercent: 20,
     opacity: 0,
-    stagger: 0.2,
-    duration: 2,
-    scale: -1,
+    stagger: 0.35,
+    duration: 1.5,
+    //    scale: -1,
+    delay: 3.0,
     ease: "back",
   });
 };
@@ -44,6 +65,7 @@ export const intro = (ele) => {
       opacity: 3,
       xPercent: 0,
       duration: 0.9,
+      delay: 3.1,
       ease: "back",
     }
   );
@@ -55,12 +77,12 @@ export const jobTitleIntro = (ele) => {
     {
       opacity: 0,
       xPercent: 30,
-      delay: 1,
     },
     {
       opacity: 3,
       xPercent: 0,
       duration: 1.1,
+      delay: 3.3,
       ease: Power3.easeInOut,
     }
   );
@@ -71,12 +93,12 @@ export const jobDetailsIntro = (ele) => {
     {
       opacity: 0,
       xPercent: 30,
-      delay: 2,
     },
     {
       opacity: 3,
       xPercent: 0,
       duration: 1.2,
+      delay: 3.5,
       ease: Power3.easeIn,
     }
   );
@@ -85,11 +107,12 @@ export const jobDetailsIntro = (ele) => {
 export const storyIntro = (ele) => {
   gsap.fromTo(
     ele,
-    { opacity: 0, xPercent: 35, delay: 3 },
+    { opacity: 0, xPercent: 35 },
     {
       opacity: 3,
       xPercent: 0,
       duration: 1.3,
+      delay: 3.8,
       ease: Power3.easeIn,
     }
   );
@@ -108,6 +131,7 @@ export const contactIntro = (ele) => {
       xPercent: 0,
       yPercent: 0,
       duration: 0.9,
+      delay: 3.9,
       ease: "back",
     }
   );
@@ -119,12 +143,12 @@ export const contactInfoIntro = (ele) => {
     {
       opacity: 0,
       xPercent: 30,
-      delay: 1,
     },
     {
       opacity: 3,
       xPercent: 0,
       duration: 1.1,
+      delay: 4.0,
       ease: Power3.easeInOut,
     }
   );
@@ -136,12 +160,12 @@ export const emailIntro = (ele) => {
     {
       opacity: 0,
       xPercent: 30,
-      delay: 2,
     },
     {
       opacity: 3,
       xPercent: 0,
       duration: 1.2,
+      delay: 4.2,
       ease: Power3.easeInOut,
     }
   );
@@ -158,6 +182,7 @@ export const quote1Intro = (ele) => {
       opacity: 3,
       xPercent: 0,
       duration: 1,
+      delay: 4.3,
       ease: "back",
     }
   );
@@ -166,8 +191,8 @@ export const quote1Intro = (ele) => {
 export const quote2Intro = (ele) => {
   gsap.fromTo(
     ele,
-    { opacity: 0, xPercent: 30, delay: 1 },
-    { opacity: 3, xPercent: 0, duration: 1.2, ease: Power3.easeIn }
+    { opacity: 0, xPercent: 30 },
+    { opacity: 3, xPercent: 0, duration: 1.2, delay: 4.4, ease: Power3.easeIn }
   );
 };
 //exp,projects,blogs
@@ -176,13 +201,13 @@ export const detailsIntro = (el1, el2, el3) => {
     [el1, el2, el3],
     {
       opacity: 0,
-      xPercent: -30,
-      delay: 2,
+      xPercent: 30,
     },
     {
       opacity: 3,
       xPercent: 0,
       duration: 1.3,
+      delay: 4.5,
       ease: Power3.easeIn,
     }
   );
@@ -218,9 +243,4 @@ export const hoverExit = (e) => {
     skewX: 0,
     ease: "power2.inOut",
   });
-};
-export const sliderIntro = (el1, el2, el3) => {
-  //text-span
-  const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
-  tl.to([el1, el2, el3], { y: "0%", duration: 1, stagger: 0.25 });
 };
