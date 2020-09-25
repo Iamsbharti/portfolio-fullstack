@@ -23,7 +23,7 @@ export const iconIntro = (ele) => {
   gsap.to(ele, {
     xPercent: -20,
     opacity: 3,
-    duration: 3,
+    duration: 1.9,
     scale: 1,
     ease: "power2.inOut",
     delay: 2.3,

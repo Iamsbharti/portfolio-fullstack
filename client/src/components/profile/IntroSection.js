@@ -229,31 +229,40 @@ const IntroSection = () => {
               </p>
               <div className="experience_projects_blogs">
                 <div>
-                  <p
+                  <div
+                    className="large_font_div"
                     ref={(ele) => {
                       exp = ele;
                     }}
                   >
-                    <span>3</span> Years of Experience
-                  </p>
+                    <span className="exp_number1">3</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span className="exp_word1">Years of Experience</span>
+                  </div>
                 </div>
                 <div>
-                  <p
+                  <div
+                    className="large_font_div"
                     ref={(ele) => {
                       projects = ele;
                     }}
                   >
-                    <span>6</span> Projects
-                  </p>
+                    <span className="exp_number">3</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span className="exp_word">Projects</span>
+                  </div>
                 </div>
                 <div>
-                  <p
+                  <div
+                    className="large_font_div"
                     ref={(ele) => {
                       blogs = ele;
                     }}
                   >
-                    <span>6</span> Blogs
-                  </p>
+                    <span className="exp_number">3</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span className="exp_word">Blogs</span>
+                  </div>
                 </div>
               </div>
             </div>
