@@ -20,93 +20,52 @@ main {
   font-family: "Kanit", sans-serif;
 }
 .profile__section {
-  background-image: linear-gradient(
-      153deg,
-      rgba(152, 152, 152, 0.03) 0%,
-      rgba(152, 152, 152, 0.03) 9%,
-      rgba(197, 197, 197, 0.03) 9%,
-      rgba(197, 197, 197, 0.03) 21%,
-      rgba(106, 106, 106, 0.03) 21%,
-      rgba(106, 106, 106, 0.03) 32%,
-      rgba(222, 222, 222, 0.03) 32%,
-      rgba(222, 222, 222, 0.03) 72%,
-      rgba(16, 16, 16, 0.03) 72%,
-      rgba(16, 16, 16, 0.03) 92%,
-      rgba(181, 181, 181, 0.03) 92%,
-      rgba(181, 181, 181, 0.03) 97%,
-      rgba(130, 130, 130, 0.03) 97%,
-      rgba(130, 130, 130, 0.03) 100%
+  background-image: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
     ),
-    linear-gradient(
-      39deg,
-      rgba(237, 237, 237, 0.03) 0%,
-      rgba(237, 237, 237, 0.03) 22%,
-      rgba(126, 126, 126, 0.03) 22%,
-      rgba(126, 126, 126, 0.03) 55%,
-      rgba(196, 196, 196, 0.03) 55%,
-      rgba(196, 196, 196, 0.03) 61%,
-      rgba(121, 121, 121, 0.03) 61%,
-      rgba(121, 121, 121, 0.03) 71%,
-      rgba(133, 133, 133, 0.03) 71%,
-      rgba(133, 133, 133, 0.03) 84%,
-      rgba(132, 132, 132, 0.03) 84%,
-      rgba(132, 132, 132, 0.03) 97%,
-      rgba(185, 185, 185, 0.03) 97%,
-      rgba(185, 185, 185, 0.03) 100%
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
     ),
-    linear-gradient(
-      124deg,
-      rgba(168, 168, 168, 0.03) 0%,
-      rgba(168, 168, 168, 0.03) 7%,
-      rgba(169, 169, 169, 0.03) 7%,
-      rgba(169, 169, 169, 0.03) 19%,
-      rgba(73, 73, 73, 0.03) 19%,
-      rgba(73, 73, 73, 0.03) 50%,
-      rgba(150, 150, 150, 0.03) 50%,
-      rgba(150, 150, 150, 0.03) 67%,
-      rgba(68, 68, 68, 0.03) 67%,
-      rgba(68, 68, 68, 0.03) 81%,
-      rgba(111, 111, 111, 0.03) 81%,
-      rgba(111, 111, 111, 0.03) 91%,
-      rgba(191, 191, 191, 0.03) 91%,
-      rgba(191, 191, 191, 0.03) 100%
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
     ),
-    linear-gradient(
-      95deg,
-      rgba(147, 147, 147, 0.03) 0%,
-      rgba(147, 147, 147, 0.03) 17%,
-      rgba(79, 79, 79, 0.03) 17%,
-      rgba(79, 79, 79, 0.03) 27%,
-      rgba(28, 28, 28, 0.03) 27%,
-      rgba(28, 28, 28, 0.03) 45%,
-      rgba(27, 27, 27, 0.03) 45%,
-      rgba(27, 27, 27, 0.03) 56%,
-      rgba(228, 228, 228, 0.03) 56%,
-      rgba(228, 228, 228, 0.03) 64%,
-      rgba(38, 38, 38, 0.03) 64%,
-      rgba(38, 38, 38, 0.03) 72%,
-      rgba(42, 42, 42, 0.03) 72%,
-      rgba(42, 42, 42, 0.03) 100%
+    repeating-linear-gradient(
+      112.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
     ),
-    linear-gradient(
-      346deg,
-      rgba(59, 59, 59, 0.03) 0%,
-      rgba(59, 59, 59, 0.03) 16%,
-      rgba(66, 66, 66, 0.03) 16%,
-      rgba(66, 66, 66, 0.03) 20%,
-      rgba(236, 236, 236, 0.03) 20%,
-      rgba(236, 236, 236, 0.03) 41%,
-      rgba(244, 244, 244, 0.03) 41%,
-      rgba(244, 244, 244, 0.03) 55%,
-      rgba(106, 106, 106, 0.03) 55%,
-      rgba(106, 106, 106, 0.03) 61%,
-      rgba(220, 220, 220, 0.03) 61%,
-      rgba(220, 220, 220, 0.03) 63%,
-      rgba(209, 209, 209, 0.03) 63%,
-      rgba(209, 209, 209, 0.03) 100%
-    ),
-    linear-gradient(90deg, rgb(96, 83, 123), rgb(17, 8, 13));
-  padding: 1rem 10rem;
+    linear-gradient(90deg, rgb(61, 61, 61), rgb(61, 61, 61));
+  padding: 1rem 15rem;
 }
 .header_icon {
   color: white;
@@ -183,44 +142,63 @@ a:active {
 }
 .profile_contact_section {
   min-height: 40vh;
-  background-image: linear-gradient(
-      66deg,
-      transparent 0%,
-      transparent 24%,
-      rgba(195, 195, 195, 0.04) 24%,
-      rgba(195, 195, 195, 0.04) 80%,
-      transparent 80%,
-      transparent 100%
+  background-image: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
     ),
-    linear-gradient(
-      153deg,
-      transparent 0%,
-      transparent 29%,
-      rgba(195, 195, 195, 0.04) 29%,
-      rgba(195, 195, 195, 0.04) 45%,
-      transparent 45%,
-      transparent 100%
+    repeating-linear-gradient(
+      157.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
     ),
-    linear-gradient(
-      199deg,
-      transparent 0%,
-      transparent 32%,
-      rgba(195, 195, 195, 0.04) 32%,
-      rgba(195, 195, 195, 0.04) 59%,
-      transparent 59%,
-      transparent 100%
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
     ),
-    linear-gradient(
-      277deg,
-      transparent 0%,
-      transparent 56%,
-      rgba(195, 195, 195, 0.04) 56%,
-      rgba(195, 195, 195, 0.04) 57%,
-      transparent 57%,
-      transparent 100%
+    repeating-linear-gradient(
+      112.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
     ),
-    linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
-  padding: 2rem 10rem;
+    repeating-linear-gradient(
+      22.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    linear-gradient(90deg, rgb(34, 34, 34), rgb(34, 34, 34));
+  padding: 2rem 15rem;
 }
 .contact_and_qoute {
   display: flex;
@@ -280,7 +258,51 @@ a:active {
   align-items: center;
 }
 .slider {
-  background: rgb(95, 105, 109);
+  background-image: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      112.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    linear-gradient(90deg, rgb(78, 50, 50), rgb(78, 50, 50));
   position: fixed;
   top: 0;
   left: 0;
