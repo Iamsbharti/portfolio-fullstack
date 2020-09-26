@@ -119,8 +119,9 @@ const IntroSection = () => {
                 fname = el;
               }}
             >
-              <p>Saurabh </p>
-              <p>
+              <p className="responsive_name">Saurabh Bharti.</p>
+              <p className="fname">Saurabh </p>
+              <p className="lname">
                 Bharti<span>.</span>
               </p>
               <div className="intro_name_ul"></div>
@@ -314,6 +315,8 @@ const IntroSection = () => {
           sliderDiv = ele;
         }}
       ></div>
+      {/**mobile version */}
+      {/**burger menu */}
     </div>
   );
 };

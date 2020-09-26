@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Kanit", sans-serif;
+}
 main {
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -16,9 +19,7 @@ main::-webkit-scrollbar {
   -ms-overflow-style: none; /*IE & Edge*/
   scrollbar-width: none; /* FireFox */
 }
-main {
-  font-family: "Kanit", sans-serif;
-}
+
 .profile__section {
   background-image: repeating-linear-gradient(
       90deg,
@@ -100,6 +101,9 @@ nav {
 .intro_name {
   font-weight: 900;
   font-size: 2.5rem;
+}
+.responsive_name {
+  display: none;
 }
 .fname {
   margin-top: 30px;
@@ -363,4 +367,149 @@ a:active {
   font-size: 11px;
   margin-right: 26px;
   margin-left: -7px;
+}
+@media (max-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  .profile__section {
+    padding: 1rem 2rem;
+  }
+  .nav__links {
+    display: flex;
+    list-style: none;
+    /*justify-content: space-around;*/
+    opacity: 0;
+    padding-right: 0px;
+  }
+  .header_introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+  }
+  .intro_details {
+    width: 350px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro_text {
+    margin: 7px 42px 4px 46px;
+  }
+  .intro_job_title,
+  .intro_job_details,
+  .intro_story {
+    margin: 7px 42px 0px 46px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .fname,
+  .lname {
+    display: none;
+  }
+  .responsive_name {
+    display: block;
+    margin-right: 42px;
+  }
+  .intro_name {
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro_name_ul {
+    width: 140px;
+    height: 6px;
+    background-color: yellow;
+    animation: scale 5s ease-in-out;
+  }
+  @keyframes scale {
+    from {
+      transform: scaleX(-1);
+      background-color: yellow;
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+  .profile_contact_section {
+    padding: 0px 71px;
+    height: fit-content;
+  }
+  .contact_and_qoute {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_text {
+    color: #9da9ce;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  .contact_info {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .contact_email {
+    font-weight: 500;
+    font-size: medium;
+    color: yellow;
+  }
+  .quote {
+    width: 355px;
+  }
+  .quote_1 {
+    font-weight: 600;
+    font-size: x-large;
+    margin-bottom: 10px;
+  }
+  .quote_2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    width: 260px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+  }
+  .experience_projects_blogs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 90px;
+    padding-top: 10px;
+  }
+  .sec2,
+  .sec3 {
+    width: 100%;
+    height: 100vh;
+  }
+  .exp_word1 {
+    display: inline-block;
+    padding-top: 2px;
+    font-size: 14px;
+    margin-right: 18px;
+    margin-left: -9px;
+  }
+
+  .exp_word {
+    display: inline-block;
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 26px;
+    margin-left: -7px;
+  }
 }
