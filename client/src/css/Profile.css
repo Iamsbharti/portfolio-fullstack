@@ -106,14 +106,10 @@ nav {
   display: none;
 }
 .fname {
-  margin-top: 30px;
-  margin-bottom: -30px;
-  opacity: 0;
+  display: block;
 }
 .lname {
-  margin-top: 30px;
-  margin-bottom: -30px;
-  opacity: 0;
+  display: block;
 }
 .intro_name_ul {
   width: 45px;
@@ -511,5 +507,20 @@ a:active {
     font-weight: 500;
     margin-right: 26px;
     margin-left: -7px;
+  }
+  .intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .intro-text {
+    color: rgb(233, 233, 233);
+    font-size: 1.2rem;
   }
 }
