@@ -20,11 +20,13 @@ import {
   sliderIntro,
   sliderDivIntro,
   hideIntroDiv,
+  nameUlScale,
 } from "../Animation";
 
 const IntroSection = () => {
   /**name header */
   let fname = useRef(null);
+  let ulDiv = useRef(null);
 
   /**job details section */
   let intoduction = useRef(null);
@@ -61,6 +63,7 @@ const IntroSection = () => {
     hideIntroDiv(introDiv);
 
     nameIntro(fname);
+    nameUlScale(ulDiv);
 
     intro(intoduction);
     jobTitleIntro(jobTitle);
@@ -97,7 +100,12 @@ const IntroSection = () => {
               <p className="lname">
                 Bharti<span>.</span>
               </p>
-              <div className="intro_name_ul"></div>
+              <div
+                className="intro_name_ul"
+                ref={(ele) => {
+                  ulDiv = ele;
+                }}
+              ></div>
             </div>
             <div className="intro_details">
               <p

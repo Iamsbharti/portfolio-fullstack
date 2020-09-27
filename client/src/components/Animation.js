@@ -109,7 +109,19 @@ export const nameIntro = (elem) => {
     ease: "back",
   });
 };
-
+export const nameUlScale = (ele) => {
+  gsap.fromTo(
+    ele,
+    {
+      scaleX: -1,
+    },
+    {
+      scaleX: 1,
+      duration: 5,
+      ease: Power3.easeInOut,
+    }
+  );
+};
 //intoduction
 export const intro = (ele) => {
   gsap.fromTo(

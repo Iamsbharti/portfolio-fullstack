@@ -470,17 +470,8 @@ a:active {
     width: 140px;
     height: 6px;
     background-color: yellow;
-    animation: scale 5s ease-in-out;
   }
-  @keyframes scale {
-    from {
-      transform: scaleX(-1);
-      background-color: yellow;
-    }
-    to {
-      transform: scaleX(1);
-    }
-  }
+
   .profile_contact_section {
     padding: 0px 71px;
     height: fit-content;
