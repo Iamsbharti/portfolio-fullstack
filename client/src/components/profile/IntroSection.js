@@ -245,6 +245,9 @@ const IntroSection = () => {
             <img src={process.env.PUBLIC_URL + "/double-down-96.png"} alt="" />
           </div>
         </section>
+        <section className="sec2">projects</section>
+        <section className="sec2">Blogs</section>
+        <section className="sec2">contacts</section>
       </main>
       <div
         className="intro"

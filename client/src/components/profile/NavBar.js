@@ -18,22 +18,24 @@ const NavBar = () => {
   };
   return (
     <>
-      <div className="mobile_menu_bar">
-        <img
-          src={process.env.PUBLIC_URL + "/header-icon.png"}
-          alt=""
-          className="header_icon"
-          ref={(el) => {
-            navIcon = el;
-          }}
-        />
-        <span className="menu_icon">
-          <i
-            class="fa fa-bars"
-            aria-hidden="true"
-            onClick={handleToggleMenu}
-          ></i>
-        </span>
+      <div>
+        <div className="mobile_menu_bar">
+          <img
+            src={process.env.PUBLIC_URL + "/header-icon.png"}
+            alt=""
+            className="header_icon"
+            ref={(el) => {
+              navIcon = el;
+            }}
+          />
+          <span className="menu_icon">
+            <i
+              class="fa fa-bars"
+              aria-hidden="true"
+              onClick={handleToggleMenu}
+            ></i>
+          </span>
+        </div>
       </div>
       <div hidden={hideMenuBar}>
         <div className="mobile_div">

@@ -457,6 +457,7 @@ a:active {
     display: flex;
     justify-content: flex-start;
     width: 258px;
+    margin-top: 37px;
     /*margin-right: 42px;*/
   }
   .intro_name {
@@ -601,7 +602,7 @@ a:active {
     font-weight: 900;
     font-size: 1.9rem;
     padding: 23px;
-    margin-right: 20px;
+    margin-right: 52px;
     cursor: pointer;
   }
   .mobile_div nav {
@@ -616,9 +617,13 @@ a:active {
     padding: 50px;
   }
   .mobile_menu_bar {
-    display: block;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 6px;
+    left: 17px;
+    right: 25px;
+    overflow: hidden;
   }
   .mobile_menu_bar img {
     width: 45px;
