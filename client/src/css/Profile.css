@@ -80,6 +80,9 @@ nav {
   justify-content: space-between;
   color: white;
 }
+.mobile_menu {
+  display: none;
+}
 .nav__links {
   display: flex;
   list-style: none;

@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../css/Profile.css";
+import NavBar from "./NavBar";
 import {
   nameIntro,
-  iconIntro,
-  navIntro,
   intro,
   jobTitleIntro,
   jobDetailsIntro,
@@ -24,10 +23,6 @@ import {
 } from "../Animation";
 
 const IntroSection = () => {
-  /**nav items */
-  let navItems = useRef(null);
-  let navIcon = useRef(null);
-
   /**name header */
   let fname = useRef(null);
 
@@ -65,9 +60,6 @@ const IntroSection = () => {
     sliderDivIntro(sliderDiv);
     hideIntroDiv(introDiv);
 
-    iconIntro(navIcon);
-    navIntro(navItems);
-
     nameIntro(fname);
 
     intro(intoduction);
@@ -91,27 +83,8 @@ const IntroSection = () => {
     <div>
       <main>
         <section className="profile__section">
-          <nav>
-            <img
-              src={process.env.PUBLIC_URL + "/header-icon.png"}
-              alt=""
-              className="header_icon"
-              ref={(el) => {
-                navIcon = el;
-              }}
-            />
-            <ul
-              className="nav__links"
-              ref={(el) => {
-                navItems = el;
-              }}
-            >
-              <li>Services</li>
-              <li>Works</li>
-              <li>Blog</li>
-              <li>Contact Me</li>
-            </ul>
-          </nav>
+          {/**nav bar */}
+          <NavBar />
           <div className="header_introduction">
             <div
               className="intro_name"
