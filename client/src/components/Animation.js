@@ -49,8 +49,25 @@ export const iconIntroMob = (ele) => {
     }
   );
 };
+
+export const menuIconIntro = (ele) => {
+  gsap.fromTo(
+    ele,
+    {
+      opacity: 0,
+      xPercent: 50,
+    },
+    {
+      opacity: 3,
+      xPercent: 0,
+      ease: "back",
+      duration: 2.0,
+      delay: 2.4,
+    }
+  );
+};
+
 export const navIntroMob = (ele) => {
-  console.log("nav ani");
   gsap.fromTo(
     ele,
     {

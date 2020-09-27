@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../../css/Profile.css";
-import { navIntroMob, iconIntroMob, navIntro, iconIntro } from "../Animation";
+import {
+  navIntroMob,
+  iconIntroMob,
+  menuIconIntro,
+  navIntro,
+  iconIntro,
+} from "../Animation";
 
 const NavBar = () => {
   /**nav items */
@@ -8,12 +14,15 @@ const NavBar = () => {
   let navIcon = useRef(null);
   let navItemsMob = useRef(null);
   let navIconMob = useRef(null);
+  let menuIconMob = useRef(null);
+
   const [hideMenuBar, toggleMenubar] = useState(true);
 
   useEffect(() => {
     iconIntro(navIcon);
     navIntro(navItems);
     navIntroMob(navItemsMob);
+    menuIconIntro(menuIconMob);
   });
   useEffect(() => {
     iconIntroMob(navIconMob);
@@ -38,6 +47,9 @@ const NavBar = () => {
               className="fa fa-bars"
               aria-hidden="true"
               onClick={handleToggleMenu}
+              ref={(ele) => {
+                menuIconMob = ele;
+              }}
             ></i>
           </span>
         </div>
