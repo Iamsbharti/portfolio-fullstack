@@ -268,6 +268,9 @@ const IntroSection = () => {
               </div>
             </div>
           </div>
+          <div className="scroll_down_arrow">
+            <img src={process.env.PUBLIC_URL + "/double-down-96.png"} alt="" />
+          </div>
         </section>
       </main>
       <div

@@ -242,6 +242,19 @@ a:active {
   margin-right: 90px;
   padding-top: 10px;
 }
+.scroll_down_arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*top: 580px;
+  position: absolute;
+  left: 550px;*/
+}
+.scroll_down_arrow img {
+  width: 65px;
+  height: 65px;
+}
 .sec2,
 .sec3 {
   width: 100%;
@@ -507,6 +520,19 @@ a:active {
     font-weight: 500;
     margin-right: 26px;
     margin-left: -7px;
+  }
+  .scroll_down_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*top: 690px;
+    position: absolute;
+    left: 180px;*/
+  }
+  .scroll_down_arrow img {
+    width: 65px;
+    height: 65px;
   }
   .intro {
     background: black;
