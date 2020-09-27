@@ -92,11 +92,12 @@ main::-webkit-scrollbar {
 }
 .header_icon {
   color: white;
-  opacity: 0;
+  /*opacity: 0;*/
   height: 50px;
   width: 50px;
 }
-.mobile_div {
+.mobile_div,
+.mobile_menu_bar {
   display: none;
 }
 nav {
@@ -453,8 +454,10 @@ a:active {
     display: none;
   }
   .responsive_name {
-    display: block;
-    margin-right: 42px;
+    display: flex;
+    justify-content: flex-start;
+    width: 258px;
+    /*margin-right: 42px;*/
   }
   .intro_name {
     font-weight: 600;
@@ -596,20 +599,37 @@ a:active {
     justify-content: flex-end;
     color: white;
     font-weight: 900;
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     padding: 23px;
     margin-right: 20px;
+    cursor: pointer;
   }
   .mobile_div nav {
     display: flex;
     justify-content: flex-start;
     margin-top: 10px;
-    margin-left: -50px;
     font-weight: 900;
     font-size: 1.2rem;
   }
   .nav__links__mob li {
     list-style: none;
     padding: 50px;
+  }
+  .mobile_menu_bar {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile_menu_bar img {
+    width: 45px;
+    height: 45px;
+  }
+  .header_icon {
+    margin-top: 10px;
+  }
+  .menu_icon {
+    cursor: pointer;
+    font-size: 2.4rem;
+    color: #f3b61f;
   }
 }
