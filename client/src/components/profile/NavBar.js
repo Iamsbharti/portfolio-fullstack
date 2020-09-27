@@ -1,18 +1,23 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../../css/Profile.css";
-import { navIntro, iconIntro } from "../Animation";
+import { navIntroMob, iconIntroMob, navIntro, iconIntro } from "../Animation";
 
 const NavBar = () => {
   /**nav items */
   let navItems = useRef(null);
   let navIcon = useRef(null);
+  let navItemsMob = useRef(null);
+  let navIconMob = useRef(null);
   const [hideMenuBar, toggleMenubar] = useState(true);
 
   useEffect(() => {
     iconIntro(navIcon);
     navIntro(navItems);
+    navIntroMob(navItemsMob);
   });
-
+  useEffect(() => {
+    iconIntroMob(navIconMob);
+  }, []);
   const handleToggleMenu = () => {
     toggleMenubar(!hideMenuBar);
   };
@@ -25,12 +30,12 @@ const NavBar = () => {
             alt=""
             className="header_icon"
             ref={(el) => {
-              navIcon = el;
+              navIconMob = el;
             }}
           />
           <span className="menu_icon">
             <i
-              class="fa fa-bars"
+              className="fa fa-bars"
               aria-hidden="true"
               onClick={handleToggleMenu}
             ></i>
@@ -40,13 +45,13 @@ const NavBar = () => {
       <div hidden={hideMenuBar}>
         <div className="mobile_div">
           <div className="close_icon" onClick={handleToggleMenu}>
-            <i class="fa fa-times" aria-hidden="true"></i>
+            <i className="fa fa-times" aria-hidden="true"></i>
           </div>
           <nav>
             <ul
               className="nav__links__mob"
               ref={(el) => {
-                navItems = el;
+                navItemsMob = el;
               }}
             >
               <li>Services</li>

@@ -19,7 +19,7 @@ export const hideIntroDiv = (ele) => {
 };
 
 //header icon
-/*export const iconIntro = (ele) => {
+export const iconIntro = (ele) => {
   gsap.to(ele, {
     xPercent: -20,
     opacity: 3,
@@ -28,25 +28,47 @@ export const hideIntroDiv = (ele) => {
     ease: "power2.inOut",
     delay: 2.3,
   });
-};*/
-export const iconIntro = (ele) => {
-  console.log("icons animation::", ele);
+};
+export const iconIntroMob = (ele) => {
+  console.log("icon ani");
   gsap.fromTo(
     ele,
     {
-      xPercent: 0,
+      xPercent: -20,
+      yPercent: -90,
       opacity: 0,
     },
     {
-      xPercent: -20,
+      xPercent: 0,
+      yPercent: 0,
       opacity: 3,
-      duration: 2.9,
+      duration: 1.9,
       scale: 1,
       ease: "power2.inOut",
-      delay: 4.3,
+      delay: 2.3,
     }
   );
 };
+export const navIntroMob = (ele) => {
+  console.log("nav ani");
+  gsap.fromTo(
+    ele,
+    {
+      opacity: 0,
+      xPercent: 50,
+      yPercent: -20,
+    },
+    {
+      opacity: 3,
+      xPercent: 0,
+      yPercent: 0,
+      stagger: 0.54,
+      ease: "back",
+      duration: 1.8,
+    }
+  );
+};
+
 //nav items
 export const navIntro = (ele) => {
   gsap.to(ele, {
