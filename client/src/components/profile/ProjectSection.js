@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../../css/Project.css";
 const ProjectSection = () => {
   return (
     <div>
