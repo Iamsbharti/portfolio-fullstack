@@ -2,22 +2,15 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../css/Profile.css";
 import NavBar from "./NavBar";
-import ContactMeSection from "./ContactMeSection";
+
 import {
   nameIntro,
   intro,
   jobTitleIntro,
   jobDetailsIntro,
   storyIntro,
-  contactIntro,
-  contactInfoIntro,
-  emailIntro,
-  quote1Intro,
-  quote2Intro,
-  detailsIntro,
   hoverLink,
   hoverExit,
-  staggerLinks,
   sliderIntro,
   sliderDivIntro,
   hideIntroDiv,
@@ -34,21 +27,6 @@ const IntroSection = () => {
   let jobTitle = useRef(null);
   let jobDetails = useRef(null);
   let story = useRef(null);
-
-  /**contact section */
-  let contact = useRef(null);
-  let contactInfo = useRef(null);
-  let email = useRef(null);
-
-  /**quoteSection */
-  let qoute1 = useRef(null);
-  let quote2 = useRef(null);
-  let exp = useRef(null);
-  let projects = useRef(null);
-  let blogs = useRef(null);
-
-  let link1 = useRef(null);
-  let link2 = useRef(null);
 
   /**slider intro */
   let sliderText1 = useRef(null);
@@ -135,9 +113,6 @@ const IntroSection = () => {
                   to="/story"
                   onMouseEnter={(e) => hoverLink(e)}
                   onMouseLeave={(e) => hoverExit(e)}
-                  ref={(ele) => {
-                    link1 = ele;
-                  }}
                 >
                   My Story
                 </Link>
