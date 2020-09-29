@@ -1,0 +1,93 @@
+* {
+  --bg-black-grad: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      157.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      112.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      22.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    linear-gradient(90deg, rgb(34, 34, 34), rgb(34, 34, 34));
+}
+.project {
+  display: flex;
+  background-image: var(--bg-black-grad);
+  min-height: 100vh;
+}
+.project__job__profile {
+  display: flex;
+  justify-content: space-between;
+}
+.project__job__profile__card {
+  box-sizing: border-box;
+  border-radius: 9px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+  height: 199px;
+  width: 200px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+.color__sec {
+  color: yellow;
+}
+.color__ml {
+  color: sandybrown;
+}
+.job__profile__icons {
+  font-size: 14px;
+  color: white;
+}

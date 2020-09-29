@@ -181,7 +181,7 @@ a:active {
       transparent 62px
     ),
     repeating-linear-gradient(
-      157.5deg,
+      45deg,
       rgba(255, 255, 255, 0.05) 0px,
       rgba(255, 255, 255, 0.05) 1px,
       transparent 1px,
@@ -192,7 +192,7 @@ a:active {
       transparent 62px
     ),
     repeating-linear-gradient(
-      45deg,
+      0deg,
       rgba(255, 255, 255, 0.05) 0px,
       rgba(255, 255, 255, 0.05) 1px,
       transparent 1px,
@@ -213,18 +213,7 @@ a:active {
       transparent 22px,
       transparent 62px
     ),
-    repeating-linear-gradient(
-      22.5deg,
-      rgba(255, 255, 255, 0.05) 0px,
-      rgba(255, 255, 255, 0.05) 1px,
-      transparent 1px,
-      transparent 21px,
-      rgba(255, 255, 255, 0.05) 21px,
-      rgba(255, 255, 255, 0.05) 22px,
-      transparent 22px,
-      transparent 62px
-    ),
-    linear-gradient(90deg, rgb(34, 34, 34), rgb(34, 34, 34));
+    linear-gradient(90deg, rgb(61, 61, 61), rgb(61, 61, 61));
   padding: 2rem 15rem;
 }
 .contact_and_qoute {
