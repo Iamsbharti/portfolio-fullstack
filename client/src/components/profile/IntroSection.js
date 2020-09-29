@@ -145,11 +145,6 @@ const IntroSection = () => {
             </div>
           </div>
         </section>
-        {/**contact section */}
-        <ContactMeSection />
-        <section className="sec2">projects</section>
-        <section className="sec2">Blogs</section>
-        <section className="sec2">contacts</section>
       </main>
       <div
         className="intro"
@@ -196,8 +191,6 @@ const IntroSection = () => {
           sliderDiv = ele;
         }}
       ></div>
-      {/**mobile version */}
-      {/**burger menu */}
     </div>
   );
 };

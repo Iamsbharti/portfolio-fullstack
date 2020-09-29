@@ -66,9 +66,6 @@ const ContactMeSection = () => {
                 className="contact_email"
                 onMouseEnter={(e) => hoverLink(e)}
                 onMouseLeave={(e) => hoverExit(e)}
-                ref={(ele) => {
-                  link2 = ele;
-                }}
               >
                 Saurabhbharti9@gmail.com
               </Link>
