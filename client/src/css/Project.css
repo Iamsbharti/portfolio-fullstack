@@ -62,8 +62,12 @@
   min-height: 100vh;
 }
 .project__job__profile {
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  position: relative;
+  top: -107px;
+  left: 227px;
 }
 .project__job__profile__card {
   box-sizing: border-box;
@@ -72,16 +76,16 @@
   font-size: 1.2rem;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
   margin: 10px;
-  padding: 10px;
+  padding: 30px;
   position: relative;
   height: 199px;
   width: 200px;
   display: flex;
   text-align: center;
   align-items: center;
-  top: -107px;
-  left: 227px;
+
   margin-top: 10px;
+  margin-right: 56px;
 }
 .color__sec {
   color: yellow;
