@@ -150,7 +150,7 @@ export const jobTitleIntro = (ele) => {
     {
       opacity: 3,
       xPercent: 0,
-      duration: 1.1,
+      duration: 2.1,
       delay: 2.7,
       ease: Power3.easeInOut,
     }
@@ -186,6 +186,23 @@ export const storyIntro = (ele) => {
       duration: 1.3,
       delay: 2.9,
       ease: Power3.easeIn,
+    }
+  );
+};
+//job profile card intro
+export const jobProfileCardIntro = (c1, c2, c3) => {
+  gsap.fromTo(
+    [c1, c2, c3],
+    {
+      opacity: 0,
+      yPercent: 400,
+    },
+    {
+      opacity: 3,
+      yPercent: 0,
+      duration: 2,
+      delay: 2.1,
+      ease: "back",
     }
   );
 };
