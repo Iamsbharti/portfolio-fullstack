@@ -107,8 +107,11 @@
   margin-right: auto;
   display: flex;
   justify-content: space-between;
-
   margin-left: 238px;
+  color: white;
+}
+.project__intro__desc {
+  margin-left: 13px;
 }
 .project__intro {
   width: 250px;
@@ -116,7 +119,7 @@
 }
 .project__intro h3 {
   color: #9da9ce;
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.9rem;
 }
 .project1__card {
   padding: 20px;
