@@ -58,7 +58,7 @@ const ProjectSection = () => {
           <div className="project__intro">
             <h3>- AllProjects</h3>
             <p className="project__intro__desc">All my builds are live here</p>
-            <Link to="allProjects" className="project__intro__desc">
+            <Link to="allProjects" className="project__intro__desc color">
               Explore More
             </Link>
           </div>

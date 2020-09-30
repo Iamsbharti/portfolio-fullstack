@@ -113,6 +113,9 @@
 .project__intro__desc {
   margin-left: 13px;
 }
+.color {
+  color: yellow;
+}
 .project__intro {
   width: 250px;
   height: 250px;
