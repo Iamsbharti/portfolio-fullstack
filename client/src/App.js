@@ -4,6 +4,7 @@ import Profile from "./components/profile/Profile";
 import Project from "./components/Project";
 import Blogs from "./components/Blogs";
 import PageNotFound from "./components/PageNotFound";
+
 function App() {
   return (
     <div className="App">
