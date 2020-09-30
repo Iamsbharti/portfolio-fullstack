@@ -59,7 +59,7 @@
 .project {
   display: flex;
   background-image: var(--bg-black-grad);
-  min-height: 100vh;
+  min-height: 20vh;
 }
 .project__job__profile {
   box-sizing: border-box;
@@ -96,4 +96,59 @@
 .job__profile__icons {
   font-size: 14px;
   color: white;
+}
+.project__section {
+  display: flex;
+  background-image: var(--bg-black-grad);
+  min-height: 80vh;
+}
+.projects__intro_p1 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 238px;
+}
+.project__intro {
+  width: 250px;
+  height: 250px;
+}
+.project__intro h3 {
+  color: #9da9ce;
+  margin-bottom: 1.1rem;
+}
+.project1__card {
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
+  border-radius: 9px;
+  width: 306px;
+  height: 350px;
+  margin-left: 177px;
+}
+.project__image {
+  width: 230px;
+  height: 230px;
+}
+.project__card__name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: white;
+}
+.project__card__techstack {
+  display: flex;
+  justify-content: space-evenly;
+  width: 89px;
+  margin-left: 12px;
+}
+code {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+.icon_img {
+  width: 25px;
+  height: 25px;
 }
