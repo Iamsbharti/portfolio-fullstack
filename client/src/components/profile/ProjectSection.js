@@ -4,9 +4,17 @@ import { jobProfileCardIntro } from "../Animation";
 import { Link } from "react-router-dom";
 
 const ProjectSection = () => {
+  /**job profile */
   let card_sec = useRef(null);
   let card_stack = useRef(null);
   let card_ml = useRef(null);
+
+  /**project card */
+  let project_intro = useRef(null);
+  let project_card = useRef(null);
+  let project_card_title = useRef(null);
+  let tech_satck_icons = useRef(null);
+  let project_live = useRef(null);
   useEffect(() => {
     jobProfileCardIntro(card_sec, card_stack, card_ml);
   });
