@@ -73,7 +73,7 @@ const ProjectSection = () => {
             </div>
             <code>- Built Tools</code>
             <div className="project__card__techstack">
-              <div className="tech">
+              <div className="project__tech">
                 <p>
                   <img
                     src={process.env.PUBLIC_URL + "/icons8-node-js-96.png"}
@@ -89,6 +89,20 @@ const ProjectSection = () => {
                 <p>
                   <img
                     src={process.env.PUBLIC_URL + "/icons8-mongodb-96.png"}
+                    className="icon_img"
+                  />
+                </p>
+              </div>
+              <div className="project__golive">
+                <p>
+                  <img
+                    src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
+                    className="icon_img"
+                  />
+                </p>
+                <p>
+                  <img
+                    src={process.env.PUBLIC_URL + "/icons8-computer-256.png"}
                     className="icon_img"
                   />
                 </p>

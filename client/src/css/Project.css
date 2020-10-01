@@ -144,9 +144,8 @@
 }
 .project__card__techstack {
   display: flex;
-  justify-content: space-evenly;
-  width: 89px;
-  margin-left: 12px;
+  justify-content: space-between;
+  margin-left: 18px;
 }
 code {
   display: inline-block;
@@ -158,7 +157,11 @@ code {
   width: 25px;
   height: 25px;
 }
-.tech {
+.project__tech {
+  display: flex;
+  justify-content: space-between;
+}
+.project__golive {
   display: flex;
   justify-content: space-between;
 }
