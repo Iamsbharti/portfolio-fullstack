@@ -93,6 +93,7 @@ const ProjectSection = () => {
                   />
                 </p>
               </div>
+
               <div className="project__golive">
                 <p>
                   <img
@@ -102,8 +103,8 @@ const ProjectSection = () => {
                 </p>
                 <p>
                   <img
-                    src={process.env.PUBLIC_URL + "/icons8-computer-256.png"}
-                    className="icon_img"
+                    src={process.env.PUBLIC_URL + "/shuttle.png"}
+                    className="icon_img_shuttle"
                   />
                 </p>
               </div>

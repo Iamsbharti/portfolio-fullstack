@@ -156,6 +156,7 @@ code {
 .icon_img {
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 .project__tech {
   display: flex;
@@ -164,4 +165,11 @@ code {
 .project__golive {
   display: flex;
   justify-content: space-between;
+}
+.icon_img_shuttle {
+  margin-top: 4px;
+  width: 20px;
+  height: 20px;
+  margin-left: 6px;
+  cursor: pointer;
 }
