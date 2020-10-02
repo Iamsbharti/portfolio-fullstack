@@ -219,12 +219,17 @@ code {
   cursor: pointer;
 }
 .project__section2 {
-  display: flex;
   background-image: var(--bg-gray-grad);
+  height: 289px;
 }
 .project2__card__position {
   min-height: 20vh;
   position: relative;
   top: -282px;
   left: 55px;
+}
+.project3__card__position {
+  position: relative;
+  top: -446px;
+  left: 490px;
 }
