@@ -104,6 +104,7 @@
 .project {
   display: flex;
   background-image: var(--bg-gray-grad);
+  height: 321px;
   /** min-height: 20vh;*/
 }
 .project__job__profile {
@@ -155,7 +156,7 @@
   margin-left: 238px;
   color: white;
   position: relative;
-  top: -53px;
+  top: -109px;
 }
 .project__intro__desc {
   margin-left: 13px;
@@ -227,11 +228,11 @@ code {
 .project2__card__position {
   min-height: 20vh;
   position: relative;
-  top: -282px;
+  top: -412px;
   left: 55px;
 }
 .project3__card__position {
   position: relative;
-  top: -446px;
+  top: -567px;
   left: 490px;
 }
