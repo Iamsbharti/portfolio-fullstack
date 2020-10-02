@@ -3658,3 +3658,48 @@
 2020-10-01 23:22:54 info: DB CONNECTION SUCCESS
 2020-10-01 23:23:11 info: Portfolio server running on-3001
 2020-10-01 23:23:11 info: DB CONNECTION SUCCESS
+2020-10-02 22:17:37 info: Portfolio server running on-3001
+2020-10-02 22:17:37 error: Error Connencting DB: querySrv ESERVFAIL _mongodb._tcp.cluster0-5qtwd.mongodb.net
+2020-10-02 22:29:37 info: Portfolio server running on-3001
+2020-10-02 22:29:40 info: DB CONNECTION SUCCESS
+2020-10-02 22:30:58 info: Portfolio server running on-3001
+2020-10-02 22:31:06 info: DB CONNECTION SUCCESS
+2020-10-02 22:31:11 info: Portfolio server running on-3001
+2020-10-02 22:31:12 info: DB CONNECTION SUCCESS
+2020-10-02 22:31:29 info: Portfolio server running on-3001
+2020-10-02 22:31:31 info: DB CONNECTION SUCCESS
+2020-10-02 22:31:50 info: Portfolio server running on-3001
+2020-10-02 22:31:54 info: DB CONNECTION SUCCESS
+2020-10-02 22:31:56 info: Portfolio server running on-3001
+2020-10-02 22:31:59 info: DB CONNECTION SUCCESS
+2020-10-02 22:32:08 info: Portfolio server running on-3001
+2020-10-02 22:32:09 info: DB CONNECTION SUCCESS
+2020-10-02 22:32:14 info: Portfolio server running on-3001
+2020-10-02 22:32:15 info: DB CONNECTION SUCCESS
+2020-10-02 22:32:20 info: Portfolio server running on-3001
+2020-10-02 22:32:21 info: DB CONNECTION SUCCESS
+2020-10-02 22:33:17 info: Portfolio server running on-3001
+2020-10-02 22:33:19 info: DB CONNECTION SUCCESS
+2020-10-02 22:33:22 info: Portfolio server running on-3001
+2020-10-02 22:33:23 info: DB CONNECTION SUCCESS
+2020-10-02 22:33:27 info: Portfolio server running on-3001
+2020-10-02 22:33:28 info: DB CONNECTION SUCCESS
+2020-10-02 22:33:31 info: Portfolio server running on-3001
+2020-10-02 22:33:32 info: DB CONNECTION SUCCESS
+2020-10-02 22:33:43 info: Portfolio server running on-3001
+2020-10-02 22:33:44 info: DB CONNECTION SUCCESS
+2020-10-02 22:33:52 info: Portfolio server running on-3001
+2020-10-02 22:33:55 info: DB CONNECTION SUCCESS
+2020-10-02 22:34:26 info: Portfolio server running on-3001
+2020-10-02 22:34:27 info: DB CONNECTION SUCCESS
+2020-10-02 22:34:30 info: Portfolio server running on-3001
+2020-10-02 22:34:33 info: DB CONNECTION SUCCESS
+2020-10-02 22:35:30 info: Portfolio server running on-3001
+2020-10-02 22:35:31 info: DB CONNECTION SUCCESS
+2020-10-02 22:41:48 info: Portfolio server running on-3001
+2020-10-02 22:41:49 info: DB CONNECTION SUCCESS
+2020-10-02 22:43:50 info: Portfolio server running on-3001
+2020-10-02 22:43:53 info: DB CONNECTION SUCCESS
+2020-10-02 22:50:30 info: DB CONNECTION SUCCESS
+2020-10-02 22:53:11 info: Portfolio server running on-3001
+2020-10-02 22:53:12 info: DB CONNECTION SUCCESS

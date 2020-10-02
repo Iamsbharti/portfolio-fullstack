@@ -59,8 +59,8 @@ const ProjectSection = () => {
             <h3>Machine Learning Enthuiast</h3>
           </div>
         </div>
-        {/**top 3 projects display */}
       </div>
+      {/**top 3 projects display */}
       <div className="project__section">
         <div className="projects__intro_p1">
           <div className="project__intro">
@@ -116,6 +116,57 @@ const ProjectSection = () => {
                   />
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/**project line 2 */}
+      <div className="project__section2">
+        <div className="project1__card project2__card__position">
+          <p className="project__card__name">KanbanBoard</p>
+          <div>
+            <img
+              src={process.env.PUBLIC_URL + "/logo512.png"}
+              alt=""
+              className="project__image"
+            />
+          </div>
+          <code>- Built Tools</code>
+          <div className="project__card__techstack">
+            <div className="project__tech">
+              <p>
+                <img
+                  src={process.env.PUBLIC_URL + "/icons8-node-js-96.png"}
+                  className="icon_img"
+                />
+              </p>
+              <p>
+                <img
+                  src={process.env.PUBLIC_URL + "/icons8-react-100.png"}
+                  className="icon_img"
+                />
+              </p>
+              <p>
+                <img
+                  src={process.env.PUBLIC_URL + "/icons8-mongodb-96.png"}
+                  className="icon_img"
+                />
+              </p>
+            </div>
+
+            <div className="project__golive">
+              <p>
+                <img
+                  src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
+                  className="icon_img"
+                />
+              </p>
+              <p>
+                <img
+                  src={process.env.PUBLIC_URL + "/shuttle.png"}
+                  className="icon_img_shuttle"
+                />
+              </p>
             </div>
           </div>
         </div>

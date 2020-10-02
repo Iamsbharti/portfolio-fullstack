@@ -59,7 +59,7 @@
 .project {
   display: flex;
   background-image: var(--bg-black-grad);
-  min-height: 20vh;
+  /** min-height: 20vh;*/
 }
 .project__job__profile {
   box-sizing: border-box;
@@ -172,4 +172,14 @@ code {
   height: 20px;
   margin-left: 6px;
   cursor: pointer;
+}
+.project__section2 {
+  background-color: blue;
+}
+.project2__card__position {
+  min-height: 20vh;
+  position: relative;
+  top: -361px;
+  left: 55px;
+  background-image: var(--bg-black-grad);
 }
