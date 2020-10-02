@@ -2,48 +2,64 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --bg-color-black: radial-gradient(
-      circle at 16% 83%,
-      rgba(148, 148, 148, 0.06) 0%,
-      rgba(148, 148, 148, 0.06) 50%,
-      rgba(63, 63, 63, 0.06) 50%,
-      rgba(63, 63, 63, 0.06) 100%
-    ),
-    radial-gradient(
-      circle at 68% 87%,
-      rgba(66, 66, 66, 0.06) 0%,
-      rgba(66, 66, 66, 0.06) 50%,
-      rgba(105, 105, 105, 0.06) 50%,
-      rgba(105, 105, 105, 0.06) 100%
-    ),
-    radial-gradient(
-      circle at 38% 50%,
-      rgba(123, 123, 123, 0.06) 0%,
-      rgba(123, 123, 123, 0.06) 50%,
-      rgba(172, 172, 172, 0.06) 50%,
-      rgba(172, 172, 172, 0.06) 100%
-    ),
-    linear-gradient(90deg, hsl(18, 0%, 1%), hsl(18, 0%, 1%));
-}
-body {
-  font-family: "Kanit", sans-serif;
-}
-main {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-/*Hide scrollbar for chrome,safari*/
-main::-webkit-scrollbar {
-  display: none;
-}
-/*Hide scrollbar for IE,Edge,Firefox*/
-main::-webkit-scrollbar {
-  -ms-overflow-style: none; /*IE & Edge*/
-  scrollbar-width: none; /* FireFox */
-}
 
-.profile__section {
-  background-image: repeating-linear-gradient(
+  --bg-black-grad: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      157.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      112.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      22.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    linear-gradient(90deg, rgb(34, 34, 34), rgb(34, 34, 34));
+  --bg-gray-grad: repeating-linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.05) 0px,
       rgba(255, 255, 255, 0.05) 1px,
@@ -88,6 +104,27 @@ main::-webkit-scrollbar {
       transparent 62px
     ),
     linear-gradient(90deg, rgb(61, 61, 61), rgb(61, 61, 61));
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+main {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+/*Hide scrollbar for chrome,safari*/
+main::-webkit-scrollbar {
+  display: none;
+}
+/*Hide scrollbar for IE,Edge,Firefox*/
+main::-webkit-scrollbar {
+  -ms-overflow-style: none; /*IE & Edge*/
+  scrollbar-width: none; /* FireFox */
+}
+
+.profile__section {
+  background-image: var(--bg-gray-grad);
   padding: 1rem 15rem;
 }
 .header_icon {
@@ -170,51 +207,7 @@ a:active {
 }
 .profile_contact_section {
   min-height: 40vh;
-  background-image: repeating-linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.05) 0px,
-      rgba(255, 255, 255, 0.05) 1px,
-      transparent 1px,
-      transparent 21px,
-      rgba(255, 255, 255, 0.05) 21px,
-      rgba(255, 255, 255, 0.05) 22px,
-      transparent 22px,
-      transparent 62px
-    ),
-    repeating-linear-gradient(
-      45deg,
-      rgba(255, 255, 255, 0.05) 0px,
-      rgba(255, 255, 255, 0.05) 1px,
-      transparent 1px,
-      transparent 21px,
-      rgba(255, 255, 255, 0.05) 21px,
-      rgba(255, 255, 255, 0.05) 22px,
-      transparent 22px,
-      transparent 62px
-    ),
-    repeating-linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.05) 0px,
-      rgba(255, 255, 255, 0.05) 1px,
-      transparent 1px,
-      transparent 21px,
-      rgba(255, 255, 255, 0.05) 21px,
-      rgba(255, 255, 255, 0.05) 22px,
-      transparent 22px,
-      transparent 62px
-    ),
-    repeating-linear-gradient(
-      112.5deg,
-      rgba(255, 255, 255, 0.05) 0px,
-      rgba(255, 255, 255, 0.05) 1px,
-      transparent 1px,
-      transparent 21px,
-      rgba(255, 255, 255, 0.05) 21px,
-      rgba(255, 255, 255, 0.05) 22px,
-      transparent 22px,
-      transparent 62px
-    ),
-    linear-gradient(90deg, rgb(61, 61, 61), rgb(61, 61, 61));
+  background-image: var(--bg-black-grad);
   padding: 2rem 15rem;
 }
 .contact_and_qoute {

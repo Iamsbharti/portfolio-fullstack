@@ -55,6 +55,51 @@
       transparent 62px
     ),
     linear-gradient(90deg, rgb(34, 34, 34), rgb(34, 34, 34));
+  --bg-gray-grad: repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    repeating-linear-gradient(
+      112.5deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 21px,
+      rgba(255, 255, 255, 0.05) 21px,
+      rgba(255, 255, 255, 0.05) 22px,
+      transparent 22px,
+      transparent 62px
+    ),
+    linear-gradient(90deg, rgb(61, 61, 61), rgb(61, 61, 61));
 }
 .project {
   display: flex;
@@ -174,12 +219,12 @@ code {
   cursor: pointer;
 }
 .project__section2 {
-  background-color: blue;
+  display: flex;
+  background-image: var(--bg-gray-grad);
 }
 .project2__card__position {
   min-height: 20vh;
   position: relative;
-  top: -361px;
+  top: -282px;
   left: 55px;
-  background-image: var(--bg-black-grad);
 }
