@@ -207,7 +207,7 @@ a:active {
 }
 .profile_contact_section {
   min-height: 40vh;
-  background-image: var(--bg-black-grad);
+  background-image: var(--bg-gray-grad);
   padding: 2rem 15rem;
 }
 .contact_and_qoute {
