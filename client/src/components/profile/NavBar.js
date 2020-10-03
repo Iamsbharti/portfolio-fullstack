@@ -35,7 +35,7 @@ const NavBar = () => {
       <div>
         <div className="mobile_menu_bar">
           <img
-            src={process.env.PUBLIC_URL + "/header-icon.png"}
+            src={process.env.PUBLIC_URL + "/LogoMakr_9JTKSc.png"}
             alt=""
             className="header_icon"
             ref={(el) => {
@@ -77,7 +77,7 @@ const NavBar = () => {
       <div className="non_mobile">
         <nav>
           <img
-            src={process.env.PUBLIC_URL + "/header-icon.png"}
+            src={process.env.PUBLIC_URL + "/LogoMakr_9JTKSc.png"}
             alt=""
             className="header_icon"
             ref={(el) => {
