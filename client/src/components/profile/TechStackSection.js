@@ -19,30 +19,35 @@ const TechStackSection = () => {
               <img
                 src={process.env.PUBLIC_URL + "/icons8-html-5-96.png"}
                 className="icon_img_tech"
+                title="HTML"
               />
             </p>
             <p>
               <img
                 src={process.env.PUBLIC_URL + "/icons8-css3-96.png"}
                 className="icon_img_tech"
+                title="CSS"
               />
             </p>
             <p>
               <img
                 src={process.env.PUBLIC_URL + "/icons8-javascript-96.png"}
                 className="icon_img_tech"
+                title="JavaScript"
               />
             </p>
             <p>
               <img
                 src={process.env.PUBLIC_URL + "/icons8-typescript-96.png"}
                 className="icon_img_tech"
+                title="TypeScript"
               />
             </p>
             <p>
               <img
                 src={process.env.PUBLIC_URL + "/icons8-node-js-96.png"}
                 className="icon_img_tech"
+                title="NodeJs"
               />
             </p>
           </div>
@@ -51,6 +56,7 @@ const TechStackSection = () => {
               <img
                 src={process.env.PUBLIC_URL + "/reactjs.svg"}
                 className="icon_img_tech"
+                title="ReactJs"
               />
             </p>
             <br />
@@ -58,24 +64,28 @@ const TechStackSection = () => {
               <img
                 src={process.env.PUBLIC_URL + "/icons8-angularjs-96.png"}
                 className="icon_img_tech"
+                title="Angular"
               />
             </p>
             <p>
               <img
                 src={process.env.PUBLIC_URL + "/icons8-mongodb-96.png"}
                 className="icon_img_tech"
+                title="MongoDB"
               />
             </p>
             <p>
               <img
                 src={`${process.env.PUBLIC_URL}/Socket-io.svg`}
                 className="icon_img_tech"
+                title="Socket.io"
               />
             </p>
             <p>
               <img
                 src={process.env.PUBLIC_URL + "/redux.svg"}
                 className="icon_img_tech"
+                title="Redux"
               />
             </p>
           </div>
@@ -84,6 +94,7 @@ const TechStackSection = () => {
               <img
                 src={process.env.PUBLIC_URL + "/webpack.svg"}
                 className="icon_img_tech"
+                title="Webpack"
               />
             </p>
           </div>
