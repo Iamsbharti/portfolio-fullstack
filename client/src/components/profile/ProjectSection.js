@@ -2,7 +2,8 @@ import React, { useRef, useEffect } from "react";
 import "../../css/Project.css";
 import { jobProfileCardIntro } from "../Animation";
 import { Link } from "react-router-dom";
-
+import { useIntersection } from "react-use";
+import gsap from "gsap/gsap-core";
 const ProjectSection = () => {
   /**job profile */
   let card_sec = useRef(null);
@@ -11,13 +12,43 @@ const ProjectSection = () => {
 
   /**project card */
   let project_intro = useRef(null);
-  let project_card = useRef(null);
+  let project_card_1 = useRef(null);
+  let project_card_2 = useRef(null);
+  let project_card_3 = useRef(null);
   let project_card_title = useRef(null);
   let tech_satck_icons = useRef(null);
   let project_live = useRef(null);
   useEffect(() => {
     jobProfileCardIntro(card_sec, card_stack, card_ml);
   });
+  /**project card animation on scroll */
+  const interSection = useIntersection(project_card_1, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5,
+  });
+  const projectCardFadeIn = (elememt) => {
+    console.log("fade in");
+    gsap.to(elememt, 1, {
+      opacity: 1,
+      y: -60,
+      ease: "power4.out",
+      stagger: {
+        amount: 0.3,
+      },
+    });
+  };
+  const projectCardFadeOut = (elememt) => {
+    console.log("fade out");
+    gsap.to(elememt, 1, {
+      opacity: 0,
+      y: -20,
+      ease: "power4.out",
+    });
+  };
+  interSection && interSection.intersectionRatio < 0.5
+    ? projectCardFadeOut(".project__section")
+    : projectCardFadeIn(".project__section");
   return (
     <>
       <div className="project">
@@ -61,7 +92,12 @@ const ProjectSection = () => {
         </div>
       </div>
       {/**top 3 projects display */}
-      <div className="project__section">
+      <div
+        className="project__section"
+        ref={(ele) => {
+          project_card_1 = ele;
+        }}
+      >
         <div className="projects__intro_p1">
           <div className="project__intro">
             <h3>- AllProjects</h3>
@@ -86,18 +122,24 @@ const ProjectSection = () => {
                   <img
                     src={process.env.PUBLIC_URL + "/icons8-node-js-96.png"}
                     className="icon_img"
+                    alt="NodeJs"
+                    title="NodeJs"
                   />
                 </p>
                 <p>
                   <img
                     src={process.env.PUBLIC_URL + "/icons8-react-100.png"}
                     className="icon_img"
+                    alt="ReactJs"
+                    title="ReactJs"
                   />
                 </p>
                 <p>
                   <img
                     src={process.env.PUBLIC_URL + "/icons8-mongodb-96.png"}
                     className="icon_img"
+                    alt="MongoDB"
+                    title="MongoDB"
                   />
                 </p>
               </div>
@@ -107,12 +149,16 @@ const ProjectSection = () => {
                   <img
                     src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
                     className="icon_img"
+                    alt="github"
+                    title="SourceCode"
                   />
                 </p>
                 <p>
                   <img
                     src={process.env.PUBLIC_URL + "/shuttle.png"}
                     className="icon_img_shuttle"
+                    alt="live"
+                    title="Live"
                   />
                 </p>
               </div>
@@ -127,7 +173,7 @@ const ProjectSection = () => {
           <div>
             <img
               src={process.env.PUBLIC_URL + "/logo512.png"}
-              alt=""
+              alt="img"
               className="project__image"
             />
           </div>
@@ -138,18 +184,24 @@ const ProjectSection = () => {
                 <img
                   src={process.env.PUBLIC_URL + "/icons8-node-js-96.png"}
                   className="icon_img"
+                  alt="NodeJs"
+                  title="NodeJs"
                 />
               </p>
               <p>
                 <img
                   src={process.env.PUBLIC_URL + "/icons8-react-100.png"}
                   className="icon_img"
+                  alt="ReactJs"
+                  title="ReactJs"
                 />
               </p>
               <p>
                 <img
                   src={process.env.PUBLIC_URL + "/icons8-mongodb-96.png"}
                   className="icon_img"
+                  alt="MongoDB"
+                  title="MongoDB"
                 />
               </p>
             </div>
@@ -159,12 +211,16 @@ const ProjectSection = () => {
                 <img
                   src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
                   className="icon_img"
+                  alt="github"
+                  title="SourceCode"
                 />
               </p>
               <p>
                 <img
                   src={process.env.PUBLIC_URL + "/shuttle.png"}
                   className="icon_img_shuttle"
+                  alt="live"
+                  title="Live"
                 />
               </p>
             </div>
@@ -187,18 +243,24 @@ const ProjectSection = () => {
                 <img
                   src={process.env.PUBLIC_URL + "/icons8-node-js-96.png"}
                   className="icon_img"
+                  alt="NodeJs"
+                  title="NodeJs"
                 />
               </p>
               <p>
                 <img
                   src={process.env.PUBLIC_URL + "/icons8-react-100.png"}
                   className="icon_img"
+                  alt="ReactJs"
+                  title="ReactJs"
                 />
               </p>
               <p>
                 <img
                   src={process.env.PUBLIC_URL + "/icons8-mongodb-96.png"}
                   className="icon_img"
+                  alt="MongoDB"
+                  title="MongoDB"
                 />
               </p>
             </div>
@@ -208,12 +270,16 @@ const ProjectSection = () => {
                 <img
                   src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
                   className="icon_img"
+                  alt="github"
+                  title="SourceCode"
                 />
               </p>
               <p>
                 <img
                   src={process.env.PUBLIC_URL + "/shuttle.png"}
                   className="icon_img_shuttle"
+                  alt="live"
+                  title="Live"
                 />
               </p>
             </div>
