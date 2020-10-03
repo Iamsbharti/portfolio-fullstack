@@ -1,9 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import "../../css/Project.css";
-import { jobProfileCardIntro } from "../Animation";
+import { jobProfileCardIntro, animateProjectCard1Intro } from "../Animation";
 import { Link } from "react-router-dom";
-import { useIntersection } from "react-use";
-import gsap from "gsap/gsap-core";
+
 const ProjectSection = () => {
   /**job profile */
   let card_sec = useRef(null);
@@ -11,47 +10,32 @@ const ProjectSection = () => {
   let card_ml = useRef(null);
 
   /**project card */
-  let project_intro = useRef(null);
   let project_card_1 = useRef(null);
+  let project_section = useRef(null);
   let project_card_2 = useRef(null);
   let project_card_3 = useRef(null);
-  let project_card_title = useRef(null);
+  /*let project_card_title = useRef(null);
   let tech_satck_icons = useRef(null);
-  let project_live = useRef(null);
+  let project_live = useRef(null);*/
+
   useEffect(() => {
     jobProfileCardIntro(card_sec, card_stack, card_ml);
+    animateProjectCard1Intro(
+      project_section,
+      project_card_1,
+      project_card_2,
+      project_card_3
+    );
   });
-  /**project card animation on scroll */
-  const interSection = useIntersection(project_card_1, {
-    root: null,
-    rootMargin: "0px",
-    threshold: 0.5,
-  });
-  const projectCardFadeIn = (elememt) => {
-    console.log("fade in");
-    gsap.to(elememt, 1, {
-      opacity: 1,
-      y: -60,
-      ease: "power4.out",
-      stagger: {
-        amount: 0.3,
-      },
-    });
-  };
-  const projectCardFadeOut = (elememt) => {
-    console.log("fade out");
-    gsap.to(elememt, 1, {
-      opacity: 0,
-      y: -20,
-      ease: "power4.out",
-    });
-  };
-  interSection && interSection.intersectionRatio < 0.5
-    ? projectCardFadeOut(".project__section")
-    : projectCardFadeIn(".project__section");
+
   return (
     <>
-      <div className="project">
+      <div
+        className="project"
+        ref={(ele) => {
+          project_section = ele;
+        }}
+      >
         <div className="project__job__profile">
           <div
             className="project__job__profile__card color__sec"
@@ -91,13 +75,10 @@ const ProjectSection = () => {
           </div>
         </div>
       </div>
+
       {/**top 3 projects display */}
-      <div
-        className="project__section"
-        ref={(ele) => {
-          project_card_1 = ele;
-        }}
-      >
+
+      <div className="project__section">
         <div className="projects__intro_p1">
           <div className="project__intro">
             <h3>- AllProjects</h3>
@@ -106,7 +87,13 @@ const ProjectSection = () => {
               Explore More
             </Link>
           </div>
-          <div className="project1__card">
+
+          <div
+            className="project1__card"
+            ref={(ele) => {
+              project_card_1 = ele;
+            }}
+          >
             <p className="project__card__name">Twitter Clone</p>
             <div>
               <img
@@ -166,9 +153,15 @@ const ProjectSection = () => {
           </div>
         </div>
       </div>
+
       {/**project line 2 */}
       <div className="project__section2">
-        <div className="project1__card project2__card__position">
+        <div
+          className="project1__card project2__card__position"
+          ref={(ele) => {
+            project_card_2 = ele;
+          }}
+        >
           <p className="project__card__name">KanbanBoard</p>
           <div>
             <img
@@ -227,7 +220,12 @@ const ProjectSection = () => {
           </div>
         </div>
         {/**peoject 3rd section */}
-        <div className="project1__card project3__card__position">
+        <div
+          className="project1__card project3__card__position"
+          ref={(ele) => {
+            project_card_3 = ele;
+          }}
+        >
           <p className="project__card__name">KanbanBoard</p>
           <div>
             <img

@@ -1,6 +1,7 @@
-import { TweenMax, Power3, Power4, TimelineLite } from "gsap";
+import { Power3, TimelineMax } from "gsap";
 import gsap from "gsap";
-import { text } from "body-parser";
+import ScrollMagic from "scrollmagic";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 //slider text intro
 export const sliderIntro = (el1, el2, el3) => {
@@ -345,4 +346,36 @@ export const hoverExit = (e) => {
     skewX: 0,
     ease: "power2.inOut",
   });
+};
+
+//on scroll project card animations
+export const animateProjectCard1Intro = (
+  triggerElement,
+  card1,
+  card2,
+  card3
+) => {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.core.globals("ScrollTrigger", ScrollTrigger);
+  let t2 = gsap.timeline({
+    paused: true,
+    scrollTrigger: {
+      trigger: triggerElement,
+      scrub: true,
+      markers: true,
+    },
+  });
+  t2.fromTo(
+    [card1, card2, card3],
+    { opacity: 0, xPercent: 20 },
+    {
+      opacity: 3,
+      xPercent: 0,
+      stagger: {
+        amount: 0.9,
+      },
+      duration: 2,
+      ease: Power3.easeInOut,
+    }
+  );
 };

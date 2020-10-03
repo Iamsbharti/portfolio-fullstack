@@ -180,6 +180,7 @@
   width: 306px;
   height: 350px;
   margin-left: 177px;
+  opacity: 0;
 }
 .project__image {
   width: 230px;

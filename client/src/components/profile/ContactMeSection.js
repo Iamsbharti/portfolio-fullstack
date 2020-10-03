@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../css/Profile.css";
-import NavBar from "./NavBar";
+
 import {
   contactIntro,
   contactInfoIntro,
