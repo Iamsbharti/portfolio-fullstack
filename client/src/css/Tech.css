@@ -1,0 +1,6 @@
+.my-widget {
+  --bg-color: #111;
+  --header-bg-color: black;
+  --badge-bg-color: #333;
+  --badge-text-color: #fff;
+}
