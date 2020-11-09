@@ -55,7 +55,7 @@ const ProjectSection = () => {
             <h3>Security Consultant</h3>
           </div>
           <div
-            className="project__job__profile__card"
+            className="project__job__profile__card color__fs"
             ref={(ele) => {
               card_stack = ele;
             }}
