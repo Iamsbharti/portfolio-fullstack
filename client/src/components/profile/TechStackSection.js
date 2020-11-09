@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../../css/Tech.css";
+import { animateWidgetIntro, animateTechnologyIntro } from "../Animation";
 const TechStackSection = () => {
+  /**widget div */
+  let widgetRef = useRef(null);
+  let techStackRef = useRef(null);
+  let iconsRef = useRef(null);
+  useEffect(() => {
+    animateWidgetIntro(techStackRef, widgetRef);
+    animateTechnologyIntro(techStackRef, iconsRef);
+  });
   return (
     <>
-      <div className="techstack">
+      <div
+        className="techstack"
+        ref={(ele) => {
+          techStackRef = ele;
+        }}
+      >
         <code className="code_tech">- TechStack</code>
-        <div className="widget__div">
+        <div
+          className="widget__div"
+          ref={(ele) => {
+            widgetRef = ele;
+          }}
+        >
           <codersrank-widget
             username="iamsbharti"
             class="my-widget"
@@ -13,7 +32,12 @@ const TechStackSection = () => {
             style={{ width: "440px", marginRight: "23px" }}
           ></codersrank-widget>
         </div>
-        <div className="technologies">
+        <div
+          className="technologies"
+          ref={(ele) => {
+            iconsRef = ele;
+          }}
+        >
           <div className="techstack__technologies_1">
             <p>
               <img

@@ -1,6 +1,10 @@
 import React, { useRef, useEffect } from "react";
 import "../../css/Project.css";
-import { jobProfileCardIntro, animateProjectCard1Intro } from "../Animation";
+import {
+  jobProfileCardIntro,
+  animateProjectCard1Intro,
+  animateProjectIntro,
+} from "../Animation";
 import { Link } from "react-router-dom";
 
 const ProjectSection = () => {
@@ -14,8 +18,8 @@ const ProjectSection = () => {
   let project_section = useRef(null);
   let project_card_2 = useRef(null);
   let project_card_3 = useRef(null);
-  /*let project_card_title = useRef(null);
-  let tech_satck_icons = useRef(null);
+  let project_section_intro = useRef(null);
+  /*let tech_satck_icons = useRef(null);
   let project_live = useRef(null);*/
 
   useEffect(() => {
@@ -26,6 +30,7 @@ const ProjectSection = () => {
       project_card_2,
       project_card_3
     );
+    animateProjectIntro(project_section, project_section_intro);
   });
 
   return (
@@ -80,7 +85,12 @@ const ProjectSection = () => {
 
       <div className="project__section">
         <div className="projects__intro_p1">
-          <div className="project__intro">
+          <div
+            className="project__intro"
+            ref={(ele) => {
+              project_section_intro = ele;
+            }}
+          >
             <h3>- AllProjects</h3>
             <p className="project__intro__desc">All my builds are live here</p>
             <Link to="allProjects" className="project__intro__desc color">
