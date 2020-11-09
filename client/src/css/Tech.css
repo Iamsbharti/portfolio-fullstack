@@ -154,3 +154,6 @@
   height: 40px;
   cursor: pointer;
 }
+.icon_img_tech:hover {
+  transform: scale(1.5);
+}
