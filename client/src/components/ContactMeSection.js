@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import "../../css/Profile.css";
+import "../css/Profile.css";
 
 import {
   contactIntro,
@@ -11,7 +11,7 @@ import {
   detailsIntro,
   hoverLink,
   hoverExit,
-} from "../Animation";
+} from "./Animation";
 
 const ContactMeSection = () => {
   /**contact section */

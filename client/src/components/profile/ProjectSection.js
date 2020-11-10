@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import "../../css/Project.css";
 import "../../css/Blogs.css";
-import TechStackSection from "./TechStackSection";
+import TechStackSection from "../TechStackSection";
 import {
   jobProfileCardIntro,
   animateProjectCard1Intro,

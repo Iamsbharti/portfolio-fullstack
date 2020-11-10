@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import "../../css/Tech.css";
-import "../../css/Blogs.css";
-import { animateDivOnScrollIntro, animateTechnologyIntro } from "../Animation";
+import "../css/Tech.css";
+import "../css/Blogs.css";
+import { animateDivOnScrollIntro, animateTechnologyIntro } from "./Animation";
 import BlogSection from "./BlogSection";
 const TechStackSection = ({ scrollTrigger }) => {
   /**widget div */
