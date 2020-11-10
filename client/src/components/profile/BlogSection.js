@@ -37,7 +37,18 @@ const BlogSection = () => {
           }}
         >
           <div className="blog__section__right__content">
-            <p className="blog__title">How I created a full stack Twitter</p>
+            <div className="blogs__div">
+              <p className="blog__title">How I created a full stack Twitter</p>
+              <p>
+                <img
+                  src={process.env.PUBLIC_URL + "/shuttle.png"}
+                  alt=""
+                  className="open__blog__icon"
+                  title="open blog"
+                />
+              </p>
+            </div>
+            <div className="div__underline"></div>
           </div>
         </div>
       </div>
