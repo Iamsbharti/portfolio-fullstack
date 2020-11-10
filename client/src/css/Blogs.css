@@ -1,0 +1,22 @@
+.blog__section {
+  min-height: 40vh;
+  background-image: var(--bg-gray-grad);
+  padding: 2rem 15rem;
+}
+.blog__section__content {
+  display: flex;
+  justify-content: space-between;
+  color: #fbfcff;
+}
+.blog_text {
+  color: #9da9ce;
+  margin-bottom: 1.1rem;
+}
+.blog_info {
+  font-weight: 900;
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+.blog__section__right {
+  width: 355px;
+}

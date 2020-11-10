@@ -404,7 +404,8 @@ export const animateProjectIntro = (trigger, element) => {
     }
   );
 };
-export const animateWidgetIntro = (trigger, element) => {
+export const animateDivOnScrollIntro = (trigger, element) => {
+  console.log("widget animation");
   gsap.registerPlugin(ScrollTrigger);
   gsap.core.globals("ScrollTrigger", ScrollTrigger);
   let t2 = gsap.timeline({
@@ -417,14 +418,14 @@ export const animateWidgetIntro = (trigger, element) => {
   });
   t2.fromTo(
     element,
-    { opacity: 0, xPercent: -20 },
+    { opacity: 0, xPercent: -40 },
     {
       opacity: 3,
       xPercent: 0,
       stagger: {
         amount: 0.9,
       },
-      duration: 2,
+      duration: 1,
       ease: Power3.easeInOut,
     }
   );
@@ -442,15 +443,15 @@ export const animateTechnologyIntro = (trigger, element) => {
   });
   t2.fromTo(
     element,
-    { opacity: 0, xPercent: 30 },
+    { opacity: 1, xPercent: 50 },
     {
       opacity: 3,
-      xPercent: -30,
+      xPercent: 0,
       stagger: {
         amount: 0.9,
       },
       duration: 2,
-      ease: Bounce,
+      ease: Power3.easeInOut,
     }
   );
 };

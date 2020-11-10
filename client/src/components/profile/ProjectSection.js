@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import "../../css/Project.css";
+import "../../css/Blogs.css";
+import TechStackSection from "./TechStackSection";
 import {
   jobProfileCardIntro,
   animateProjectCard1Intro,
@@ -19,8 +21,8 @@ const ProjectSection = () => {
   let project_card_2 = useRef(null);
   let project_card_3 = useRef(null);
   let project_section_intro = useRef(null);
-  /*let tech_satck_icons = useRef(null);
-  let project_live = useRef(null);*/
+  /**tech stack refs */
+  let tech_satck_ref = useRef(null);
 
   useEffect(() => {
     jobProfileCardIntro(card_sec, card_stack, card_ml);
@@ -165,7 +167,12 @@ const ProjectSection = () => {
       </div>
 
       {/**project line 2 */}
-      <div className="project__section2">
+      <div
+        className="project__section2"
+        ref={(ele) => {
+          tech_satck_ref = ele;
+        }}
+      >
         <div
           className="project1__card project2__card__position"
           ref={(ele) => {
@@ -294,6 +301,7 @@ const ProjectSection = () => {
           </div>
         </div>
       </div>
+      <TechStackSection scrollTrigger="tech_satck_ref" />
     </>
   );
 };
