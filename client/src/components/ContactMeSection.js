@@ -73,12 +73,7 @@ const ContactMeSection = () => {
               </Link>
             </p>
           </div>
-          <div
-            className="quote"
-            ref={(ele) => {
-              qoute = ele;
-            }}
-          >
+          <div className="quote">
             <p
               className="quote_1"
               ref={(ele) => {
