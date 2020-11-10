@@ -16,11 +16,13 @@ import {
 const ContactMeSection = () => {
   /**contact section */
   let contact = useRef(null);
+
   let contactInfo = useRef(null);
   let email = useRef(null);
 
   /**quoteSection */
   let qoute1 = useRef(null);
+
   let quote2 = useRef(null);
   let exp = useRef(null);
   let projects = useRef(null);
@@ -71,7 +73,12 @@ const ContactMeSection = () => {
               </Link>
             </p>
           </div>
-          <div className="quote">
+          <div
+            className="quote"
+            ref={(ele) => {
+              qoute = ele;
+            }}
+          >
             <p
               className="quote_1"
               ref={(ele) => {
