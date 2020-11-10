@@ -404,8 +404,10 @@ export const animateProjectIntro = (trigger, element) => {
     }
   );
 };
-export const animateDivOnScrollIntro = (trigger, element) => {
+export const animateDivOnScrollIntro = (trigger, element, direction) => {
   console.log("widget animation");
+  let axis;
+  axis = direction === "right" ? 50 : -40;
   gsap.registerPlugin(ScrollTrigger);
   gsap.core.globals("ScrollTrigger", ScrollTrigger);
   let t2 = gsap.timeline({
@@ -418,7 +420,7 @@ export const animateDivOnScrollIntro = (trigger, element) => {
   });
   t2.fromTo(
     element,
-    { opacity: 0, xPercent: -40 },
+    { opacity: 0, xPercent: axis },
     {
       opacity: 3,
       xPercent: 0,

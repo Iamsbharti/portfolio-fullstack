@@ -14,8 +14,8 @@ const TechStackSection = ({ scrollTrigger }) => {
   let blogInfo = useRef;
 
   useEffect(() => {
-    animateDivOnScrollIntro(scrollTrigger, widgetRef);
-    animateTechnologyIntro(scrollTrigger, iconsRef);
+    animateDivOnScrollIntro(scrollTrigger, widgetRef, "left");
+    animateTechnologyIntro(scrollTrigger, iconsRef, "right");
   });
   return (
     <>
@@ -144,7 +144,7 @@ const TechStackSection = ({ scrollTrigger }) => {
           </div>
         </div>
       </div>
-      <BlogSection scrollTrigger="techStackRef" />
+      <BlogSection />
     </>
   );
 };
