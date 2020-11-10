@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import "../css/Profile.css";
 import "../css/Blogs.css";
 import { animateDivOnScrollIntro } from "./Animation";
-import ContactMeSection from "./ContactMeSection";
+import Certifications from "./Certifications";
 const BlogSection = () => {
   /**Ref init */
   let blogLeft = useRef(null);
@@ -57,7 +57,7 @@ const BlogSection = () => {
           </div>
         </div>
       </div>
-      <ContactMeSection />
+      <Certifications />
     </>
   );
 };
