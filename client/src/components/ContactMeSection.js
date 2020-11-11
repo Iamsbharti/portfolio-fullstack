@@ -132,7 +132,10 @@ const ContactMeSection = () => {
           </div>
         </div>
         <div className="scroll_down_arrow">
-          <img src={process.env.PUBLIC_URL + "/double-down-96.png"} alt="" />
+          <p style={{ fontSize: "16px", fontWeight: "800" }}>
+            Thank you <span style={{ color: "red" }}>&#10084;</span> for
+            scrolling this far{" "}
+          </p>
         </div>
       </section>
     </div>

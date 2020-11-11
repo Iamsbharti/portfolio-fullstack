@@ -362,7 +362,6 @@ export const animateProjectCard1Intro = (
     scrollTrigger: {
       trigger: triggerElement,
       scrub: true,
-      markers: true,
     },
   });
   t2.fromTo(
@@ -387,7 +386,6 @@ export const animateProjectIntro = (trigger, element) => {
     scrollTrigger: {
       trigger: trigger,
       scrub: true,
-      markers: true,
     },
   });
   t2.fromTo(
@@ -415,7 +413,6 @@ export const animateDivOnScrollIntro = (trigger, element, direction) => {
     scrollTrigger: {
       trigger: trigger,
       scrub: true,
-      markers: true,
     },
   });
   t2.fromTo(
@@ -440,7 +437,6 @@ export const animateTechnologyIntro = (trigger, element) => {
     scrollTrigger: {
       trigger: trigger,
       scrub: true,
-      markers: true,
     },
   });
   t2.fromTo(
