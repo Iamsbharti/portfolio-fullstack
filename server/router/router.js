@@ -14,7 +14,7 @@ const upload = multer({
 });
 
 /**projects route */
-router.get("/portfolio/projects", auth.isAuthorized, posts.getProjects);
+router.get("/portfolio/projects", posts.getProjects);
 router.post(
   "/portfolio/createProject",
   auth.isAuthorized,
