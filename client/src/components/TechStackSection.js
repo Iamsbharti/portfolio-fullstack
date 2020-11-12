@@ -6,7 +6,7 @@ import BlogSection from "./BlogSection";
 const TechStackSection = ({ scrollTrigger }) => {
   /**widget div */
   let widgetRef = useRef(null);
-  let techStackRef = useRef(null);
+
   let iconsRef = useRef(null);
 
   useEffect(() => {
@@ -15,12 +15,7 @@ const TechStackSection = ({ scrollTrigger }) => {
   });
   return (
     <>
-      <div
-        className="div__slider__ref"
-        ref={(ele) => {
-          techStackRef = ele;
-        }}
-      >
+      <div className="div__slider__ref">
         <div className="techstack">
           <code className="code_tech">- TechStack</code>
           <div

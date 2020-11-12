@@ -1,6 +1,6 @@
-import { Power3, TimelineMax, Bounce } from "gsap";
+import { Power3 } from "gsap";
 import gsap from "gsap";
-import ScrollMagic from "scrollmagic";
+
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 //slider text intro

@@ -7,8 +7,16 @@ import {
   navIntro,
   iconIntro,
 } from "../Animation";
-
+import { useHistory } from "react-router-dom";
 const NavBar = () => {
+  /**define state */
+  let history = useHistory();
+  /**route back to feed  */
+  const handleNavigation = (to) => {
+    console.log("navigating to ", to);
+    history.push(`/${to}`);
+  };
+
   /**nav items */
   let navItems = useRef(null);
   let navIcon = useRef(null);
@@ -67,7 +75,9 @@ const NavBar = () => {
               }}
             >
               <li>Services</li>
-              <li>Works</li>
+
+              <li onClick={() => handleNavigation("projects")}>Works</li>
+
               <li>Blog</li>
               <li>Contact Me</li>
             </ul>
@@ -91,7 +101,7 @@ const NavBar = () => {
             }}
           >
             <li>Services</li>
-            <li>Works</li>
+            <li onClick={() => handleNavigation("projects")}>Work</li>
             <li>Blog</li>
             <li>Contact Me</li>
           </ul>

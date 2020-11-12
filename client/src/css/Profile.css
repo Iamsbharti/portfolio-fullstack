@@ -155,6 +155,8 @@ nav {
   padding-left: 2rem;
   font-size: 1.2rem;
   font-weight: 600;
+  cursor: pointer;
+  color: white;
 }
 .header_introduction {
   padding: 4rem 0rem;
@@ -205,6 +207,7 @@ a:hover {
 a:active {
   color: yellow;
 }
+
 .profile_contact_section {
   min-height: 40vh;
   background-image: var(--bg-gray-grad);
@@ -570,6 +573,9 @@ a:active {
     float: right;
     overflow-x: hidden;
     background-image: var(--bg-color-black);
+  }
+  li {
+    cursor: pointer;
   }
   .close_icon {
     display: flex;

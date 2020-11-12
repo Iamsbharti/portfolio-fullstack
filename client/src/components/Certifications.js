@@ -30,6 +30,7 @@ const BlogSection = () => {
             <a
               href="https://www.youracclaim.com/badges/94d84920-80df-4ca8-864f-5bf4669c74e4"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src={
