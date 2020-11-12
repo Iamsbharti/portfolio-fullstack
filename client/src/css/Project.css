@@ -240,3 +240,21 @@ code {
   top: -567px;
   left: 490px;
 }
+
+/**Project page styles**/
+.project__page {
+  height: 100vh;
+  background-image: var(--bg-black-grad);
+  color: white;
+}
+.MuiChip-label {
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  color: white !important;
+}
+.MuiChip-outlined {
+  border-color: rgb(199, 199, 145) !important;
+}
+.MuiChip-avatarColorSecondary {
+  background-color: black !important;
+}

@@ -20,3 +20,13 @@ export const projects = [
     __v: 0,
   },
 ];
+export const projectFilterCategory = [
+  { name: "All", img: "shuttle.png" },
+  { name: "ReactJS", img: "icons8-react-100.png" },
+  { name: "AngularJS", img: "icons8-angularjs-96.png" },
+  { name: "FullStack", img: "icons8-computer-256.png" },
+  { name: "Games", img: "header-icons.png" },
+  { name: "ML", img: "launch.png" },
+  { name: "NodeJS", img: "icons8-node-js-96.png" },
+  { name: "Clones", img: "header-icon.png" },
+];
