@@ -248,7 +248,7 @@ code {
   color: white;
 }
 .MuiChip-label {
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 800 !important;
   color: white !important;
 }
@@ -257,4 +257,16 @@ code {
 }
 .MuiChip-avatarColorSecondary {
   background-color: black !important;
+}
+.MuiChip-clickableColorSecondary:hover {
+  transform: translate(100);
+}
+.project__page__filters {
+  padding: 20px;
+}
+.project__page__intro {
+  margin: 0px 0px 0px 40px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
 }

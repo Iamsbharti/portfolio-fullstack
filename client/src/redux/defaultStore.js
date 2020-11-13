@@ -21,12 +21,12 @@ export const projects = [
   },
 ];
 export const projectFilterCategory = [
-  { name: "All", img: "icons8-workspace-one-128.png" },
-  { name: "ReactJS", img: "icons8-react-100.png" },
-  { name: "AngularJS", img: "icons8-angularjs-96.png" },
-  { name: "FullStack", img: "icons8-stack-correctly-96.png" },
-  { name: "Games", img: "icons8-games-folder-96.png" },
-  { name: "ML", img: "icons8-learning-96.png" },
-  { name: "NodeJS", img: "icons8-node-js-96.png" },
-  { name: "Clones", img: "header-icon.png" },
+  { name: "All", img: "icons8-workspace-one-128.png", disabled: true },
+  { name: "ReactJS", img: "icons8-react-100.png", disabled: false },
+  { name: "AngularJS", img: "icons8-angularjs-96.png", disabled: false },
+  { name: "FullStack", img: "icons8-stack-correctly-96.png", disabled: false },
+  { name: "Games", img: "icons8-games-folder-96.png", disabled: false },
+  { name: "ML", img: "icons8-learning-96.png", disabled: false },
+  { name: "NodeJS", img: "icons8-node-js-96.png", disabled: false },
+  { name: "Clones", img: "header-icon.png", disabled: false },
 ];
