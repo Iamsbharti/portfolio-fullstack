@@ -2,30 +2,43 @@ const Project = require("../model/Project");
 const shortid = require("shortid");
 const logger = require("../library/logger");
 const { formatResponse } = require("../library/formatResponse");
+const { push } = require("../library/logger");
+const { update } = require("../model/Project");
 
 const createPost = async (req, res) => {
-  const { name, demo, code, type, description, userId } = req.body;
+  const { name, demo, code, type, description, userId, techstack } = req.body;
   logger.info("Create Post Control");
-  console.log(name, demo, code, type, description, userId);
+  console.log(type, techstack);
   let newProject = new Project({
     projectId: shortid.generate(),
     name: name,
     demo: demo,
     code: code,
-    type: type,
     description: description,
     userId: userId,
     image: req.file.id,
   });
   /**save new project */
+
   let savedProject = await Project.create(newProject);
-  let project = await Project.findOne({
-    projectId: savedProject.projectId,
+  const { projectId } = savedProject;
+  // update type and techstack array
+  let updateOptions = { $push: { techstack: techstack, type: type } };
+
+  console.log("updateoptions:", updateOptions);
+  let updatedProject = await Project.updateOne(
+    { projectId: projectId },
+    updateOptions
+  );
+  const { n } = updatedProject;
+  let createdProject = await Project.findOne({
+    projectId: projectId,
   }).populate("image");
-  if (savedProject) {
+
+  if (savedProject && n === 1) {
     res
       .status(200)
-      .json(formatResponse(false, 200, "Project Created", project));
+      .json(formatResponse(false, 200, "Project Created", createdProject));
   } else {
     res
       .status(500)

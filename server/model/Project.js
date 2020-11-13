@@ -26,7 +26,11 @@ const projectSchema = mongoose.Schema({
     ref: "Images",
   },
   type: {
-    type: String,
+    type: Array,
+    required: true,
+  },
+  techstack: {
+    type: Array,
     required: true,
   },
   description: {
