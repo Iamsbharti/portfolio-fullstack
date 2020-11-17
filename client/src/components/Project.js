@@ -129,7 +129,7 @@ const Project = () => {
               </div>
             </div>
             <div className="project__description" hidden={showDescription}>
-              <p>
+              <p className="description">
                 project description yes . this app does a lot of thing you would
                 fill to fo. Love it or die
               </p>

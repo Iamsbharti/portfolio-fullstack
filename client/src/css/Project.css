@@ -286,3 +286,8 @@ code {
 .collapse__icon {
   cursor: pointer;
 }
+.project__description .description::first-letter {
+  font-weight: 800 !important;
+  font-size: 20px;
+  text-transform: uppercase;
+}
