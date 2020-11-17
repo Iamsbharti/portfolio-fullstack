@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { getAllProjectAction } from "../../redux/actions/projectAction";
 
-const ProjectSection = () => {
+const ProjectSection = ({ getAllProjectAction }) => {
   /**job profile */
   let card_sec = useRef(null);
   let card_stack = useRef(null);

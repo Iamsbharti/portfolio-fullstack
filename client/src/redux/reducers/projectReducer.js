@@ -4,7 +4,7 @@ import { projects } from "../defaultStore";
 export function projectReducer(_projects = projects, action) {
   switch (action.type) {
     case GET_PROJECTS:
-      return action.allProjects;
+      return action.allProjectsResponse;
     default:
       return _projects;
   }
