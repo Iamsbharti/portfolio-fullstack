@@ -8,6 +8,7 @@ import { connect } from "react-redux";
 import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined";
 const Project = () => {
   const [showCategory, setShowCategory] = useState("All");
+  const [showDescription, setShowDesc] = useState(true);
   const useStyles = makeStyles((theme) => ({
     root: {
       display: "flex",
@@ -19,7 +20,10 @@ const Project = () => {
     },
   }));
   const classes = useStyles();
-
+  const handleExpandIcon = () => {
+    console.log("handle expand");
+    setShowDesc(!showDescription);
+  };
   return (
     <>
       <div className="project__page">
@@ -102,9 +106,19 @@ const Project = () => {
                   />
                 </p>
                 <p className="expand__icon">
-                  <ExpandMoreOutlinedIcon fontSize="large" title="See More!!" />
+                  <ExpandMoreOutlinedIcon
+                    fontSize="large"
+                    title="See More!!"
+                    onClick={handleExpandIcon}
+                  />
                 </p>
               </div>
+            </div>
+            <div className="project__description" hidden={showDescription}>
+              <p>
+                project description yes . this app does a lot of thing you would
+                fill to fo. Love it or die
+              </p>
             </div>
           </div>
         </div>
