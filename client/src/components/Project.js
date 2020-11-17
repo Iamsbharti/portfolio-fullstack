@@ -4,6 +4,8 @@ import { projectFilterCategory } from "../redux/defaultStore";
 import Chip from "@material-ui/core/Chip";
 import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
+import { connect } from "react-redux";
+import {} from "../";
 const Project = () => {
   const [showCategory, setShowCategory] = useState("All");
   const useStyles = makeStyles((theme) => ({
@@ -17,6 +19,7 @@ const Project = () => {
     },
   }));
   const classes = useStyles();
+
   return (
     <>
       <div className="project__page">
@@ -47,4 +50,8 @@ const Project = () => {
     </>
   );
 };
-export default Project;
+const mapStateToProps = ({ projects }) => {
+  console.log("State in Project:", projects);
+};
+
+export default connect(mapStateToProps)(Project);

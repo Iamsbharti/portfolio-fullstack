@@ -1,9 +1,9 @@
 import { GET_PROJECTS } from "./actionType";
 import * as apis from "../../api/apis";
 
-export function getAllProjectAction(projectInfo) {
+export function getAllProjectAction() {
   return async (dispatch) => {
-    let allProjectsResponse = await apis.getAllProjects(projectInfo);
+    let allProjectsResponse = await apis.getAllProjects();
     dispatch({ type: GET_PROJECTS, allProjectsResponse });
   };
 }

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "../../css/Project.css";
 import "../../css/Blogs.css";
 import TechStackSection from "../TechStackSection";
@@ -8,6 +8,8 @@ import {
   animateProjectIntro,
 } from "../Animation";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { getAllProjectAction } from "../../redux/actions/projectAction";
 
 const ProjectSection = () => {
   /**job profile */
@@ -34,7 +36,10 @@ const ProjectSection = () => {
     );
     animateProjectIntro(project_section, project_section_intro);
   });
-
+  useEffect(() => {
+    console.log("call projects action");
+    getAllProjectAction();
+  }, []);
   return (
     <>
       <div
@@ -305,4 +310,10 @@ const ProjectSection = () => {
     </>
   );
 };
-export default ProjectSection;
+const mapStateToProps = ({ projects }) => {
+  console.log("State projects::", projects);
+};
+const mapActionToProps = {
+  getAllProjectAction,
+};
+export default connect(mapStateToProps, mapActionToProps)(ProjectSection);
