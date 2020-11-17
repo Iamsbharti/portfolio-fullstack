@@ -5,13 +5,13 @@ import Chip from "@material-ui/core/Chip";
 import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import { connect } from "react-redux";
-import {} from "../";
+import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined";
 const Project = () => {
   const [showCategory, setShowCategory] = useState("All");
   const useStyles = makeStyles((theme) => ({
     root: {
       display: "flex",
-      justifyContent: "center",
+      justifyContent: "space-around",
       flexWrap: "wrap",
       "& > *": {
         margin: theme.spacing(0.5),
@@ -45,7 +45,69 @@ const Project = () => {
         <div className="project__page__intro">
           Currently showing {showCategory} Projects
         </div>
-        <div className="project__page__cards__section"></div>
+        <div className="project__page__cards__section">
+          <div className="project__card">
+            <p className="project__card__name">Twitter Clone</p>
+            <div>
+              <img
+                src={process.env.PUBLIC_URL + "/logo512.png"}
+                alt=""
+                className="project__image"
+              />
+            </div>
+            <code>- Built Tools</code>
+            <div className="project__card__techstack">
+              <div className="project__tech">
+                <p>
+                  <img
+                    src={process.env.PUBLIC_URL + "/icons8-node-js-96.png"}
+                    className="icon_img"
+                    alt="NodeJs"
+                    title="NodeJs"
+                  />
+                </p>
+                <p>
+                  <img
+                    src={process.env.PUBLIC_URL + "/icons8-react-100.png"}
+                    className="icon_img"
+                    alt="ReactJs"
+                    title="ReactJs"
+                  />
+                </p>
+                <p>
+                  <img
+                    src={process.env.PUBLIC_URL + "/icons8-mongodb-96.png"}
+                    className="icon_img"
+                    alt="MongoDB"
+                    title="MongoDB"
+                  />
+                </p>
+              </div>
+
+              <div className="project__golive">
+                <p>
+                  <img
+                    src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
+                    className="icon_img"
+                    alt="github"
+                    title="SourceCode"
+                  />
+                </p>
+                <p>
+                  <img
+                    src={process.env.PUBLIC_URL + "/shuttle.png"}
+                    className="icon_img_shuttle"
+                    alt="live"
+                    title="Live"
+                  />
+                </p>
+                <p className="expand__icon">
+                  <ExpandMoreOutlinedIcon fontSize="large" title="See More!!" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
