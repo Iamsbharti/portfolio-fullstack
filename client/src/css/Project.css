@@ -282,6 +282,7 @@ code {
   height: auto;
   margin-left: 177px;
 }
-.expand__icon {
+.expand__icon,
+.collapse__icon {
   cursor: pointer;
 }

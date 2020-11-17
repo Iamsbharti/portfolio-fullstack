@@ -6,6 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Avatar from "@material-ui/core/Avatar";
 import { connect } from "react-redux";
 import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined";
+import ExpandLessOutlinedIcon from "@material-ui/icons/ExpandLessOutlined";
 const Project = () => {
   const [showCategory, setShowCategory] = useState("All");
   const [showDescription, setShowDesc] = useState(true);
@@ -105,10 +106,23 @@ const Project = () => {
                     title="Live"
                   />
                 </p>
-                <p className="expand__icon">
+                <p
+                  className="expand__icon"
+                  hidden={!showDescription}
+                  title="See More!!"
+                >
                   <ExpandMoreOutlinedIcon
                     fontSize="large"
-                    title="See More!!"
+                    onClick={handleExpandIcon}
+                  />
+                </p>
+                <p
+                  className="collapse__icon"
+                  hidden={showDescription}
+                  title="Hide"
+                >
+                  <ExpandLessOutlinedIcon
+                    fontSize="large"
                     onClick={handleExpandIcon}
                   />
                 </p>
