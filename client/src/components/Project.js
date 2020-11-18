@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/Project.css";
 import { projectFilterCategory } from "../redux/defaultStore";
 import Chip from "@material-ui/core/Chip";
@@ -7,7 +7,9 @@ import Avatar from "@material-ui/core/Avatar";
 import { connect } from "react-redux";
 import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined";
 import ExpandLessOutlinedIcon from "@material-ui/icons/ExpandLessOutlined";
-const Project = () => {
+import { getAllProjectAction } from "../redux/actions/projectAction";
+
+const Project = ({ projects, getAllProjectAction }) => {
   const [showCategory, setShowCategory] = useState("All");
   const [showDescription, setShowDesc] = useState(true);
   const useStyles = makeStyles((theme) => ({
@@ -25,15 +27,20 @@ const Project = () => {
     console.log("handle expand");
     setShowDesc(!showDescription);
   };
+  useEffect(() => {
+    console.log("call projects action");
+    getAllProjectAction();
+  }, []);
   return (
     <>
       <div className="project__page">
         <div className="project__page__filters">
           <div className={classes.root}>
-            {projectFilterCategory.map((filter) => (
+            {projectFilterCategory.map((filter, index) => (
               <Chip
                 color="secondary"
                 label={filter.name}
+                key={index}
                 avatar={
                   <Avatar
                     alt="Natacha"
@@ -140,8 +147,13 @@ const Project = () => {
     </>
   );
 };
-const mapStateToProps = ({ projects }) => {
+const mapStateToProps = (state) => {
+  const { projects } = state;
   console.log("State in Project:", projects);
+  console.log("type ofstate:", typeof projects);
+  return projects;
 };
-
-export default connect(mapStateToProps)(Project);
+const mapActionToProps = {
+  getAllProjectAction,
+};
+export default connect(mapStateToProps, mapActionToProps)(Project);

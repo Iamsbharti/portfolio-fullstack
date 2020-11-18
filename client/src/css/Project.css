@@ -272,6 +272,7 @@ code {
 }
 .project__page__cards__section {
   display: flex;
+  justify-content: flex-start;
 }
 .project__card {
   padding: 20px;
