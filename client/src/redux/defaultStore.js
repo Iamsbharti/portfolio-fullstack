@@ -29,4 +29,8 @@ export const projectFilterCategory = [
   { name: "ML", img: "icons8-learning-96.png", disabled: false },
   { name: "NodeJS", img: "icons8-node-js-96.png", disabled: false },
   { name: "Clones", img: "header-icon.png", disabled: false },
+  { name: "Html", img: "icons8-html-5-96.png", disabled: false },
+  { name: "CSS", img: "icons8-css3-96.png", disabled: false },
+  { name: "Javascript", img: "icons8-javascript-96.png", disabled: false },
+  { name: "Typescript", img: "icons8-typescript-96.png", disabled: false },
 ];
