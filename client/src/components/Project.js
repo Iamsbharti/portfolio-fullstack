@@ -149,8 +149,24 @@ const Project = ({ projects, getAllProjectAction }) => {
 };
 const mapStateToProps = (state) => {
   const { projects } = state;
-  console.log("State in Project:", projects);
-  console.log("type ofstate:", typeof projects);
+  // update state
+  projects.map((project) => {
+    let techArray = project.techstack;
+    let newTechArray = [];
+    let techIconObject = {};
+    projectFilterCategory.map((icon) => {
+      techArray.map((tech) => {
+        if (tech.toLowerCase() === icon.name.toLowerCase()) {
+          newTechArray.push({ name: tech, img: icon.img });
+        }
+        techIconObject = { newTechArray };
+        Object.assign(project, techIconObject);
+      });
+    });
+  });
+
+  console.log("updated project:", projects);
+
   return projects;
 };
 const mapActionToProps = {

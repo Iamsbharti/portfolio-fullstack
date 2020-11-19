@@ -8,6 +8,7 @@ export const projects = [
     type: "fullstack",
     description: "A full stack app",
     userId: "3SJTd1d-m",
+    techstack: [],
     image: {
       _id: "5f660fad647d75156db41cbc",
       length: 33308,

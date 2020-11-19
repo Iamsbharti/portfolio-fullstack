@@ -5807,3 +5807,538 @@
 2020-11-18 10:56:43 info: GET /api/v1/portfolio/projects 304 572.168 ms - -
 2020-11-18 10:58:18 info: Portfolio server running on-3001
 2020-11-18 10:58:20 info: DB CONNECTION SUCCESS
+2020-11-18 11:00:06 info: Portfolio server running on-3001
+2020-11-18 11:00:08 info: DB CONNECTION SUCCESS
+2020-11-18 11:00:08 info: Get Project Control
+2020-11-18 11:00:08 info: GET /api/v1/portfolio/projects 304 259.097 ms - -
+2020-11-18 11:00:37 info: Portfolio server running on-3001
+2020-11-18 11:00:38 info: DB CONNECTION SUCCESS
+2020-11-18 11:00:38 info: Get Project Control
+2020-11-18 11:00:39 info: GET /api/v1/portfolio/projects 304 253.471 ms - -
+2020-11-18 11:02:08 info: Portfolio server running on-3001
+2020-11-18 11:02:10 info: Get Project Control
+2020-11-18 11:02:10 info: DB CONNECTION SUCCESS
+2020-11-18 11:02:10 info: GET /api/v1/portfolio/projects 304 265.971 ms - -
+2020-11-18 11:02:16 info: Portfolio server running on-3001
+2020-11-18 11:02:17 info: Get Project Control
+2020-11-18 11:02:17 info: DB CONNECTION SUCCESS
+2020-11-18 11:02:17 info: GET /api/v1/portfolio/projects 304 781.975 ms - -
+2020-11-18 11:02:23 info: Get Project Control
+2020-11-18 11:02:23 info: GET /api/v1/portfolio/projects 304 214.452 ms - -
+2020-11-18 11:02:45 info: Portfolio server running on-3001
+2020-11-18 11:02:46 info: DB CONNECTION SUCCESS
+2020-11-18 11:03:12 info: Portfolio server running on-3001
+2020-11-18 11:03:13 info: Get Project Control
+2020-11-18 11:03:14 info: DB CONNECTION SUCCESS
+2020-11-18 11:03:14 info: GET /api/v1/portfolio/projects 304 893.706 ms - -
+2020-11-18 11:03:37 info: Portfolio server running on-3001
+2020-11-18 11:03:38 info: DB CONNECTION SUCCESS
+2020-11-18 11:03:38 info: Get Project Control
+2020-11-18 11:03:39 info: GET /api/v1/portfolio/projects 304 282.697 ms - -
+2020-11-18 11:03:51 info: Portfolio server running on-3001
+2020-11-18 11:03:52 info: DB CONNECTION SUCCESS
+2020-11-18 11:04:25 info: Portfolio server running on-3001
+2020-11-18 11:04:26 info: DB CONNECTION SUCCESS
+2020-11-18 11:05:24 info: Portfolio server running on-3001
+2020-11-18 11:05:25 info: DB CONNECTION SUCCESS
+2020-11-18 11:06:07 info: Portfolio server running on-3001
+2020-11-18 11:06:08 info: Get Project Control
+2020-11-18 11:06:08 info: DB CONNECTION SUCCESS
+2020-11-18 11:06:09 info: GET /api/v1/portfolio/projects 304 636.767 ms - -
+2020-11-18 11:07:01 info: Portfolio server running on-3001
+2020-11-18 11:07:02 info: DB CONNECTION SUCCESS
+2020-11-18 11:07:03 info: Get Project Control
+2020-11-18 11:07:03 info: GET /api/v1/portfolio/projects 304 243.400 ms - -
+2020-11-18 11:08:04 info: Portfolio server running on-3001
+2020-11-18 11:08:05 info: DB CONNECTION SUCCESS
+2020-11-18 11:08:09 info: Portfolio server running on-3001
+2020-11-18 11:08:10 info: DB CONNECTION SUCCESS
+2020-11-18 11:09:16 info: Portfolio server running on-3001
+2020-11-18 11:09:17 info: DB CONNECTION SUCCESS
+2020-11-18 11:09:19 info: Get Project Control
+2020-11-18 11:09:19 info: GET /api/v1/portfolio/projects 304 288.853 ms - -
+2020-11-18 11:09:35 info: Portfolio server running on-3001
+2020-11-18 11:09:36 info: DB CONNECTION SUCCESS
+2020-11-18 11:09:37 info: Get Project Control
+2020-11-18 11:09:37 info: GET /api/v1/portfolio/projects 304 265.458 ms - -
+2020-11-18 11:09:50 info: Portfolio server running on-3001
+2020-11-18 11:09:51 info: DB CONNECTION SUCCESS
+2020-11-18 11:09:51 info: Get Project Control
+2020-11-18 11:09:51 info: GET /api/v1/portfolio/projects 304 267.094 ms - -
+2020-11-18 11:10:49 info: Portfolio server running on-3001
+2020-11-18 11:10:50 info: Get Project Control
+2020-11-18 11:10:50 info: DB CONNECTION SUCCESS
+2020-11-18 11:10:50 info: GET /api/v1/portfolio/projects 304 265.228 ms - -
+2020-11-18 11:11:36 info: Portfolio server running on-3001
+2020-11-18 11:11:36 info: Get Project Control
+2020-11-18 11:11:37 info: DB CONNECTION SUCCESS
+2020-11-18 11:11:37 info: GET /api/v1/portfolio/projects 304 446.407 ms - -
+2020-11-18 11:12:13 info: Portfolio server running on-3001
+2020-11-18 11:12:14 info: DB CONNECTION SUCCESS
+2020-11-18 11:13:03 info: Portfolio server running on-3001
+2020-11-18 11:13:05 info: DB CONNECTION SUCCESS
+2020-11-18 11:13:29 info: Portfolio server running on-3001
+2020-11-18 11:13:31 info: Portfolio server running on-3001
+2020-11-18 11:13:32 info: DB CONNECTION SUCCESS
+2020-11-18 11:13:35 info: Portfolio server running on-3001
+2020-11-18 11:13:36 info: DB CONNECTION SUCCESS
+2020-11-18 11:13:39 info: Portfolio server running on-3001
+2020-11-18 11:13:40 info: DB CONNECTION SUCCESS
+2020-11-18 11:13:47 info: Portfolio server running on-3001
+2020-11-18 11:13:48 info: DB CONNECTION SUCCESS
+2020-11-18 11:13:55 info: Portfolio server running on-3001
+2020-11-18 11:13:56 info: DB CONNECTION SUCCESS
+2020-11-18 11:14:30 info: Portfolio server running on-3001
+2020-11-18 11:14:32 info: DB CONNECTION SUCCESS
+2020-11-18 11:15:20 info: Portfolio server running on-3001
+2020-11-18 11:15:21 info: DB CONNECTION SUCCESS
+2020-11-18 11:15:38 info: Portfolio server running on-3001
+2020-11-18 11:15:39 info: Get Project Control
+2020-11-18 11:15:39 info: DB CONNECTION SUCCESS
+2020-11-18 11:15:40 info: GET /api/v1/portfolio/projects 304 818.516 ms - -
+2020-11-18 11:16:08 info: Portfolio server running on-3001
+2020-11-18 11:16:09 info: DB CONNECTION SUCCESS
+2020-11-18 11:16:12 info: Portfolio server running on-3001
+2020-11-18 11:16:13 info: DB CONNECTION SUCCESS
+2020-11-18 11:16:20 info: Portfolio server running on-3001
+2020-11-18 11:16:21 info: DB CONNECTION SUCCESS
+2020-11-18 11:16:26 info: Get Project Control
+2020-11-18 11:16:27 info: GET /api/v1/portfolio/projects 304 289.354 ms - -
+2020-11-18 11:16:52 info: Portfolio server running on-3001
+2020-11-18 11:16:53 info: DB CONNECTION SUCCESS
+2020-11-18 11:17:01 info: Portfolio server running on-3001
+2020-11-18 11:17:02 info: DB CONNECTION SUCCESS
+2020-11-18 11:17:04 info: Get Project Control
+2020-11-18 11:17:05 info: GET /api/v1/portfolio/projects 304 262.792 ms - -
+2020-11-18 11:17:36 info: Portfolio server running on-3001
+2020-11-18 11:17:37 info: DB CONNECTION SUCCESS
+2020-11-18 11:17:41 info: Portfolio server running on-3001
+2020-11-18 11:17:42 info: DB CONNECTION SUCCESS
+2020-11-18 11:17:45 info: Get Project Control
+2020-11-18 11:17:45 info: GET /api/v1/portfolio/projects 304 242.711 ms - -
+2020-11-18 11:18:28 info: Portfolio server running on-3001
+2020-11-18 11:18:30 info: DB CONNECTION SUCCESS
+2020-11-18 11:18:31 info: Get Project Control
+2020-11-18 11:18:31 info: GET /api/v1/portfolio/projects 304 267.343 ms - -
+2020-11-18 11:20:00 info: Portfolio server running on-3001
+2020-11-18 11:20:02 info: DB CONNECTION SUCCESS
+2020-11-18 11:20:02 info: Get Project Control
+2020-11-18 11:20:02 info: GET /api/v1/portfolio/projects 304 247.901 ms - -
+2020-11-18 11:20:31 info: Portfolio server running on-3001
+2020-11-18 11:20:32 info: Get Project Control
+2020-11-18 11:20:32 info: DB CONNECTION SUCCESS
+2020-11-18 11:20:32 info: GET /api/v1/portfolio/projects 304 477.235 ms - -
+2020-11-18 11:20:36 info: Get Project Control
+2020-11-18 11:20:36 info: GET /api/v1/portfolio/projects 304 211.243 ms - -
+2020-11-18 11:20:57 info: Portfolio server running on-3001
+2020-11-18 11:20:58 info: DB CONNECTION SUCCESS
+2020-11-18 11:21:06 info: Get Project Control
+2020-11-18 11:21:06 info: GET /api/v1/portfolio/projects 304 238.746 ms - -
+2020-11-18 11:21:23 info: Portfolio server running on-3001
+2020-11-18 11:21:24 info: Get Project Control
+2020-11-18 11:21:25 info: DB CONNECTION SUCCESS
+2020-11-18 11:21:25 info: GET /api/v1/portfolio/projects 304 589.990 ms - -
+2020-11-18 11:21:51 info: Portfolio server running on-3001
+2020-11-18 11:21:51 info: Get Project Control
+2020-11-18 11:21:52 info: DB CONNECTION SUCCESS
+2020-11-18 11:21:52 info: GET /api/v1/portfolio/projects 304 704.950 ms - -
+2020-11-18 11:21:59 info: Portfolio server running on-3001
+2020-11-18 11:22:00 info: Get Project Control
+2020-11-18 11:22:00 info: DB CONNECTION SUCCESS
+2020-11-18 11:22:00 info: GET /api/v1/portfolio/projects 304 543.519 ms - -
+2020-11-18 11:30:36 info: Portfolio server running on-3001
+2020-11-18 11:30:38 info: DB CONNECTION SUCCESS
+2020-11-18 11:30:50 info: Authorizing user
+2020-11-18 11:30:50 info: File Info:[object Object]
+2020-11-18 11:30:53 info: Create Post Control
+2020-11-18 11:30:53 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 2906.534 ms - 692
+2020-11-18 11:32:13 info: Get Project Control
+2020-11-18 11:32:13 info: GET /api/v1/portfolio/projects 200 268.867 ms - 5037
+2020-11-18 11:35:05 info: Portfolio server running on-3001
+2020-11-18 11:35:06 info: DB CONNECTION SUCCESS
+2020-11-18 11:35:14 info: Authorizing user
+2020-11-18 11:35:14 info: File Info:[object Object]
+2020-11-18 11:35:17 info: Create Post Control
+2020-11-18 11:35:58 info: Portfolio server running on-3001
+2020-11-18 11:35:59 info: DB CONNECTION SUCCESS
+2020-11-18 11:36:04 info: Authorizing user
+2020-11-18 11:36:04 info: File Info:[object Object]
+2020-11-18 11:36:05 info: Create Post Control
+2020-11-18 11:36:05 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 1744.040 ms - 686
+2020-11-18 11:37:42 info: Get Project Control
+2020-11-18 11:37:43 info: GET /api/v1/portfolio/projects 200 219.655 ms - 6257
+2020-11-18 11:38:08 info: Portfolio server running on-3001
+2020-11-18 11:38:09 info: Get Project Control
+2020-11-18 11:38:09 info: DB CONNECTION SUCCESS
+2020-11-18 11:38:09 info: GET /api/v1/portfolio/projects 304 630.991 ms - -
+2020-11-18 11:39:15 info: Authorizing user
+2020-11-18 11:39:15 info: File Info:[object Object]
+2020-11-18 11:39:17 info: Create Post Control
+2020-11-18 11:39:17 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 2346.376 ms - 686
+2020-11-18 11:39:21 info: Authorizing user
+2020-11-18 11:39:21 info: File Info:[object Object]
+2020-11-18 11:39:22 info: Create Post Control
+2020-11-18 11:39:23 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 1593.132 ms - 686
+2020-11-18 11:39:30 info: Authorizing user
+2020-11-18 11:39:30 info: File Info:[object Object]
+2020-11-18 11:39:31 info: Create Post Control
+2020-11-18 11:39:32 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 1553.092 ms - 694
+2020-11-18 11:39:37 info: Authorizing user
+2020-11-18 11:39:37 info: File Info:[object Object]
+2020-11-18 11:39:38 info: Create Post Control
+2020-11-18 11:39:39 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 1570.199 ms - 706
+2020-11-18 11:39:57 info: Authorizing user
+2020-11-18 11:39:57 info: File Info:[object Object]
+2020-11-18 11:39:58 info: Create Post Control
+2020-11-18 11:39:59 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 1944.178 ms - 698
+2020-11-18 11:40:04 info: Authorizing user
+2020-11-18 11:40:04 info: File Info:[object Object]
+2020-11-18 11:40:06 info: Create Post Control
+2020-11-18 11:40:06 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 2305.888 ms - 708
+2020-11-18 11:40:20 info: Authorizing user
+2020-11-18 11:40:20 info: File Info:[object Object]
+2020-11-18 11:40:21 info: Create Post Control
+2020-11-18 11:40:22 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 1827.526 ms - 705
+2020-11-18 11:40:27 info: Authorizing user
+2020-11-18 11:40:27 info: File Info:[object Object]
+2020-11-18 11:40:29 info: Create Post Control
+2020-11-18 11:40:30 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 2526.107 ms - 691
+2020-11-18 11:40:36 info: Get Project Control
+2020-11-18 11:40:36 info: GET /api/v1/portfolio/projects 200 235.534 ms - 5129
+2020-11-18 11:41:07 info: Portfolio server running on-3001
+2020-11-18 11:41:08 info: Get Project Control
+2020-11-18 11:41:09 info: DB CONNECTION SUCCESS
+2020-11-18 11:41:09 info: GET /api/v1/portfolio/projects 304 507.883 ms - -
+2020-11-18 11:41:38 info: Portfolio server running on-3001
+2020-11-18 11:41:38 info: Get Project Control
+2020-11-18 11:41:39 info: DB CONNECTION SUCCESS
+2020-11-18 11:41:39 info: GET /api/v1/portfolio/projects 304 477.512 ms - -
+2020-11-18 11:41:55 info: Portfolio server running on-3001
+2020-11-18 11:41:56 info: DB CONNECTION SUCCESS
+2020-11-18 11:41:56 info: Get Project Control
+2020-11-18 11:41:57 info: GET /api/v1/portfolio/projects 304 285.213 ms - -
+2020-11-18 11:42:16 info: Portfolio server running on-3001
+2020-11-18 11:42:17 info: DB CONNECTION SUCCESS
+2020-11-18 11:42:17 info: Get Project Control
+2020-11-18 11:42:18 info: GET /api/v1/portfolio/projects 304 257.925 ms - -
+2020-11-18 11:43:02 info: Portfolio server running on-3001
+2020-11-18 11:43:03 info: Get Project Control
+2020-11-18 11:43:03 info: DB CONNECTION SUCCESS
+2020-11-18 11:43:03 info: GET /api/v1/portfolio/projects 304 430.400 ms - -
+2020-11-18 11:43:41 info: Portfolio server running on-3001
+2020-11-18 11:43:43 info: DB CONNECTION SUCCESS
+2020-11-18 11:43:44 info: Get Project Control
+2020-11-18 11:43:44 info: GET /api/v1/portfolio/projects 304 265.862 ms - -
+2020-11-18 11:43:53 info: Portfolio server running on-3001
+2020-11-18 11:43:54 info: DB CONNECTION SUCCESS
+2020-11-18 11:43:55 info: Get Project Control
+2020-11-18 11:43:55 info: GET /api/v1/portfolio/projects 304 271.740 ms - -
+2020-11-18 11:44:53 info: Portfolio server running on-3001
+2020-11-18 11:44:54 info: DB CONNECTION SUCCESS
+2020-11-18 11:44:55 info: Get Project Control
+2020-11-18 11:44:55 info: GET /api/v1/portfolio/projects 304 265.173 ms - -
+2020-11-18 11:45:08 info: Portfolio server running on-3001
+2020-11-18 11:45:09 info: DB CONNECTION SUCCESS
+2020-11-18 11:45:10 info: Get Project Control
+2020-11-18 11:45:11 info: GET /api/v1/portfolio/projects 304 290.958 ms - -
+2020-11-18 11:45:40 info: Portfolio server running on-3001
+2020-11-18 11:45:42 info: DB CONNECTION SUCCESS
+2020-11-18 11:45:43 info: Get Project Control
+2020-11-18 11:45:43 info: GET /api/v1/portfolio/projects 304 284.943 ms - -
+2020-11-18 11:46:09 info: Portfolio server running on-3001
+2020-11-18 11:46:11 info: Get Project Control
+2020-11-18 11:46:15 info: Portfolio server running on-3001
+2020-11-18 11:46:17 info: DB CONNECTION SUCCESS
+2020-11-18 11:46:17 info: Get Project Control
+2020-11-18 11:46:17 info: GET /api/v1/portfolio/projects 304 266.295 ms - -
+2020-11-18 11:46:35 info: Portfolio server running on-3001
+2020-11-18 11:46:36 info: DB CONNECTION SUCCESS
+2020-11-18 11:46:37 info: Get Project Control
+2020-11-18 11:46:38 info: GET /api/v1/portfolio/projects 304 284.789 ms - -
+2020-11-18 11:46:50 info: Portfolio server running on-3001
+2020-11-18 11:46:52 info: DB CONNECTION SUCCESS
+2020-11-18 11:46:54 info: Get Project Control
+2020-11-18 11:46:54 info: GET /api/v1/portfolio/projects 304 335.302 ms - -
+2020-11-18 11:47:57 info: Portfolio server running on-3001
+2020-11-18 11:47:58 info: DB CONNECTION SUCCESS
+2020-11-18 11:48:04 info: Portfolio server running on-3001
+2020-11-18 11:48:05 info: DB CONNECTION SUCCESS
+2020-11-18 11:48:07 info: Get Project Control
+2020-11-18 11:48:07 info: GET /api/v1/portfolio/projects 304 301.135 ms - -
+2020-11-18 11:48:18 info: Portfolio server running on-3001
+2020-11-18 11:48:20 info: DB CONNECTION SUCCESS
+2020-11-18 11:48:35 info: Portfolio server running on-3001
+2020-11-18 11:48:36 info: DB CONNECTION SUCCESS
+2020-11-18 11:48:38 info: Get Project Control
+2020-11-18 11:48:38 info: GET /api/v1/portfolio/projects 304 271.203 ms - -
+2020-11-18 11:48:56 info: Portfolio server running on-3001
+2020-11-18 11:48:57 info: DB CONNECTION SUCCESS
+2020-11-18 11:48:59 info: Portfolio server running on-3001
+2020-11-18 11:49:00 info: DB CONNECTION SUCCESS
+2020-11-18 11:49:24 info: Portfolio server running on-3001
+2020-11-18 11:49:25 info: DB CONNECTION SUCCESS
+2020-11-18 11:49:31 info: Portfolio server running on-3001
+2020-11-18 11:49:32 info: DB CONNECTION SUCCESS
+2020-11-18 11:49:33 info: Get Project Control
+2020-11-18 11:49:34 info: GET /api/v1/portfolio/projects 304 299.501 ms - -
+2020-11-18 11:50:56 info: Portfolio server running on-3001
+2020-11-18 11:50:57 info: Portfolio server running on-3001
+2020-11-18 11:50:58 info: DB CONNECTION SUCCESS
+2020-11-18 11:51:25 info: Portfolio server running on-3001
+2020-11-18 11:51:26 info: DB CONNECTION SUCCESS
+2020-11-18 11:51:43 info: Portfolio server running on-3001
+2020-11-18 11:51:45 info: Portfolio server running on-3001
+2020-11-18 11:51:46 info: DB CONNECTION SUCCESS
+2020-11-18 11:51:49 info: Get Project Control
+2020-11-18 11:51:49 info: GET /api/v1/portfolio/projects 304 280.032 ms - -
+2020-11-18 11:52:31 info: Portfolio server running on-3001
+2020-11-18 11:52:32 info: DB CONNECTION SUCCESS
+2020-11-18 11:52:33 info: Portfolio server running on-3001
+2020-11-18 11:52:34 info: DB CONNECTION SUCCESS
+2020-11-18 11:52:38 info: Get Project Control
+2020-11-18 11:52:38 info: GET /api/v1/portfolio/projects 304 283.278 ms - -
+2020-11-18 11:52:59 info: Portfolio server running on-3001
+2020-11-18 11:53:00 info: DB CONNECTION SUCCESS
+2020-11-18 11:53:06 info: Portfolio server running on-3001
+2020-11-18 11:53:07 info: DB CONNECTION SUCCESS
+2020-11-18 11:53:10 info: Portfolio server running on-3001
+2020-11-18 11:53:11 info: DB CONNECTION SUCCESS
+2020-11-18 11:53:13 info: Get Project Control
+2020-11-18 11:53:14 info: GET /api/v1/portfolio/projects 304 276.220 ms - -
+2020-11-18 11:53:39 info: Portfolio server running on-3001
+2020-11-18 11:53:41 info: Portfolio server running on-3001
+2020-11-18 11:53:42 info: DB CONNECTION SUCCESS
+2020-11-18 11:53:45 info: Get Project Control
+2020-11-18 11:53:45 info: GET /api/v1/portfolio/projects 304 256.023 ms - -
+2020-11-18 11:54:07 info: Portfolio server running on-3001
+2020-11-18 11:54:08 info: DB CONNECTION SUCCESS
+2020-11-18 11:54:09 info: Get Project Control
+2020-11-18 11:54:10 info: GET /api/v1/portfolio/projects 304 302.373 ms - -
+2020-11-18 11:54:44 info: Portfolio server running on-3001
+2020-11-18 11:54:46 info: DB CONNECTION SUCCESS
+2020-11-18 11:54:47 info: Get Project Control
+2020-11-18 11:54:47 info: GET /api/v1/portfolio/projects 304 274.248 ms - -
+2020-11-18 11:55:49 info: Portfolio server running on-3001
+2020-11-18 11:55:50 info: DB CONNECTION SUCCESS
+2020-11-18 11:55:52 info: Get Project Control
+2020-11-18 11:55:52 info: GET /api/v1/portfolio/projects 304 264.595 ms - -
+2020-11-18 11:56:41 info: Portfolio server running on-3001
+2020-11-18 11:56:42 info: DB CONNECTION SUCCESS
+2020-11-18 11:56:45 info: Portfolio server running on-3001
+2020-11-18 11:56:46 info: DB CONNECTION SUCCESS
+2020-11-18 11:56:50 info: Portfolio server running on-3001
+2020-11-18 11:56:51 info: DB CONNECTION SUCCESS
+2020-11-18 11:56:53 info: Get Project Control
+2020-11-18 11:56:54 info: GET /api/v1/portfolio/projects 304 283.153 ms - -
+2020-11-18 11:57:20 info: Portfolio server running on-3001
+2020-11-18 11:57:21 info: Portfolio server running on-3001
+2020-11-18 11:57:22 info: DB CONNECTION SUCCESS
+2020-11-18 11:58:44 info: Portfolio server running on-3001
+2020-11-18 11:58:45 info: DB CONNECTION SUCCESS
+2020-11-18 11:58:48 info: Portfolio server running on-3001
+2020-11-18 11:58:49 info: DB CONNECTION SUCCESS
+2020-11-18 11:58:54 info: Portfolio server running on-3001
+2020-11-18 11:58:56 info: DB CONNECTION SUCCESS
+2020-11-18 11:58:59 info: Portfolio server running on-3001
+2020-11-18 11:59:00 info: DB CONNECTION SUCCESS
+2020-11-18 11:59:03 info: Portfolio server running on-3001
+2020-11-18 11:59:04 info: DB CONNECTION SUCCESS
+2020-11-18 11:59:17 info: Portfolio server running on-3001
+2020-11-18 11:59:18 info: DB CONNECTION SUCCESS
+2020-11-18 11:59:23 info: Portfolio server running on-3001
+2020-11-18 11:59:24 info: DB CONNECTION SUCCESS
+2020-11-18 11:59:43 info: Portfolio server running on-3001
+2020-11-18 11:59:44 info: DB CONNECTION SUCCESS
+2020-11-18 11:59:46 info: Portfolio server running on-3001
+2020-11-18 11:59:48 info: DB CONNECTION SUCCESS
+2020-11-18 11:59:50 info: Get Project Control
+2020-11-18 11:59:51 info: GET /api/v1/portfolio/projects 304 298.404 ms - -
+2020-11-18 12:00:28 info: Portfolio server running on-3001
+2020-11-18 12:00:29 info: DB CONNECTION SUCCESS
+2020-11-18 12:00:34 info: Portfolio server running on-3001
+2020-11-18 12:00:35 info: DB CONNECTION SUCCESS
+2020-11-18 12:00:37 info: Get Project Control
+2020-11-18 12:00:38 info: GET /api/v1/portfolio/projects 304 276.799 ms - -
+2020-11-18 12:00:59 info: Portfolio server running on-3001
+2020-11-18 12:01:00 info: DB CONNECTION SUCCESS
+2020-11-18 12:01:15 info: Portfolio server running on-3001
+2020-11-18 12:01:16 info: DB CONNECTION SUCCESS
+2020-11-18 12:01:20 info: Portfolio server running on-3001
+2020-11-18 12:01:21 info: DB CONNECTION SUCCESS
+2020-11-18 12:01:24 info: Portfolio server running on-3001
+2020-11-18 12:01:25 info: DB CONNECTION SUCCESS
+2020-11-18 12:01:28 info: Get Project Control
+2020-11-18 12:01:28 info: GET /api/v1/portfolio/projects 304 260.621 ms - -
+2020-11-18 12:01:58 info: Portfolio server running on-3001
+2020-11-18 12:01:59 info: DB CONNECTION SUCCESS
+2020-11-18 12:02:02 info: Get Project Control
+2020-11-18 12:02:02 info: GET /api/v1/portfolio/projects 304 262.920 ms - -
+2020-11-18 12:02:18 info: Portfolio server running on-3001
+2020-11-18 12:02:19 info: DB CONNECTION SUCCESS
+2020-11-18 12:02:22 info: Get Project Control
+2020-11-18 12:02:22 info: GET /api/v1/portfolio/projects 304 266.601 ms - -
+2020-11-18 12:02:40 info: Portfolio server running on-3001
+2020-11-18 12:02:41 info: DB CONNECTION SUCCESS
+2020-11-18 12:02:44 info: Get Project Control
+2020-11-18 12:02:44 info: GET /api/v1/portfolio/projects 304 285.117 ms - -
+2020-11-18 12:03:03 info: Portfolio server running on-3001
+2020-11-18 12:03:04 info: DB CONNECTION SUCCESS
+2020-11-18 12:03:07 info: Portfolio server running on-3001
+2020-11-18 12:03:08 info: DB CONNECTION SUCCESS
+2020-11-18 12:03:10 info: Portfolio server running on-3001
+2020-11-18 12:03:11 info: DB CONNECTION SUCCESS
+2020-11-18 12:03:17 info: Get Project Control
+2020-11-18 12:03:17 info: GET /api/v1/portfolio/projects 304 253.003 ms - -
+2020-11-18 12:03:38 info: Portfolio server running on-3001
+2020-11-18 12:03:39 info: DB CONNECTION SUCCESS
+2020-11-18 12:03:41 info: Get Project Control
+2020-11-18 12:03:42 info: GET /api/v1/portfolio/projects 304 238.126 ms - -
+2020-11-18 12:04:25 info: Portfolio server running on-3001
+2020-11-18 12:04:26 info: DB CONNECTION SUCCESS
+2020-11-18 12:04:29 info: Get Project Control
+2020-11-18 12:04:29 info: GET /api/v1/portfolio/projects 304 238.703 ms - -
+2020-11-18 12:05:13 info: Portfolio server running on-3001
+2020-11-18 12:05:14 info: DB CONNECTION SUCCESS
+2020-11-18 12:05:17 info: Get Project Control
+2020-11-18 12:05:17 info: GET /api/v1/portfolio/projects 304 284.191 ms - -
+2020-11-18 12:05:47 info: Portfolio server running on-3001
+2020-11-18 12:05:48 info: DB CONNECTION SUCCESS
+2020-11-18 12:05:51 info: Get Project Control
+2020-11-18 12:05:51 info: GET /api/v1/portfolio/projects 304 248.875 ms - -
+2020-11-18 12:06:05 info: Portfolio server running on-3001
+2020-11-18 12:06:06 info: DB CONNECTION SUCCESS
+2020-11-18 12:06:09 info: Get Project Control
+2020-11-18 12:06:09 info: GET /api/v1/portfolio/projects 304 275.767 ms - -
+2020-11-18 12:09:06 info: Portfolio server running on-3001
+2020-11-18 12:09:07 info: DB CONNECTION SUCCESS
+2020-11-18 12:09:10 info: Get Project Control
+2020-11-18 12:09:10 info: GET /api/v1/portfolio/projects 304 256.413 ms - -
+2020-11-18 12:10:12 info: Portfolio server running on-3001
+2020-11-18 12:10:13 info: DB CONNECTION SUCCESS
+2020-11-18 12:10:15 info: Get Project Control
+2020-11-18 12:10:16 info: GET /api/v1/portfolio/projects 304 269.065 ms - -
+2020-11-19 10:13:17 info: DB CONNECTION SUCCESS
+2020-11-19 10:14:11 info: Portfolio server running on-3001
+2020-11-19 10:14:14 info: DB CONNECTION SUCCESS
+2020-11-19 10:15:10 info: Portfolio server running on-3001
+2020-11-19 10:15:11 info: DB CONNECTION SUCCESS
+2020-11-19 10:15:16 info: Get Project Control
+2020-11-19 10:15:17 info: GET /api/v1/portfolio/projects 304 575.952 ms - -
+2020-11-19 10:16:19 info: Portfolio server running on-3001
+2020-11-19 10:16:20 info: DB CONNECTION SUCCESS
+2020-11-19 10:22:29 info: Portfolio server running on-3001
+2020-11-19 10:22:31 info: DB CONNECTION SUCCESS
+2020-11-19 10:22:39 info: Get Project Control
+2020-11-19 10:22:39 info: GET /api/v1/portfolio/projects 304 418.281 ms - -
+2020-11-19 10:25:12 info: Portfolio server running on-3001
+2020-11-19 10:25:13 info: DB CONNECTION SUCCESS
+2020-11-19 10:25:19 info: Get Project Control
+2020-11-19 10:25:19 info: GET /api/v1/portfolio/projects 304 256.713 ms - -
+2020-11-19 10:26:23 info: Portfolio server running on-3001
+2020-11-19 10:26:24 info: Get Project Control
+2020-11-19 10:26:24 info: DB CONNECTION SUCCESS
+2020-11-19 10:26:25 info: Portfolio server running on-3001
+2020-11-19 10:26:26 info: DB CONNECTION SUCCESS
+2020-11-19 10:26:42 info: Portfolio server running on-3001
+2020-11-19 10:26:42 info: Get Project Control
+2020-11-19 10:26:43 info: DB CONNECTION SUCCESS
+2020-11-19 10:26:43 info: GET /api/v1/portfolio/projects 304 977.233 ms - -
+2020-11-19 10:26:54 info: Portfolio server running on-3001
+2020-11-19 10:26:55 info: Get Project Control
+2020-11-19 10:26:56 info: DB CONNECTION SUCCESS
+2020-11-19 10:26:56 info: GET /api/v1/portfolio/projects 304 1176.176 ms - -
+2020-11-19 10:27:51 info: Portfolio server running on-3001
+2020-11-19 10:27:52 info: Get Project Control
+2020-11-19 10:27:52 info: DB CONNECTION SUCCESS
+2020-11-19 10:27:53 info: GET /api/v1/portfolio/projects 304 887.025 ms - -
+2020-11-19 10:28:09 info: Get Project Control
+2020-11-19 10:28:10 info: GET /api/v1/portfolio/projects 304 244.975 ms - -
+2020-11-19 10:30:59 info: Portfolio server running on-3001
+2020-11-19 10:31:01 info: DB CONNECTION SUCCESS
+2020-11-19 10:31:01 info: Get Project Control
+2020-11-19 10:31:02 info: GET /api/v1/portfolio/projects 304 296.622 ms - -
+2020-11-19 10:31:43 info: Portfolio server running on-3001
+2020-11-19 10:31:44 info: DB CONNECTION SUCCESS
+2020-11-19 10:31:44 info: Get Project Control
+2020-11-19 10:31:45 info: GET /api/v1/portfolio/projects 304 451.030 ms - -
+2020-11-19 10:31:58 info: Portfolio server running on-3001
+2020-11-19 10:31:59 info: Get Project Control
+2020-11-19 10:31:59 info: DB CONNECTION SUCCESS
+2020-11-19 10:31:59 info: GET /api/v1/portfolio/projects 304 380.891 ms - -
+2020-11-19 10:32:05 info: Portfolio server running on-3001
+2020-11-19 10:32:06 info: Get Project Control
+2020-11-19 10:32:06 info: DB CONNECTION SUCCESS
+2020-11-19 10:32:06 info: GET /api/v1/portfolio/projects 304 611.856 ms - -
+2020-11-19 10:32:18 info: Portfolio server running on-3001
+2020-11-19 10:32:19 info: Get Project Control
+2020-11-19 10:32:19 info: DB CONNECTION SUCCESS
+2020-11-19 10:32:19 info: GET /api/v1/portfolio/projects 304 321.202 ms - -
+2020-11-19 10:35:18 info: Portfolio server running on-3001
+2020-11-19 10:35:19 info: Get Project Control
+2020-11-19 10:35:20 info: DB CONNECTION SUCCESS
+2020-11-19 10:35:20 info: GET /api/v1/portfolio/projects 304 265.273 ms - -
+2020-11-19 10:35:25 info: Portfolio server running on-3001
+2020-11-19 10:35:26 info: Get Project Control
+2020-11-19 10:35:27 info: DB CONNECTION SUCCESS
+2020-11-19 10:35:27 info: GET /api/v1/portfolio/projects 304 971.549 ms - -
+2020-11-19 10:36:07 info: Portfolio server running on-3001
+2020-11-19 10:36:08 info: Get Project Control
+2020-11-19 10:36:09 info: DB CONNECTION SUCCESS
+2020-11-19 10:36:09 info: GET /api/v1/portfolio/projects 304 508.344 ms - -
+2020-11-19 10:36:12 info: Portfolio server running on-3001
+2020-11-19 10:36:13 info: Get Project Control
+2020-11-19 10:36:13 info: DB CONNECTION SUCCESS
+2020-11-19 10:36:14 info: GET /api/v1/portfolio/projects 304 487.518 ms - -
+2020-11-19 10:36:16 info: Portfolio server running on-3001
+2020-11-19 10:36:17 info: DB CONNECTION SUCCESS
+2020-11-19 10:36:21 info: Get Project Control
+2020-11-19 10:36:21 info: GET /api/v1/portfolio/projects 304 260.172 ms - -
+2020-11-19 10:38:45 info: Portfolio server running on-3001
+2020-11-19 10:38:47 info: Get Project Control
+2020-11-19 10:38:47 info: DB CONNECTION SUCCESS
+2020-11-19 10:38:47 info: GET /api/v1/portfolio/projects 304 301.135 ms - -
+2020-11-19 10:40:20 info: Portfolio server running on-3001
+2020-11-19 10:40:22 info: Get Project Control
+2020-11-19 10:40:22 info: DB CONNECTION SUCCESS
+2020-11-19 10:40:22 info: GET /api/v1/portfolio/projects 304 584.055 ms - -
+2020-11-19 10:41:13 info: Portfolio server running on-3001
+2020-11-19 10:41:14 info: Get Project Control
+2020-11-19 10:41:15 info: DB CONNECTION SUCCESS
+2020-11-19 10:41:16 info: GET /api/v1/portfolio/projects 304 1859.772 ms - -
+2020-11-19 10:41:37 info: Portfolio server running on-3001
+2020-11-19 10:41:38 info: Get Project Control
+2020-11-19 10:41:39 info: DB CONNECTION SUCCESS
+2020-11-19 10:41:39 info: GET /api/v1/portfolio/projects 304 1563.708 ms - -
+2020-11-19 10:42:03 info: Portfolio server running on-3001
+2020-11-19 10:42:04 info: Get Project Control
+2020-11-19 10:42:05 info: DB CONNECTION SUCCESS
+2020-11-19 10:42:05 info: GET /api/v1/portfolio/projects 304 1011.343 ms - -
+2020-11-19 10:42:20 info: Portfolio server running on-3001
+2020-11-19 10:42:22 info: Get Project Control
+2020-11-19 10:42:22 info: DB CONNECTION SUCCESS
+2020-11-19 10:42:22 info: GET /api/v1/portfolio/projects 304 568.904 ms - -
+2020-11-19 10:42:38 info: Portfolio server running on-3001
+2020-11-19 10:42:39 info: Get Project Control
+2020-11-19 10:42:39 info: DB CONNECTION SUCCESS
+2020-11-19 10:42:40 info: GET /api/v1/portfolio/projects 304 954.475 ms - -
+2020-11-19 10:42:45 info: Portfolio server running on-3001
+2020-11-19 10:42:46 info: Get Project Control
+2020-11-19 10:42:46 info: DB CONNECTION SUCCESS
+2020-11-19 10:42:46 info: GET /api/v1/portfolio/projects 304 760.089 ms - -
+2020-11-19 10:43:43 info: Portfolio server running on-3001
+2020-11-19 10:43:45 info: Portfolio server running on-3001
+2020-11-19 10:43:49 info: DB CONNECTION SUCCESS
+2020-11-19 10:43:56 info: Portfolio server running on-3001
+2020-11-19 10:43:56 info: Get Project Control
+2020-11-19 10:43:59 info: DB CONNECTION SUCCESS
+2020-11-19 10:43:59 info: GET /api/v1/portfolio/projects 304 2962.567 ms - -
+2020-11-19 10:44:21 info: Portfolio server running on-3001
+2020-11-19 10:44:22 info: Get Project Control
+2020-11-19 10:44:23 info: DB CONNECTION SUCCESS
+2020-11-19 10:44:23 info: GET /api/v1/portfolio/projects 304 896.360 ms - -
+2020-11-19 10:44:56 info: Get Project Control
+2020-11-19 10:44:57 info: GET /api/v1/portfolio/projects 304 770.977 ms - -
+2020-11-19 10:45:49 info: Portfolio server running on-3001
+2020-11-19 10:45:50 info: Get Project Control
+2020-11-19 10:45:51 info: DB CONNECTION SUCCESS
+2020-11-19 10:45:51 info: GET /api/v1/portfolio/projects 304 495.083 ms - -

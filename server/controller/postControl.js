@@ -23,7 +23,12 @@ const createPost = async (req, res) => {
   let savedProject = await Project.create(newProject);
   const { projectId } = savedProject;
   // update type and techstack array
-  let updateOptions = { $push: { techstack: techstack, type: type } };
+  let updateOptions = {
+    $push: {
+      techstack: { $each: techstack.split(",") },
+      type: { $each: type.split(",") },
+    },
+  };
 
   console.log("updateoptions:", updateOptions);
   let updatedProject = await Project.updateOne(
