@@ -71,18 +71,16 @@ const Project = ({ projects, getAllProjectAction }) => {
               <code>- Built Tools</code>
               <div className="project__card__techstack">
                 <div className="project__tech">
-                  <div>
-                    {project.newTechArray.map((tech, index) => (
-                      <p key={index}>
-                        <img
-                          src={process.env.PUBLIC_URL + tech.img}
-                          className="icon_img"
-                          alt={tech.name}
-                          title={tech.name}
-                        />
-                      </p>
-                    ))}
-                  </div>
+                  {project.newTechArray.map((tech, index) => (
+                    <p key={index}>
+                      <img
+                        src={process.env.PUBLIC_URL + tech.img}
+                        className="icon_img"
+                        alt={tech.name}
+                        title={tech.name}
+                      />
+                    </p>
+                  ))}
                 </div>
 
                 <div className="project__golive">
@@ -137,10 +135,7 @@ const Project = ({ projects, getAllProjectAction }) => {
                 </div>
               </div>
               <div className="project__description" hidden={showDescription}>
-                <p className="description">
-                  project description yes . this app does a lot of thing you
-                  would fill to fo. Love it or die
-                </p>
+                <p className="description">{project.description}</p>
               </div>
             </div>
           ))}
