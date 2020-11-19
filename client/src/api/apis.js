@@ -1,6 +1,6 @@
 import axios from "axios";
 import FormData from "form-data";
-const baseUrl =
+export const baseUrl =
   process.env.NODE_ENV === "production" ? "" : "http://localhost:3001";
 
 export const getAllProjects = async () => {

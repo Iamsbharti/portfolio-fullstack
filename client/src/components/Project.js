@@ -8,10 +8,11 @@ import { connect } from "react-redux";
 import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined";
 import ExpandLessOutlinedIcon from "@material-ui/icons/ExpandLessOutlined";
 import { getAllProjectAction } from "../redux/actions/projectAction";
-
+import { baseUrl } from "../api/apis";
 const Project = ({ projects, getAllProjectAction }) => {
   const [showCategory, setShowCategory] = useState("All");
   const [stateProjects, setStateProjects] = useState(projects);
+
   const useStyles = makeStyles((theme) => ({
     root: {
       display: "flex",
@@ -49,6 +50,7 @@ const Project = ({ projects, getAllProjectAction }) => {
   useEffect(() => {
     setStateProjects(projects);
     //console.log("projects local state::", stateProjects);
+    console.log("baseurl::", baseUrl);
   }, [projects]);
   return (
     <>
@@ -81,11 +83,13 @@ const Project = ({ projects, getAllProjectAction }) => {
             <div className="project__card" key={index}>
               <p className="project__card__name">{project.name}</p>
               <div>
-                <img
-                  src={process.env.PUBLIC_URL + "/logo512.png"}
-                  alt=""
-                  className="project__image"
-                />
+                {stateProjects.image && (
+                  <img
+                    src={`${baseUrl}/api/v1/project/picture?filename=${stateProjects.image.filename}`}
+                    alt="project image"
+                    className="project__image"
+                  />
+                )}
               </div>
               <code>- Built Tools</code>
               <div className="project__card__techstack">
