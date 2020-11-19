@@ -12,6 +12,7 @@ import { getAllProjectAction } from "../redux/actions/projectAction";
 const Project = ({ projects, getAllProjectAction }) => {
   const [showCategory, setShowCategory] = useState("All");
   const [showDescription, setShowDesc] = useState(true);
+  const [stateProjects, setStateProjects] = useState(projects);
   const useStyles = makeStyles((theme) => ({
     root: {
       display: "flex",
@@ -23,14 +24,25 @@ const Project = ({ projects, getAllProjectAction }) => {
     },
   }));
   const classes = useStyles();
-  const handleExpandIcon = () => {
-    console.log("handle expand");
-    setShowDesc(!showDescription);
+  const handleExpandIcon = (projectId) => {
+    console.log("handle expand", projectId);
+    // change global state
+    setStateProjects(
+      stateProjects.map((project) =>
+        project.projectId === projectId
+          ? { ...project, showDescription: !project.showDescription }
+          : project
+      )
+    );
   };
   useEffect(() => {
-    console.log("call projects action");
     getAllProjectAction();
+    setStateProjects(projects);
   }, []);
+  useEffect(() => {
+    setStateProjects(projects);
+    console.log("projects local state::", stateProjects);
+  }, [projects]);
   return (
     <>
       <div className="project__page">
@@ -58,7 +70,7 @@ const Project = ({ projects, getAllProjectAction }) => {
           Currently showing {showCategory} Projects
         </div>
         <div className="project__page__cards__section">
-          {projects.map((project, index) => (
+          {stateProjects.map((project, index) => (
             <div className="project__card" key={index}>
               <p className="project__card__name">{project.name}</p>
               <div>
@@ -114,27 +126,30 @@ const Project = ({ projects, getAllProjectAction }) => {
                   </p>
                   <p
                     className="expand__icon"
-                    hidden={!showDescription}
+                    hidden={!project.showDescription}
                     title="See More!!"
                   >
                     <ExpandMoreOutlinedIcon
                       fontSize="large"
-                      onClick={handleExpandIcon}
+                      onClick={() => handleExpandIcon(project.projectId)}
                     />
                   </p>
                   <p
                     className="collapse__icon"
-                    hidden={showDescription}
+                    hidden={project.showDescription}
                     title="Hide"
                   >
                     <ExpandLessOutlinedIcon
                       fontSize="large"
-                      onClick={handleExpandIcon}
+                      onClick={() => handleExpandIcon(project.projectId)}
                     />
                   </p>
                 </div>
               </div>
-              <div className="project__description" hidden={showDescription}>
+              <div
+                className="project__description"
+                hidden={project.showDescription}
+              >
                 <p className="description">{project.description}</p>
               </div>
             </div>
@@ -159,13 +174,13 @@ const mapStateToProps = (state) => {
         }
         techIconObject = { newTechArray };
         //Object.assign(project, techIconObject);
-        project = { ...project, newTechArray };
+        project = { ...project, newTechArray, showDescription: true };
       });
     });
     _projects.push(project);
   });
 
-  console.log("updated project:", projects);
+  console.log("updated project:", _projects);
 
   return { projects: _projects };
 };
