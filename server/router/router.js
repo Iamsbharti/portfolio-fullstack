@@ -5,7 +5,7 @@ const blogs = require("../controller/blogControl");
 const auth = require("../middlewares/authorization");
 const db = require("../initdb");
 const multer = require("multer");
-const { storage } = require("../initdb");
+const { storage, fetchPictures } = require("../initdb");
 
 const upload = multer({
   storage: db.storage,
@@ -30,7 +30,8 @@ router.post(
   upload.single("file"),
   blogs.createBlog
 );
-
+/**fetch pictures */
+router.get("/project/picture", fetchPictures);
 //router.post("/portfolio/createUser", users.createUser);
 router.get("/portfolio/login", users.adminLogin);
 

@@ -6748,3 +6748,13 @@
 2020-11-19 12:49:22 info: Get Project Control
 2020-11-19 12:49:23 info: DB CONNECTION SUCCESS
 2020-11-19 12:49:23 info: GET /api/v1/portfolio/projects 304 367.847 ms - -
+2020-11-19 12:56:20 info: Portfolio server running on-3001
+2020-11-19 12:56:21 info: DB CONNECTION SUCCESS
+2020-11-19 12:56:25 info: Portfolio server running on-3001
+2020-11-19 12:56:26 info: DB CONNECTION SUCCESS
+2020-11-19 12:57:22 info: Portfolio server running on-3001
+2020-11-19 12:57:23 info: DB CONNECTION SUCCESS
+2020-11-19 12:57:47 info: Portfolio server running on-3001
+2020-11-19 12:57:49 info: DB CONNECTION SUCCESS
+2020-11-19 12:59:41 info: Fetch Pictures25c9d8426a070aa357f30fb53b473265
+2020-11-19 12:59:43 info: GET /api/v1/project/picture?filename=25c9d8426a070aa357f30fb53b473265 200 1803.296 ms - -

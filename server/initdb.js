@@ -62,9 +62,23 @@ const fileFilter = (req, file, cb) => {
     cb(formatResponse(true, 500, "File Extension Not Allowed", null), false);
   }
 };
-
+// fetch pictures
+const fetchPictures = (req, res) => {
+  logger.info(`Fetch Pictures${req.query.filename}`);
+  gfs.files.findOne({ filename: req.query.filename }, (error, file) => {
+    /**file existence */
+    if (!file || file.length === 0) {
+      return res
+        .status(404)
+        .json(formatResponse(true, 404, "File Not Found", ""));
+    }
+    const readStream = gfs.createReadStream(file.filename);
+    readStream.pipe(res);
+  });
+};
 module.exports = {
   initdb,
   storage,
   fileFilter,
+  fetchPictures,
 };
