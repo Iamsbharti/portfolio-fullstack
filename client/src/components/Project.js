@@ -29,7 +29,7 @@ const Project = ({ projects, getAllProjectAction }) => {
   };
   useEffect(() => {
     console.log("call projects action");
-    getAllProjectAction();
+    //getAllProjectAction();
   }, []);
   return (
     <>
@@ -58,90 +58,92 @@ const Project = ({ projects, getAllProjectAction }) => {
           Currently showing {showCategory} Projects
         </div>
         <div className="project__page__cards__section">
-          <div className="project__card">
-            <p className="project__card__name">Twitter Clone</p>
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/logo512.png"}
-                alt=""
-                className="project__image"
-              />
-            </div>
-            <code>- Built Tools</code>
-            <div className="project__card__techstack">
-              <div className="project__tech">
-                <p>
-                  <img
-                    src={process.env.PUBLIC_URL + "/icons8-node-js-96.png"}
-                    className="icon_img"
-                    alt="NodeJs"
-                    title="NodeJs"
-                  />
-                </p>
-                <p>
-                  <img
-                    src={process.env.PUBLIC_URL + "/icons8-react-100.png"}
-                    className="icon_img"
-                    alt="ReactJs"
-                    title="ReactJs"
-                  />
-                </p>
-                <p>
-                  <img
-                    src={process.env.PUBLIC_URL + "/icons8-mongodb-96.png"}
-                    className="icon_img"
-                    alt="MongoDB"
-                    title="MongoDB"
-                  />
-                </p>
+          {projects.map((project, index) => (
+            <div className="project__card" key={index}>
+              <p className="project__card__name">{project.name}</p>
+              <div>
+                <img
+                  src={process.env.PUBLIC_URL + "/logo512.png"}
+                  alt=""
+                  className="project__image"
+                />
               </div>
+              <code>- Built Tools</code>
+              <div className="project__card__techstack">
+                <div className="project__tech">
+                  <div>
+                    {project.newTechArray.map((tech, index) => (
+                      <p key={index}>
+                        <img
+                          src={process.env.PUBLIC_URL + tech.img}
+                          className="icon_img"
+                          alt={tech.name}
+                          title={tech.name}
+                        />
+                      </p>
+                    ))}
+                  </div>
+                </div>
 
-              <div className="project__golive">
-                <p>
-                  <img
-                    src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
-                    className="icon_img"
-                    alt="github"
-                    title="SourceCode"
-                  />
-                </p>
-                <p>
-                  <img
-                    src={process.env.PUBLIC_URL + "/shuttle.png"}
-                    className="icon_img_shuttle"
-                    alt="live"
-                    title="Live"
-                  />
-                </p>
-                <p
-                  className="expand__icon"
-                  hidden={!showDescription}
-                  title="See More!!"
-                >
-                  <ExpandMoreOutlinedIcon
-                    fontSize="large"
-                    onClick={handleExpandIcon}
-                  />
-                </p>
-                <p
-                  className="collapse__icon"
-                  hidden={showDescription}
-                  title="Hide"
-                >
-                  <ExpandLessOutlinedIcon
-                    fontSize="large"
-                    onClick={handleExpandIcon}
-                  />
+                <div className="project__golive">
+                  <p>
+                    <a
+                      href={project.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
+                        className="icon_img"
+                        alt="github"
+                        title="SourceCode"
+                      />
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={process.env.PUBLIC_URL + "/shuttle.png"}
+                        className="icon_img_shuttle"
+                        alt="live"
+                        title="Live"
+                      />
+                    </a>
+                  </p>
+                  <p
+                    className="expand__icon"
+                    hidden={!showDescription}
+                    title="See More!!"
+                  >
+                    <ExpandMoreOutlinedIcon
+                      fontSize="large"
+                      onClick={handleExpandIcon}
+                    />
+                  </p>
+                  <p
+                    className="collapse__icon"
+                    hidden={showDescription}
+                    title="Hide"
+                  >
+                    <ExpandLessOutlinedIcon
+                      fontSize="large"
+                      onClick={handleExpandIcon}
+                    />
+                  </p>
+                </div>
+              </div>
+              <div className="project__description" hidden={showDescription}>
+                <p className="description">
+                  project description yes . this app does a lot of thing you
+                  would fill to fo. Love it or die
                 </p>
               </div>
             </div>
-            <div className="project__description" hidden={showDescription}>
-              <p className="description">
-                project description yes . this app does a lot of thing you would
-                fill to fo. Love it or die
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </>
@@ -167,7 +169,7 @@ const mapStateToProps = (state) => {
 
   console.log("updated project:", projects);
 
-  return projects;
+  return { projects };
 };
 const mapActionToProps = {
   getAllProjectAction,
