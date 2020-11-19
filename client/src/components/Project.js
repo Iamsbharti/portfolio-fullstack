@@ -11,7 +11,6 @@ import { getAllProjectAction } from "../redux/actions/projectAction";
 
 const Project = ({ projects, getAllProjectAction }) => {
   const [showCategory, setShowCategory] = useState("All");
-  const [showDescription, setShowDesc] = useState(true);
   const [stateProjects, setStateProjects] = useState(projects);
   const useStyles = makeStyles((theme) => ({
     root: {
@@ -20,6 +19,14 @@ const Project = ({ projects, getAllProjectAction }) => {
       flexWrap: "wrap",
       "& > *": {
         margin: theme.spacing(0.5),
+      },
+    },
+    root1: {
+      display: "flex",
+      margin: "2px 0px 0px 0px",
+      flexWrap: "wrap",
+      "& > *": {
+        margin: theme.spacing(0.1),
       },
     },
   }));
@@ -41,7 +48,7 @@ const Project = ({ projects, getAllProjectAction }) => {
   }, []);
   useEffect(() => {
     setStateProjects(projects);
-    console.log("projects local state::", stateProjects);
+    //console.log("projects local state::", stateProjects);
   }, [projects]);
   return (
     <>
@@ -151,6 +158,11 @@ const Project = ({ projects, getAllProjectAction }) => {
                 hidden={project.showDescription}
               >
                 <p className="description">{project.description}</p>
+                <div className={classes.root1}>
+                  {project.type.map((tp, index) => (
+                    <Chip color="primary" label={tp} key={index} size="small" />
+                  ))}
+                </div>
               </div>
             </div>
           ))}
@@ -180,7 +192,7 @@ const mapStateToProps = (state) => {
     _projects.push(project);
   });
 
-  console.log("updated project:", _projects);
+  //console.log("updated project:", _projects);
 
   return { projects: _projects };
 };

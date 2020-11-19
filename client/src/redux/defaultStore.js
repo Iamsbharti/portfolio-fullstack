@@ -5,7 +5,7 @@ export const projects = [
     name: "Project1",
     demo: "https://p.appp.com",
     code: "https://op.app.com",
-    type: "fullstack",
+    type: ["fullstack"],
     description: "A full stack app",
     userId: "3SJTd1d-m",
     techstack: ["reactjs"],
