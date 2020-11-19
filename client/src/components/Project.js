@@ -29,7 +29,7 @@ const Project = ({ projects, getAllProjectAction }) => {
   };
   useEffect(() => {
     console.log("call projects action");
-    //getAllProjectAction();
+    getAllProjectAction();
   }, []);
   return (
     <>
@@ -147,6 +147,7 @@ const Project = ({ projects, getAllProjectAction }) => {
 const mapStateToProps = (state) => {
   const { projects } = state;
   // update state
+  let _projects = [];
   projects.map((project) => {
     let techArray = project.techstack;
     let newTechArray = [];
@@ -157,14 +158,16 @@ const mapStateToProps = (state) => {
           newTechArray.push({ name: tech, img: icon.img });
         }
         techIconObject = { newTechArray };
-        Object.assign(project, techIconObject);
+        //Object.assign(project, techIconObject);
+        project = { ...project, newTechArray };
       });
     });
+    _projects.push(project);
   });
 
   console.log("updated project:", projects);
 
-  return { projects };
+  return { projects: _projects };
 };
 const mapActionToProps = {
   getAllProjectAction,
