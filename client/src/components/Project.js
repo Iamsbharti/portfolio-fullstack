@@ -78,18 +78,19 @@ const Project = ({ projects, getAllProjectAction }) => {
     );
 
     // sort project based on filter
-    let sortedProjects = projects.filter(
-      (project) =>
-        project.techstack.includes(filter.toLowerCase()) ||
-        project.type.includes(filter.toLowerCase())
-    );
-    if (sortedProjects.length === 0) {
-      setNotFound(false);
-    } else {
-      setNotFound(true);
-    }
+    let sortedProjects =
+      filter === "All"
+        ? projects
+        : projects.filter(
+            (project) =>
+              project.techstack.includes(filter.toLowerCase()) ||
+              project.type.includes(filter.toLowerCase())
+          );
+    // show/hide project not found div
+    setNotFound(sortedProjects.length === 0 ? false : true);
+
+    // set global state
     setStateProjects(sortedProjects);
-    //console.log("sorted projects::", stateProjects);
   };
   return (
     <>
