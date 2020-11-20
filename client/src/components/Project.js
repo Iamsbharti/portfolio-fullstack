@@ -34,7 +34,7 @@ const Project = ({ projects, getAllProjectAction }) => {
   }));
   const classes = useStyles();
   const handleExpandIcon = (projectId) => {
-    console.log("handle expand", projectId);
+    //console.log("handle expand", projectId);
     // change global state
     setStateProjects(
       stateProjects.map((project) =>
@@ -46,25 +46,25 @@ const Project = ({ projects, getAllProjectAction }) => {
   };
   useEffect(() => {
     getAllProjectAction();
-    console.log("effect 1");
+    //console.log("effect 1");
     setStateProjects(projects);
     setNotFound(true);
   }, []);
   useEffect(() => {
     setStateProjects(projects);
-    console.log("effect 2");
+    //console.log("effect 2");
     setNotFound(true);
-    console.log("projects local state::", stateProjects);
+    //console.log("projects local state::", stateProjects);
   }, [projects]);
   useEffect(() => {
-    //setStateProjects(stateProjects);
-    console.log("effect 2");
-    console.log("projects local state::", stateProjects);
+    setStateProjects(stateProjects);
+    //console.log("effect 2");
+    //console.log("projects local state::", stateProjects);
   }, [filterCategory]);
 
   /**Filter projects */
   const handleFilterProjects = (filter) => {
-    console.log("Filter projects", filter);
+    //console.log("Filter projects", filter);
     // set view category
     setShowCategory(filter);
 
