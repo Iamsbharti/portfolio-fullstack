@@ -306,7 +306,6 @@ code {
   object-fit: contain;
 }
 .project__not__found {
-  height: 100vh;
   background-image: var(--bg-black-grad);
   color: white;
   display: flex;
@@ -314,7 +313,7 @@ code {
   align-items: center;
 }
 .project__not__found > p {
-  margin: 0px 0px 240px 0px;
+  margin: -188px 0px 10px 0px;
   font-size: 20px;
   font-weight: 900;
   text-shadow: blanchedalmond;
