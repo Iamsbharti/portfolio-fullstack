@@ -305,3 +305,24 @@ code {
   width: 100% !important;
   object-fit: contain;
 }
+.project__not__found {
+  height: 100vh;
+  background-image: var(--bg-black-grad);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project__not__found > p {
+  margin: 0px 0px 240px 0px;
+  font-size: 20px;
+  font-weight: 900;
+  text-shadow: blanchedalmond;
+  /**margin fo mobile 0px 0px 395px 0px**/
+}
+.project__not__found > img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 240px;
+}

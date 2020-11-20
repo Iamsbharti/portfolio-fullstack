@@ -13,6 +13,7 @@ const Project = ({ projects, getAllProjectAction }) => {
   const [showCategory, setShowCategory] = useState("All");
   const [stateProjects, setStateProjects] = useState(projects);
   const [filterCategory, setFilterCategory] = useState(projectFilterCategory);
+  const [notFound, setNotFound] = useState(true);
   const useStyles = makeStyles((theme) => ({
     root: {
       display: "flex",
@@ -47,10 +48,12 @@ const Project = ({ projects, getAllProjectAction }) => {
     getAllProjectAction();
     console.log("effect 1");
     setStateProjects(projects);
+    setNotFound(true);
   }, []);
   useEffect(() => {
     setStateProjects(projects);
     console.log("effect 2");
+    setNotFound(true);
     console.log("projects local state::", stateProjects);
   }, [projects]);
   useEffect(() => {
@@ -58,6 +61,7 @@ const Project = ({ projects, getAllProjectAction }) => {
     console.log("effect 2");
     console.log("projects local state::", stateProjects);
   }, [filterCategory]);
+
   /**Filter projects */
   const handleFilterProjects = (filter) => {
     console.log("Filter projects", filter);
@@ -79,6 +83,11 @@ const Project = ({ projects, getAllProjectAction }) => {
         project.techstack.includes(filter.toLowerCase()) ||
         project.type.includes(filter.toLowerCase())
     );
+    if (sortedProjects.length === 0) {
+      setNotFound(false);
+    } else {
+      setNotFound(true);
+    }
     setStateProjects(sortedProjects);
     //console.log("sorted projects::", stateProjects);
   };
@@ -202,6 +211,15 @@ const Project = ({ projects, getAllProjectAction }) => {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+      <div hidden={notFound}>
+        <div className="project__not__found" hidden={notFound}>
+          <img
+            src={process.env.PUBLIC_URL + "icons8-brick-wall-64.png"}
+            alt="build"
+          />
+          <p>I am still building them...</p>
         </div>
       </div>
     </>
