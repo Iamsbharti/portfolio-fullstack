@@ -12,7 +12,7 @@ import { baseUrl } from "../api/apis";
 const Project = ({ projects, getAllProjectAction }) => {
   const [showCategory, setShowCategory] = useState("All");
   const [stateProjects, setStateProjects] = useState(projects);
-
+  const [filterCategory, setFilterCategory] = useState(projectFilterCategory);
   const useStyles = makeStyles((theme) => ({
     root: {
       display: "flex",
@@ -45,19 +45,49 @@ const Project = ({ projects, getAllProjectAction }) => {
   };
   useEffect(() => {
     getAllProjectAction();
+    console.log("effect 1");
     setStateProjects(projects);
   }, []);
   useEffect(() => {
     setStateProjects(projects);
-    //console.log("projects local state::", stateProjects);
-    console.log("baseurl::", baseUrl);
+    console.log("effect 2");
+    console.log("projects local state::", stateProjects);
   }, [projects]);
+  useEffect(() => {
+    //setStateProjects(stateProjects);
+    console.log("effect 2");
+    console.log("projects local state::", stateProjects);
+  }, [filterCategory]);
+  /**Filter projects */
+  const handleFilterProjects = (filter) => {
+    console.log("Filter projects", filter);
+    // set view category
+    setShowCategory(filter);
+
+    // set icon as disabled
+    setFilterCategory(
+      filterCategory.map((category) =>
+        category.name === filter
+          ? { ...category, disabled: true }
+          : { ...category, disabled: false }
+      )
+    );
+
+    // sort project based on filter
+    let sortedProjects = projects.filter(
+      (project) =>
+        project.techstack.includes(filter.toLowerCase()) ||
+        project.type.includes(filter.toLowerCase())
+    );
+    setStateProjects(sortedProjects);
+    //console.log("sorted projects::", stateProjects);
+  };
   return (
     <>
       <div className="project__page">
         <div className="project__page__filters">
           <div className={classes.root}>
-            {projectFilterCategory.map((filter, index) => (
+            {filterCategory.map((filter, index) => (
               <Chip
                 color="secondary"
                 label={filter.name}
@@ -71,12 +101,14 @@ const Project = ({ projects, getAllProjectAction }) => {
                 clickable
                 variant="outlined"
                 disabled={filter.disabled}
+                onClick={() => handleFilterProjects(filter.name)}
               />
             ))}
           </div>
         </div>
         <div className="project__page__intro">
-          Currently showing {showCategory} Projects
+          Currently showing{" "}
+          <code style={{ color: "#087CA7" }}>{showCategory}</code> Projects
         </div>
         <div className="project__page__cards__section">
           {stateProjects.map((project, index) => (
