@@ -83,9 +83,9 @@ const Project = ({ projects, getAllProjectAction }) => {
             <div className="project__card" key={index}>
               <p className="project__card__name">{project.name}</p>
               <div>
-                {stateProjects.image && (
+                {project.image && (
                   <img
-                    src={`${baseUrl}/api/v1/project/picture?filename=${stateProjects.image.filename}`}
+                    src={`${baseUrl}/api/v1/project/picture?filename=${project.image.filename}`}
                     alt="project image"
                     className="project__image"
                   />
