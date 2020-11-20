@@ -82,7 +82,7 @@ const Project = ({ projects, getAllProjectAction }) => {
           {stateProjects.map((project, index) => (
             <div className="project__card" key={index}>
               <p className="project__card__name">{project.name}</p>
-              <div>
+              <div className="project__image">
                 {project.image && (
                   <img
                     src={`${baseUrl}/api/v1/project/picture?filename=${project.image.filename}`}

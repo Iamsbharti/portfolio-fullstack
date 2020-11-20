@@ -301,3 +301,7 @@ code {
   font-size: 20px;
   text-transform: uppercase;
 }
+.project__image {
+  width: 100% !important;
+  object-fit: contain;
+}
