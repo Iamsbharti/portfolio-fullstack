@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
 import "../../css/Profile.css";
 import NavBar from "./NavBar";
-
+import { useHistory } from "react-router-dom";
 import {
   nameIntro,
   intro,
@@ -50,6 +50,30 @@ const IntroSection = () => {
     storyIntro(story);
 
     sliderIntro(sliderText1, sliderText2, sliderText3);
+  }, []);
+
+  /**handle login for  admin*/
+  let history = useHistory();
+  const loginFunction = useCallback((event) => {
+    const ctrlKey = 17;
+    const cmdKey = 91;
+    const lKey = 76;
+    console.log("event-keycode::", event.keyCode);
+    let evt = event || window.event; // IE support
+    let c = evt.keyCode;
+    let ctrlDown = evt.ctrlKey || evt.metaKey; // Mac support
+    if (ctrlDown && c == lKey) {
+      console.log("login page");
+      history.push("/login");
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener("keydown", loginFunction, false);
+
+    return () => {
+      document.removeEventListener("keydown", loginFunction, false);
+    };
   }, []);
   return (
     <div>
