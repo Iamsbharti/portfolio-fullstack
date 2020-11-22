@@ -62,7 +62,7 @@ const IntroSection = () => {
     let evt = event || window.event; // IE support
     let c = evt.keyCode;
     let ctrlDown = evt.ctrlKey || evt.metaKey; // Mac support
-    if (ctrlDown && c == lKey) {
+    if (ctrlDown && c === lKey) {
       console.log("login page");
       history.push("/login");
     }

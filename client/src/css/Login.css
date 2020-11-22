@@ -32,6 +32,7 @@ input {
   border: none;
   line-height: 2;
   background-image: var(--bg-gray-grad);
+  border-radius: 11px;
 }
 input:focus {
   outline: none;
@@ -60,5 +61,13 @@ input::-webkit-input-placeholder {
   transition: all 0.2s ease-in-out;
 }
 .button__login:hover {
+  transform: scale(1.1);
+}
+span {
+  cursor: pointer;
+  display: inline-block;
+  margin: 2px;
+}
+span:hover {
   transform: scale(1.1);
 }

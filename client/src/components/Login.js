@@ -33,6 +33,9 @@ const Login = () => {
           <div className="button__login">
             <p>Login</p>
           </div>
+          <span>
+            <code>Cancel?</code>
+          </span>
         </form>
       </div>
     </div>
