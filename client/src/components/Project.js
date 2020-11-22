@@ -36,6 +36,7 @@ const Project = ({ projects, getAllProjectAction }) => {
   const handleExpandIcon = (projectId) => {
     //console.log("handle expand", projectId);
     // change global state
+    // eslint-disable-next-line
     setStateProjects(
       stateProjects.map((project) =>
         project.projectId === projectId
@@ -46,21 +47,19 @@ const Project = ({ projects, getAllProjectAction }) => {
   };
   useEffect(() => {
     getAllProjectAction();
-    //console.log("effect 1");
     setStateProjects(projects);
     setNotFound(true);
   }, []);
+
   useEffect(() => {
     setStateProjects(projects);
-    //console.log("effect 2");
     setNotFound(true);
-    //console.log("projects local state::", stateProjects);
+    // eslint-disable-next-line
   }, [projects]);
   useEffect(() => {
     setStateProjects(stateProjects);
-    //console.log("effect 2");
-    //console.log("projects local state::", stateProjects);
-  }, [filterCategory]);
+    // eslint-disable-next-line
+  }, [filterCategory, stateProjects]);
 
   /**Filter projects */
   const handleFilterProjects = (filter) => {
@@ -128,7 +127,7 @@ const Project = ({ projects, getAllProjectAction }) => {
                 {project.image && (
                   <img
                     src={`${baseUrl}/api/v1/project/picture?filename=${project.image.filename}`}
-                    alt="project image"
+                    alt="demon"
                     className="project__image"
                   />
                 )}
@@ -233,18 +232,15 @@ const mapStateToProps = (state) => {
   projects.map((project) => {
     let techArray = project.techstack;
     let newTechArray = [];
-    let techIconObject = {};
-    projectFilterCategory.map((icon) => {
+    projectFilterCategory.map((icon) =>
       techArray.map((tech) => {
         if (tech.toLowerCase() === icon.name.toLowerCase()) {
           newTechArray.push({ name: tech, img: icon.img });
         }
-        techIconObject = { newTechArray };
-        //Object.assign(project, techIconObject);
-        project = { ...project, newTechArray, showDescription: true };
-      });
-    });
-    _projects.push(project);
+        return (project = { ...project, newTechArray, showDescription: true });
+      })
+    );
+    return _projects.push(project);
   });
 
   //console.log("updated project:", _projects);
