@@ -8,15 +8,20 @@ const Login = () => {
     <div className="login__page">
       <div className="login__content">
         <form className="login__form">
+          <p>Are you Admin? Authenticate!!!</p>
           <label for="loginId">LoginId</label>
+          <br />
           <input
             type="text"
             name="loginId"
             placeholder="userid"
             value={loginId}
+            autoFocus
             onClick={(event) => setLoginId(event.target.value)}
           />
-          <label for="loginId">Secret</label>
+          <br />
+          <label for="password">Secret</label>
+          <br />
           <input
             type="password"
             name="password"
