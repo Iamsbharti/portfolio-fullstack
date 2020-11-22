@@ -1,0 +1,10 @@
+.manage__page {
+  min-height: 100vh;
+  background-image: var(--bg-black-grad);
+  color: white;
+}
+.manage__page > p {
+  padding: 30px;
+}
+.manage__options {
+}
