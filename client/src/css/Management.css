@@ -3,8 +3,21 @@
   background-image: var(--bg-black-grad);
   color: white;
 }
-.manage__page > p {
+.manage__page > code {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 900;
   padding: 30px;
 }
 .manage__options {
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+p {
+  transition: all 0.2s ease-in-out;
+}
+
+p:hover {
+  transform: scale(1.1);
 }
