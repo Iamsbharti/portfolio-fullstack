@@ -1,15 +1,32 @@
 import React, { useState, useEffect } from "react";
 import "../css/Login.css";
-
+import { useHistory } from "react-router-dom";
 const Login = () => {
   const [loginId, setLoginId] = useState("");
   const [password, setPassword] = useState("");
+  let history = useHistory();
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    switch (name) {
+      case "loginId":
+        setLoginId(value);
+        break;
+      case "password":
+        setPassword(value);
+        break;
+      default:
+    }
+  };
+  const handleLogin = () => {
+    history.push("/manage");
+  };
   return (
     <div className="login__page">
       <div className="login__content">
         <form className="login__form">
           <p>Are you Admin? Authenticate!!!</p>
-          <label for="loginId">LoginId</label>
+          <label htmlFor="loginId">LoginId</label>
           <br />
           <input
             type="text"
@@ -17,23 +34,23 @@ const Login = () => {
             placeholder="Id Please?"
             value={loginId}
             autoFocus
-            onClick={(event) => setLoginId(event.target.value)}
+            onChange={handleChange}
           />
           <br />
-          <label for="password">Secret</label>
+          <label htmlFor="password">Secret</label>
           <br />
           <input
             type="password"
             name="password"
             placeholder="Secret"
             value={password}
-            onClick={(event) => setPassword(event.target.value)}
+            onChange={handleChange}
           />
           <br />
-          <div className="button__login">
+          <div className="button__login" onClick={handleLogin}>
             <p>Login</p>
           </div>
-          <span>
+          <span onClick={() => history.push("/")}>
             <code>Cancel?</code>
           </span>
         </form>

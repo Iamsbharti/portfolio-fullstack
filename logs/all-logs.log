@@ -10969,3 +10969,36 @@
 2020-11-22 21:13:53 info: DB CONNECTION SUCCESS
 2020-11-22 21:14:29 info: Portfolio server running on-3001
 2020-11-22 21:14:34 info: DB CONNECTION SUCCESS
+2020-11-22 21:16:26 info: Portfolio server running on-3001
+2020-11-22 21:16:29 info: DB CONNECTION SUCCESS
+2020-11-22 21:17:10 info: Portfolio server running on-3001
+2020-11-22 21:17:12 info: DB CONNECTION SUCCESS
+2020-11-22 21:18:16 info: Portfolio server running on-3001
+2020-11-22 21:18:18 info: DB CONNECTION SUCCESS
+2020-11-22 21:19:37 info: Portfolio server running on-3001
+2020-11-22 21:19:40 info: DB CONNECTION SUCCESS
+2020-11-22 21:20:50 info: Portfolio server running on-3001
+2020-11-22 21:20:53 info: DB CONNECTION SUCCESS
+2020-11-22 21:20:57 info: Portfolio server running on-3001
+2020-11-22 21:20:59 info: DB CONNECTION SUCCESS
+2020-11-22 21:21:01 info: Portfolio server running on-3001
+2020-11-22 21:21:03 info: DB CONNECTION SUCCESS
+2020-11-22 21:21:34 info: Portfolio server running on-3001
+2020-11-22 21:21:36 info: DB CONNECTION SUCCESS
+2020-11-22 21:21:45 info: Portfolio server running on-3001
+2020-11-22 21:21:46 info: DB CONNECTION SUCCESS
+2020-11-22 21:22:03 info: Portfolio server running on-3001
+2020-11-22 21:22:05 info: DB CONNECTION SUCCESS
+2020-11-22 21:23:03 info: Portfolio server running on-3001
+2020-11-22 21:23:05 info: DB CONNECTION SUCCESS
+2020-11-22 21:23:14 info: Portfolio server running on-3001
+2020-11-22 21:23:15 info: Portfolio server running on-3001
+2020-11-22 21:23:17 info: DB CONNECTION SUCCESS
+2020-11-22 21:23:28 info: Portfolio server running on-3001
+2020-11-22 21:23:29 info: DB CONNECTION SUCCESS
+2020-11-22 21:23:41 info: Portfolio server running on-3001
+2020-11-22 21:23:43 info: DB CONNECTION SUCCESS
+2020-11-22 21:24:03 info: Portfolio server running on-3001
+2020-11-22 21:24:05 info: DB CONNECTION SUCCESS
+2020-11-22 21:24:37 info: Get Project Control
+2020-11-22 21:24:37 info: GET /api/v1/portfolio/projects 304 308.521 ms - -
