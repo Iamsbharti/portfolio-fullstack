@@ -13,6 +13,9 @@ function App() {
         <Route path="/projects" exact component={Project} />
         <Route path="/blogs" exact component={Blogs} />
         <Route path="/login" exact component={Login} />
+        <Route path="/manage" exact component={Login} />
+        <Route path="/manage/projects" exact component={Login} />
+        <Route path="/manage/blogs" exact component={Login} />
         <Route component={PageNotFound} />
       </Switch>
     </div>

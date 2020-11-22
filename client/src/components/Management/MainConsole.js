@@ -5,10 +5,10 @@ const MainConsole = () => {
   let history = useHistory();
   return (
     <div className="manage__page">
-      <p>Management Console</p>
+      <code>Management Console</code>
       <div className="manage__options">
-        <p onClick={() => history.push("/manage/Projects")}>Manage Projects</p>
-        <p onClick={() => history.push("/manage/Blogs")}>Manage Blogs</p>
+        <p onClick={() => history.push("/manage/projects")}>Manage Projects</p>
+        <p onClick={() => history.push("/manage/blogs")}>Manage Blogs</p>
       </div>
     </div>
   );
