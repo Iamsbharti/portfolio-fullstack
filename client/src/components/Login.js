@@ -14,7 +14,7 @@ const Login = () => {
           <input
             type="text"
             name="loginId"
-            placeholder="userid"
+            placeholder="Id Please?"
             value={loginId}
             autoFocus
             onClick={(event) => setLoginId(event.target.value)}
@@ -29,6 +29,10 @@ const Login = () => {
             value={password}
             onClick={(event) => setPassword(event.target.value)}
           />
+          <br />
+          <div className="button__login">
+            <p>Login</p>
+          </div>
         </form>
       </div>
     </div>
