@@ -54,8 +54,11 @@
 .blog__page > p {
   font-size: 30px;
   font-weight: 900;
+  padding: 20px;
 }
 .blogs {
+}
+.blog__card {
   padding: 20px;
   box-sizing: border-box;
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
@@ -66,10 +69,10 @@
   margin-bottom: 15px;
   align-self: flex-start;
   display: flex;
-  justify-content: space-between;
 }
 .blog__content {
   padding: 12px;
+  cursor: pointer;
 }
 .blog__content__topic {
   margin-bottom: 5px;
@@ -100,11 +103,10 @@
   margin-bottom: 5px;
 }
 .blog__img {
+  margin: -12px 0px -151px 82px;
 }
 .blog__img > img {
   position: absolute;
   width: auto;
   height: 191px;
-  top: 52px;
-  left: 658px;
 }
