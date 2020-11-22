@@ -5,6 +5,9 @@ import Project from "./components/Project";
 import Blogs from "./components/Blogs";
 import PageNotFound from "./components/PageNotFound";
 import Login from "./components/Login";
+import MainConsole from "./components/Management/MainConsole";
+import ManageProjects from "./components/Management/ManageProjects";
+import ManageBlogs from "./components/Management/ManageBlogs";
 function App() {
   return (
     <div className="App">
@@ -13,9 +16,9 @@ function App() {
         <Route path="/projects" exact component={Project} />
         <Route path="/blogs" exact component={Blogs} />
         <Route path="/login" exact component={Login} />
-        <Route path="/manage" exact component={Login} />
-        <Route path="/manage/projects" exact component={Login} />
-        <Route path="/manage/blogs" exact component={Login} />
+        <Route path="/manage" exact component={MainConsole} />
+        <Route path="/manage/projects" exact component={ManageProjects} />
+        <Route path="/manage/blogs" exact component={ManageBlogs} />
         <Route component={PageNotFound} />
       </Switch>
     </div>
