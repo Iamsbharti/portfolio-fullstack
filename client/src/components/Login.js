@@ -25,25 +25,21 @@ const Login = ({ error, message, adminLoginAction }) => {
     }
   };
   const handleLogin = () => {
-    console.log("Admin Login Start");
     let userInfo = { loginId: loginId, password: password };
     setAuthStatus("Authenticating...");
     adminLoginAction(userInfo);
-    console.log("error--message", error, message);
     setAuthStatus(message);
   };
   useEffect(() => {
-    console.log("Effects", error, message);
     setAuthStatus(message);
 
     if (error) {
-      console.log("login error");
       setUserStateOnError();
       setLoginId("");
       setPassword("");
+      setAuthStatus("Try Again!!");
     }
     if (!error && message === "User Authenticated") {
-      console.log("auth sucess");
       setTimeout(() => history.push("/manage"), 1200);
     }
   }, [message, error]);

@@ -16,14 +16,12 @@ export const getAllProjects = async () => {
 
 export const loginApi = async ({ loginId, password }) => {
   console.log("Login api call");
-  //http://localhost:3001/api/v1/portfolio/login
   try {
     let loginRes = await axios.post(`${baseUrl}/api/v1/portfolio/login`, {
       userName: loginId,
       password: password,
     });
 
-    console.log("Login Response:", loginRes);
     let {
       firstName,
       lastName,
@@ -44,7 +42,6 @@ export const loginApi = async ({ loginId, password }) => {
       error: loginRes.data.error,
       message: loginRes.data.message,
     };
-    console.log("return value__login:", returnVal);
     return returnVal;
   } catch (error) {
     console.warn("Error", error.message);
