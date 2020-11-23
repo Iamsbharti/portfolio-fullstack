@@ -11579,3 +11579,10 @@
 2020-11-23 12:50:47 info: Admin Login Control
 2020-11-23 12:50:47 info: pwd match-true
 2020-11-23 12:50:47 info: POST /api/v1/portfolio/login 200 524.845 ms - 486
+2020-11-23 12:51:32 info: Portfolio server running on-3001
+2020-11-23 12:51:33 info: DB CONNECTION SUCCESS
+2020-11-23 12:51:38 info: Portfolio server running on-3001
+2020-11-23 12:51:39 info: DB CONNECTION SUCCESS
+2020-11-23 12:51:42 info: Portfolio server running on-3001
+2020-11-23 12:51:45 info: Portfolio server running on-3001
+2020-11-23 12:51:46 info: DB CONNECTION SUCCESS

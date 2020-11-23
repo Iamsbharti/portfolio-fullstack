@@ -8,7 +8,6 @@ let user = {
   message: "",
 };
 export function userReducer(_user = user, action) {
-  console.log("actin --type::", action.type, _user);
   switch (action.type) {
     case ADMIN_LOGIN:
       return action.loginResponse;
