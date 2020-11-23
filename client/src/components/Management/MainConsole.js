@@ -6,9 +6,17 @@ const MainConsole = () => {
   return (
     <div className="manage__page">
       <code>Management Console</code>
+      <code style={{ color: "red", cursor: "pointer" }}>Logout</code>
+
       <div className="manage__options">
-        <p onClick={() => history.push("/manage/projects")}>Manage Projects</p>
-        <p onClick={() => history.push("/manage/blogs")}>Manage Blogs</p>
+        <div className="content__card">
+          <h2>Contents</h2>
+          <div className="divider"></div>
+          <p onClick={() => history.push("/manage/projects")}>
+            Manage Projects
+          </p>
+          <p onClick={() => history.push("/manage/blogs")}>Manage Blogs</p>
+        </div>
       </div>
     </div>
   );
