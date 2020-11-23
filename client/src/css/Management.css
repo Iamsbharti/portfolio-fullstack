@@ -36,3 +36,11 @@
 .content__card > p {
   margin: 20px;
 }
+h1 {
+  padding: 16px;
+  margin-left: 33px;
+}
+.status {
+  margin-left: 40px;
+  color: red;
+}

@@ -1,4 +1,4 @@
-import { ADMIN_LOGIN, LOGIN_ERROR } from "./actionType";
+import { ADMIN_LOGIN, LOGIN_ERROR, LOGOUT } from "./actionType";
 import * as apis from "../../api/apis";
 
 export function adminLoginAction(userInfo) {
@@ -13,5 +13,11 @@ export function setUserStateOnError() {
   console.log("error-set session::");
   return (dispatch) => {
     dispatch({ type: LOGIN_ERROR });
+  };
+}
+export function logOutAction() {
+  console.log("logging out");
+  return (dispatch) => {
+    dispatch({ type: LOGOUT });
   };
 }
