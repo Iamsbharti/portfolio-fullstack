@@ -42,7 +42,7 @@ const Login = ({ error, message, adminLoginAction }) => {
     if (!error && message === "User Authenticated") {
       setTimeout(() => history.push("/manage"), 1200);
     }
-  }, [message, error]);
+  }, [message, error, history]);
   return (
     <div className="login__page">
       <div className="login__content">

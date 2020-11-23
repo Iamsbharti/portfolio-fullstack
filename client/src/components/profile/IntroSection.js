@@ -55,8 +55,6 @@ const IntroSection = () => {
   /**handle login for  admin*/
   let history = useHistory();
   const loginFunction = useCallback((event) => {
-    const ctrlKey = 17;
-    const cmdKey = 91;
     const lKey = 76;
     console.log("event-keycode::", event.keyCode);
     let evt = event || window.event; // IE support
