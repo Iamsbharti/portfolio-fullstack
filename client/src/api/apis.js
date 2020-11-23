@@ -19,7 +19,7 @@ export const loginApi = async ({ loginId, password }) => {
   //http://localhost:3001/api/v1/portfolio/login
   try {
     let loginRes = await axios.post(`${baseUrl}/api/v1/portfolio/login`, {
-      loginId: loginId,
+      userName: loginId,
       password: password,
     });
 
@@ -37,16 +37,17 @@ export const loginApi = async ({ loginId, password }) => {
     localStorage.setItem("name", firstName + " " + lastName);
     localStorage.setItem("userName", userName);
 
-    let returnVal = loginRes.toObject();
+    let returnVal = loginRes.data.data;
     delete returnVal.authToken;
     returnVal = {
       ...returnVal,
-      error: loginRes.error,
-      message: loginRes.message,
+      error: loginRes.data.error,
+      message: loginRes.data.message,
     };
     console.log("return value__login:", returnVal);
     return returnVal;
   } catch (error) {
     console.warn("Error", error.message);
+    return error.response.data;
   }
 };

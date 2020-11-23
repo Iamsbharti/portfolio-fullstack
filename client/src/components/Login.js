@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "../css/Login.css";
 import { useHistory } from "react-router-dom";
-const Login = () => {
+import { connect } from "react-redux";
+import {
+  adminLoginAction,
+  setUserStateOnError,
+} from "../redux/actions/adminAction";
+const Login = ({ error, message, adminLoginAction }) => {
   const [loginId, setLoginId] = useState("");
   const [password, setPassword] = useState("");
+  const [authStatus, setAuthStatus] = useState("");
   let history = useHistory();
 
   const handleChange = (e) => {
@@ -19,8 +25,28 @@ const Login = () => {
     }
   };
   const handleLogin = () => {
-    history.push("/manage");
+    console.log("Admin Login Start");
+    let userInfo = { loginId: loginId, password: password };
+    setAuthStatus("Authenticating...");
+    adminLoginAction(userInfo);
+    console.log("error--message", error, message);
+    setAuthStatus(message);
   };
+  useEffect(() => {
+    console.log("Effects", error, message);
+    setAuthStatus(message);
+
+    if (error) {
+      console.log("login error");
+      setUserStateOnError();
+      setLoginId("");
+      setPassword("");
+    }
+    if (!error && message === "User Authenticated") {
+      console.log("auth sucess");
+      setTimeout(() => history.push("/manage"), 1200);
+    }
+  }, [message, error]);
   return (
     <div className="login__page">
       <div className="login__content">
@@ -53,9 +79,21 @@ const Login = () => {
           <span onClick={() => history.push("/")}>
             <code>Cancel?</code>
           </span>
+          <span>
+            <code>{authStatus}</code>
+          </span>
         </form>
       </div>
     </div>
   );
 };
-export default Login;
+const mapStateToProps = (state) => {
+  console.log("Login State:", state.user);
+  const { error, message } = state.user;
+  return { error, message };
+};
+const mapActionToPros = {
+  adminLoginAction,
+  setUserStateOnError,
+};
+export default connect(mapStateToProps, mapActionToPros)(Login);

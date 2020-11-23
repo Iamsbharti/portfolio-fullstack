@@ -33,6 +33,6 @@ router.post(
 /**fetch pictures */
 router.get("/project/picture", fetchPictures);
 //router.post("/portfolio/createUser", users.createUser);
-router.get("/portfolio/login", users.adminLogin);
+router.post("/portfolio/login", users.adminLogin);
 
 module.exports = router;
