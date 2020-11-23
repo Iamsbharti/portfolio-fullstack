@@ -8,7 +8,6 @@ const MainConsole = ({ user, logOutAction }) => {
   const [showStatus, setShowStatus] = useState(true);
   const [status, setStatus] = useState("");
   const handleLogout = () => {
-    console.log("logging out");
     logOutAction();
     setShowStatus(false);
     setStatus("Logging off, see you soon!!!");
