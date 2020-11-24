@@ -17,18 +17,18 @@ const ManageProjects = ({ projects, getAllProjectAction }) => {
   //let history = useHistory();
   const handleAddProject = () => {};
   const color = HUE[50];
-  const styles = {
+  /*const styles = {
     padding: 20,
     marginTop: 20,
     marginBottom: 20,
     height: 380,
     overflowY: "auto",
     fontFamily: "Roboto",
-  };
+  };*/
   useEffect(() => {
     console.log("get all projects");
     getAllProjectAction();
-  }, []);
+  }, [getAllProjectAction]);
   return (
     <div className="manage__page">
       <code>Manage Projects Console</code>

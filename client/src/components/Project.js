@@ -49,6 +49,7 @@ const Project = ({ projects, getAllProjectAction }) => {
     getAllProjectAction();
     setStateProjects(projects);
     setNotFound(true);
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {
