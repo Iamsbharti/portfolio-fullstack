@@ -48,3 +48,15 @@ h1 {
 .managae__content {
   padding: 30px;
 }
+.projects {
+  box-sizing: border-box;
+  border-radius: 9px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
+  margin: 5px;
+  padding: 20px;
+  position: relative;
+  height: auto;
+  width: 600px;
+}

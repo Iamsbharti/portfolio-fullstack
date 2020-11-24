@@ -72,7 +72,7 @@ const Login = ({ error, message, adminLoginAction }) => {
           <div className="button__login" onClick={handleLogin}>
             <p>Login</p>
           </div>
-          <span onClick={() => history.push("/")}>
+          <span className="cancel__span" onClick={() => history.push("/")}>
             <code>Cancel?</code>
           </span>
           <span>
