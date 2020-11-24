@@ -1,22 +1,20 @@
-import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import React, { useEffect } from "react";
+//import { useHistory } from "react-router-dom";
 import "../../css/Management.css";
 import {
   List,
   ListItem,
   ListItemText,
-  Typography,
   ListItemSecondaryAction,
   IconButton,
   Button,
 } from "@material-ui/core";
 import HUE from "@material-ui/core/colors/indigo";
 import { AddBoxOutlined, Edit, Delete } from "@material-ui/icons";
-import Divider from "@material-ui/core/Divider";
 import { connect } from "react-redux";
 import { getAllProjectAction } from "../../redux/actions/projectAction";
 const ManageProjects = ({ projects, getAllProjectAction }) => {
-  let history = useHistory();
+  //let history = useHistory();
   const handleAddProject = () => {};
   const color = HUE[50];
   const styles = {

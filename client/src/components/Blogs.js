@@ -2,7 +2,6 @@ import React from "react";
 import "../css/Blogs.css";
 import Chip from "@material-ui/core/Chip";
 import { makeStyles } from "@material-ui/core/styles";
-import Avatar from "@material-ui/core/Avatar";
 
 const Blogs = () => {
   const useStyles = makeStyles((theme) => ({

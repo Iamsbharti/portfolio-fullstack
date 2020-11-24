@@ -54,17 +54,20 @@ const IntroSection = () => {
 
   /**handle login for  admin*/
   let history = useHistory();
-  const loginFunction = useCallback((event) => {
-    const lKey = 76;
-    console.log("event-keycode::", event.keyCode);
-    let evt = event || window.event; // IE support
-    let c = evt.keyCode;
-    let ctrlDown = evt.ctrlKey || evt.metaKey; // Mac support
-    if (ctrlDown && c === lKey) {
-      console.log("login page");
-      history.push("/login");
-    }
-  }, []);
+  const loginFunction = useCallback(
+    (event) => {
+      const lKey = 76;
+      console.log("event-keycode::", event.keyCode);
+      let evt = event || window.event; // IE support
+      let c = evt.keyCode;
+      let ctrlDown = evt.ctrlKey || evt.metaKey; // Mac support
+      if (ctrlDown && c === lKey) {
+        console.log("login page");
+        history.push("/login");
+      }
+    },
+    [history]
+  );
 
   useEffect(() => {
     document.addEventListener("keydown", loginFunction, false);
@@ -72,7 +75,7 @@ const IntroSection = () => {
     return () => {
       document.removeEventListener("keydown", loginFunction, false);
     };
-  }, []);
+  }, [loginFunction]);
   return (
     <div>
       <main>
