@@ -44,3 +44,7 @@ h1 {
   margin-left: 40px;
   color: red;
 }
+/**Manage projects console**/
+.managae__content {
+  padding: 30px;
+}
