@@ -57,6 +57,14 @@ h1 {
   margin: 5px;
   padding: 20px;
   position: relative;
-  height: auto;
+  height: 400px;
   width: 600px;
+}
+
+.projects {
+  overflow-y: scroll;
+}
+.MuiTypography-body1 {
+  font-size: 16px !important;
+  font-weight: 900 !important;
 }

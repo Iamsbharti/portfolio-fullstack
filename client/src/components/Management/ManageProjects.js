@@ -12,9 +12,10 @@ import {
 } from "@material-ui/core";
 import HUE from "@material-ui/core/colors/indigo";
 import { AddBoxOutlined, Edit, Delete } from "@material-ui/icons";
+import Divider from "@material-ui/core/Divider";
 import { connect } from "react-redux";
 import { getAllProjectAction } from "../../redux/actions/projectAction";
-const ManageProjects = ({ projects }) => {
+const ManageProjects = ({ projects, getAllProjectAction }) => {
   let history = useHistory();
   const handleAddProject = () => {};
   const color = HUE[50];
@@ -27,10 +28,9 @@ const ManageProjects = ({ projects }) => {
     fontFamily: "Roboto",
   };
   useEffect(() => {
-    if (projects != undefined) {
-      getAllProjectAction();
-    }
-  }, [projects]);
+    console.log("get all projects");
+    getAllProjectAction();
+  }, []);
   return (
     <div className="manage__page">
       <code>Manage Projects Console</code>
@@ -40,12 +40,15 @@ const ManageProjects = ({ projects }) => {
           <span style={{ color: "white" }}>Add Project</span>
         </Button>
         <div className="projects">
-          <p>Current Projects</p>
+          <p className="header">Current Projects</p>
           <List component="ul">
             {projects &&
               projects.map((project, index) => (
                 <ListItem key={index}>
-                  <ListItemText primary={project.name} />
+                  <ListItemText
+                    className="project_name"
+                    primary={project.name}
+                  />
                   <IconButton>
                     <Edit style={{ color: color }} />
                   </IconButton>
@@ -66,5 +69,7 @@ const mapStateToProps = (state) => {
   const { projects } = state;
   return { projects };
 };
-const mapActioToProps = { getAllProjectAction };
-export default connect(mapStateToProps)(ManageProjects);
+const mapActionToProps = {
+  getAllProjectAction,
+};
+export default connect(mapStateToProps, mapActionToProps)(ManageProjects);
