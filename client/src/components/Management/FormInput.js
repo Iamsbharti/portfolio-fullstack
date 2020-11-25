@@ -13,23 +13,16 @@ const styles = (theme) => ({
 });
 
 const FormDialog = ({ projectToEdit, mode, classes }) => {
-  const {
-    description,
-    projectId,
-    name,
-    type,
-    techstack,
-    demo,
-    code,
-    userId,
-    image,
-  } = projectToEdit;
-  const [name, setName] = useState(mode ? name : "");
-  const [description, setDesc] = useState(mode ? description : "");
-  const [type, setType] = useState(mode ? type : "");
-  const [techstack, setTechStack] = useState(mode ? techstack : "");
-  const [demo, setDemo] = useState(mode ? demo : "");
-  const [code, setCode] = useState(mode ? code : "");
+  const [name, setName] = useState(mode ? projectToEdit.name : "");
+  const [description, setDesc] = useState(
+    mode ? projectToEdit.description : ""
+  );
+  const [type, setType] = useState(mode ? projectToEdit.type : "");
+  const [techstack, setTechStack] = useState(
+    mode ? projectToEdit.techstack : ""
+  );
+  const [demo, setDemo] = useState(mode ? projectToEdit.demo : "");
+  const [code, setCode] = useState(mode ? projectToEdit.code : "");
   const [file, setFile] = useState();
 
   return (
@@ -41,11 +34,11 @@ const FormDialog = ({ projectToEdit, mode, classes }) => {
             <TextField
               className={classes.FormControl}
               autoFocus
-              name="title"
-              placeholder="project title"
-              label="Project Title"
+              name="name"
+              placeholder="project name"
+              label="Project Name"
               margin="dense"
-              value={}
+              value={name}
               onChange={(e) => setName(e.target.value)}
             />
             <Divider />
@@ -56,7 +49,7 @@ const FormDialog = ({ projectToEdit, mode, classes }) => {
               placeholder="description"
               label="Description"
               margin="dense"
-              value={}
+              value={description}
               rowsMax={4}
               onChange={(e) => setDesc(e.target.value)}
             />
@@ -84,7 +77,7 @@ const FormDialog = ({ projectToEdit, mode, classes }) => {
               placeholder="demo link"
               label="Project Demo Link"
               margin="dense"
-              value={}
+              value={demo}
               onChange={(e) => setDemo(e.target.value)}
             />
             <Divider />
@@ -95,7 +88,7 @@ const FormDialog = ({ projectToEdit, mode, classes }) => {
               placeholder="Code Repo link"
               label="Project Code Repo Link"
               margin="dense"
-              value={}
+              value={code}
               onChange={(e) => setCode(e.target.value)}
             />
           </div>
