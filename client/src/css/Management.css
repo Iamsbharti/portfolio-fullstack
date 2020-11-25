@@ -89,3 +89,14 @@ input[type="file"] {
   display: flex;
   justify-content: space-between;
 }
+.techstack__chips {
+  margin: 20px;
+}
+.type__chips {
+  margin: 20px;
+}
+.MuiChip-root {
+}
+.MuiChip-root.Mui-disabled {
+  opacity: 60.5 !important;
+}

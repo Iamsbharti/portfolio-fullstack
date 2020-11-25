@@ -8,7 +8,7 @@ import Divider from "@material-ui/core/Divider";
 const styles = (theme) => ({
   FormControl: {
     width: 600,
-    marginTop: 10,
+    margin: 20,
   },
 });
 
@@ -53,7 +53,7 @@ const FormDialog = ({ projectToEdit, mode, classes }) => {
             />
 
             <div className="upload_cover">
-              <label HtmlFor="file-upload" className="custom-file-upload">
+              <label htmlFor="file-upload" className="custom-file-upload">
                 <p>Upload Picture</p>
                 <CloudUploadIcon title="Upload Attachment" />
               </label>

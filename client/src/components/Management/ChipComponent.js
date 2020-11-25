@@ -2,6 +2,7 @@ import React from "react";
 import { InputLabel, Paper, Avatar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Chip from "@material-ui/core/Chip";
+import { SignalWifi1BarLockSharp } from "@material-ui/icons";
 const ChipComponent = ({ chips, type }) => {
   const useStyles = makeStyles((theme) => ({
     root: {
@@ -14,6 +15,8 @@ const ChipComponent = ({ chips, type }) => {
     },
     chip: {
       margin: theme.spacing(0.5),
+      backgroundColor: "blue",
+      color: "gray",
     },
   }));
   const chipClasses = useStyles();
@@ -28,14 +31,8 @@ const ChipComponent = ({ chips, type }) => {
           return (
             <li key={index}>
               <Chip
-                avatar={
-                  <Avatar
-                    alt="Natacha"
-                    src={process.env.PUBLIC_URL + `/${filter.img}`}
-                  />
-                }
                 label={filter.name}
-                onDelete={handleDelete(filter)}
+                onDelete={() => handleDelete(filter)}
                 className={chipClasses.chip}
               />
             </li>
