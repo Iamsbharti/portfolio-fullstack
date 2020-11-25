@@ -29,7 +29,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const DialogComponent = ({ open, onCloseDialog }) => {
+const DialogComponent = ({ open, onCloseDialog, mode }) => {
   const classes = useStyles();
   const [openValue, setOpenValue] = useState(open);
   const handleClose = () => {
@@ -55,18 +55,15 @@ const DialogComponent = ({ open, onCloseDialog }) => {
               <CloseIcon />
             </IconButton>
             <Typography variant="h6" className={classes.title}>
-              Sound
+              {mode} Project
             </Typography>
             <Button autoFocus color="inherit" onClick={handleClose}>
-              save
+              {mode === "Create" ? "Create" : "Save"}
             </Button>
           </Toolbar>
         </AppBar>
         <DialogTitle>Create a new Project</DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            Enter these details and it will appear in the left pane
-          </DialogContentText>
           <FormInput postCreateClose={handleClose} />
         </DialogContent>
       </Dialog>

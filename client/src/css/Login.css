@@ -20,7 +20,7 @@ form > p {
   font-size: xx-large;
   font-weight: 900;
 }
-label {
+.label {
   margin: 22px 0px 0px 0px;
   display: inline-block;
   font-size: larger;

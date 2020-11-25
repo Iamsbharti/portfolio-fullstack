@@ -7,7 +7,7 @@ import ChipComponent from "./ChipComponent";
 import Divider from "@material-ui/core/Divider";
 const styles = (theme) => ({
   FormControl: {
-    width: 300,
+    width: 900,
     marginTop: 10,
   },
 });
@@ -35,27 +35,25 @@ const FormDialog = ({ projectToEdit, mode, classes }) => {
               className={classes.FormControl}
               autoFocus
               name="name"
-              placeholder="project name"
               label="Project Name"
               margin="dense"
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-            <Divider />
+
             <TextField
               className={classes.FormControl}
               autoFocus
               name="description"
-              placeholder="description"
               label="Description"
               margin="dense"
               value={description}
               rowsMax={4}
               onChange={(e) => setDesc(e.target.value)}
             />
-            <Divider />
-            <div class="upload_cover">
-              <label HtmlFor="file-upload" class="custom-file-upload">
+
+            <div className="upload_cover">
+              <label HtmlFor="file-upload" className="custom-file-upload">
                 <CloudUploadIcon title="Upload Attachment" />
               </label>
               <input id="file-upload" type="file" name="attachment" />

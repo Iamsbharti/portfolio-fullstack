@@ -48,7 +48,9 @@ const Login = ({ error, message, adminLoginAction }) => {
       <div className="login__content">
         <form className="login__form">
           <p>Are you Admin? Authenticate!!!</p>
-          <label htmlFor="loginId">LoginId</label>
+          <label className="label" htmlFor="loginId">
+            LoginId
+          </label>
           <br />
           <input
             type="text"
@@ -59,7 +61,9 @@ const Login = ({ error, message, adminLoginAction }) => {
             onChange={handleChange}
           />
           <br />
-          <label htmlFor="password">Secret</label>
+          <label className="label" htmlFor="password">
+            Secret
+          </label>
           <br />
           <input
             type="password"

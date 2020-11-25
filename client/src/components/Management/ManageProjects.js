@@ -16,7 +16,7 @@ import { getAllProjectAction } from "../../redux/actions/projectAction";
 import DialogComponent from "./DialogComponent";
 const ManageProjects = ({ projects, getAllProjectAction }) => {
   //let history = useHistory();
-  const handleAddProject = () => {};
+
   const color = HUE[50];
 
   useEffect(() => {
@@ -28,6 +28,7 @@ const ManageProjects = ({ projects, getAllProjectAction }) => {
   const [value, setValue] = useState(false);
   //open the dialog box
   const handleClick = () => {
+    console.log("open dialog box");
     setValue(true);
   };
   //reset the value after dialog is closed
@@ -38,12 +39,16 @@ const ManageProjects = ({ projects, getAllProjectAction }) => {
     <div className="manage__page">
       <code>Manage Projects Console</code>
       <div className="managae__content">
-        <Button onClick={handleAddProject}>
+        <Button onClick={handleClick}>
           <AddBoxOutlined color="primary" />
           <span style={{ color: "white" }}>Add Project</span>
         </Button>
         {value && (
-          <DialogComponent open={value} onCloseDialog={handleCloseDialog} />
+          <DialogComponent
+            open={value}
+            onCloseDialog={handleCloseDialog}
+            mode="Create"
+          />
         )}
         <div className="projects">
           <p className="header">Current Projects</p>
