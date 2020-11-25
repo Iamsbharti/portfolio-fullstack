@@ -14,7 +14,6 @@ const styles = (theme) => ({
 
 const FormDialog = ({ projectToEdit, mode, classes }) => {
   const {
-    title,
     description,
     projectId,
     name,
@@ -25,6 +24,14 @@ const FormDialog = ({ projectToEdit, mode, classes }) => {
     userId,
     image,
   } = projectToEdit;
+  const [name, setName] = useState(mode ? name : "");
+  const [description, setDesc] = useState(mode ? description : "");
+  const [type, setType] = useState(mode ? type : "");
+  const [techstack, setTechStack] = useState(mode ? techstack : "");
+  const [demo, setDemo] = useState(mode ? demo : "");
+  const [code, setCode] = useState(mode ? code : "");
+  const [file, setFile] = useState();
+
   return (
     <>
       <div className="input__form">
@@ -39,7 +46,7 @@ const FormDialog = ({ projectToEdit, mode, classes }) => {
               label="Project Title"
               margin="dense"
               value={}
-              onChange={(e) => setTitle(e.target.value)}
+              onChange={(e) => setName(e.target.value)}
             />
             <Divider />
             <TextField
