@@ -12280,3 +12280,37 @@
 2020-11-25 12:10:12 info: GET /api/v1/portfolio/projects 304 250.766 ms - -
 2020-11-25 12:11:06 info: Portfolio server running on-3001
 2020-11-25 12:11:07 info: DB CONNECTION SUCCESS
+2020-11-25 12:11:43 info: Portfolio server running on-3001
+2020-11-25 12:11:44 info: DB CONNECTION SUCCESS
+2020-11-25 12:11:46 info: Get Project Control
+2020-11-25 12:11:46 info: GET /api/v1/portfolio/projects 304 304.959 ms - -
+2020-11-25 12:12:50 info: Portfolio server running on-3001
+2020-11-25 12:12:51 info: DB CONNECTION SUCCESS
+2020-11-25 12:12:54 info: Get Project Control
+2020-11-25 12:12:55 info: GET /api/v1/portfolio/projects 304 252.345 ms - -
+2020-11-25 12:13:11 info: Get Project Control
+2020-11-25 12:13:12 info: GET /api/v1/portfolio/projects 304 219.722 ms - -
+2020-11-25 12:14:27 info: Portfolio server running on-3001
+2020-11-25 12:14:28 info: DB CONNECTION SUCCESS
+2020-11-25 12:14:31 info: Get Project Control
+2020-11-25 12:14:31 info: GET /api/v1/portfolio/projects 304 275.299 ms - -
+2020-11-25 12:16:31 info: Portfolio server running on-3001
+2020-11-25 12:16:32 info: DB CONNECTION SUCCESS
+2020-11-25 12:16:33 info: Get Project Control
+2020-11-25 12:16:34 info: GET /api/v1/portfolio/projects 304 316.101 ms - -
+2020-11-25 12:16:53 info: Portfolio server running on-3001
+2020-11-25 12:16:54 info: DB CONNECTION SUCCESS
+2020-11-25 12:16:55 info: Get Project Control
+2020-11-25 12:16:56 info: GET /api/v1/portfolio/projects 304 268.099 ms - -
+2020-11-25 12:17:17 info: Portfolio server running on-3001
+2020-11-25 12:17:18 info: DB CONNECTION SUCCESS
+2020-11-25 12:17:20 info: Get Project Control
+2020-11-25 12:17:20 info: GET /api/v1/portfolio/projects 304 259.250 ms - -
+2020-11-25 12:19:53 info: Portfolio server running on-3001
+2020-11-25 12:19:55 info: DB CONNECTION SUCCESS
+2020-11-25 12:21:10 info: Portfolio server running on-3001
+2020-11-25 12:21:11 info: DB CONNECTION SUCCESS
+2020-11-25 12:21:15 info: Portfolio server running on-3001
+2020-11-25 12:21:16 info: DB CONNECTION SUCCESS
+2020-11-25 12:21:18 info: Get Project Control
+2020-11-25 12:21:18 info: GET /api/v1/portfolio/projects 304 303.027 ms - -
