@@ -71,6 +71,7 @@ h1 {
 /**Form input styles**/
 .upload_cover {
   display: flex;
+  margin: 20px;
 }
 .coverpic_label {
   margin-top: -26px;
@@ -95,8 +96,10 @@ input[type="file"] {
 .type__chips {
   margin: 20px;
 }
-.MuiChip-root {
-}
+
 .MuiChip-root.Mui-disabled {
   opacity: 60.5 !important;
+}
+.MuiChip-label {
+  color: black !important;
 }

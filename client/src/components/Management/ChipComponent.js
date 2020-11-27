@@ -2,7 +2,6 @@ import React from "react";
 import { InputLabel, Paper, Avatar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Chip from "@material-ui/core/Chip";
-import { SignalWifi1BarLockSharp } from "@material-ui/icons";
 const ChipComponent = ({ chips, type }) => {
   const useStyles = makeStyles((theme) => ({
     root: {
@@ -15,8 +14,8 @@ const ChipComponent = ({ chips, type }) => {
     },
     chip: {
       margin: theme.spacing(0.5),
-      backgroundColor: "blue",
-      color: "gray",
+      backgroundColor: "white",
+      color: "black",
     },
   }));
   const chipClasses = useStyles();

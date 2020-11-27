@@ -13,10 +13,11 @@ import HUE from "@material-ui/core/colors/indigo";
 import { AddBoxOutlined, Edit, Delete } from "@material-ui/icons";
 import { connect } from "react-redux";
 import { getAllProjectAction } from "../../redux/actions/projectAction";
-import DialogComponent from "./DialogComponent";
+import FormInput from "./FormInput";
 const ManageProjects = ({ projects, getAllProjectAction }) => {
   //let history = useHistory();
-
+  const [editMode, setEditMode] = useState(false);
+  const [projectToEdit, setProjectToEdit] = useState({});
   const color = HUE[50];
 
   useEffect(() => {
@@ -44,10 +45,10 @@ const ManageProjects = ({ projects, getAllProjectAction }) => {
           <span style={{ color: "white" }}>Add Project</span>
         </Button>
         {value && (
-          <DialogComponent
+          <FormInput
             open={value}
             onCloseDialog={handleCloseDialog}
-            mode="Create"
+            mode={editMode}
           />
         )}
         <div className="projects">
