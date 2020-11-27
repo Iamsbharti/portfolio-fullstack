@@ -14,6 +14,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
+import { Delete } from "@material-ui/icons";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import { connect } from "react-redux";
 import { projectFilterCategory } from "../../redux/defaultStore";
@@ -117,7 +118,21 @@ const FormDialog = ({ open, onCloseDialog, mode, projectToEdit, classes }) => {
                     <p>Upload Picture</p>
                     <CloudUploadIcon title="Upload Attachment" />
                   </label>
-                  <input id="file-upload" type="file" name="attachment" />
+                  <input
+                    id="file-upload"
+                    type="file"
+                    name="attachment"
+                    onChange={(event) => setFile(event.target.files[0])}
+                  />
+                  <span
+                    className="upload__message"
+                    hidden={file ? false : true}
+                  >
+                    Upload Success
+                    <IconButton edge="end">
+                      <Delete onClick={() => setFile()} />
+                    </IconButton>
+                  </span>
                 </div>
                 <TextField
                   className={classes.FormControl}

@@ -44,6 +44,11 @@ const ManageProjects = ({ projects, getAllProjectAction }) => {
       projects.find((project) => project.projectId === projectId)
     );
   };
+  //handle save project
+  const handleSaveProject = (mode, projectInfo) => {
+    console.log("Saving project", mode, projectInfo);
+    // based on mode call update or create project action
+  };
   return (
     <div className="manage__page">
       <code>Manage Projects Console</code>
@@ -58,6 +63,7 @@ const ManageProjects = ({ projects, getAllProjectAction }) => {
             onCloseDialog={handleCloseDialog}
             mode={editMode}
             projectToEdit={projectToEdit}
+            saveProject={handleSaveProject}
           />
         )}
         <div className="projects">
