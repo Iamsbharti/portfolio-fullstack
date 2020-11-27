@@ -36,6 +36,14 @@ const ManageProjects = ({ projects, getAllProjectAction }) => {
   const handleCloseDialog = (_value) => {
     setValue(_value);
   };
+  //handle edit project
+  const handleEditProject = (projectId) => {
+    setEditMode(!editMode);
+    setValue(!value);
+    setProjectToEdit(
+      projects.find((project) => project.projectId === projectId)
+    );
+  };
   return (
     <div className="manage__page">
       <code>Manage Projects Console</code>
@@ -49,6 +57,7 @@ const ManageProjects = ({ projects, getAllProjectAction }) => {
             open={value}
             onCloseDialog={handleCloseDialog}
             mode={editMode}
+            projectToEdit={projectToEdit}
           />
         )}
         <div className="projects">
@@ -61,7 +70,9 @@ const ManageProjects = ({ projects, getAllProjectAction }) => {
                     className="project_name"
                     primary={project.name}
                   />
-                  <IconButton>
+                  <IconButton
+                    onClick={() => handleEditProject(project.projectId)}
+                  >
                     <Edit style={{ color: color }} />
                   </IconButton>
                   <ListItemSecondaryAction>
