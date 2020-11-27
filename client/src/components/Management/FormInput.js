@@ -81,7 +81,7 @@ const FormDialog = ({ open, onCloseDialog, mode, projectToEdit, classes }) => {
               {mode} Project
             </Typography>
             <Button autoFocus color="inherit" onClick={handleClose}>
-              {mode === "Create" ? "Create" : "Save"}
+              {mode ? "Save" : "Create"}
             </Button>
           </Toolbar>
         </AppBar>
