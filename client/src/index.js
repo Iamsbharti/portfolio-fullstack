@@ -7,12 +7,10 @@ import configureStore from "./redux/store";
 import { Provider as ReduxProvider } from "react-redux";
 const store = configureStore();
 ReactDOM.render(
-  <React.StrictMode>
-    <ReduxProvider store={store}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </ReduxProvider>
-  </React.StrictMode>,
+  <ReduxProvider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </ReduxProvider>,
   document.getElementById("root")
 );

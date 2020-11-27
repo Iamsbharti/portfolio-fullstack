@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {
   TextField,
   withStyles,
@@ -20,12 +20,12 @@ import { connect } from "react-redux";
 import { projectFilterCategory } from "../../redux/defaultStore";
 import ChipComponent from "./ChipComponent";
 import Divider from "@material-ui/core/Divider";
-const styles = (theme) => ({
+const styles = makeStyles((theme) => ({
   FormControl: {
     width: 600,
     margin: 20,
   },
-});
+}));
 const useStyles = makeStyles((theme) => ({
   appBar: {
     position: "relative",
@@ -35,12 +35,18 @@ const useStyles = makeStyles((theme) => ({
     flex: 1,
   },
 }));
-
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
-const FormDialog = ({ open, onCloseDialog, mode, projectToEdit, classes }) => {
+const FormDialog = ({
+  open,
+  onCloseDialog,
+  mode,
+  projectToEdit,
+  saveProject,
+}) => {
   const diaLogClasses = useStyles();
+  const formClasses = styles();
   const [openValue, setOpenValue] = useState(open);
   const handleClose = () => {
     setOpenValue(false);
@@ -59,7 +65,19 @@ const FormDialog = ({ open, onCloseDialog, mode, projectToEdit, classes }) => {
   const [demo, setDemo] = useState(mode ? projectToEdit.demo : "");
   const [code, setCode] = useState(mode ? projectToEdit.code : "");
   const [file, setFile] = useState();
-
+  const handleProject = () => {
+    console.log("Save project FormINput");
+    let projectInfo = {
+      name: name,
+      description: description,
+      type: type,
+      techstack: techstack,
+      file: file,
+      demo: demo,
+      code: code,
+    };
+    saveProject(mode, projectInfo);
+  };
   return (
     <>
       <Dialog
@@ -81,7 +99,7 @@ const FormDialog = ({ open, onCloseDialog, mode, projectToEdit, classes }) => {
             <Typography variant="h6" className={diaLogClasses.title}>
               {mode} Project
             </Typography>
-            <Button autoFocus color="inherit" onClick={handleClose}>
+            <Button autoFocus color="inherit" onClick={handleProject}>
               {mode ? "Save" : "Create"}
             </Button>
           </Toolbar>
@@ -93,7 +111,7 @@ const FormDialog = ({ open, onCloseDialog, mode, projectToEdit, classes }) => {
             <div className="form__card">
               <div className="form__content__left">
                 <TextField
-                  className={classes.FormControl}
+                  className={formClasses.FormControl}
                   autoFocus
                   name="name"
                   label="Project Name"
@@ -103,7 +121,7 @@ const FormDialog = ({ open, onCloseDialog, mode, projectToEdit, classes }) => {
                 />
 
                 <TextField
-                  className={classes.FormControl}
+                  className={formClasses.FormControl}
                   autoFocus
                   name="description"
                   label="Description"
@@ -129,13 +147,13 @@ const FormDialog = ({ open, onCloseDialog, mode, projectToEdit, classes }) => {
                     hidden={file ? false : true}
                   >
                     Upload Success
-                    <IconButton edge="end">
-                      <Delete onClick={() => setFile()} />
+                    <IconButton edge="end" onClick={() => setFile()}>
+                      <Delete />
                     </IconButton>
                   </span>
                 </div>
                 <TextField
-                  className={classes.FormControl}
+                  className={formClasses.FormControl}
                   autoFocus
                   name="code"
                   placeholder="Code Repo link"
@@ -146,7 +164,7 @@ const FormDialog = ({ open, onCloseDialog, mode, projectToEdit, classes }) => {
                 />
                 <Divider />
                 <TextField
-                  className={classes.FormControl}
+                  className={formClasses.FormControl}
                   autoFocus
                   name="demo"
                   placeholder="demo link"
@@ -182,7 +200,4 @@ const mapStateToProps = (state) => {
   return state;
 };
 const mapActionToProps = {};
-export default connect(
-  mapStateToProps,
-  mapActionToProps
-)(withStyles(styles)(FormDialog));
+export default connect(mapStateToProps, mapActionToProps)(FormDialog);

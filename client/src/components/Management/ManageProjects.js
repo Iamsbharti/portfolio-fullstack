@@ -46,7 +46,12 @@ const ManageProjects = ({ projects, getAllProjectAction }) => {
   };
   //handle save project
   const handleSaveProject = (mode, projectInfo) => {
-    console.log("Saving project", mode, projectInfo);
+    console.log("Saving project ManageProject", mode, projectInfo);
+    if (mode) {
+      console.log("edit /update project");
+    } else {
+      console.log("create new project");
+    }
     // based on mode call update or create project action
   };
   return (
