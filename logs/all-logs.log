@@ -12901,3 +12901,9 @@
 2020-11-27 11:29:57 info: DB CONNECTION SUCCESS
 2020-11-27 11:29:59 info: Get Project Control
 2020-11-27 11:30:00 info: GET /api/v1/portfolio/projects 304 243.540 ms - -
+2020-11-27 11:30:34 info: Portfolio server running on-3001
+2020-11-27 11:30:36 info: DB CONNECTION SUCCESS
+2020-11-27 11:30:38 info: Get Project Control
+2020-11-27 11:30:39 info: GET /api/v1/portfolio/projects 304 275.748 ms - -
+2020-11-27 11:30:50 info: Portfolio server running on-3001
+2020-11-27 11:30:51 info: DB CONNECTION SUCCESS
