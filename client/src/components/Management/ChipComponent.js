@@ -19,15 +19,23 @@ const ChipComponent = ({ chips, type, updateChipContent }) => {
     },
   }));
   const chipClasses = useStyles();
-
-  const updateChip = () => {
-    updateChipContent();
-  };
   const [chipValues, setChipValues] = useState();
-
   useEffect(() => {
     setChipValues(chips.map((chip) => chip.name));
   }, [chips]);
+
+  const updateChip = (chip, action) => {
+    console.log("updating chip", chip, action);
+    switch (action) {
+      case "add":
+        setChipValues([...chipValues, chip]);
+        break;
+      case "delete":
+        setChipValues(chipValues.filter((val) => val !== chip));
+        break;
+    }
+    updateChipContent();
+  };
   return (
     <>
       <InputLabel htmlFor={type}>{type}</InputLabel>
@@ -36,7 +44,6 @@ const ChipComponent = ({ chips, type, updateChipContent }) => {
           value={chipValues}
           onAdd={(chip) => updateChip(chip, "add")}
           onDelete={(chip, index) => updateChip(chip, "delete")}
-          placeholder="Type a name  hit enter"
         />
       </paper>
     </>
