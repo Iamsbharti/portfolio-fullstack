@@ -78,6 +78,8 @@ const FormDialog = ({
     };
     saveProject(mode, projectInfo);
   };
+  // handle delete chip component
+  const handleUpdateChipComponent = () => {};
   return (
     <>
       <Dialog
@@ -179,6 +181,7 @@ const FormDialog = ({
                   <ChipComponent
                     chips={projectFilterCategory}
                     type="Techstack"
+                    updateChipContent={handleUpdateChipComponent}
                   />
                 </div>
                 <Divider />
@@ -186,6 +189,7 @@ const FormDialog = ({
                   <ChipComponent
                     chips={projectFilterCategory}
                     type="ProjectType"
+                    updateChipContent={handleUpdateChipComponent}
                   />
                 </div>
               </div>

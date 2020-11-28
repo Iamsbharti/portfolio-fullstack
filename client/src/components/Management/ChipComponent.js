@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { InputLabel, Paper, Avatar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import Chip from "@material-ui/core/Chip";
-const ChipComponent = ({ chips, type }) => {
+import ChipInput from "material-ui-chip-input";
+const ChipComponent = ({ chips, type, updateChipContent }) => {
   const useStyles = makeStyles((theme) => ({
     root: {
       display: "flex",
@@ -22,22 +22,25 @@ const ChipComponent = ({ chips, type }) => {
   const handleDelete = (filter) => {
     console.log("Delete:", filter);
   };
+  const updateChip = () => {
+    updateChipContent();
+  };
+  const [chipValues, setChipValues] = useState();
+
+  useEffect(() => {
+    setChipValues(chips.map((chip) => chip.name));
+  }, [chips]);
   return (
     <>
       <InputLabel htmlFor={type}>{type}</InputLabel>
-      <Paper component="ul" className={chipClasses.root}>
-        {chips.map((filter, index) => {
-          return (
-            <li key={index}>
-              <Chip
-                label={filter.name}
-                onDelete={() => handleDelete(filter)}
-                className={chipClasses.chip}
-              />
-            </li>
-          );
-        })}
-      </Paper>
+      <paper className={chipClasses.root}>
+        <ChipInput
+          value={chipValues}
+          onAdd={(chip) => updateChipContent(chip, "add")}
+          onDelete={(chip, index) => updateChipContent(chip, "delete")}
+          placeholder="Type a name  hit enter"
+        />
+      </paper>
     </>
   );
 };

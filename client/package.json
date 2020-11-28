@@ -12,6 +12,7 @@
     "dateformat": "^3.0.3",
     "form-data": "^3.0.0",
     "gsap": "^3.5.1",
+    "material-ui-chip-input": "^2.0.0-beta.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-gsap": "^2.2.1",
