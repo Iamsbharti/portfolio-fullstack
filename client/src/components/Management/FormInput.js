@@ -82,10 +82,11 @@ const FormDialog = ({
   const handleUpdateChipComponent = (updatedChips, type) => {
     console.log("handle update chip Form Input::", updatedChips, type);
     switch (type) {
-      case "techstack":
+      case "Techstack":
         setTechStack(updatedChips);
+        console.log("updated tech stack array::", techstack);
         break;
-      case "type":
+      case "ProjectType":
         setType(updatedChips);
         break;
     }
