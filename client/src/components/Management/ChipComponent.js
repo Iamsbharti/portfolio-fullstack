@@ -19,9 +19,7 @@ const ChipComponent = ({ chips, type, updateChipContent }) => {
     },
   }));
   const chipClasses = useStyles();
-  const handleDelete = (filter) => {
-    console.log("Delete:", filter);
-  };
+
   const updateChip = () => {
     updateChipContent();
   };
@@ -36,8 +34,8 @@ const ChipComponent = ({ chips, type, updateChipContent }) => {
       <paper className={chipClasses.root}>
         <ChipInput
           value={chipValues}
-          onAdd={(chip) => updateChipContent(chip, "add")}
-          onDelete={(chip, index) => updateChipContent(chip, "delete")}
+          onAdd={(chip) => updateChip(chip, "add")}
+          onDelete={(chip, index) => updateChip(chip, "delete")}
           placeholder="Type a name  hit enter"
         />
       </paper>
