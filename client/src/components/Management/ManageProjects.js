@@ -14,6 +14,8 @@ import { AddBoxOutlined, Edit, Delete } from "@material-ui/icons";
 import { connect } from "react-redux";
 import { getAllProjectAction } from "../../redux/actions/projectAction";
 import FormInput from "./FormInput";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const ManageProjects = ({ projects, getAllProjectAction }) => {
   //let history = useHistory();
   const [editMode, setEditMode] = useState(false);
@@ -96,6 +98,7 @@ const ManageProjects = ({ projects, getAllProjectAction }) => {
           </List>
         </div>
       </div>
+      <ToastContainer autoClose={1599} hideProgressBar />
     </div>
   );
 };

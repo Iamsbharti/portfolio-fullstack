@@ -1,5 +1,6 @@
 import axios from "axios";
 import FormData from "form-data";
+import { toast } from "react-toastify";
 export const baseUrl =
   process.env.NODE_ENV === "production" ? "" : "http://localhost:3001";
 
@@ -45,6 +46,51 @@ export const loginApi = async ({ loginId, password }) => {
     return returnVal;
   } catch (error) {
     console.warn("Error", error.message);
+    return error.response.data;
+  }
+};
+export const createProject = async (projectInfo) => {
+  console.log("Create Project api::", projectInfo);
+  let data = new FormData();
+  const {
+    name,
+    description,
+    type,
+    techstack,
+    demo,
+    code,
+    file,
+    userId,
+  } = projectInfo;
+  data.append("userId", userId);
+  data.append("name", name);
+  data.append("description", description);
+  data.append("type", type);
+  data.append("techstack", techstack);
+  data.append("demo", demo);
+  data.append("code", code);
+  data.append("file", file);
+  console.log("Auth token::", localStorage.getItem("authToken"));
+
+  let createProjectConfig = {
+    method: "post",
+    url: `${baseUrl}/api/v1/portfolio/createProject?userId=${userId}`,
+    headers: {
+      authToken: localStorage.getItem("authToken"),
+    },
+    data: data,
+  };
+
+  try {
+    let createProjectResponse = await axios(createProjectConfig);
+    console.log("create project success::", createProjectResponse.data.message);
+    if (!createProjectResponse.data.error) {
+      toast.success("Project Created");
+    }
+    return createProjectResponse.data.data;
+  } catch (error) {
+    console.warn("Create Project Error::", error.response.data);
+    toast.error(error.response.data.message);
     return error.response.data;
   }
 };
