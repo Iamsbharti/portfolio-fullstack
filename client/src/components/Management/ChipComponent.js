@@ -28,24 +28,28 @@ const ChipComponent = ({ chips, type, updateChipContent }) => {
     console.log("updating chip", chip, action);
     switch (action) {
       case "add":
-        setChipValues([...chipValues, chip]);
+        let addedChips = [...chipValues, chip];
+        setChipValues(addedChips);
+        updateChipContent(addedChips, type);
+
         break;
       case "delete":
-        setChipValues(chipValues.filter((val) => val !== chip));
+        let deletedChips = chipValues.filter((val) => val !== chip);
+        setChipValues(deletedChips);
+        updateChipContent(deletedChips, type);
         break;
     }
-    updateChipContent();
   };
   return (
     <>
       <InputLabel htmlFor={type}>{type}</InputLabel>
-      <paper className={chipClasses.root}>
+      <Paper className={chipClasses.root}>
         <ChipInput
           value={chipValues}
           onAdd={(chip) => updateChip(chip, "add")}
           onDelete={(chip, index) => updateChip(chip, "delete")}
         />
-      </paper>
+      </Paper>
     </>
   );
 };

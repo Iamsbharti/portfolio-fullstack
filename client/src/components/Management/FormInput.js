@@ -79,7 +79,17 @@ const FormDialog = ({
     saveProject(mode, projectInfo);
   };
   // handle delete chip component
-  const handleUpdateChipComponent = () => {};
+  const handleUpdateChipComponent = (updatedChips, type) => {
+    console.log("handle update chip Form Input::", updatedChips, type);
+    switch (type) {
+      case "techstack":
+        setTechStack(updatedChips);
+        break;
+      case "type":
+        setType(updatedChips);
+        break;
+    }
+  };
   return (
     <>
       <Dialog
