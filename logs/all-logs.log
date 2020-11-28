@@ -13617,3 +13617,72 @@
 2020-11-28 15:06:42 info: DB CONNECTION SUCCESS
 2020-11-28 15:06:45 info: Get Project Control
 2020-11-28 15:06:45 info: GET /api/v1/portfolio/projects 304 246.019 ms - -
+2020-11-28 15:09:46 info: Portfolio server running on-3001
+2020-11-28 15:09:47 info: DB CONNECTION SUCCESS
+2020-11-28 15:09:52 info: Portfolio server running on-3001
+2020-11-28 15:09:53 info: DB CONNECTION SUCCESS
+2020-11-28 15:09:56 info: Get Project Control
+2020-11-28 15:09:56 info: GET /api/v1/portfolio/projects 304 334.287 ms - -
+2020-11-28 15:10:03 info: Portfolio server running on-3001
+2020-11-28 15:10:04 info: DB CONNECTION SUCCESS
+2020-11-28 15:10:06 info: Get Project Control
+2020-11-28 15:10:06 info: GET /api/v1/portfolio/projects 304 276.287 ms - -
+2020-11-28 15:10:32 info: Portfolio server running on-3001
+2020-11-28 15:10:33 info: DB CONNECTION SUCCESS
+2020-11-28 15:10:36 info: Get Project Control
+2020-11-28 15:10:36 info: GET /api/v1/portfolio/projects 304 242.230 ms - -
+2020-11-28 15:11:41 info: OPTIONS /api/v1/portfolio/createProject?userId=undefined 204 0.658 ms - 0
+2020-11-28 15:11:41 info: Authorizing user
+2020-11-28 15:11:41 info: POST /api/v1/portfolio/createProject?userId=undefined 400 6.152 ms - 71
+2020-11-28 15:11:41 info: File Info:[object Object]
+2020-11-28 15:11:41 info: Create Post Control
+2020-11-28 15:12:30 info: Portfolio server running on-3001
+2020-11-28 15:12:31 info: DB CONNECTION SUCCESS
+2020-11-28 15:12:35 info: Get Project Control
+2020-11-28 15:12:35 info: GET /api/v1/portfolio/projects 200 251.658 ms - 6896
+2020-11-28 15:13:29 info: OPTIONS /api/v1/portfolio/createProject?userId=3SJTd1d-m 204 1.502 ms - 0
+2020-11-28 15:13:29 info: Authorizing user
+2020-11-28 15:13:29 info: File Info:[object Object]
+2020-11-28 15:13:29 info: Create Post Control
+2020-11-28 15:13:30 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 882.399 ms - 632
+2020-11-28 15:14:15 info: Portfolio server running on-3001
+2020-11-28 15:14:16 info: DB CONNECTION SUCCESS
+2020-11-28 15:14:19 info: Get Project Control
+2020-11-28 15:14:19 info: GET /api/v1/portfolio/projects 200 322.594 ms - 7465
+2020-11-28 15:14:34 info: Portfolio server running on-3001
+2020-11-28 15:14:35 info: DB CONNECTION SUCCESS
+2020-11-28 15:14:37 info: Get Project Control
+2020-11-28 15:14:37 info: GET /api/v1/portfolio/projects 304 297.276 ms - -
+2020-11-28 15:14:42 info: Portfolio server running on-3001
+2020-11-28 15:14:43 info: DB CONNECTION SUCCESS
+2020-11-28 15:14:46 info: Get Project Control
+2020-11-28 15:14:46 info: GET /api/v1/portfolio/projects 304 261.655 ms - -
+2020-11-28 15:15:34 info: OPTIONS /api/v1/portfolio/createProject?userId=3SJTd1d-m 204 0.960 ms - 0
+2020-11-28 15:15:34 info: Authorizing user
+2020-11-28 15:15:34 info: File Info:[object Object]
+2020-11-28 15:15:35 info: Create Post Control
+2020-11-28 15:15:35 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 935.132 ms - 635
+2020-11-28 15:16:08 info: Portfolio server running on-3001
+2020-11-28 15:16:10 info: DB CONNECTION SUCCESS
+2020-11-28 15:16:12 info: Get Project Control
+2020-11-28 15:16:13 info: GET /api/v1/portfolio/projects 200 366.316 ms - 8037
+2020-11-28 15:16:18 info: Portfolio server running on-3001
+2020-11-28 15:16:20 info: DB CONNECTION SUCCESS
+2020-11-28 15:16:22 info: Get Project Control
+2020-11-28 15:16:24 info: Portfolio server running on-3001
+2020-11-28 15:16:25 info: DB CONNECTION SUCCESS
+2020-11-28 15:16:28 info: Get Project Control
+2020-11-28 15:16:28 info: GET /api/v1/portfolio/projects 304 339.923 ms - -
+2020-11-28 15:16:46 info: Portfolio server running on-3001
+2020-11-28 15:16:48 info: DB CONNECTION SUCCESS
+2020-11-28 15:16:51 info: Get Project Control
+2020-11-28 15:16:51 info: GET /api/v1/portfolio/projects 304 323.208 ms - -
+2020-11-28 15:16:57 info: Portfolio server running on-3001
+2020-11-28 15:17:00 info: DB CONNECTION SUCCESS
+2020-11-28 15:17:02 info: Get Project Control
+2020-11-28 15:17:02 info: GET /api/v1/portfolio/projects 304 345.828 ms - -
+2020-11-28 15:17:43 info: OPTIONS /api/v1/portfolio/createProject?userId=3SJTd1d-m 204 0.872 ms - 0
+2020-11-28 15:17:43 info: Authorizing user
+2020-11-28 15:17:43 info: File Info:[object Object]
+2020-11-28 15:17:44 info: Create Post Control
+2020-11-28 15:17:44 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 933.450 ms - 623

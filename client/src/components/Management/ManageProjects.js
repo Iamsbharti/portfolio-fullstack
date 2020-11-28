@@ -12,11 +12,18 @@ import {
 import HUE from "@material-ui/core/colors/indigo";
 import { AddBoxOutlined, Edit, Delete } from "@material-ui/icons";
 import { connect } from "react-redux";
-import { getAllProjectAction } from "../../redux/actions/projectAction";
+import {
+  getAllProjectAction,
+  createProjectAction,
+} from "../../redux/actions/projectAction";
 import FormInput from "./FormInput";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const ManageProjects = ({ projects, getAllProjectAction }) => {
+const ManageProjects = ({
+  projects,
+  getAllProjectAction,
+  createProjectAction,
+}) => {
   //let history = useHistory();
   const [editMode, setEditMode] = useState(false);
   const [projectToEdit, setProjectToEdit] = useState({});
@@ -48,13 +55,15 @@ const ManageProjects = ({ projects, getAllProjectAction }) => {
   };
   //handle save project
   const handleSaveProject = (mode, projectInfo) => {
+    // based on mode call update or create project action
     console.log("Saving project ManageProject", mode, projectInfo);
     if (mode) {
       console.log("edit /update project");
     } else {
       console.log("create new project");
+      createProjectAction(projectInfo);
+      setValue(!value);
     }
-    // based on mode call update or create project action
   };
   return (
     <div className="manage__page">
@@ -108,5 +117,6 @@ const mapStateToProps = (state) => {
 };
 const mapActionToProps = {
   getAllProjectAction,
+  createProjectAction,
 };
 export default connect(mapStateToProps, mapActionToProps)(ManageProjects);
