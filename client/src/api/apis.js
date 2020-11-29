@@ -94,3 +94,53 @@ export const createProject = async (projectInfo) => {
     return error.response.data;
   }
 };
+export const updateProject = async (projectInfo) => {
+  console.log("update Project api::", projectInfo);
+  let data = new FormData();
+  const {
+    name,
+    description,
+    type,
+    techstack,
+    demo,
+    code,
+    file,
+    fileChg,
+    userId,
+  } = projectInfo;
+  data.append("userId", userId);
+  data.append("name", name);
+  data.append("description", description);
+  data.append("type", type);
+  data.append("techstack", techstack);
+  data.append("demo", demo);
+  data.append("code", code);
+  if (fileChg) {
+    console.log("include new file");
+    data.append("file", file);
+  }
+
+  console.log("Auth token::", localStorage.getItem("authToken"));
+
+  let createProjectConfig = {
+    method: "post",
+    url: `${baseUrl}/api/v1/portfolio/createProject?userId=${userId}`,
+    headers: {
+      authToken: localStorage.getItem("authToken"),
+    },
+    data: data,
+  };
+
+  try {
+    let createProjectResponse = await axios(createProjectConfig);
+    console.log("create project success::", createProjectResponse.data.message);
+    if (!createProjectResponse.data.error) {
+      toast.success("Project Created");
+    }
+    return createProjectResponse.data.data;
+  } catch (error) {
+    console.warn("Create Project Error::", error.response.data);
+    toast.error(error.response.data.message);
+    return error.response.data;
+  }
+};

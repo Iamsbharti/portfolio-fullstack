@@ -7,7 +7,7 @@ const path = require("path");
 const { formatResponse } = require("./library/formatResponse");
 const dotenv = require("dotenv");
 const Project = require("./model/Project");
-
+const multer = require("multer");
 dotenv.config();
 initdb = () => {
   mongoose.connect(process.env.DB_CONNECT, {
@@ -34,7 +34,7 @@ mongoose.connection.once("open", () => {
   gfs = Grid(mongoose.connection.db, mongoose.mongo);
   gfs.collection("images");
 });
-//create storage engine
+
 const storage = new GridFsStorage({
   url: process.env.DB_CONNECT,
   file: (req, file) => {
@@ -50,6 +50,7 @@ const storage = new GridFsStorage({
           bucketName: "images",
         };
         logger.info(`File Info:${fileInfo}`);
+        console.log("FIle uplaod success");
         resolve(fileInfo);
       });
     });
@@ -64,6 +65,7 @@ const fileFilter = (req, file, cb) => {
     cb(formatResponse(true, 500, "File Extension Not Allowed", null), false);
   }
 };
+
 // fetch pictures
 const fetchPictures = (req, res) => {
   logger.info(`Fetch Pictures${req.query.filename}`);
@@ -81,26 +83,28 @@ const fetchPictures = (req, res) => {
 // find , delete image and update new one , during project update
 const updatePicture = async (req, res, next) => {
   logger.info("Delete Attachment");
-  let { projectId } = req.query;
-  console.log("projectid:", projectId);
+  let { projectId, fileChg } = req.query;
+  console.log("projectid:", projectId, fileChg);
   // find project file
   let existingProject = await Project.findOne({
     projectId: projectId,
   });
   const filename = existingProject.image;
   let isFileDeleted = false;
-  gfs.files.deleteOne({ filename: filename }, (err) => {
-    if (err) {
-      console.log("File Delete Error");
-    } else {
-      isFileDeleted = true;
-      console.log("File delete success");
-      next();
-    }
-  });
-  if (isFileDeleted) {
-    // upload new file
-    console.log("Move to upload new pic");
+  if (fileChg === "true") {
+    gfs.files.deleteOne({ filename: filename }, (err) => {
+      if (err) {
+        console.log("File Delete Error");
+      } else {
+        isFileDeleted = true;
+        console.log("File delete success");
+        console.log("Initiate new File Upload");
+        next();
+      }
+    });
+  } else {
+    console.log("Skip file upload change");
+    next();
   }
 };
 module.exports = {

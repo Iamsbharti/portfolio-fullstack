@@ -14113,3 +14113,165 @@
 2020-11-29 12:30:30 info: DB CONNECTION SUCCESS
 2020-11-29 12:31:54 info: Portfolio server running on-3001
 2020-11-29 12:31:56 info: DB CONNECTION SUCCESS
+2020-11-29 12:53:47 info: Portfolio server running on-3001
+2020-11-29 12:53:49 info: DB CONNECTION SUCCESS
+2020-11-29 12:53:52 info: Portfolio server running on-3001
+2020-11-29 12:53:54 info: DB CONNECTION SUCCESS
+2020-11-29 12:53:58 info: Get Project Control
+2020-11-29 12:53:59 info: GET /api/v1/portfolio/projects 200 288.775 ms - 9144
+2020-11-29 12:54:00 info: Portfolio server running on-3001
+2020-11-29 12:54:01 info: DB CONNECTION SUCCESS
+2020-11-29 12:54:28 info: Portfolio server running on-3001
+2020-11-29 12:54:29 info: DB CONNECTION SUCCESS
+2020-11-29 12:54:36 info: Portfolio server running on-3001
+2020-11-29 12:54:37 info: Get Project Control
+2020-11-29 12:54:37 info: DB CONNECTION SUCCESS
+2020-11-29 12:54:37 info: GET /api/v1/portfolio/projects 304 516.927 ms - -
+2020-11-29 12:54:39 info: Get Project Control
+2020-11-29 12:54:40 info: GET /api/v1/portfolio/projects 304 241.655 ms - -
+2020-11-29 12:55:32 info: Portfolio server running on-3001
+2020-11-29 12:55:35 info: DB CONNECTION SUCCESS
+2020-11-29 12:55:51 info: Portfolio server running on-3001
+2020-11-29 12:55:52 info: DB CONNECTION SUCCESS
+2020-11-29 12:55:58 info: Portfolio server running on-3001
+2020-11-29 12:55:59 info: DB CONNECTION SUCCESS
+2020-11-29 12:56:03 info: Portfolio server running on-3001
+2020-11-29 12:56:05 info: DB CONNECTION SUCCESS
+2020-11-29 12:56:41 info: Portfolio server running on-3001
+2020-11-29 12:56:46 info: DB CONNECTION SUCCESS
+2020-11-29 12:56:49 info: Portfolio server running on-3001
+2020-11-29 12:56:50 info: DB CONNECTION SUCCESS
+2020-11-29 12:56:55 info: Authorizing user
+2020-11-29 12:56:55 info: Delete Attachment
+2020-11-29 12:56:55 info: File Info:[object Object]
+2020-11-29 12:56:57 info: Update project control
+2020-11-29 12:56:58 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=false 200 3188.662 ms - 65
+2020-11-29 12:57:20 info: Portfolio server running on-3001
+2020-11-29 12:57:21 info: DB CONNECTION SUCCESS
+2020-11-29 12:57:24 info: Authorizing user
+2020-11-29 12:57:24 info: Delete Attachment
+2020-11-29 12:57:24 info: File Info:[object Object]
+2020-11-29 12:57:25 info: Update project control
+2020-11-29 12:57:26 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=false 200 2054.500 ms - 65
+2020-11-29 12:58:17 info: Portfolio server running on-3001
+2020-11-29 12:58:18 info: DB CONNECTION SUCCESS
+2020-11-29 12:58:20 info: Authorizing user
+2020-11-29 12:58:20 info: Delete Attachment
+2020-11-29 12:58:20 info: File Info:[object Object]
+2020-11-29 12:58:22 info: Update project control
+2020-11-29 12:58:22 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=false 200 2233.448 ms - 65
+2020-11-29 12:58:54 info: Portfolio server running on-3001
+2020-11-29 12:58:55 info: DB CONNECTION SUCCESS
+2020-11-29 12:59:02 info: Authorizing user
+2020-11-29 12:59:02 info: Delete Attachment
+2020-11-29 12:59:02 info: File Info:[object Object]
+2020-11-29 12:59:04 info: Update project control
+2020-11-29 12:59:04 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=false 200 2320.869 ms - 65
+2020-11-29 12:59:33 info: Portfolio server running on-3001
+2020-11-29 12:59:34 info: DB CONNECTION SUCCESS
+2020-11-29 12:59:39 info: Portfolio server running on-3001
+2020-11-29 12:59:40 info: DB CONNECTION SUCCESS
+2020-11-29 13:01:25 info: Portfolio server running on-3001
+2020-11-29 13:01:27 info: DB CONNECTION SUCCESS
+2020-11-29 13:01:39 info: Portfolio server running on-3001
+2020-11-29 13:01:41 info: Portfolio server running on-3001
+2020-11-29 13:01:42 info: DB CONNECTION SUCCESS
+2020-11-29 13:01:48 info: Portfolio server running on-3001
+2020-11-29 13:01:49 info: DB CONNECTION SUCCESS
+2020-11-29 13:01:52 info: Portfolio server running on-3001
+2020-11-29 13:01:53 info: DB CONNECTION SUCCESS
+2020-11-29 13:02:07 info: Portfolio server running on-3001
+2020-11-29 13:02:08 info: DB CONNECTION SUCCESS
+2020-11-29 13:02:19 info: Authorizing user
+2020-11-29 13:02:19 info: Delete Attachment
+2020-11-29 13:02:19 info: Update project control
+2020-11-29 13:03:23 info: Portfolio server running on-3001
+2020-11-29 13:03:25 info: DB CONNECTION SUCCESS
+2020-11-29 13:03:33 info: Portfolio server running on-3001
+2020-11-29 13:03:34 info: Portfolio server running on-3001
+2020-11-29 13:03:35 info: DB CONNECTION SUCCESS
+2020-11-29 13:03:45 info: Authorizing user
+2020-11-29 13:03:45 info: Delete Attachment
+2020-11-29 13:03:45 info: Update project control
+2020-11-29 13:04:41 info: Portfolio server running on-3001
+2020-11-29 13:04:42 info: DB CONNECTION SUCCESS
+2020-11-29 13:04:47 info: Authorizing user
+2020-11-29 13:04:47 info: Delete Attachment
+2020-11-29 13:04:47 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=false 200 150.832 ms - 2
+2020-11-29 13:05:02 info: Portfolio server running on-3001
+2020-11-29 13:05:03 info: DB CONNECTION SUCCESS
+2020-11-29 13:05:30 info: Authorizing user
+2020-11-29 13:05:30 info: Delete Attachment
+2020-11-29 13:05:30 info: Update project control
+2020-11-29 13:07:30 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=true - - ms - -
+2020-11-29 13:11:39 info: Portfolio server running on-3001
+2020-11-29 13:11:40 info: Portfolio server running on-3001
+2020-11-29 13:11:41 info: DB CONNECTION SUCCESS
+2020-11-29 13:17:50 info: Portfolio server running on-3001
+2020-11-29 13:17:51 info: Portfolio server running on-3001
+2020-11-29 13:17:52 info: DB CONNECTION SUCCESS
+2020-11-29 13:17:56 info: Authorizing user
+2020-11-29 13:17:56 info: Delete Attachment
+2020-11-29 13:18:41 info: Portfolio server running on-3001
+2020-11-29 13:18:43 info: DB CONNECTION SUCCESS
+2020-11-29 13:18:49 info: Authorizing user
+2020-11-29 13:18:49 info: Delete Attachment
+2020-11-29 13:20:03 info: Portfolio server running on-3001
+2020-11-29 13:20:04 info: DB CONNECTION SUCCESS
+2020-11-29 13:23:27 info: Portfolio server running on-3001
+2020-11-29 13:23:28 info: DB CONNECTION SUCCESS
+2020-11-29 13:23:34 info: Authorizing user
+2020-11-29 13:23:34 info: Delete Attachment
+2020-11-29 13:23:34 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=true 200 265.445 ms - 32
+2020-11-29 13:23:58 info: Portfolio server running on-3001
+2020-11-29 13:23:59 info: DB CONNECTION SUCCESS
+2020-11-29 13:24:02 info: Authorizing user
+2020-11-29 13:24:02 info: Delete Attachment
+2020-11-29 13:24:02 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=true 200 305.892 ms - 46
+2020-11-29 13:24:40 info: Portfolio server running on-3001
+2020-11-29 13:24:42 info: DB CONNECTION SUCCESS
+2020-11-29 13:24:45 info: Portfolio server running on-3001
+2020-11-29 13:24:46 info: DB CONNECTION SUCCESS
+2020-11-29 13:24:49 info: Authorizing user
+2020-11-29 13:24:49 info: Delete Attachment
+2020-11-29 13:25:24 info: Portfolio server running on-3001
+2020-11-29 13:25:26 info: DB CONNECTION SUCCESS
+2020-11-29 13:25:29 info: Authorizing user
+2020-11-29 13:25:29 info: Delete Attachment
+2020-11-29 13:25:30 info: Update project control
+2020-11-29 13:27:29 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=true - - ms - -
+2020-11-29 13:28:14 info: Portfolio server running on-3001
+2020-11-29 13:28:15 info: DB CONNECTION SUCCESS
+2020-11-29 13:28:37 info: Portfolio server running on-3001
+2020-11-29 13:28:38 info: DB CONNECTION SUCCESS
+2020-11-29 13:28:45 info: Authorizing user
+2020-11-29 13:28:45 info: Delete Attachment
+2020-11-29 13:30:42 info: Portfolio server running on-3001
+2020-11-29 13:30:43 info: DB CONNECTION SUCCESS
+2020-11-29 13:30:50 info: Portfolio server running on-3001
+2020-11-29 13:30:50 info: DB CONNECTION SUCCESS
+2020-11-29 13:30:57 info: Portfolio server running on-3001
+2020-11-29 13:30:59 info: Portfolio server running on-3001
+2020-11-29 13:31:00 info: DB CONNECTION SUCCESS
+2020-11-29 13:31:08 info: Portfolio server running on-3001
+2020-11-29 13:31:09 info: DB CONNECTION SUCCESS
+2020-11-29 13:35:59 info: Portfolio server running on-3001
+2020-11-29 13:36:00 info: DB CONNECTION SUCCESS
+2020-11-29 13:36:12 info: Portfolio server running on-3001
+2020-11-29 13:36:13 info: Portfolio server running on-3001
+2020-11-29 13:36:14 info: DB CONNECTION SUCCESS
+2020-11-29 13:36:55 info: Portfolio server running on-3001
+2020-11-29 13:36:57 info: DB CONNECTION SUCCESS
+2020-11-29 13:37:03 info: Authorizing user
+2020-11-29 13:37:03 info: Delete Attachment
+2020-11-29 13:37:04 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=true 302 295.252 ms - 7419
+2020-11-29 13:37:04 info: GET /api/v1/portfolio/function%20multerMiddleware%20(req,%20res,%20next)%20%7B%0A%20%20%20%20if%20(!is(req,%20['multipart']))%20return%20next()%0A%0A%20%20%20%20var%20options%20=%20setup()%0A%0A%20%20%20%20var%20limits%20=%20options.limits%0A%20%20%20%20var%20storage%20=%20options.storage%0A%20%20%20%20var%20fileFilter%20=%20options.fileFilter%0A%20%20%20%20var%20fileStrategy%20=%20options.fileStrategy%0A%20%20%20%20var%20preservePath%20=%20options.preservePath%0A%0A%20%20%20%20req.body%20=%20Object.create(null)%0A%0A%20%20%20%20var%20busboy%0A%0A%20%20%20%20try%20%7B%0A%20%20%20%20%20%20busboy%20=%20new%20Busboy(%7B%20headers:%20req.headers,%20limits:%20limits,%20preservePath:%20preservePath%20%7D)%0A%20%20%20%20%7D%20catch%20(err)%20%7B%0A%20%20%20%20%20%20return%20next(err)%0A%20%20%20%20%7D%0A%0A%20%20%20%20var%20appender%20=%20new%20FileAppender(fileStrategy,%20req)%0A%20%20%20%20var%20isDone%20=%20false%0A%20%20%20%20var%20readFinished%20=%20false%0A%20%20%20%20var%20errorOccured%20=%20false%0A%20%20%20%20var%20pendingWrites%20=%20new%20Counter()%0A%20%20%20%20var%20uploadedFiles%20=%20[]%0A%0A%20%20%20%20function%20done%20(err)%20%7B%0A%20%20%20%20%20%20if%20(isDone)%20return%0A%20%20%20%20%20%20isDone%20=%20true%0A%0A%20%20%20%20%20%20req.unpipe(busboy)%0A%20%20%20%20%20%20drainStream(req)%0A%20%20%20%20%20%20busboy.removeAllListeners()%0A%0A%20%20%20%20%20%20onFinished(req,%20function%20()%20%7B%20next(err)%20%7D)%0A%20%20%20%20%7D%0A%0A%20%20%20%20function%20indicateDone%20()%20%7B%0A%20%20%20%20%20%20if%20(readFinished%20&&%20pendingWrites.isZero()%20&&%20!errorOccured)%20done()%0A%20%20%20%20%7D%0A%0A%20%20%20%20function%20abortWithError%20(uploadError)%20%7B%0A%20%20%20%20%20%20if%20(errorOccured)%20return%0A%20%20%20%20%20%20errorOccured%20=%20true%0A%0A%20%20%20%20%20%20pendingWrites.onceZero(function%20()%20%7B%0A%20%20%20%20%20%20%20%20function%20remove%20(file,%20cb)%20%7B%0A%20%20%20%20%20%20%20%20%20%20storage._removeFile(req,%20file,%20cb)%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20removeUploadedFiles(uploadedFiles,%20remove,%20function%20(err,%20storageErrors)%20%7B%0A%20%20%20%20%20%20%20%20%20%20if%20(err)%20return%20done(err)%0A%0A%20%20%20%20%20%20%20%20%20%20uploadError.storageErrors%20=%20storageErrors%0A%20%20%20%20%20%20%20%20%20%20done(uploadError)%0A%20%20%20%20%20%20%20%20%7D)%0A%20%20%20%20%20%20%7D)%0A%20%20%20%20%7D%0A%0A%20%20%20%20function%20abortWithCode%20(code,%20optionalField)%20%7B%0A%20%20%20%20%20%20abortWithError(new%20MulterError(code,%20optionalField))%0A%20%20%20%20%7D%0A%0A%20%20%20%20//%20handle%20text%20field%20data%0A%20%20%20%20busboy.on('field',%20function%20(fieldname,%20value,%20fieldnameTruncated,%20valueTruncated)%20%7B%0A%20%20%20%20%20%20if%20(fieldnameTruncated)%20return%20abortWithCode('LIMIT_FIELD_KEY')%0A%20%20%20%20%20%20if%20(valueTruncated)%20return%20abortWithCode('LIMIT_FIELD_VALUE',%20fieldname)%0A%0A%20%20%20%20%20%20//%20Work%20around%20bug%20in%20Busboy%20(https://github.com/mscdex/busboy/issues/6)%0A%20%20%20%20%20%20if%20(limits%20&&%20limits.hasOwnProperty('fieldNameSize'))%20%7B%0A%20%20%20%20%20%20%20%20if%20(fieldname.length%20%3E%20limits.fieldNameSize)%20return%20abortWithCode('LIMIT_FIELD_KEY')%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20appendField(req.body,%20fieldname,%20value)%0A%20%20%20%20%7D)%0A%0A%20%20%20%20//%20handle%20files%0A%20%20%20%20busboy.on('file',%20function%20(fieldname,%20fileStream,%20filename,%20encoding,%20mimetype)%20%7B%0A%20%20%20%20%20%20//%20don't%20attach%20to%20the%20files%20object,%20if%20there%20is%20no%20file%0A%20%20%20%20%20%20if%20(!filename)%20return%20fileStream.resume()%0A%0A%20%20%20%20%20%20//%20Work%20around%20bug%20in%20Busboy%20(https://github.com/mscdex/busboy/issues/6)%0A%20%20%20%20%20%20if%20(limits%20&&%20limits.hasOwnProperty('fieldNameSize'))%20%7B%0A%20%20%20%20%20%20%20%20if%20(fieldname.length%20%3E%20limits.fieldNameSize)%20return%20abortWithCode('LIMIT_FIELD_KEY')%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20var%20file%20=%20%7B%0A%20%20%20%20%20%20%20%20fieldname:%20fieldname,%0A%20%20%20%20%20%20%20%20originalname:%20filename,%0A%20%20%20%20%20%20%20%20encoding:%20encoding,%0A%20%20%20%20%20%20%20%20mimetype:%20mimetype%0A%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20var%20placeholder%20=%20appender.insertPlaceholder(file)%0A%0A%20%20%20%20%20%20fileFilter(req,%20file,%20function%20(err,%20includeFile)%20%7B%0A%20%20%20%20%20%20%20%20if%20(err)%20%7B%0A%20%20%20%20%20%20%20%20%20%20appender.removePlaceholder(placeholder)%0A%20%20%20%20%20%20%20%20%20%20return%20abortWithError(err)%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20if%20(!includeFile)%20%7B%0A%20%20%20%20%20%20%20%20%20%20appender.removePlaceholder(placeholder)%0A%20%20%20%20%20%20%20%20%20%20return%20fileStream.resume()%0A%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20var%20aborting%20=%20false%0A%20%20%20%20%20%20%20%20pendingWrites.increment()%0A%0A%20%20%20%20%20%20%20%20Object.defineProperty(file,%20'stream',%20%7B%0A%20%20%20%20%20%20%20%20%20%20configurable:%20true,%0A%20%20%20%20%20%20%20%20%20%20enumerable:%20false,%0A%20%20%20%20%20%20%20%20%20%20value:%20fileStream%0A%20%20%20%20%20%20%20%20%7D)%0A%0A%20%20%20%20%20%20%20%20fileStream.on('error',%20function%20(err)%20%7B%0A%20%20%20%20%20%20%20%20%20%20pendingWrites.decrement()%0A%20%20%20%20%20%20%20%20%20%20abortWithError(err)%0A%20%20%20%20%20%20%20%20%7D)%0A%0A%20%20%20%20%20%20%20%20fileStream.on('limit',%20function%20()%20%7B%0A%20%20%20%20%20%20%20%20%20%20aborting%20=%20true%0A%20%20%20%20%20%20%20%20%20%20abortWithCode('LIMIT_FILE_SIZE',%20fieldname)%0A%20%20%20%20%20%20%20%20%7D)%0A%0A%20%20%20%20%20%20%20%20storage._handleFile(req,%20file,%20function%20(err,%20info)%20%7B%0A%20%20%20%20%20%20%20%20%20%20if%20(aborting)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20appender.removePlaceholder(placeholder)%0A%20%20%20%20%20%20%20%20%20%20%20%20uploadedFiles.push(extend(file,%20info))%0A%20%20%20%20%20%20%20%20%20%20%20%20return%20pendingWrites.decrement()%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20if%20(err)%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20appender.removePlaceholder(placeholder)%0A%20%20%20%20%20%20%20%20%20%20%20%20pendingWrites.decrement()%0A%20%20%20%20%20%20%20%20%20%20%20%20return%20abortWithError(err)%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%0A%20%20%20%20%20%20%20%20%20%20var%20fileInfo%20=%20extend(file,%20info)%0A%0A%20%20%20%20%20%20%20%20%20%20appender.replacePlaceholder(placeholder,%20fileInfo)%0A%20%20%20%20%20%20%20%20%20%20uploadedFiles.push(fileInfo)%0A%20%20%20%20%20%20%20%20%20%20pendingWrites.decrement()%0A%20%20%20%20%20%20%20%20%20%20indicateDone()%0A%20%20%20%20%20%20%20%20%7D)%0A%20%20%20%20%20%20%7D)%0A%20%20%20%20%7D)%0A%0A%20%20%20%20busboy.on('error',%20function%20(err)%20%7B%20abortWithError(err)%20%7D)%0A%20%20%20%20busboy.on('partsLimit',%20function%20()%20%7B%20abortWithCode('LIMIT_PART_COUNT')%20%7D)%0A%20%20%20%20busboy.on('filesLimit',%20function%20()%20%7B%20abortWithCode('LIMIT_FILE_COUNT')%20%7D)%0A%20%20%20%20busboy.on('fieldsLimit',%20function%20()%20%7B%20abortWithCode('LIMIT_FIELD_COUNT')%20%7D)%0A%20%20%20%20busboy.on('finish',%20function%20()%20%7B%0A%20%20%20%20%20%20readFinished%20=%20true%0A%20%20%20%20%20%20indicateDone()%0A%20%20%20%20%7D)%0A%0A%20%20%20%20req.pipe(busboy)%0A%20%20%7D 404 7.159 ms - 7454
+2020-11-29 13:42:59 info: Portfolio server running on-3001
+2020-11-29 13:43:00 info: Portfolio server running on-3001
+2020-11-29 13:43:01 info: DB CONNECTION SUCCESS
+2020-11-29 13:43:04 info: Portfolio server running on-3001
+2020-11-29 13:43:06 info: DB CONNECTION SUCCESS
+2020-11-29 13:43:13 info: Authorizing user
+2020-11-29 13:43:13 info: File Info:[object Object]
+2020-11-29 13:43:14 info: Create Post Control
+2020-11-29 13:43:14 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 1196.982 ms - 680

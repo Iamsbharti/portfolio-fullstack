@@ -78,24 +78,16 @@ const filterNewItem = (existingArray, newArray) => {
 };
 const updateProject = async (req, res) => {
   logger.info("Update project control");
-  const {
-    name,
-    demo,
-    code,
-    type,
-    description,
-    userId,
-    techstack,
-    fileChg,
-    projectId,
-  } = req.body;
+  const { name, demo, code, type, description, userId, techstack } = req.body;
+  const { projectId, fileChg } = req.query;
+  console.log("BODY::", req.body);
+  console.log("QUERY::", req.query);
   let updateOptions = {};
   let existingProject = await Project.findOne({
     projectId: projectId,
   });
-
   // upload new file
-  if (fileChg) {
+  if (fileChg === "true") {
     console.log("file change", req.file.id);
     updateOptions = { ...updateOptions, image: req.file.id };
   }
