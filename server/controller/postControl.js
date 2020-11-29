@@ -2,8 +2,7 @@ const Project = require("../model/Project");
 const shortid = require("shortid");
 const logger = require("../library/logger");
 const { formatResponse } = require("../library/formatResponse");
-const { push } = require("../library/logger");
-const { update } = require("../model/Project");
+const { collection } = require("../model/Project");
 
 const createPost = async (req, res) => {
   const { name, demo, code, type, description, userId, techstack } = req.body;
@@ -65,7 +64,86 @@ const getProjects = async (req, res) => {
       }
     });
 };
+const filterNewItem = (existingArray, newArray) => {
+  console.log("Filter new item::", existingArray, newArray);
+  let retVal = [];
+  newArray.map((content) => {
+    if (!existingArray.includes(content)) {
+      console.log(content, "is new item");
+      retVal.push(content);
+    }
+  });
+  console.log("new items array::", retVal);
+  return retVal;
+};
+const updateProject = async (req, res) => {
+  logger.info("Update project control");
+  const {
+    name,
+    demo,
+    code,
+    type,
+    description,
+    userId,
+    techstack,
+    fileChg,
+    projectId,
+  } = req.body;
+  let updateOptions = {};
+  let existingProject = await Project.findOne({
+    projectId: projectId,
+  });
+  console.log("ProjectIDS::", projectId);
+
+  // upload new file
+  if (fileChg) {
+    console.log("file change");
+    updateOptions = { ...updateOptions, file: req.file.id };
+  }
+  // filter new techstack array and type array
+  let updatedTechArray = filterNewItem(existingProject.techstack, techstack);
+  let updatedTypeArray = filterNewItem(existingProject.type, type);
+  let techUpdateQuery = {};
+  let typeUpdateQuery;
+  if (updatedTechArray.length > 0) {
+    techUpdateQuery = {
+      $push: {
+        techstack: { $each: updatedTechArray.split(",") },
+      },
+    };
+    updateOptions = { ...updateOptions, techUpdateQuery };
+  }
+  if (updatedTypeArray.length > 0) {
+    typeUpdateQuery = {
+      $push: {
+        type: { $each: updatedTypeArray.split(",") },
+      },
+    };
+    updateOptions = { ...updateOptions, typeUpdateQuery };
+  }
+  console.log("update options after array update::", updateOptions);
+  updateOptions = {
+    updateOptions,
+    name: name,
+    demo: demo,
+    code: code,
+    description: description,
+    userId: userId,
+  };
+  console.log("Final update options::", updateOptions);
+  // update project
+  let { n } = await Project.updateOne({ projectId: projectId }, updateOptions);
+  console.log(n, "project updated");
+  if (n === 1) {
+    res.status(200).json(formatResponse(false, 200, "Project Updated", n));
+  } else {
+    res
+      .status(500)
+      .json(formatResponse(true, 500, "Internal Server Error", null));
+  }
+};
 module.exports = {
   createPost,
   getProjects,
+  updateProject,
 };
