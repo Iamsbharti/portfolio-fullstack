@@ -93,7 +93,6 @@ const updateProject = async (req, res) => {
   let existingProject = await Project.findOne({
     projectId: projectId,
   });
-  console.log("ProjectIDS::", projectId);
 
   // upload new file
   if (fileChg) {
