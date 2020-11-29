@@ -97,33 +97,24 @@ const updateProject = async (req, res) => {
 
   // upload new file
   if (fileChg) {
-    console.log("file change");
-    updateOptions = { ...updateOptions, file: req.file.id };
+    console.log("file change", req.file.id);
+    updateOptions = { ...updateOptions, image: req.file.id };
   }
   // filter new techstack array and type array
-  let updatedTechArray = filterNewItem(existingProject.techstack, techstack);
-  let updatedTypeArray = filterNewItem(existingProject.type, type);
-  let techUpdateQuery = {};
-  let typeUpdateQuery;
-  if (updatedTechArray.length > 0) {
-    techUpdateQuery = {
-      $push: {
-        techstack: { $each: updatedTechArray.split(",") },
-      },
-    };
-    updateOptions = { ...updateOptions, techUpdateQuery };
-  }
-  if (updatedTypeArray.length > 0) {
-    typeUpdateQuery = {
-      $push: {
-        type: { $each: updatedTypeArray.split(",") },
-      },
-    };
-    updateOptions = { ...updateOptions, typeUpdateQuery };
-  }
-  console.log("update options after array update::", updateOptions);
+  let updatedTechArray = filterNewItem(
+    existingProject.techstack,
+    techstack.split(",")
+  );
+  let updatedTypeArray = filterNewItem(existingProject.type, type.split(","));
+  let arrayUpdateOptions = {
+    ...updateOptions,
+    $push: {
+      techstack: { $each: updatedTechArray },
+      type: { $each: updatedTypeArray },
+    },
+  };
   updateOptions = {
-    updateOptions,
+    ...arrayUpdateOptions,
     name: name,
     demo: demo,
     code: code,

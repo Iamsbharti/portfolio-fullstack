@@ -5,8 +5,8 @@ const blogs = require("../controller/blogControl");
 const auth = require("../middlewares/authorization");
 const db = require("../initdb");
 const multer = require("multer");
-const { storage, fetchPictures } = require("../initdb");
-
+const { storage, fetchPictures, updatePicture } = require("../initdb");
+const bodyParser = require("body-parser");
 const upload = multer({
   storage: db.storage,
   limits: 1024 * 1024 * 6,
@@ -21,7 +21,13 @@ router.post(
   upload.single("file"),
   posts.createPost
 );
-
+router.post(
+  "/portfolio/updateProject/",
+  auth.isAuthorized,
+  updatePicture,
+  upload.single("file"),
+  posts.updateProject
+);
 /**blogs route */
 router.get("/portfolio/blogs", auth.isAuthorized, blogs.getBlogs);
 router.post(

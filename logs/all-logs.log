@@ -13779,3 +13779,335 @@
 2020-11-29 11:05:46 info: DB CONNECTION SUCCESS
 2020-11-29 11:06:03 info: Portfolio server running on-3001
 2020-11-29 11:06:04 info: DB CONNECTION SUCCESS
+2020-11-29 11:07:21 info: Portfolio server running on-3001
+2020-11-29 11:07:23 info: DB CONNECTION SUCCESS
+2020-11-29 11:07:56 info: Portfolio server running on-3001
+2020-11-29 11:07:57 info: DB CONNECTION SUCCESS
+2020-11-29 11:08:36 info: Portfolio server running on-3001
+2020-11-29 11:08:37 info: Portfolio server running on-3001
+2020-11-29 11:08:38 info: DB CONNECTION SUCCESS
+2020-11-29 11:09:33 info: Portfolio server running on-3001
+2020-11-29 11:09:34 info: DB CONNECTION SUCCESS
+2020-11-29 11:10:06 info: Portfolio server running on-3001
+2020-11-29 11:10:07 info: DB CONNECTION SUCCESS
+2020-11-29 11:10:16 info: Portfolio server running on-3001
+2020-11-29 11:10:17 info: DB CONNECTION SUCCESS
+2020-11-29 11:11:02 info: Portfolio server running on-3001
+2020-11-29 11:11:03 info: DB CONNECTION SUCCESS
+2020-11-29 11:11:06 info: Portfolio server running on-3001
+2020-11-29 11:11:07 info: DB CONNECTION SUCCESS
+2020-11-29 11:11:31 info: Portfolio server running on-3001
+2020-11-29 11:11:33 info: DB CONNECTION SUCCESS
+2020-11-29 11:11:45 info: Portfolio server running on-3001
+2020-11-29 11:11:46 info: DB CONNECTION SUCCESS
+2020-11-29 11:11:53 info: Portfolio server running on-3001
+2020-11-29 11:11:54 info: DB CONNECTION SUCCESS
+2020-11-29 11:12:04 info: Portfolio server running on-3001
+2020-11-29 11:12:05 info: DB CONNECTION SUCCESS
+2020-11-29 11:12:13 info: Portfolio server running on-3001
+2020-11-29 11:12:15 info: DB CONNECTION SUCCESS
+2020-11-29 11:12:25 info: Portfolio server running on-3001
+2020-11-29 11:12:26 info: DB CONNECTION SUCCESS
+2020-11-29 11:23:56 info: Portfolio server running on-3001
+2020-11-29 11:23:58 info: DB CONNECTION SUCCESS
+2020-11-29 11:24:18 info: Portfolio server running on-3001
+2020-11-29 11:24:19 info: DB CONNECTION SUCCESS
+2020-11-29 11:24:38 info: Portfolio server running on-3001
+2020-11-29 11:24:39 info: DB CONNECTION SUCCESS
+2020-11-29 11:24:44 info: Portfolio server running on-3001
+2020-11-29 11:24:45 info: DB CONNECTION SUCCESS
+2020-11-29 11:25:06 info: Portfolio server running on-3001
+2020-11-29 11:25:07 info: DB CONNECTION SUCCESS
+2020-11-29 11:25:15 info: Portfolio server running on-3001
+2020-11-29 11:25:16 info: DB CONNECTION SUCCESS
+2020-11-29 11:26:07 info: Portfolio server running on-3001
+2020-11-29 11:26:08 info: DB CONNECTION SUCCESS
+2020-11-29 11:26:30 info: Portfolio server running on-3001
+2020-11-29 11:26:31 info: DB CONNECTION SUCCESS
+2020-11-29 11:30:13 info: GET /api/v1/portfolio/login 404 70.354 ms - 62
+2020-11-29 11:30:29 info: GET /api/v1/portfolio/login 404 0.989 ms - 62
+2020-11-29 11:30:36 info: GET /api/v1/portfolio/login 404 0.753 ms - 62
+2020-11-29 11:30:45 info: Portfolio server running on-3001
+2020-11-29 11:30:46 info: DB CONNECTION SUCCESS
+2020-11-29 11:31:07 info: GET /api/v1/portfolio/login 404 15.303 ms - 62
+2020-11-29 11:31:23 info: Admin Login Control
+2020-11-29 11:31:23 info: pwd match-true
+2020-11-29 11:31:23 info: POST /api/v1/portfolio/login 200 372.096 ms - 486
+2020-11-29 11:31:44 info: Authorizing user
+2020-11-29 11:31:44 info: Delete Attachment
+2020-11-29 11:32:18 info: Portfolio server running on-3001
+2020-11-29 11:32:20 info: DB CONNECTION SUCCESS
+2020-11-29 11:32:21 info: Authorizing user
+2020-11-29 11:32:21 info: Delete Attachment
+2020-11-29 11:32:52 info: Portfolio server running on-3001
+2020-11-29 11:32:54 info: Portfolio server running on-3001
+2020-11-29 11:32:56 info: DB CONNECTION SUCCESS
+2020-11-29 11:33:03 info: Portfolio server running on-3001
+2020-11-29 11:33:04 info: DB CONNECTION SUCCESS
+2020-11-29 11:33:08 info: Portfolio server running on-3001
+2020-11-29 11:33:09 info: DB CONNECTION SUCCESS
+2020-11-29 11:33:14 info: Authorizing user
+2020-11-29 11:33:14 info: Delete Attachment
+2020-11-29 11:34:08 info: Portfolio server running on-3001
+2020-11-29 11:34:09 info: DB CONNECTION SUCCESS
+2020-11-29 11:34:12 info: Authorizing user
+2020-11-29 11:34:12 info: Delete Attachment
+2020-11-29 11:35:17 info: Portfolio server running on-3001
+2020-11-29 11:35:20 info: Portfolio server running on-3001
+2020-11-29 11:35:21 info: DB CONNECTION SUCCESS
+2020-11-29 11:35:27 info: Authorizing user
+2020-11-29 11:35:27 info: Delete Attachment
+2020-11-29 11:35:53 info: Portfolio server running on-3001
+2020-11-29 11:35:54 info: DB CONNECTION SUCCESS
+2020-11-29 11:35:57 info: Authorizing user
+2020-11-29 11:35:57 info: Delete Attachment
+2020-11-29 11:36:13 info: Portfolio server running on-3001
+2020-11-29 11:36:14 info: DB CONNECTION SUCCESS
+2020-11-29 11:36:19 info: Authorizing user
+2020-11-29 11:36:19 info: Delete Attachment
+2020-11-29 11:40:07 info: Portfolio server running on-3001
+2020-11-29 11:40:09 info: DB CONNECTION SUCCESS
+2020-11-29 11:40:20 info: Portfolio server running on-3001
+2020-11-29 11:40:21 info: DB CONNECTION SUCCESS
+2020-11-29 11:42:07 info: Portfolio server running on-3001
+2020-11-29 11:42:08 info: DB CONNECTION SUCCESS
+2020-11-29 11:42:16 info: Authorizing user
+2020-11-29 11:42:16 info: Delete Attachment
+2020-11-29 11:43:00 info: Portfolio server running on-3001
+2020-11-29 11:43:02 info: DB CONNECTION SUCCESS
+2020-11-29 11:43:06 info: Authorizing user
+2020-11-29 11:43:06 info: Delete Attachment
+2020-11-29 11:43:17 info: Portfolio server running on-3001
+2020-11-29 11:43:18 info: DB CONNECTION SUCCESS
+2020-11-29 11:44:56 info: Portfolio server running on-3001
+2020-11-29 11:44:57 info: DB CONNECTION SUCCESS
+2020-11-29 11:45:03 info: Authorizing user
+2020-11-29 11:45:03 info: Delete Attachment
+2020-11-29 11:45:29 info: Authorizing user
+2020-11-29 11:45:29 info: File Info:[object Object]
+2020-11-29 11:45:31 info: Create Post Control
+2020-11-29 11:45:32 info: POST /api/v1/portfolio/createProject?userId=3SJTd1d-m 200 2526.162 ms - 680
+2020-11-29 11:46:38 info: Portfolio server running on-3001
+2020-11-29 11:46:38 error: Error Connencting DB: querySrv ESERVFAIL _mongodb._tcp.cluster0-5qtwd.mongodb.net
+2020-11-29 11:47:27 info: Portfolio server running on-3001
+2020-11-29 11:47:28 info: DB CONNECTION SUCCESS
+2020-11-29 11:47:35 info: Authorizing user
+2020-11-29 11:47:35 info: Delete Attachment
+2020-11-29 11:47:52 info: Portfolio server running on-3001
+2020-11-29 11:47:53 info: Portfolio server running on-3001
+2020-11-29 11:47:54 info: DB CONNECTION SUCCESS
+2020-11-29 11:47:57 info: Authorizing user
+2020-11-29 11:47:57 info: Delete Attachment
+2020-11-29 11:48:57 info: Portfolio server running on-3001
+2020-11-29 11:48:59 info: DB CONNECTION SUCCESS
+2020-11-29 11:49:06 info: Authorizing user
+2020-11-29 11:49:06 info: Delete Attachment
+2020-11-29 11:49:36 info: Portfolio server running on-3001
+2020-11-29 11:49:37 info: DB CONNECTION SUCCESS
+2020-11-29 11:49:49 info: Authorizing user
+2020-11-29 11:49:49 info: Delete Attachment
+2020-11-29 11:49:49 info: File Info:[object Object]
+2020-11-29 11:49:50 info: Update project control
+2020-11-29 11:50:41 info: Portfolio server running on-3001
+2020-11-29 11:50:42 info: DB CONNECTION SUCCESS
+2020-11-29 11:50:46 info: Authorizing user
+2020-11-29 11:50:46 info: Delete Attachment
+2020-11-29 11:50:46 info: File Info:[object Object]
+2020-11-29 11:50:47 info: Update project control
+2020-11-29 11:51:29 info: Portfolio server running on-3001
+2020-11-29 11:51:31 info: Portfolio server running on-3001
+2020-11-29 11:51:32 info: DB CONNECTION SUCCESS
+2020-11-29 11:52:07 info: Portfolio server running on-3001
+2020-11-29 11:52:09 info: DB CONNECTION SUCCESS
+2020-11-29 11:52:32 info: Portfolio server running on-3001
+2020-11-29 11:52:33 info: DB CONNECTION SUCCESS
+2020-11-29 11:52:39 info: Portfolio server running on-3001
+2020-11-29 11:52:40 info: DB CONNECTION SUCCESS
+2020-11-29 11:53:19 info: Authorizing user
+2020-11-29 11:53:19 info: Delete Attachment
+2020-11-29 11:53:19 info: File Info:[object Object]
+2020-11-29 11:53:22 info: Update project control
+2020-11-29 11:53:22 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 2691.972 ms - 65
+2020-11-29 11:55:53 info: Portfolio server running on-3001
+2020-11-29 11:55:54 info: DB CONNECTION SUCCESS
+2020-11-29 11:55:59 info: Authorizing user
+2020-11-29 11:55:59 info: Delete Attachment
+2020-11-29 11:55:59 info: File Info:[object Object]
+2020-11-29 11:56:01 info: Update project control
+2020-11-29 11:56:01 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 1978.126 ms - 65
+2020-11-29 11:57:08 info: Portfolio server running on-3001
+2020-11-29 11:57:09 info: Portfolio server running on-3001
+2020-11-29 11:57:10 info: DB CONNECTION SUCCESS
+2020-11-29 11:57:50 info: Portfolio server running on-3001
+2020-11-29 11:57:51 info: DB CONNECTION SUCCESS
+2020-11-29 11:57:56 info: Authorizing user
+2020-11-29 11:57:56 info: Delete Attachment
+2020-11-29 11:57:56 info: File Info:[object Object]
+2020-11-29 11:57:57 info: Update project control
+2020-11-29 11:57:58 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 1985.515 ms - 65
+2020-11-29 11:58:38 info: Authorizing user
+2020-11-29 11:58:38 info: Delete Attachment
+2020-11-29 11:58:39 info: File Info:[object Object]
+2020-11-29 11:58:41 info: Update project control
+2020-11-29 11:58:41 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 2644.961 ms - 65
+2020-11-29 11:59:35 info: Portfolio server running on-3001
+2020-11-29 11:59:36 info: DB CONNECTION SUCCESS
+2020-11-29 11:59:48 info: Portfolio server running on-3001
+2020-11-29 11:59:49 info: DB CONNECTION SUCCESS
+2020-11-29 11:59:58 info: Portfolio server running on-3001
+2020-11-29 11:59:59 info: DB CONNECTION SUCCESS
+2020-11-29 12:00:11 info: Authorizing user
+2020-11-29 12:00:11 info: Delete Attachment
+2020-11-29 12:00:12 info: File Info:[object Object]
+2020-11-29 12:00:14 info: Update project control
+2020-11-29 12:00:14 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 3038.718 ms - 65
+2020-11-29 12:00:55 info: Authorizing user
+2020-11-29 12:00:55 info: Delete Attachment
+2020-11-29 12:00:56 info: File Info:[object Object]
+2020-11-29 12:00:57 info: Update project control
+2020-11-29 12:00:57 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 1906.790 ms - 65
+2020-11-29 12:01:47 info: Portfolio server running on-3001
+2020-11-29 12:01:48 info: DB CONNECTION SUCCESS
+2020-11-29 12:02:24 info: Portfolio server running on-3001
+2020-11-29 12:02:25 info: DB CONNECTION SUCCESS
+2020-11-29 12:02:28 info: Portfolio server running on-3001
+2020-11-29 12:02:29 info: DB CONNECTION SUCCESS
+2020-11-29 12:02:31 info: Authorizing user
+2020-11-29 12:02:31 info: Delete Attachment
+2020-11-29 12:02:31 info: File Info:[object Object]
+2020-11-29 12:02:33 info: Update project control
+2020-11-29 12:02:33 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 2547.492 ms - 65
+2020-11-29 12:03:04 info: Portfolio server running on-3001
+2020-11-29 12:03:05 info: DB CONNECTION SUCCESS
+2020-11-29 12:03:18 info: Authorizing user
+2020-11-29 12:03:18 info: Delete Attachment
+2020-11-29 12:03:18 info: File Info:[object Object]
+2020-11-29 12:03:20 info: Update project control
+2020-11-29 12:03:50 info: Portfolio server running on-3001
+2020-11-29 12:03:51 info: DB CONNECTION SUCCESS
+2020-11-29 12:03:54 info: Authorizing user
+2020-11-29 12:03:55 info: Delete Attachment
+2020-11-29 12:03:55 info: File Info:[object Object]
+2020-11-29 12:03:56 info: Update project control
+2020-11-29 12:05:12 info: Portfolio server running on-3001
+2020-11-29 12:05:13 info: DB CONNECTION SUCCESS
+2020-11-29 12:05:27 info: Portfolio server running on-3001
+2020-11-29 12:05:28 info: DB CONNECTION SUCCESS
+2020-11-29 12:05:37 info: Authorizing user
+2020-11-29 12:05:37 info: Delete Attachment
+2020-11-29 12:05:37 info: File Info:[object Object]
+2020-11-29 12:05:39 info: Update project control
+2020-11-29 12:07:00 info: Portfolio server running on-3001
+2020-11-29 12:07:01 info: DB CONNECTION SUCCESS
+2020-11-29 12:07:02 info: Portfolio server running on-3001
+2020-11-29 12:07:04 info: DB CONNECTION SUCCESS
+2020-11-29 12:07:31 info: Portfolio server running on-3001
+2020-11-29 12:07:32 info: DB CONNECTION SUCCESS
+2020-11-29 12:07:40 info: Authorizing user
+2020-11-29 12:07:40 info: Delete Attachment
+2020-11-29 12:07:40 info: File Info:[object Object]
+2020-11-29 12:07:42 info: Update project control
+2020-11-29 12:07:42 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 2231.251 ms - 65
+2020-11-29 12:08:13 info: Portfolio server running on-3001
+2020-11-29 12:08:14 info: DB CONNECTION SUCCESS
+2020-11-29 12:09:09 info: Portfolio server running on-3001
+2020-11-29 12:09:10 info: DB CONNECTION SUCCESS
+2020-11-29 12:10:14 info: Portfolio server running on-3001
+2020-11-29 12:10:16 info: DB CONNECTION SUCCESS
+2020-11-29 12:10:20 info: Portfolio server running on-3001
+2020-11-29 12:10:21 info: DB CONNECTION SUCCESS
+2020-11-29 12:10:26 info: Authorizing user
+2020-11-29 12:10:26 info: Delete Attachment
+2020-11-29 12:10:26 info: File Info:[object Object]
+2020-11-29 12:10:28 info: Update project control
+2020-11-29 12:10:28 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 1823.718 ms - 65
+2020-11-29 12:12:06 info: Portfolio server running on-3001
+2020-11-29 12:12:08 info: DB CONNECTION SUCCESS
+2020-11-29 12:12:10 info: Portfolio server running on-3001
+2020-11-29 12:12:11 info: DB CONNECTION SUCCESS
+2020-11-29 12:12:17 info: Authorizing user
+2020-11-29 12:12:17 info: Delete Attachment
+2020-11-29 12:12:17 info: File Info:[object Object]
+2020-11-29 12:12:20 info: Update project control
+2020-11-29 12:12:20 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 2736.070 ms - 65
+2020-11-29 12:12:49 info: Authorizing user
+2020-11-29 12:12:49 info: Delete Attachment
+2020-11-29 12:12:49 info: File Info:[object Object]
+2020-11-29 12:12:51 info: Update project control
+2020-11-29 12:12:51 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 1876.657 ms - 65
+2020-11-29 12:13:13 info: Authorizing user
+2020-11-29 12:13:13 info: Delete Attachment
+2020-11-29 12:13:14 info: File Info:[object Object]
+2020-11-29 12:13:16 info: Update project control
+2020-11-29 12:13:16 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 2468.824 ms - 65
+2020-11-29 12:15:01 info: Portfolio server running on-3001
+2020-11-29 12:15:04 info: Portfolio server running on-3001
+2020-11-29 12:15:06 info: DB CONNECTION SUCCESS
+2020-11-29 12:15:13 info: Portfolio server running on-3001
+2020-11-29 12:15:14 info: DB CONNECTION SUCCESS
+2020-11-29 12:15:15 info: Portfolio server running on-3001
+2020-11-29 12:15:17 info: DB CONNECTION SUCCESS
+2020-11-29 12:15:27 info: Authorizing user
+2020-11-29 12:15:27 info: Delete Attachment
+2020-11-29 12:15:27 info: File Info:[object Object]
+2020-11-29 12:15:29 info: Update project control
+2020-11-29 12:15:30 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 2699.607 ms - 65
+2020-11-29 12:16:49 info: Portfolio server running on-3001
+2020-11-29 12:16:50 info: DB CONNECTION SUCCESS
+2020-11-29 12:17:01 info: Portfolio server running on-3001
+2020-11-29 12:17:03 info: DB CONNECTION SUCCESS
+2020-11-29 12:17:17 info: Authorizing user
+2020-11-29 12:17:17 info: Delete Attachment
+2020-11-29 12:17:17 info: File Info:[object Object]
+2020-11-29 12:17:19 info: Update project control
+2020-11-29 12:17:19 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 2043.324 ms - 65
+2020-11-29 12:17:37 info: Portfolio server running on-3001
+2020-11-29 12:17:38 info: DB CONNECTION SUCCESS
+2020-11-29 12:17:46 info: Authorizing user
+2020-11-29 12:17:46 info: Delete Attachment
+2020-11-29 12:17:46 info: File Info:[object Object]
+2020-11-29 12:17:48 info: Update project control
+2020-11-29 12:17:49 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 2602.622 ms - 65
+2020-11-29 12:25:18 info: Portfolio server running on-3001
+2020-11-29 12:25:19 info: DB CONNECTION SUCCESS
+2020-11-29 12:25:44 info: Portfolio server running on-3001
+2020-11-29 12:25:45 info: DB CONNECTION SUCCESS
+2020-11-29 12:25:51 info: Portfolio server running on-3001
+2020-11-29 12:25:52 info: DB CONNECTION SUCCESS
+2020-11-29 12:26:07 info: Authorizing user
+2020-11-29 12:26:07 info: Delete Attachment
+2020-11-29 12:26:07 info: File Info:[object Object]
+2020-11-29 12:26:09 info: Update project control
+2020-11-29 12:26:09 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 1849.104 ms - 65
+2020-11-29 12:27:18 info: Portfolio server running on-3001
+2020-11-29 12:27:19 info: Portfolio server running on-3001
+2020-11-29 12:27:20 info: DB CONNECTION SUCCESS
+2020-11-29 12:27:25 info: Authorizing user
+2020-11-29 12:27:25 info: Delete Attachment
+2020-11-29 12:27:25 info: File Info:[object Object]
+2020-11-29 12:27:26 info: Update project control
+2020-11-29 12:27:27 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 1905.941 ms - 65
+2020-11-29 12:28:08 info: Authorizing user
+2020-11-29 12:28:08 info: Delete Attachment
+2020-11-29 12:28:08 info: File Info:[object Object]
+2020-11-29 12:28:09 info: Update project control
+2020-11-29 12:28:09 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 1481.674 ms - 65
+2020-11-29 12:28:40 info: Authorizing user
+2020-11-29 12:28:40 info: Delete Attachment
+2020-11-29 12:28:41 info: File Info:[object Object]
+2020-11-29 12:28:42 info: Update project control
+2020-11-29 12:28:42 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 1534.823 ms - 65
+2020-11-29 12:29:32 info: Portfolio server running on-3001
+2020-11-29 12:29:34 info: DB CONNECTION SUCCESS
+2020-11-29 12:29:35 info: Portfolio server running on-3001
+2020-11-29 12:29:36 info: DB CONNECTION SUCCESS
+2020-11-29 12:30:02 info: Portfolio server running on-3001
+2020-11-29 12:30:03 info: DB CONNECTION SUCCESS
+2020-11-29 12:30:06 info: Authorizing user
+2020-11-29 12:30:06 info: Delete Attachment
+2020-11-29 12:30:06 info: File Info:[object Object]
+2020-11-29 12:30:08 info: Update project control
+2020-11-29 12:30:08 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5 200 2089.177 ms - 65
+2020-11-29 12:30:28 info: Portfolio server running on-3001
+2020-11-29 12:30:29 info: Portfolio server running on-3001
+2020-11-29 12:30:30 info: DB CONNECTION SUCCESS
