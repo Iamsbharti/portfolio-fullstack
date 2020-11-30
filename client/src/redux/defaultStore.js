@@ -35,3 +35,13 @@ export const projectFilterCategory = [
   { name: "Javascript", img: "icons8-javascript-96.png", disabled: false },
   { name: "Typescript", img: "icons8-typescript-96.png", disabled: false },
 ];
+export const techStackArray = [
+  "ReactJS",
+  "AngularJS",
+  "NodeJS",
+  "Html",
+  "CSS",
+  "Javascript",
+  "Typescript",
+];
+export const projectTypeArray = ["FullStack", "Game", "ML", "Clone"];

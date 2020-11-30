@@ -17,7 +17,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import { Delete } from "@material-ui/icons";
 import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import { connect } from "react-redux";
-import { projectFilterCategory } from "../../redux/defaultStore";
+import { techStackArray, projectTypeArray } from "../../redux/defaultStore";
 import ChipComponent from "./ChipComponent";
 import Divider from "@material-ui/core/Divider";
 const styles = makeStyles((theme) => ({
@@ -57,10 +57,10 @@ const FormDialog = ({
     mode ? projectToEdit.description : ""
   );
   const [type, setType] = useState(
-    mode ? projectToEdit.type : projectFilterCategory
+    mode ? projectToEdit.type : projectTypeArray
   );
   const [techstack, setTechStack] = useState(
-    mode ? projectToEdit.techstack : projectFilterCategory
+    mode ? projectToEdit.techstack : techStackArray
   );
   const [demo, setDemo] = useState(mode ? projectToEdit.demo : "");
   const [code, setCode] = useState(mode ? projectToEdit.code : "");
@@ -72,11 +72,13 @@ const FormDialog = ({
       description: description,
       type: type,
       techstack: techstack,
-      file: file,
       demo: demo,
       code: code,
       userId: localStorage.getItem("userId"),
     };
+    if (file) {
+      projectInfo = { ...projectInfo, fileChg: "true", file: file };
+    }
     saveProject(mode, projectInfo);
   };
   // handle delete chip component
@@ -191,7 +193,7 @@ const FormDialog = ({
               <div className="form__content__right">
                 <div className="techstack__chips">
                   <ChipComponent
-                    chips={projectFilterCategory}
+                    chips={techstack}
                     type="Techstack"
                     updateChipContent={handleUpdateChipComponent}
                   />
@@ -199,7 +201,7 @@ const FormDialog = ({
                 <Divider />
                 <div className="type__chips">
                   <ChipComponent
-                    chips={projectFilterCategory}
+                    chips={type}
                     type="ProjectType"
                     updateChipContent={handleUpdateChipComponent}
                   />

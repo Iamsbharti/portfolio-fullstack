@@ -59,6 +59,10 @@ const ManageProjects = ({
     console.log("Saving project ManageProject", mode, projectInfo);
     if (mode) {
       console.log("edit /update project");
+      let updateProjectinfo = {
+        ...projectInfo,
+        projectId: projectToEdit.projectId,
+      };
     } else {
       console.log("create new project");
       createProjectAction(projectInfo);

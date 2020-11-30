@@ -21,7 +21,7 @@ const ChipComponent = ({ chips, type, updateChipContent }) => {
   const chipClasses = useStyles();
   const [chipValues, setChipValues] = useState();
   useEffect(() => {
-    setChipValues(chips.map((chip) => chip.name));
+    setChipValues(chips);
   }, [chips]);
 
   const updateChip = (chip, action) => {
@@ -29,6 +29,7 @@ const ChipComponent = ({ chips, type, updateChipContent }) => {
     switch (action) {
       case "add":
         let addedChips = [...chipValues, chip];
+        console.log("addedChips:", addedChips);
         setChipValues(addedChips);
         updateChipContent(addedChips, type);
 
