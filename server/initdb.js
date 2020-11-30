@@ -110,7 +110,7 @@ const updatePicture = async (req, res, next) => {
 };
 
 const deleteFile = (file_id) => {
-  logger.info("Delete GFS", file_id);
+  logger.info(`Delete GFS ${file_id}`);
   let retVal;
   gfs.remove({ _id: file_id, root: "images" }, function (err) {
     if (err) {

@@ -14420,3 +14420,46 @@
 2020-11-30 11:31:37 info: DB CONNECTION SUCCESS
 2020-11-30 11:31:42 info: Portfolio server running on-3001
 2020-11-30 11:31:43 info: DB CONNECTION SUCCESS
+2020-11-30 11:38:52 info: Portfolio server running on-3001
+2020-11-30 11:38:53 info: DB CONNECTION SUCCESS
+2020-11-30 11:38:57 info: Authorizing user
+2020-11-30 11:38:57 info: File Info:[object Object]
+2020-11-30 11:38:59 info: Update project control
+2020-11-30 11:38:59 info: Delete Existing file-5fc48c79ca38a5713389f504
+2020-11-30 11:38:59 info: Delete GFS 5fc48c79ca38a5713389f504
+2020-11-30 11:38:59 info: Delete Response-undefined
+2020-11-30 11:38:59 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=false 200 2802.516 ms - 65
+2020-11-30 11:40:18 info: Portfolio server running on-3001
+2020-11-30 11:40:19 info: DB CONNECTION SUCCESS
+2020-11-30 11:40:22 info: Authorizing user
+2020-11-30 11:40:22 info: File Info:[object Object]
+2020-11-30 11:40:25 info: Update project control
+2020-11-30 11:40:25 info: Delete recent upload file-5fc48cce875fc3717286eff1
+2020-11-30 11:40:25 info: Delete GFS 5fc48cce875fc3717286eff1
+2020-11-30 11:40:25 info: Delete Response-undefined
+2020-11-30 11:40:26 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=false 200 3176.065 ms - 65
+2020-11-30 11:41:59 info: Authorizing user
+2020-11-30 11:41:59 info: File Info:[object Object]
+2020-11-30 11:42:02 info: Update project control
+2020-11-30 11:42:02 info: Delete Existing file-5fc34dbe2fe1513a310d9948
+2020-11-30 11:42:02 info: Delete GFS 5fc34dbe2fe1513a310d9948
+2020-11-30 11:42:02 info: Delete Response-undefined
+2020-11-30 11:42:02 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=true 200 2727.605 ms - 65
+2020-11-30 11:43:33 info: Portfolio server running on-3001
+2020-11-30 11:43:34 info: Portfolio server running on-3001
+2020-11-30 11:43:35 info: Portfolio server running on-3001
+2020-11-30 11:43:36 info: DB CONNECTION SUCCESS
+2020-11-30 11:43:41 info: Portfolio server running on-3001
+2020-11-30 11:43:42 info: DB CONNECTION SUCCESS
+2020-11-30 11:43:43 info: Portfolio server running on-3001
+2020-11-30 11:43:44 info: DB CONNECTION SUCCESS
+2020-11-30 11:43:47 info: Portfolio server running on-3001
+2020-11-30 11:43:48 info: Portfolio server running on-3001
+2020-11-30 11:43:49 info: DB CONNECTION SUCCESS
+2020-11-30 11:43:59 info: Portfolio server running on-3001
+2020-11-30 11:43:59 info: Portfolio server running on-3001
+2020-11-30 11:44:01 info: DB CONNECTION SUCCESS
+2020-11-30 11:44:05 info: Portfolio server running on-3001
+2020-11-30 11:44:06 info: DB CONNECTION SUCCESS
+2020-11-30 11:44:29 info: Portfolio server running on-3001
+2020-11-30 11:44:30 info: DB CONNECTION SUCCESS

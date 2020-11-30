@@ -2,7 +2,7 @@ const Project = require("../model/Project");
 const shortid = require("shortid");
 const logger = require("../library/logger");
 const { formatResponse } = require("../library/formatResponse");
-import { deleteFile } from "../initdb";
+const { deleteFile } = require("../initdb");
 
 const createPost = async (req, res) => {
   const { name, demo, code, type, description, userId, techstack } = req.body;
@@ -93,11 +93,10 @@ const updateProject = async (req, res) => {
     logger.info(`Delete Existing file-${existingProject.image}`);
     let deleteResponse = deleteFile(existingProject.image);
     logger.info(`Delete Response-${deleteResponse}`);
-    console.log("update new file change", req.file.id);
     updateOptions = { ...updateOptions, image: req.file.id };
   } else {
     // delete the file which was uploaded
-    logger.info(`Delete Existing file-${req.file.id}`);
+    logger.info(`Delete Uploaded file-${req.file.id}`);
     let deleteResponse = deleteFile(req.file.id);
     logger.info(`Delete Response-${deleteResponse}`);
   }
@@ -122,10 +121,8 @@ const updateProject = async (req, res) => {
     description: description,
     userId: userId,
   };
-  console.log("Final update options::", updateOptions);
   // update project
   let { n } = await Project.updateOne({ projectId: projectId }, updateOptions);
-  console.log(n, "project updated");
   if (n === 1) {
     res.status(200).json(formatResponse(false, 200, "Project Updated", n));
   } else {
