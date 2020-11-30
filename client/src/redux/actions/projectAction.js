@@ -1,4 +1,4 @@
-import { CREATE_PROJECT, GET_PROJECTS } from "./actionType";
+import { CREATE_PROJECT, GET_PROJECTS, UPDATE_PROJECT } from "./actionType";
 
 import * as apis from "../../api/apis";
 
@@ -16,5 +16,13 @@ export function createProjectAction(projectInfo) {
     let newProject = await apis.createProject(projectInfo);
     console.log("new project action res::", newProject);
     dispatch({ type: CREATE_PROJECT, newProject });
+  };
+}
+export function updateProjectAction(projectInfo) {
+  console.log("Update Project Action", projectInfo);
+  return async (dispatch) => {
+    let updatedProject = await apis.updateProject(projectInfo);
+    console.log("Updated project:", updatedProject);
+    dispatch({ type: UPDATE_PROJECT, updatedProject });
   };
 }

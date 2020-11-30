@@ -4,3 +4,4 @@ export const LOGOUT = "LOGOUT";
 export const GET_PROJECTS = "GET_PROJECTS";
 export const GET_BLOGS = "GET_BLOGS";
 export const CREATE_PROJECT = "CREATE_PROJECT";
+export const UPDATE_PROJECT = "UPDATE_PROJECT";

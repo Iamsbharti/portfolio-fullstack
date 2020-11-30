@@ -14525,3 +14525,29 @@
 2020-11-30 11:52:21 info: Delete GFS 5fc48f5f84f92e765bfb6a6e
 2020-11-30 11:52:21 info: Delete Response-undefined
 2020-11-30 11:52:22 info: POST /api/v1/portfolio/updateProject?userId=3SJTd1d-m&projectId=UVT9i5jp5&fileChg=true 200 2563.040 ms - 663
+2020-11-30 11:53:29 info: Portfolio server running on-3001
+2020-11-30 11:53:31 info: Portfolio server running on-3001
+2020-11-30 11:53:32 info: DB CONNECTION SUCCESS
+2020-11-30 11:53:33 info: Get Project Control
+2020-11-30 11:53:34 info: GET /api/v1/portfolio/projects 200 302.510 ms - 9374
+2020-11-30 11:54:02 info: Portfolio server running on-3001
+2020-11-30 11:54:03 info: DB CONNECTION SUCCESS
+2020-11-30 11:54:04 info: Get Project Control
+2020-11-30 11:54:06 info: Portfolio server running on-3001
+2020-11-30 11:54:07 info: DB CONNECTION SUCCESS
+2020-11-30 11:54:09 info: Get Project Control
+2020-11-30 11:54:09 info: GET /api/v1/portfolio/projects 304 233.438 ms - -
+2020-11-30 11:54:33 info: Portfolio server running on-3001
+2020-11-30 11:54:34 info: DB CONNECTION SUCCESS
+2020-11-30 11:54:37 info: Get Project Control
+2020-11-30 11:54:37 info: GET /api/v1/portfolio/projects 304 307.383 ms - -
+2020-11-30 11:54:45 info: Portfolio server running on-3001
+2020-11-30 11:54:47 info: DB CONNECTION SUCCESS
+2020-11-30 11:54:48 info: Get Project Control
+2020-11-30 11:54:48 info: GET /api/v1/portfolio/projects 304 286.558 ms - -
+2020-11-30 11:54:55 info: Portfolio server running on-3001
+2020-11-30 11:54:56 info: DB CONNECTION SUCCESS
+2020-11-30 11:54:59 info: Portfolio server running on-3001
+2020-11-30 11:55:00 info: DB CONNECTION SUCCESS
+2020-11-30 11:55:01 info: Get Project Control
+2020-11-30 11:55:01 info: GET /api/v1/portfolio/projects 304 264.669 ms - -
