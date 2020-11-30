@@ -1,5 +1,6 @@
 import {
   CREATE_PROJECT,
+  DELETE_PROJECT,
   GET_PROJECTS,
   UPDATE_PROJECT,
 } from "../actions/actionType";
@@ -16,6 +17,10 @@ export function projectReducer(_projects = projects, action) {
         project.projectId === projectId
           ? { ...project, ...action.updatedProject }
           : project
+      );
+    case DELETE_PROJECT:
+      return _projects.filter(
+        (project) => project.projectId !== action.projectId
       );
     default:
       return _projects;
