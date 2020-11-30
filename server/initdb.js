@@ -9,6 +9,7 @@ const dotenv = require("dotenv");
 const Project = require("./model/Project");
 const multer = require("multer");
 dotenv.config();
+
 initdb = () => {
   mongoose.connect(process.env.DB_CONNECT, {
     useCreateIndex: true,
@@ -107,10 +108,25 @@ const updatePicture = async (req, res, next) => {
     next();
   }
 };
+
+const deleteFile = (file_id) => {
+  logger.info("Delete GFS", file_id);
+  let retVal;
+  gfs.remove({ _id: file_id, root: "images" }, function (err) {
+    if (err) {
+      retVal = "error";
+    } else {
+      console.log("File Delete success");
+      retVal = "success";
+    }
+    return retVal;
+  });
+};
 module.exports = {
   initdb,
   storage,
   fileFilter,
   fetchPictures,
   updatePicture,
+  deleteFile,
 };

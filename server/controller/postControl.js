@@ -2,7 +2,7 @@ const Project = require("../model/Project");
 const shortid = require("shortid");
 const logger = require("../library/logger");
 const { formatResponse } = require("../library/formatResponse");
-const { collection } = require("../model/Project");
+import { deleteFile } from "../initdb";
 
 const createPost = async (req, res) => {
   const { name, demo, code, type, description, userId, techstack } = req.body;
@@ -82,14 +82,24 @@ const updateProject = async (req, res) => {
   const { projectId, fileChg } = req.query;
   console.log("BODY::", req.body);
   console.log("QUERY::", req.query);
+
   let updateOptions = {};
   let existingProject = await Project.findOne({
     projectId: projectId,
   });
   // upload new file
   if (fileChg === "true") {
-    console.log("file change", req.file.id);
+    // delete the existing file
+    logger.info(`Delete Existing file-${existingProject.image}`);
+    let deleteResponse = deleteFile(existingProject.image);
+    logger.info(`Delete Response-${deleteResponse}`);
+    console.log("update new file change", req.file.id);
     updateOptions = { ...updateOptions, image: req.file.id };
+  } else {
+    // delete the file which was uploaded
+    logger.info(`Delete Existing file-${req.file.id}`);
+    let deleteResponse = deleteFile(req.file.id);
+    logger.info(`Delete Response-${deleteResponse}`);
   }
   // filter new techstack array and type array
   let updatedTechArray = filterNewItem(

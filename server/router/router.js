@@ -14,18 +14,21 @@ const upload = multer({
 
 /**projects route */
 router.get("/portfolio/projects", posts.getProjects);
+// create project
 router.post(
   "/portfolio/createProject",
   auth.isAuthorized,
   upload.single("file"),
   posts.createPost
 );
+// update project
 router.post(
   "/portfolio/updateProject/",
   auth.isAuthorized,
-  updatePicture,
+  upload.single("file"),
   posts.updateProject
 );
+
 /**blogs route */
 router.get("/portfolio/blogs", auth.isAuthorized, blogs.getBlogs);
 router.post(
