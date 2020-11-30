@@ -141,3 +141,26 @@ export const updateProject = async (projectInfo) => {
     return error.response.data;
   }
 };
+export const deleteProject = async (projectInfo) => {
+  console.log("delete Project api", projectInfo);
+  let deleteProjectConfig = {
+    method: "delete",
+    url: `${baseUrl}/api/v1/portfolio/deleteProject?userId=${userId}&projectId=${projectId}`,
+    headers: {
+      authToken: localStorage.getItem("authToken"),
+    },
+  };
+
+  try {
+    let deleteProjectResponse = await axios(deleteProjectConfig);
+    console.log("delete project success::", deleteProjectResponse.data.message);
+    if (!deleteProjectResponse.data.error) {
+      toast.success(deleteProjectResponse.data.message);
+    }
+    return projectInfo.projectId;
+  } catch (error) {
+    console.warn("Delete Project Error::", error.response.data);
+    toast.error(error.response.data.message);
+    return error.response.data;
+  }
+};

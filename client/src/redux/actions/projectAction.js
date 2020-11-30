@@ -1,4 +1,9 @@
-import { CREATE_PROJECT, GET_PROJECTS, UPDATE_PROJECT } from "./actionType";
+import {
+  CREATE_PROJECT,
+  DELETE_PROJECT,
+  GET_PROJECTS,
+  UPDATE_PROJECT,
+} from "./actionType";
 
 import * as apis from "../../api/apis";
 
@@ -24,5 +29,13 @@ export function updateProjectAction(projectInfo) {
     let updatedProject = await apis.updateProject(projectInfo);
     console.log("Updated project:", updatedProject);
     dispatch({ type: UPDATE_PROJECT, updatedProject });
+  };
+}
+export function deleteProjectAction(projectInfo) {
+  console.log("Delete project Action::", projectInfo);
+  return async (dispatch) => {
+    let projectId = await apis.deleteProject(projectInfo);
+    console.log("Deleted project id::", projectId);
+    dispatch({ type: DELETE_PROJECT, projectId });
   };
 }
