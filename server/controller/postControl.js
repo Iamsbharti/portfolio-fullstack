@@ -124,7 +124,12 @@ const updateProject = async (req, res) => {
   // update project
   let { n } = await Project.updateOne({ projectId: projectId }, updateOptions);
   if (n === 1) {
-    res.status(200).json(formatResponse(false, 200, "Project Updated", n));
+    let updatedProject = await Project.findOne({
+      projectId: projectId,
+    }).populate("image");
+    res
+      .status(200)
+      .json(formatResponse(false, 200, "Project Updated", updatedProject));
   } else {
     res
       .status(500)

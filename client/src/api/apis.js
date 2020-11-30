@@ -107,6 +107,7 @@ export const updateProject = async (projectInfo) => {
     file,
     fileChg,
     userId,
+    projectId,
   } = projectInfo;
   data.append("userId", userId);
   data.append("name", name);
@@ -115,16 +116,12 @@ export const updateProject = async (projectInfo) => {
   data.append("techstack", techstack);
   data.append("demo", demo);
   data.append("code", code);
-  if (fileChg) {
-    console.log("include new file");
-    data.append("file", file);
-  }
+  data.append("file", file);
 
   console.log("Auth token::", localStorage.getItem("authToken"));
-
-  let createProjectConfig = {
+  let updateProjectConfig = {
     method: "post",
-    url: `${baseUrl}/api/v1/portfolio/createProject?userId=${userId}`,
+    url: `${baseUrl}/api/v1/portfolio/updateProject?userId=${userId}&projectId=${projectId}&fileChg=${fileChg}`,
     headers: {
       authToken: localStorage.getItem("authToken"),
     },
@@ -132,14 +129,14 @@ export const updateProject = async (projectInfo) => {
   };
 
   try {
-    let createProjectResponse = await axios(createProjectConfig);
-    console.log("create project success::", createProjectResponse.data.message);
-    if (!createProjectResponse.data.error) {
-      toast.success("Project Created");
+    let updateProjectResponse = await axios(updateProjectConfig);
+    console.log("update project success::", updateProjectResponse.data.message);
+    if (!updateProjectResponse.data.error) {
+      toast.success("Project Updated");
     }
-    return createProjectResponse.data.data;
+    return updateProjectResponse.data.data;
   } catch (error) {
-    console.warn("Create Project Error::", error.response.data);
+    console.warn("Update Project Error::", error.response.data);
     toast.error(error.response.data.message);
     return error.response.data;
   }
