@@ -14871,3 +14871,76 @@
 2020-11-30 13:45:04 info: DB CONNECTION SUCCESS
 2020-11-30 13:45:11 info: Portfolio server running on-3001
 2020-11-30 13:45:11 info: DB CONNECTION SUCCESS
+2020-11-30 13:46:34 info: Portfolio server running on-3001
+2020-11-30 13:46:35 info: DB CONNECTION SUCCESS
+2020-11-30 13:47:10 info: Portfolio server running on-3001
+2020-11-30 13:47:11 info: DB CONNECTION SUCCESS
+2020-11-30 13:47:21 info: Portfolio server running on-3001
+2020-11-30 13:47:22 info: DB CONNECTION SUCCESS
+2020-11-30 13:47:40 info: Portfolio server running on-3001
+2020-11-30 13:47:41 info: DB CONNECTION SUCCESS
+2020-11-30 13:47:48 info: Portfolio server running on-3001
+2020-11-30 13:47:49 info: DB CONNECTION SUCCESS
+2020-11-30 13:47:52 info: Portfolio server running on-3001
+2020-11-30 13:47:53 info: DB CONNECTION SUCCESS
+2020-11-30 13:47:59 info: Portfolio server running on-3001
+2020-11-30 13:48:00 info: DB CONNECTION SUCCESS
+2020-11-30 13:48:11 info: Portfolio server running on-3001
+2020-11-30 13:48:12 info: DB CONNECTION SUCCESS
+2020-11-30 13:48:43 info: Portfolio server running on-3001
+2020-11-30 13:48:44 info: DB CONNECTION SUCCESS
+2020-11-30 13:48:47 info: Get Project Control
+2020-11-30 13:48:49 info: Portfolio server running on-3001
+2020-11-30 13:48:50 info: DB CONNECTION SUCCESS
+2020-11-30 13:48:52 info: Get Project Control
+2020-11-30 13:48:52 info: GET /api/v1/portfolio/projects 304 270.244 ms - -
+2020-11-30 13:48:57 info: Portfolio server running on-3001
+2020-11-30 13:48:58 info: DB CONNECTION SUCCESS
+2020-11-30 13:49:04 info: OPTIONS /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=DOc92dPhL 204 2.250 ms - 0
+2020-11-30 13:49:04 info: Authorizing user
+2020-11-30 13:49:04 info: Delete Project Control
+2020-11-30 13:49:04 info: Delete GFS 5fb4ba9a0619c95b770418f3
+2020-11-30 13:49:04 info: Project Image Delted
+2020-11-30 13:49:05 info: DELETE /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=DOc92dPhL 200 337.777 ms - 85
+2020-11-30 13:49:10 info: OPTIONS /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=AmVzbL1BI 204 0.346 ms - 0
+2020-11-30 13:49:10 info: Authorizing user
+2020-11-30 13:49:10 info: Delete Project Control
+2020-11-30 13:49:10 info: Delete GFS 5fc496d51c4f4e0626497f20
+2020-11-30 13:49:10 info: Project Image Delted
+2020-11-30 13:49:10 info: DELETE /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=AmVzbL1BI 200 216.698 ms - 85
+2020-11-30 13:49:16 info: OPTIONS /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=2PpMe9U_D 204 0.301 ms - 0
+2020-11-30 13:49:16 info: Authorizing user
+2020-11-30 13:49:16 info: Delete Project Control
+2020-11-30 13:49:16 info: Delete GFS 5fb4baa10619c95b770418f6
+2020-11-30 13:49:16 info: Project Image Delted
+2020-11-30 13:49:16 info: DELETE /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=2PpMe9U_D 200 179.408 ms - 85
+2020-11-30 13:49:19 info: OPTIONS /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=RDro4cQvQ 204 0.179 ms - 0
+2020-11-30 13:49:19 info: Authorizing user
+2020-11-30 13:49:19 info: Delete Project Control
+2020-11-30 13:49:19 info: Delete GFS 5fb4bab50619c95b770418f9
+2020-11-30 13:49:19 info: Project Image Delted
+2020-11-30 13:49:19 info: DELETE /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=RDro4cQvQ 200 244.307 ms - 85
+2020-11-30 13:49:22 info: OPTIONS /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=LQy7KX-Rh 204 0.192 ms - 0
+2020-11-30 13:49:22 info: Authorizing user
+2020-11-30 13:49:22 info: Delete Project Control
+2020-11-30 13:49:22 info: Delete GFS 5fb4babc0619c95b770418fc
+2020-11-30 13:49:22 info: Project Image Delted
+2020-11-30 13:49:22 info: DELETE /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=LQy7KX-Rh 200 217.140 ms - 85
+2020-11-30 13:49:25 info: OPTIONS /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=t7hvpCuXI 204 0.252 ms - 0
+2020-11-30 13:49:25 info: Authorizing user
+2020-11-30 13:49:25 info: Delete Project Control
+2020-11-30 13:49:25 info: Delete GFS 5fb4bacc0619c95b770418ff
+2020-11-30 13:49:25 info: Project Image Delted
+2020-11-30 13:49:25 info: DELETE /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=t7hvpCuXI 200 199.664 ms - 85
+2020-11-30 13:49:27 info: OPTIONS /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=B29js_uR4 204 0.296 ms - 0
+2020-11-30 13:49:27 info: Authorizing user
+2020-11-30 13:49:27 info: Delete Project Control
+2020-11-30 13:49:28 info: Delete GFS 5fb4bad30619c95b77041902
+2020-11-30 13:49:28 info: Project Image Delted
+2020-11-30 13:49:28 info: DELETE /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=B29js_uR4 200 226.771 ms - 85
+2020-11-30 13:49:30 info: OPTIONS /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=Diq6xG32W 204 0.366 ms - 0
+2020-11-30 13:49:30 info: Authorizing user
+2020-11-30 13:49:30 info: Delete Project Control
+2020-11-30 13:49:30 info: Delete GFS 5fb756b3774b5d44c846b723
+2020-11-30 13:49:30 info: Project Image Delted
+2020-11-30 13:49:30 info: DELETE /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=Diq6xG32W 200 232.395 ms - 85

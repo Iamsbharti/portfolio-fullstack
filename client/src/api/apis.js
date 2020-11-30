@@ -143,6 +143,7 @@ export const updateProject = async (projectInfo) => {
 };
 export const deleteProject = async (projectInfo) => {
   console.log("delete Project api", projectInfo);
+  const { projectId, userId } = projectInfo;
   let deleteProjectConfig = {
     method: "delete",
     url: `${baseUrl}/api/v1/portfolio/deleteProject?userId=${userId}&projectId=${projectId}`,
@@ -157,7 +158,7 @@ export const deleteProject = async (projectInfo) => {
     if (!deleteProjectResponse.data.error) {
       toast.success(deleteProjectResponse.data.message);
     }
-    return projectInfo.projectId;
+    return projectId;
   } catch (error) {
     console.warn("Delete Project Error::", error.response.data);
     toast.error(error.response.data.message);

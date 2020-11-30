@@ -16,6 +16,7 @@ import {
   getAllProjectAction,
   createProjectAction,
   updateProjectAction,
+  deleteProjectAction,
 } from "../../redux/actions/projectAction";
 import FormInput from "./FormInput";
 import { ToastContainer, toast } from "react-toastify";
@@ -25,6 +26,7 @@ const ManageProjects = ({
   getAllProjectAction,
   createProjectAction,
   updateProjectAction,
+  deleteProjectAction,
 }) => {
   //let history = useHistory();
   const [editMode, setEditMode] = useState(false);
@@ -74,6 +76,14 @@ const ManageProjects = ({
       setValue(!value);
     }
   };
+  // handle delete project
+  const handleDeleteProject = (projectId) => {
+    let projectInfo = {
+      projectId: projectId,
+      userId: localStorage.getItem("userId"),
+    };
+    deleteProjectAction(projectInfo);
+  };
   return (
     <div className="manage__page">
       <code>Manage Projects Console</code>
@@ -107,7 +117,10 @@ const ManageProjects = ({
                     <Edit style={{ color: color }} />
                   </IconButton>
                   <ListItemSecondaryAction>
-                    <IconButton edge="end">
+                    <IconButton
+                      edge="end"
+                      onClick={() => handleDeleteProject(project.projectId)}
+                    >
                       <Delete style={{ color: color }} />
                     </IconButton>
                   </ListItemSecondaryAction>
@@ -128,5 +141,6 @@ const mapActionToProps = {
   getAllProjectAction,
   createProjectAction,
   updateProjectAction,
+  deleteProjectAction,
 };
 export default connect(mapStateToProps, mapActionToProps)(ManageProjects);
