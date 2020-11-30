@@ -96,9 +96,10 @@ const updateProject = async (req, res) => {
     updateOptions = { ...updateOptions, image: req.file.id };
   } else {
     // delete the file which was uploaded
-    logger.info(`Delete Uploaded file-${req.file.id}`);
+    /**logger.info(`Delete Uploaded file-${req.file.id}`);
     let deleteResponse = deleteFile(req.file.id);
     logger.info(`Delete Response-${deleteResponse}`);
+    **/
   }
   // filter new techstack array and type array
   let updatedTechArray = filterNewItem(

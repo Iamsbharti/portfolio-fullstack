@@ -15,6 +15,7 @@ import { connect } from "react-redux";
 import {
   getAllProjectAction,
   createProjectAction,
+  updateProjectAction,
 } from "../../redux/actions/projectAction";
 import FormInput from "./FormInput";
 import { ToastContainer, toast } from "react-toastify";
@@ -23,6 +24,7 @@ const ManageProjects = ({
   projects,
   getAllProjectAction,
   createProjectAction,
+  updateProjectAction,
 }) => {
   //let history = useHistory();
   const [editMode, setEditMode] = useState(false);
@@ -63,6 +65,9 @@ const ManageProjects = ({
         ...projectInfo,
         projectId: projectToEdit.projectId,
       };
+      console.log("Project info for Update::", updateProjectinfo);
+      updateProjectAction(updateProjectinfo);
+      setValue(!value);
     } else {
       console.log("create new project");
       createProjectAction(projectInfo);
@@ -122,5 +127,6 @@ const mapStateToProps = (state) => {
 const mapActionToProps = {
   getAllProjectAction,
   createProjectAction,
+  updateProjectAction,
 };
 export default connect(mapStateToProps, mapActionToProps)(ManageProjects);
