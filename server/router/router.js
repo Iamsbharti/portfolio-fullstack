@@ -28,6 +28,12 @@ router.post(
   upload.single("file"),
   posts.updateProject
 );
+// delete project
+router.delete(
+  "/portfolio/deleteProject/",
+  auth.isAuthorized,
+  posts.deleteProject
+);
 
 /**blogs route */
 router.get("/portfolio/blogs", auth.isAuthorized, blogs.getBlogs);

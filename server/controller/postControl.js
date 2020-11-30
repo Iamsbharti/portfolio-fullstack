@@ -137,8 +137,41 @@ const updateProject = async (req, res) => {
       .json(formatResponse(true, 500, "Internal Server Error", null));
   }
 };
+const deleteProject = async (req, res) => {
+  logger.info("Delete Project Control");
+  const { projectId } = req.query;
+  const query = { projectId: projectId };
+  //find project and delete file image
+  let projectFound = await Project.findOne(query);
+  // delete image
+  if (projectFound.image) {
+    let deleteResponse = deleteFile(projectFound.image);
+    logger.info("Project Image Delted");
+  }
+  // delete the whole project
+  await Project.deleteOne(query, (err, project) => {
+    let { n } = project;
+    if (err) {
+      res
+        .status(500)
+        .json(formatResponse(true, 500, "Internal Server Error", err));
+    } else {
+      res
+        .status(200)
+        .json(
+          formatResponse(
+            false,
+            200,
+            "Project Deleted",
+            `${n} Document Affected`
+          )
+        );
+    }
+  });
+};
 module.exports = {
   createPost,
   getProjects,
   updateProject,
+  deleteProject,
 };
