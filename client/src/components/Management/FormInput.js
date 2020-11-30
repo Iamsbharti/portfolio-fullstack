@@ -192,17 +192,6 @@ const FormDialog = ({
                   value={code}
                   onChange={(e) => setCode(e.target.value)}
                 />
-                <Divider />
-                <TextField
-                  className={formClasses.FormControl}
-                  autoFocus
-                  name="demo"
-                  placeholder="demo link"
-                  label="Project Demo Link"
-                  margin="dense"
-                  value={demo}
-                  onChange={(e) => setDemo(e.target.value)}
-                />
               </div>
               <div className="form__content__right">
                 <div className="techstack__chips">
@@ -220,6 +209,17 @@ const FormDialog = ({
                     updateChipContent={handleUpdateChipComponent}
                   />
                 </div>
+                <Divider />
+                <TextField
+                  className={formClasses.FormControl}
+                  autoFocus
+                  name="demo"
+                  placeholder="demo link"
+                  label="Project Demo Link"
+                  margin="dense"
+                  value={demo}
+                  onChange={(e) => setDemo(e.target.value)}
+                />
               </div>
             </div>
           </div>
