@@ -6,8 +6,6 @@ const crypto = require("crypto");
 const path = require("path");
 const { formatResponse } = require("./library/formatResponse");
 const dotenv = require("dotenv");
-const Project = require("./model/Project");
-const multer = require("multer");
 dotenv.config();
 
 initdb = () => {
@@ -81,33 +79,6 @@ const fetchPictures = (req, res) => {
     readStream.pipe(res);
   });
 };
-// find , delete image and update new one , during project update
-const updatePicture = async (req, res, next) => {
-  logger.info("Delete Attachment");
-  let { projectId, fileChg } = req.query;
-  console.log("projectid:", projectId, fileChg);
-  // find project file
-  let existingProject = await Project.findOne({
-    projectId: projectId,
-  });
-  const filename = existingProject.image;
-  let isFileDeleted = false;
-  if (fileChg === "true") {
-    gfs.files.deleteOne({ filename: filename }, (err) => {
-      if (err) {
-        console.log("File Delete Error");
-      } else {
-        isFileDeleted = true;
-        console.log("File delete success");
-        console.log("Initiate new File Upload");
-        next();
-      }
-    });
-  } else {
-    console.log("Skip file upload change");
-    next();
-  }
-};
 
 const deleteFile = (file_id) => {
   logger.info(`Delete GFS ${file_id}`);
@@ -127,6 +98,5 @@ module.exports = {
   storage,
   fileFilter,
   fetchPictures,
-  updatePicture,
   deleteFile,
 };
