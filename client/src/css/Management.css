@@ -109,3 +109,11 @@ input[type="file"] {
 .MuiChip-label {
   color: black !important;
 }
+.img__div {
+  padding: 20px;
+  margin-left: 120px;
+}
+.img__div > img {
+  width: 150px;
+  height: 150px;
+}

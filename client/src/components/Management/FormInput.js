@@ -20,6 +20,8 @@ import { connect } from "react-redux";
 import { techStackArray, projectTypeArray } from "../../redux/defaultStore";
 import ChipComponent from "./ChipComponent";
 import Divider from "@material-ui/core/Divider";
+import { baseUrl } from "../../api/apis";
+import "../../css/Management.css";
 const styles = makeStyles((theme) => ({
   FormControl: {
     width: 600,
@@ -48,6 +50,7 @@ const FormDialog = ({
   const diaLogClasses = useStyles();
   const formClasses = styles();
   const [openValue, setOpenValue] = useState(open);
+  console.log("PROJECT EDIT", projectToEdit);
   const handleClose = () => {
     setOpenValue(false);
     onCloseDialog(false);
@@ -167,6 +170,17 @@ const FormDialog = ({
                       <Delete />
                     </IconButton>
                   </span>
+                  <div
+                    className="img__div"
+                    hidden={projectToEdit.image ? false : true}
+                  >
+                    {projectToEdit.image && (
+                      <img
+                        src={`${baseUrl}/api/v1/project/picture?filename=${projectToEdit.image.filename}`}
+                        alt="demon"
+                      />
+                    )}
+                  </div>
                 </div>
                 <TextField
                   className={formClasses.FormControl}
