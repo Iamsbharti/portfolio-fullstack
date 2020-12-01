@@ -117,3 +117,7 @@ input[type="file"] {
   width: 150px;
   height: 150px;
 }
+.back__icon {
+  margin: 5px !important;
+  cursor: pointer;
+}

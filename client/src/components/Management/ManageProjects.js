@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-//import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "../../css/Management.css";
 import {
   List,
@@ -21,6 +21,7 @@ import {
 import FormInput from "./FormInput";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 const ManageProjects = ({
   projects,
   getAllProjectAction,
@@ -28,7 +29,7 @@ const ManageProjects = ({
   updateProjectAction,
   deleteProjectAction,
 }) => {
-  //let history = useHistory();
+  let history = useHistory();
   const [editMode, setEditMode] = useState(false);
   const [projectToEdit, setProjectToEdit] = useState({});
   const color = HUE[50];
@@ -87,6 +88,10 @@ const ManageProjects = ({
   return (
     <div className="manage__page">
       <code>Manage Projects Console</code>
+      <ArrowBackIcon
+        className="back__icon"
+        onClick={() => history.push("/manage")}
+      />
       <div className="managae__content">
         <Button onClick={handleClick}>
           <AddBoxOutlined color="primary" />

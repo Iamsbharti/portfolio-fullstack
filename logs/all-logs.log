@@ -14944,3 +14944,46 @@
 2020-11-30 13:49:30 info: Delete GFS 5fb756b3774b5d44c846b723
 2020-11-30 13:49:30 info: Project Image Delted
 2020-11-30 13:49:30 info: DELETE /api/v1/portfolio/deleteProject?userId=3SJTd1d-m&projectId=Diq6xG32W 200 232.395 ms - 85
+2020-12-01 10:49:00 info: DB CONNECTION SUCCESS
+2020-12-01 10:50:20 info: Portfolio server running on-3001
+2020-12-01 10:50:22 info: DB CONNECTION SUCCESS
+2020-12-01 10:50:28 info: Get Project Control
+2020-12-01 10:50:29 info: GET /api/v1/portfolio/projects 200 265.669 ms - 4698
+2020-12-01 10:50:59 info: Portfolio server running on-3001
+2020-12-01 10:51:00 info: DB CONNECTION SUCCESS
+2020-12-01 10:51:04 info: Get Project Control
+2020-12-01 10:51:04 info: GET /api/v1/portfolio/projects 304 257.479 ms - -
+2020-12-01 10:51:14 info: Portfolio server running on-3001
+2020-12-01 10:51:15 info: DB CONNECTION SUCCESS
+2020-12-01 10:51:18 info: Get Project Control
+2020-12-01 10:51:18 info: GET /api/v1/portfolio/projects 304 249.883 ms - -
+2020-12-01 10:52:07 info: Portfolio server running on-3001
+2020-12-01 10:52:08 info: DB CONNECTION SUCCESS
+2020-12-01 10:52:12 info: Get Project Control
+2020-12-01 10:52:12 info: GET /api/v1/portfolio/projects 304 241.904 ms - -
+2020-12-01 10:52:17 info: Portfolio server running on-3001
+2020-12-01 10:52:18 info: DB CONNECTION SUCCESS
+2020-12-01 10:52:21 info: Get Project Control
+2020-12-01 10:52:22 info: GET /api/v1/portfolio/projects 304 262.162 ms - -
+2020-12-01 10:52:47 info: Portfolio server running on-3001
+2020-12-01 10:52:48 info: DB CONNECTION SUCCESS
+2020-12-01 10:52:50 info: Portfolio server running on-3001
+2020-12-01 10:52:51 info: DB CONNECTION SUCCESS
+2020-12-01 10:52:54 info: Get Project Control
+2020-12-01 10:52:54 info: GET /api/v1/portfolio/projects 304 289.410 ms - -
+2020-12-01 10:53:09 info: Portfolio server running on-3001
+2020-12-01 10:53:11 info: DB CONNECTION SUCCESS
+2020-12-01 10:53:14 info: Get Project Control
+2020-12-01 10:53:15 info: GET /api/v1/portfolio/projects 304 295.305 ms - -
+2020-12-01 10:53:34 info: Portfolio server running on-3001
+2020-12-01 10:53:36 info: DB CONNECTION SUCCESS
+2020-12-01 10:53:38 info: Get Project Control
+2020-12-01 10:53:39 info: GET /api/v1/portfolio/projects 304 252.704 ms - -
+2020-12-01 10:54:18 info: Portfolio server running on-3001
+2020-12-01 10:54:20 info: DB CONNECTION SUCCESS
+2020-12-01 10:54:23 info: Get Project Control
+2020-12-01 10:54:23 info: GET /api/v1/portfolio/projects 304 284.492 ms - -
+2020-12-01 10:54:49 info: Get Project Control
+2020-12-01 10:54:49 info: GET /api/v1/portfolio/projects 304 231.253 ms - -
+2020-12-01 10:54:58 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-01 10:54:59 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 854.017 ms - -
