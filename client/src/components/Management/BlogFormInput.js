@@ -170,10 +170,9 @@ const BlogFormInput = ({ open, onCloseDialog, mode, blogToEdit, saveBlog }) => {
                 </div>
                 <Divider />
                 <TextField
-                  id="datetime-local"
+                  id="date-local"
                   label="Blog Creation Date"
-                  type="datetime-local"
-                  defaultValue="2020-02-20T20:20"
+                  type="date"
                   className={formClasses.FormControl}
                   InputLabelProps={{
                     shrink: true,
