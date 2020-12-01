@@ -144,7 +144,7 @@ const deleteProject = async (req, res) => {
   //find project and delete file image
   let projectFound = await Project.findOne(query);
   // delete image
-  if (projectFound.image) {
+  if (projectFound.image !== null) {
     let deleteResponse = deleteFile(projectFound.image);
     logger.info("Project Image Delted");
   }

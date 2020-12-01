@@ -21,6 +21,14 @@ const blogSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  type: {
+    type: Array,
+    required: true,
+  },
+  created: {
+    type: Date,
+    default: Date.now(),
+  },
   image: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Images",

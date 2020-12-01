@@ -15298,3 +15298,67 @@
 2020-12-01 11:45:54 info: DB CONNECTION SUCCESS
 2020-12-01 11:45:55 info: Get All Blog Control
 2020-12-01 11:45:55 info: GET /api/v1/portfolio/blogs 200 251.394 ms - 419
+2020-12-01 11:48:43 info: Portfolio server running on-3001
+2020-12-01 11:48:44 info: DB CONNECTION SUCCESS
+2020-12-01 11:49:07 info: Portfolio server running on-3001
+2020-12-01 11:49:08 info: DB CONNECTION SUCCESS
+2020-12-01 11:49:48 info: Portfolio server running on-3001
+2020-12-01 11:49:49 info: DB CONNECTION SUCCESS
+2020-12-01 11:50:12 info: Portfolio server running on-3001
+2020-12-01 11:50:14 info: DB CONNECTION SUCCESS
+2020-12-01 11:50:41 info: Portfolio server running on-3001
+2020-12-01 11:50:42 info: DB CONNECTION SUCCESS
+2020-12-01 11:51:42 info: Portfolio server running on-3001
+2020-12-01 11:51:44 info: DB CONNECTION SUCCESS
+2020-12-01 11:51:54 info: Portfolio server running on-3001
+2020-12-01 11:51:55 info: DB CONNECTION SUCCESS
+2020-12-01 11:52:01 info: Portfolio server running on-3001
+2020-12-01 11:52:02 info: DB CONNECTION SUCCESS
+2020-12-01 11:52:38 info: Portfolio server running on-3001
+2020-12-01 11:52:39 info: Portfolio server running on-3001
+2020-12-01 11:52:40 info: DB CONNECTION SUCCESS
+2020-12-01 11:55:09 info: Portfolio server running on-3001
+2020-12-01 11:55:11 info: DB CONNECTION SUCCESS
+2020-12-01 11:55:48 info: Portfolio server running on-3001
+2020-12-01 11:55:49 info: DB CONNECTION SUCCESS
+2020-12-01 11:56:08 info: Portfolio server running on-3001
+2020-12-01 11:56:09 info: DB CONNECTION SUCCESS
+2020-12-01 11:56:18 info: Portfolio server running on-3001
+2020-12-01 11:56:19 info: DB CONNECTION SUCCESS
+2020-12-01 11:56:24 info: Portfolio server running on-3001
+2020-12-01 11:56:25 info: DB CONNECTION SUCCESS
+2020-12-01 11:56:40 info: Portfolio server running on-3001
+2020-12-01 11:56:41 info: DB CONNECTION SUCCESS
+2020-12-01 11:56:45 info: Portfolio server running on-3001
+2020-12-01 11:56:46 info: DB CONNECTION SUCCESS
+2020-12-01 11:56:50 info: Portfolio server running on-3001
+2020-12-01 11:56:51 info: DB CONNECTION SUCCESS
+2020-12-01 11:58:12 info: Authorizing user
+2020-12-01 11:58:12 info: DELETE /api/v1/portfolio/deleteProject?blogId=1EvntKQvk&userId=3SJTd1d-m 400 5.529 ms - 69
+2020-12-01 11:58:31 info: Authorizing user
+2020-12-01 11:58:31 info: Delete Project Control
+2020-12-01 11:58:57 info: DELETE /api/v1/portfolio/deleteProject?blogId=1EvntKQvk&userId=3SJTd1d-m - - ms - -
+2020-12-01 11:59:31 info: Portfolio server running on-3001
+2020-12-01 11:59:32 info: DB CONNECTION SUCCESS
+2020-12-01 11:59:37 info: Portfolio server running on-3001
+2020-12-01 11:59:38 info: DB CONNECTION SUCCESS
+2020-12-01 11:59:43 info: Authorizing user
+2020-12-01 11:59:43 info: Delete Blog Control
+2020-12-01 12:00:20 info: Portfolio server running on-3001
+2020-12-01 12:00:21 info: DB CONNECTION SUCCESS
+2020-12-01 12:00:26 info: Authorizing user
+2020-12-01 12:00:26 info: Delete Blog Control
+2020-12-01 12:00:26 info: Delete GFS 5f661810a5f7b2214850babc
+2020-12-01 12:00:26 info: Project Image Delted
+2020-12-01 12:00:26 info: DELETE /api/v1/portfolio/deleteBlog?blogId=1EvntKQvk&userId=3SJTd1d-m 200 422.618 ms - 76
+2020-12-01 12:00:36 info: Get All Blog Control
+2020-12-01 12:00:37 info: GET /api/v1/portfolio/blogs 200 487.469 ms - 241
+2020-12-01 12:00:52 info: Authorizing user
+2020-12-01 12:00:52 info: Delete Blog Control
+2020-12-01 12:00:52 info: Delete GFS 5f66186702ed2121da761bab
+2020-12-01 12:00:52 info: Project Image Delted
+2020-12-01 12:00:52 info: DELETE /api/v1/portfolio/deleteBlog?blogId=tidBVBrX7&userId=3SJTd1d-m 200 256.081 ms - 76
+2020-12-01 12:00:58 info: Get All Blog Control
+2020-12-01 12:00:58 info: GET /api/v1/portfolio/blogs 200 129.561 ms - 64
+2020-12-01 12:01:14 info: Portfolio server running on-3001
+2020-12-01 12:01:15 info: DB CONNECTION SUCCESS

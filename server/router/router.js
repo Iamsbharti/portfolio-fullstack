@@ -43,6 +43,7 @@ router.post(
   upload.single("file"),
   blogs.createBlog
 );
+router.delete("/portfolio/deleteBlog", auth.isAuthorized, blogs.deleteBlog);
 /**fetch pictures */
 router.get("/project/picture", fetchPictures);
 //router.post("/portfolio/createUser", users.createUser);
