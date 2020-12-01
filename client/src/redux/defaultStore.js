@@ -21,6 +21,28 @@ export const projects = [
     __v: 0,
   },
 ];
+export const blogs = [
+  {
+    _id: "5fc5e3d1abd69b48f5bce5c3",
+    type: [],
+    created: "2020-12-01T06:31:14.347Z",
+    blogId: "-ittn8OT7",
+    userId: "3SJTd1d-m",
+    title: "Create Twitter",
+    link: "https://www.git.com",
+    description: "new blogs",
+    image: {
+      _id: "5fc5e3ccabd69b48f5bce5c1",
+      length: 189544,
+      chunkSize: 261120,
+      uploadDate: "2020-12-01T06:33:53.475Z",
+      filename: "b4d23a4096ceccd2126edb343439398b",
+      md5: "4222b4495ff075c7be23b844e3bc0390",
+      contentType: "image/png",
+    },
+    __v: 0,
+  },
+];
 export const projectFilterCategory = [
   { name: "All", img: "icons8-workspace-one-128.png", disabled: true },
   { name: "ReactJS", img: "icons8-react-100.png", disabled: false },

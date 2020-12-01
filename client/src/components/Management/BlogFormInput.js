@@ -50,7 +50,7 @@ const BlogFormInput = ({ open, onCloseDialog, mode, blogToEdit, saveBlog }) => {
     onCloseDialog(false);
   };
   const [title, setTitle] = useState(mode ? blogToEdit.title : "");
-  const [description, setDesc] = useState(mode ? BlogToEdit.description : "");
+  const [description, setDesc] = useState(mode ? blogToEdit.description : "");
   const [type, setType] = useState(mode ? blogToEdit.type : projectTypeArray);
   const [link, setLink] = useState(mode ? blogToEdit.link : "");
   const [created, setCreated] = useState(mode ? blogToEdit.created : "");
@@ -174,7 +174,7 @@ const BlogFormInput = ({ open, onCloseDialog, mode, blogToEdit, saveBlog }) => {
                   label="Blog Creation Date"
                   type="datetime-local"
                   defaultValue="2020-02-20T20:20"
-                  className={classes.textField}
+                  className={formClasses.FormControl}
                   InputLabelProps={{
                     shrink: true,
                   }}

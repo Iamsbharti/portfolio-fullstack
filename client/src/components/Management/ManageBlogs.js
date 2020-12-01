@@ -13,21 +13,21 @@ import HUE from "@material-ui/core/colors/indigo";
 import { AddBoxOutlined, Edit, Delete } from "@material-ui/icons";
 import { connect } from "react-redux";
 import {
-  getAllProjectAction,
-  createProjectAction,
-  updateProjectAction,
-  deleteProjectAction,
-} from "../../redux/actions/projectAction";
+  getAllBlogAction,
+  updateBlogAction,
+  createBlogAction,
+  deleteBlogAction,
+} from "../../redux/actions/blogAction";
 import BlogFormInput from "./BlogFormInput";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 const ManageBlogs = ({
   blogs,
-  getAllProjectAction,
-  createProjectAction,
-  updateProjectAction,
-  deleteProjectAction,
+  getAllBlogAction,
+  updateBlogAction,
+  createBlogAction,
+  deleteBlogAction,
 }) => {
   let history = useHistory();
   const [editMode, setEditMode] = useState(false);
@@ -36,8 +36,8 @@ const ManageBlogs = ({
 
   useEffect(() => {
     console.log("get all blogs");
-    getAllBlogsAction();
-  }, [getAllBlogsAction]);
+    getAllBlogAction();
+  }, [getAllBlogAction]);
 
   //handle dialog transition
   const [value, setValue] = useState(false);
@@ -100,7 +100,7 @@ const ManageBlogs = ({
             open={value}
             onCloseDialog={handleCloseDialog}
             mode={editMode}
-            projectToEdit={blogToEdit}
+            blogToEdit={blogToEdit}
             saveProject={handleSaveBlog}
           />
         )}
@@ -136,9 +136,9 @@ const mapStateToProps = (state) => {
   return { blogs };
 };
 const mapActionToProps = {
-  getAllProjectAction,
-  createProjectAction,
-  updateProjectAction,
-  deleteProjectAction,
+  getAllBlogAction,
+  updateBlogAction,
+  createBlogAction,
+  deleteBlogAction,
 };
 export default connect(mapStateToProps, mapActionToProps)(ManageBlogs);
