@@ -174,4 +174,5 @@ module.exports = {
   getProjects,
   updateProject,
   deleteProject,
+  filterNewItem,
 };

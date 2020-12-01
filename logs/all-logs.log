@@ -15420,3 +15420,101 @@
 2020-12-01 12:09:02 info: Portfolio server running on-3001
 2020-12-01 12:09:03 info: Portfolio server running on-3001
 2020-12-01 12:09:04 info: DB CONNECTION SUCCESS
+2020-12-01 12:17:56 info: Portfolio server running on-3001
+2020-12-01 12:17:57 info: DB CONNECTION SUCCESS
+2020-12-01 12:18:30 info: Portfolio server running on-3001
+2020-12-01 12:18:32 info: DB CONNECTION SUCCESS
+2020-12-01 12:18:38 info: Portfolio server running on-3001
+2020-12-01 12:18:39 info: DB CONNECTION SUCCESS
+2020-12-01 12:18:48 info: Portfolio server running on-3001
+2020-12-01 12:18:49 info: DB CONNECTION SUCCESS
+2020-12-01 12:19:14 info: Portfolio server running on-3001
+2020-12-01 12:19:16 info: DB CONNECTION SUCCESS
+2020-12-01 12:19:23 info: Portfolio server running on-3001
+2020-12-01 12:19:24 info: DB CONNECTION SUCCESS
+2020-12-01 12:19:35 info: Portfolio server running on-3001
+2020-12-01 12:19:36 info: DB CONNECTION SUCCESS
+2020-12-01 12:19:42 info: Portfolio server running on-3001
+2020-12-01 12:19:43 info: DB CONNECTION SUCCESS
+2020-12-01 12:19:54 info: Portfolio server running on-3001
+2020-12-01 12:19:55 info: DB CONNECTION SUCCESS
+2020-12-01 12:19:59 info: Portfolio server running on-3001
+2020-12-01 12:20:00 info: DB CONNECTION SUCCESS
+2020-12-01 12:20:02 info: Portfolio server running on-3001
+2020-12-01 12:20:03 info: DB CONNECTION SUCCESS
+2020-12-01 12:20:13 info: Portfolio server running on-3001
+2020-12-01 12:20:14 info: DB CONNECTION SUCCESS
+2020-12-01 12:20:31 info: Portfolio server running on-3001
+2020-12-01 12:20:32 info: DB CONNECTION SUCCESS
+2020-12-01 12:20:35 info: Portfolio server running on-3001
+2020-12-01 12:20:36 info: DB CONNECTION SUCCESS
+2020-12-01 12:20:43 info: Portfolio server running on-3001
+2020-12-01 12:20:44 info: Portfolio server running on-3001
+2020-12-01 12:20:45 info: DB CONNECTION SUCCESS
+2020-12-01 12:20:50 info: Portfolio server running on-3001
+2020-12-01 12:20:51 info: DB CONNECTION SUCCESS
+2020-12-01 12:21:12 info: Portfolio server running on-3001
+2020-12-01 12:21:13 info: DB CONNECTION SUCCESS
+2020-12-01 12:21:16 info: Portfolio server running on-3001
+2020-12-01 12:21:16 info: Portfolio server running on-3001
+2020-12-01 12:21:18 info: DB CONNECTION SUCCESS
+2020-12-01 12:21:28 info: Portfolio server running on-3001
+2020-12-01 12:21:29 info: DB CONNECTION SUCCESS
+2020-12-01 12:21:35 info: Portfolio server running on-3001
+2020-12-01 12:21:36 info: DB CONNECTION SUCCESS
+2020-12-01 12:22:08 info: Portfolio server running on-3001
+2020-12-01 12:22:09 info: DB CONNECTION SUCCESS
+2020-12-01 12:22:13 info: Portfolio server running on-3001
+2020-12-01 12:22:14 info: DB CONNECTION SUCCESS
+2020-12-01 12:22:22 info: Portfolio server running on-3001
+2020-12-01 12:22:23 info: DB CONNECTION SUCCESS
+2020-12-01 12:22:30 info: Portfolio server running on-3001
+2020-12-01 12:22:31 info: DB CONNECTION SUCCESS
+2020-12-01 12:22:37 info: Portfolio server running on-3001
+2020-12-01 12:22:38 info: DB CONNECTION SUCCESS
+2020-12-01 12:22:41 info: Portfolio server running on-3001
+2020-12-01 12:22:42 info: DB CONNECTION SUCCESS
+2020-12-01 12:22:50 info: Portfolio server running on-3001
+2020-12-01 12:22:51 info: DB CONNECTION SUCCESS
+2020-12-01 12:23:00 info: Portfolio server running on-3001
+2020-12-01 12:23:01 info: DB CONNECTION SUCCESS
+2020-12-01 12:23:15 info: Portfolio server running on-3001
+2020-12-01 12:23:16 info: DB CONNECTION SUCCESS
+2020-12-01 12:23:20 info: Portfolio server running on-3001
+2020-12-01 12:23:21 info: Portfolio server running on-3001
+2020-12-01 12:23:22 info: DB CONNECTION SUCCESS
+2020-12-01 12:26:14 info: Portfolio server running on-3001
+2020-12-01 12:26:15 info: DB CONNECTION SUCCESS
+2020-12-01 12:26:37 info: Portfolio server running on-3001
+2020-12-01 12:26:38 info: DB CONNECTION SUCCESS
+2020-12-01 12:26:41 info: Portfolio server running on-3001
+2020-12-01 12:26:42 info: DB CONNECTION SUCCESS
+2020-12-01 12:26:46 info: Portfolio server running on-3001
+2020-12-01 12:26:48 info: DB CONNECTION SUCCESS
+2020-12-01 12:26:57 info: Portfolio server running on-3001
+2020-12-01 12:26:58 info: DB CONNECTION SUCCESS
+2020-12-01 12:27:00 info: Authorizing user
+2020-12-01 12:27:01 info: File Info:[object Object]
+2020-12-01 12:27:02 info: Update Blog control
+2020-12-01 12:27:29 info: Get All Blog Control
+2020-12-01 12:27:29 info: GET /api/v1/portfolio/blogs 200 338.810 ms - 1871
+2020-12-01 12:27:53 info: POST /api/v1/portfolio/updateBlog?userId=3SJTd1d-m&blogId=UVT9i5jp5&fileChg=true - - ms - -
+2020-12-01 12:27:57 info: Portfolio server running on-3001
+2020-12-01 12:27:59 info: DB CONNECTION SUCCESS
+2020-12-01 12:28:02 info: Authorizing user
+2020-12-01 12:28:02 info: File Info:[object Object]
+2020-12-01 12:28:04 info: Update Blog control
+2020-12-01 12:28:04 info: Delete Existing file-5fc5e3ccabd69b48f5bce5c1
+2020-12-01 12:28:04 info: Delete GFS 5fc5e3ccabd69b48f5bce5c1
+2020-12-01 12:28:04 info: Delete Response-undefined
+2020-12-01 12:28:04 info: POST /api/v1/portfolio/updateBlog?userId=3SJTd1d-m&blogId=-ittn8OT7&fileChg=true 200 2233.773 ms - 481
+2020-12-01 12:28:48 info: Authorizing user
+2020-12-01 12:28:48 info: File Info:[object Object]
+2020-12-01 12:28:49 info: Update Blog control
+2020-12-01 12:28:49 info: Delete Existing file-5fc5e97a388f4d54c6943a95
+2020-12-01 12:28:49 info: Delete GFS 5fc5e97a388f4d54c6943a95
+2020-12-01 12:28:49 info: Delete Response-undefined
+2020-12-01 12:28:50 info: POST /api/v1/portfolio/updateBlog?userId=3SJTd1d-m&blogId=-ittn8OT7&fileChg=true 200 1932.921 ms - 486
+2020-12-01 12:29:02 info: Authorizing user
+2020-12-01 12:29:02 info: Update Blog control
+2020-12-01 12:29:02 info: POST /api/v1/portfolio/updateBlog?userId=3SJTd1d-m&blogId=-ittn8OT7&fileChg=false 200 522.327 ms - 486

@@ -37,11 +37,19 @@ router.delete(
 
 /**blogs route */
 router.get("/portfolio/blogs", blogs.getBlogs);
+//create blog
 router.post(
   "/portfolio/createBlog",
   auth.isAuthorized,
   upload.single("file"),
   blogs.createBlog
+);
+// update blog
+router.post(
+  "/portfolio/updateBlog/",
+  auth.isAuthorized,
+  upload.single("file"),
+  blogs.updateBlog
 );
 router.delete("/portfolio/deleteBlog", auth.isAuthorized, blogs.deleteBlog);
 /**fetch pictures */
