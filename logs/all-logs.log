@@ -15417,3 +15417,6 @@
 2020-12-01 12:08:30 info: File Info:[object Object]
 2020-12-01 12:08:31 info: Create Blog Control
 2020-12-01 12:08:31 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 1495.668 ms - 521
+2020-12-01 12:09:02 info: Portfolio server running on-3001
+2020-12-01 12:09:03 info: Portfolio server running on-3001
+2020-12-01 12:09:04 info: DB CONNECTION SUCCESS

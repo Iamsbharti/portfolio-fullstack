@@ -17,7 +17,6 @@ const createBlog = async (req, res) => {
   });
 
   /**create blog */
-  let blog;
   let savedBlog = await Blog.create(newBlog);
   const { blogId } = savedBlog;
   // update type
