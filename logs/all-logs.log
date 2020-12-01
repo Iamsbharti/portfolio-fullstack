@@ -15288,3 +15288,13 @@
 2020-12-01 11:42:37 info: DB CONNECTION SUCCESS
 2020-12-01 11:42:40 info: Portfolio server running on-3001
 2020-12-01 11:42:41 info: DB CONNECTION SUCCESS
+2020-12-01 11:45:12 info: Admin Login Control
+2020-12-01 11:45:12 info: pwd match-true
+2020-12-01 11:45:13 info: POST /api/v1/portfolio/login 200 456.087 ms - 486
+2020-12-01 11:45:31 info: Authorizing user
+2020-12-01 11:45:31 info: Get All Blog Control
+2020-12-01 11:45:31 info: GET /api/v1/portfolio/blogs 400 6.560 ms - 71
+2020-12-01 11:45:53 info: Portfolio server running on-3001
+2020-12-01 11:45:54 info: DB CONNECTION SUCCESS
+2020-12-01 11:45:55 info: Get All Blog Control
+2020-12-01 11:45:55 info: GET /api/v1/portfolio/blogs 200 251.394 ms - 419

@@ -36,7 +36,7 @@ router.delete(
 );
 
 /**blogs route */
-router.get("/portfolio/blogs", auth.isAuthorized, blogs.getBlogs);
+router.get("/portfolio/blogs", blogs.getBlogs);
 router.post(
   "/portfolio/createBlog",
   auth.isAuthorized,
