@@ -15362,3 +15362,58 @@
 2020-12-01 12:00:58 info: GET /api/v1/portfolio/blogs 200 129.561 ms - 64
 2020-12-01 12:01:14 info: Portfolio server running on-3001
 2020-12-01 12:01:15 info: DB CONNECTION SUCCESS
+2020-12-01 12:03:48 info: Authorizing user
+2020-12-01 12:03:48 info: File Info:[object Object]
+2020-12-01 12:03:53 info: Create Blog Control
+2020-12-01 12:03:53 info: populate image
+2020-12-01 12:03:53 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 5270.502 ms - 503
+2020-12-01 12:04:50 info: Portfolio server running on-3001
+2020-12-01 12:04:51 info: DB CONNECTION SUCCESS
+2020-12-01 12:05:02 info: Portfolio server running on-3001
+2020-12-01 12:05:03 info: DB CONNECTION SUCCESS
+2020-12-01 12:05:13 info: Portfolio server running on-3001
+2020-12-01 12:05:14 info: DB CONNECTION SUCCESS
+2020-12-01 12:05:27 info: Portfolio server running on-3001
+2020-12-01 12:05:28 info: DB CONNECTION SUCCESS
+2020-12-01 12:05:31 info: Portfolio server running on-3001
+2020-12-01 12:05:32 info: DB CONNECTION SUCCESS
+2020-12-01 12:05:34 info: Portfolio server running on-3001
+2020-12-01 12:05:35 info: DB CONNECTION SUCCESS
+2020-12-01 12:05:41 info: Portfolio server running on-3001
+2020-12-01 12:05:42 info: DB CONNECTION SUCCESS
+2020-12-01 12:05:58 info: Portfolio server running on-3001
+2020-12-01 12:06:00 info: DB CONNECTION SUCCESS
+2020-12-01 12:06:17 info: Portfolio server running on-3001
+2020-12-01 12:06:18 info: DB CONNECTION SUCCESS
+2020-12-01 12:06:23 info: Portfolio server running on-3001
+2020-12-01 12:06:24 info: DB CONNECTION SUCCESS
+2020-12-01 12:06:34 info: Portfolio server running on-3001
+2020-12-01 12:06:35 info: DB CONNECTION SUCCESS
+2020-12-01 12:06:46 info: Portfolio server running on-3001
+2020-12-01 12:06:47 info: DB CONNECTION SUCCESS
+2020-12-01 12:06:53 info: Portfolio server running on-3001
+2020-12-01 12:06:54 info: DB CONNECTION SUCCESS
+2020-12-01 12:06:58 info: Portfolio server running on-3001
+2020-12-01 12:06:59 info: DB CONNECTION SUCCESS
+2020-12-01 12:07:03 info: Portfolio server running on-3001
+2020-12-01 12:07:05 info: DB CONNECTION SUCCESS
+2020-12-01 12:07:14 info: Authorizing user
+2020-12-01 12:07:14 info: File Info:[object Object]
+2020-12-01 12:07:15 info: Create Blog Control
+2020-12-01 12:07:36 info: Portfolio server running on-3001
+2020-12-01 12:07:37 info: DB CONNECTION SUCCESS
+2020-12-01 12:07:42 info: Authorizing user
+2020-12-01 12:07:42 info: File Info:[object Object]
+2020-12-01 12:07:43 info: Create Blog Control
+2020-12-01 12:08:05 info: Portfolio server running on-3001
+2020-12-01 12:08:07 info: DB CONNECTION SUCCESS
+2020-12-01 12:08:13 info: Authorizing user
+2020-12-01 12:08:13 info: File Info:[object Object]
+2020-12-01 12:08:14 info: Create Blog Control
+2020-12-01 12:08:15 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 1513.303 ms - 53
+2020-12-01 12:08:27 info: Portfolio server running on-3001
+2020-12-01 12:08:28 info: DB CONNECTION SUCCESS
+2020-12-01 12:08:30 info: Authorizing user
+2020-12-01 12:08:30 info: File Info:[object Object]
+2020-12-01 12:08:31 info: Create Blog Control
+2020-12-01 12:08:31 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 1495.668 ms - 521
