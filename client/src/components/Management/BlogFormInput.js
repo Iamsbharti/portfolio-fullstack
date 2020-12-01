@@ -62,6 +62,7 @@ const BlogFormInput = ({ open, onCloseDialog, mode, blogToEdit, saveBlog }) => {
       link: link,
       description: description,
       type: type,
+      created: created,
       userId: localStorage.getItem("userId"),
     };
     if (file) {
@@ -177,7 +178,7 @@ const BlogFormInput = ({ open, onCloseDialog, mode, blogToEdit, saveBlog }) => {
                   InputLabelProps={{
                     shrink: true,
                   }}
-                  value={created}
+                  value={new Date().toDateString()}
                   onChange={(event) => setCreated(event.target.value)}
                 />
               </div>

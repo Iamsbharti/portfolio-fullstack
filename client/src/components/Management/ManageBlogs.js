@@ -101,7 +101,7 @@ const ManageBlogs = ({
             onCloseDialog={handleCloseDialog}
             mode={editMode}
             blogToEdit={blogToEdit}
-            saveProject={handleSaveBlog}
+            saveBlog={handleSaveBlog}
           />
         )}
         <div className="projects">

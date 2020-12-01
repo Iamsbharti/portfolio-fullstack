@@ -15611,3 +15611,69 @@
 2020-12-01 13:20:24 info: GET /api/v1/portfolio/blogs 304 250.282 ms - -
 2020-12-01 13:20:34 info: Fetch Pictures833b67c6a80a95471cf49bd0ff225c90
 2020-12-01 13:20:39 info: GET /api/v1/project/picture?filename=833b67c6a80a95471cf49bd0ff225c90 200 4197.408 ms - -
+2020-12-01 13:22:37 info: Portfolio server running on-3001
+2020-12-01 13:22:38 info: DB CONNECTION SUCCESS
+2020-12-01 13:22:41 info: Get All Blog Control
+2020-12-01 13:22:41 info: GET /api/v1/portfolio/blogs 304 214.003 ms - -
+2020-12-01 13:22:45 info: Fetch Pictures833b67c6a80a95471cf49bd0ff225c90
+2020-12-01 13:22:47 info: GET /api/v1/project/picture?filename=833b67c6a80a95471cf49bd0ff225c90 200 1683.977 ms - -
+2020-12-01 13:22:53 info: OPTIONS /api/v1/portfolio/updateBlog?userId=3SJTd1d-m&blogId=-ittn8OT7&fileChg=undefined 204 1.248 ms - 0
+2020-12-01 13:22:53 info: Authorizing user
+2020-12-01 13:22:53 info: Update Blog control
+2020-12-01 13:23:47 info: Portfolio server running on-3001
+2020-12-01 13:23:48 info: DB CONNECTION SUCCESS
+2020-12-01 13:23:51 info: Get All Blog Control
+2020-12-01 13:23:51 info: GET /api/v1/portfolio/blogs 304 241.085 ms - -
+2020-12-01 13:23:53 info: Fetch Pictures833b67c6a80a95471cf49bd0ff225c90
+2020-12-01 13:23:55 info: GET /api/v1/project/picture?filename=833b67c6a80a95471cf49bd0ff225c90 200 1804.774 ms - -
+2020-12-01 13:24:05 info: OPTIONS /api/v1/portfolio/updateBlog?userId=3SJTd1d-m&blogId=-ittn8OT7&fileChg=undefined 204 0.667 ms - 0
+2020-12-01 13:24:05 info: Authorizing user
+2020-12-01 13:24:05 info: Update Blog control
+2020-12-01 13:24:05 info: POST /api/v1/portfolio/updateBlog?userId=3SJTd1d-m&blogId=-ittn8OT7&fileChg=undefined 200 467.545 ms - 527
+2020-12-01 13:24:32 info: Portfolio server running on-3001
+2020-12-01 13:24:33 info: DB CONNECTION SUCCESS
+2020-12-01 13:24:35 info: Get All Blog Control
+2020-12-01 13:24:36 info: GET /api/v1/portfolio/blogs 200 223.293 ms - 1895
+2020-12-01 13:24:50 info: Portfolio server running on-3001
+2020-12-01 13:24:51 info: DB CONNECTION SUCCESS
+2020-12-01 13:24:53 info: Get All Blog Control
+2020-12-01 13:24:53 info: GET /api/v1/portfolio/blogs 304 262.924 ms - -
+2020-12-01 13:25:01 info: Portfolio server running on-3001
+2020-12-01 13:25:02 info: DB CONNECTION SUCCESS
+2020-12-01 13:25:03 info: Get All Blog Control
+2020-12-01 13:25:04 info: GET /api/v1/portfolio/blogs 304 243.087 ms - -
+2020-12-01 13:25:29 info: Portfolio server running on-3001
+2020-12-01 13:25:30 info: DB CONNECTION SUCCESS
+2020-12-01 13:25:32 info: Get All Blog Control
+2020-12-01 13:25:32 info: GET /api/v1/portfolio/blogs 304 247.477 ms - -
+2020-12-01 13:25:34 info: Fetch Pictures833b67c6a80a95471cf49bd0ff225c90
+2020-12-01 13:25:36 info: GET /api/v1/project/picture?filename=833b67c6a80a95471cf49bd0ff225c90 200 1769.515 ms - -
+2020-12-01 13:25:48 info: OPTIONS /api/v1/portfolio/updateBlog?userId=3SJTd1d-m&blogId=-ittn8OT7&fileChg=undefined 204 0.924 ms - 0
+2020-12-01 13:25:48 info: Authorizing user
+2020-12-01 13:25:48 info: Update Blog control
+2020-12-01 13:25:48 info: POST /api/v1/portfolio/updateBlog?userId=3SJTd1d-m&blogId=-ittn8OT7&fileChg=undefined 200 487.909 ms - 525
+2020-12-01 13:26:14 info: Portfolio server running on-3001
+2020-12-01 13:26:15 info: DB CONNECTION SUCCESS
+2020-12-01 13:26:17 info: Get All Blog Control
+2020-12-01 13:26:18 info: GET /api/v1/portfolio/blogs 200 246.136 ms - 1893
+2020-12-01 13:26:24 info: Portfolio server running on-3001
+2020-12-01 13:26:25 info: DB CONNECTION SUCCESS
+2020-12-01 13:26:27 info: Get All Blog Control
+2020-12-01 13:26:27 info: GET /api/v1/portfolio/blogs 304 235.146 ms - -
+2020-12-01 13:26:29 info: Fetch Pictures833b67c6a80a95471cf49bd0ff225c90
+2020-12-01 13:26:30 info: GET /api/v1/project/picture?filename=833b67c6a80a95471cf49bd0ff225c90 200 1411.471 ms - -
+2020-12-01 13:26:47 info: Portfolio server running on-3001
+2020-12-01 13:26:48 info: DB CONNECTION SUCCESS
+2020-12-01 13:26:50 info: Get All Blog Control
+2020-12-01 13:26:50 info: GET /api/v1/portfolio/blogs 304 247.132 ms - -
+2020-12-01 13:26:52 info: Fetch Pictures833b67c6a80a95471cf49bd0ff225c90
+2020-12-01 13:26:54 info: GET /api/v1/project/picture?filename=833b67c6a80a95471cf49bd0ff225c90 200 1710.052 ms - -
+2020-12-01 13:27:02 info: Portfolio server running on-3001
+2020-12-01 13:27:03 info: DB CONNECTION SUCCESS
+2020-12-01 13:27:05 info: Get All Blog Control
+2020-12-01 13:27:05 info: GET /api/v1/portfolio/blogs 304 256.319 ms - -
+2020-12-01 13:27:07 info: Fetch Pictures833b67c6a80a95471cf49bd0ff225c90
+2020-12-01 13:27:08 info: GET /api/v1/project/picture?filename=833b67c6a80a95471cf49bd0ff225c90 200 1328.107 ms - -
+2020-12-01 13:27:24 info: OPTIONS /api/v1/portfolio/deleteBlog?userId=3SJTd1d-m&projectId=adgR9-KOr 204 1.570 ms - 0
+2020-12-01 13:27:24 info: Authorizing user
+2020-12-01 13:27:24 info: Delete Blog Control

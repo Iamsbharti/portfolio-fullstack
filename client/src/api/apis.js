@@ -202,7 +202,7 @@ export const createBlog = async (blogInfo) => {
     let createBlogResponse = await axios(createBlogConfig);
     console.log("create blog success::", createBlogResponse.data.message);
     if (!createBlogResponse.data.error) {
-      toast.success("Blog Created");
+      toast.success(createBlogResponse.data.message);
     }
     return createBlogResponse.data.data;
   } catch (error) {
@@ -247,7 +247,7 @@ export const updateBlog = async (blogInfo) => {
     let updateBlogResponse = await axios(updateBlogConfig);
     console.log("update blog success::", updateBlogResponse.data.message);
     if (!updateBlogResponse.data.error) {
-      toast.success("Project Updated");
+      toast.success(updateBlogResponse.data.message);
     }
     return updateBlogResponse.data.data;
   } catch (error) {
