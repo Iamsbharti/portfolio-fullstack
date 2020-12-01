@@ -5,7 +5,7 @@ import {
   UPDATE_BLOG,
 } from "../actions/actionType";
 import { blogs } from "../defaultStore";
-export function projectReducer(_blogs = blogs, action) {
+export function blogReducer(_blogs = blogs, action) {
   switch (action.type) {
     case GET_BLOGS:
       return action.allBlogsResponse;
