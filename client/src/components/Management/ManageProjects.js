@@ -18,7 +18,7 @@ import {
   updateProjectAction,
   deleteProjectAction,
 } from "../../redux/actions/projectAction";
-import FormInput from "./FormInput";
+import ProjectFormInput from "./ProjectFormInput";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
@@ -98,7 +98,7 @@ const ManageProjects = ({
           <span style={{ color: "white" }}>Add Project</span>
         </Button>
         {value && (
-          <FormInput
+          <ProjectFormInput
             open={value}
             onCloseDialog={handleCloseDialog}
             mode={editMode}

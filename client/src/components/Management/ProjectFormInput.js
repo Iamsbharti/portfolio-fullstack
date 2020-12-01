@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
-const FormDialog = ({
+const ProjectFormInput = ({
   open,
   onCloseDialog,
   mode,
@@ -232,4 +232,4 @@ const mapStateToProps = (state) => {
   return state;
 };
 const mapActionToProps = {};
-export default connect(mapStateToProps, mapActionToProps)(FormDialog);
+export default connect(mapStateToProps, mapActionToProps)(ProjectFormInput);
