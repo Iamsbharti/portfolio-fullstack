@@ -1,28 +1,24 @@
 import {
-  CREATE_PROJECT,
-  DELETE_PROJECT,
-  GET_PROJECTS,
-  UPDATE_PROJECT,
+  CREATE_BLOG,
+  DELETE_BLOG,
+  GET_BLOGS,
+  UPDATE_BLOG,
 } from "../actions/actionType";
-import { projects } from "../defaultStore";
-export function projectReducer(_projects = projects, action) {
+import { blogs } from "../defaultStore";
+export function projectReducer(_blogs = blogs, action) {
   switch (action.type) {
-    case GET_PROJECTS:
-      return action.allProjectsResponse;
-    case CREATE_PROJECT:
-      return [..._projects, action.newProject];
-    case UPDATE_PROJECT:
-      const { projectId } = action.updatedProject;
-      return _projects.map((project) =>
-        project.projectId === projectId
-          ? { ...project, ...action.updatedProject }
-          : project
+    case GET_BLOGS:
+      return action.allBlogsResponse;
+    case CREATE_BLOG:
+      return [..._blogs, action.newBlog];
+    case UPDATE_BLOG:
+      const { blogId } = action.updatedBlog;
+      return _blogs.map((blog) =>
+        blog.blogId === blogId ? { ...blog, ...action.updatedBlog } : project
       );
-    case DELETE_PROJECT:
-      return _projects.filter(
-        (project) => project.projectId !== action.projectId
-      );
+    case DELETE_BLOG:
+      return _blogs.filter((blog) => blog.blogId !== action.blogId);
     default:
-      return _projects;
+      return _blogs;
   }
 }
