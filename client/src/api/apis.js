@@ -165,3 +165,118 @@ export const deleteProject = async (projectInfo) => {
     return error.response.data;
   }
 };
+/*****************BLOG APIS******************** */
+export const getAllBlogs = async () => {
+  console.log("calling api");
+  try {
+    let allBlogs = await axios.get(`${baseUrl}/api/v1/portfolio/blogs`);
+    console.log("GET all blogs response", allBlogs);
+    return allBlogs.data.data;
+  } catch (error) {
+    console.warn("Error Fetching allBlogs");
+  }
+};
+export const createBlog = async (blogInfo) => {
+  console.log("Create blog api::", blogInfo);
+  let data = new FormData();
+  const { title, description, type, link, created, file, userId } = blogInfo;
+  data.append("userId", userId);
+  data.append("title", title);
+  data.append("description", description);
+  data.append("type", type);
+  data.append("link", link);
+  data.append("created", created);
+  data.append("file", file);
+  console.log("Auth token::", localStorage.getItem("authToken"));
+
+  let createBlogConfig = {
+    method: "post",
+    url: `${baseUrl}/api/v1/portfolio/createBlog?userId=${userId}`,
+    headers: {
+      authToken: localStorage.getItem("authToken"),
+    },
+    data: data,
+  };
+
+  try {
+    let createBlogResponse = await axios(createBlogConfig);
+    console.log("create blog success::", createBlogResponse.data.message);
+    if (!createBlogResponse.data.error) {
+      toast.success("Blog Created");
+    }
+    return createBlogResponse.data.data;
+  } catch (error) {
+    console.warn("Create Blog Error::", error.response.data);
+    toast.error(error.response.data.message);
+    return error.response.data;
+  }
+};
+export const updateBlog = async (blogInfo) => {
+  console.log("update Blog api::", blogInfo);
+  let data = new FormData();
+  const {
+    title,
+    description,
+    type,
+    link,
+    created,
+    file,
+    userId,
+    fileChg,
+    blogId,
+  } = blogInfo;
+  data.append("userId", userId);
+  data.append("title", title);
+  data.append("description", description);
+  data.append("type", type);
+  data.append("link", link);
+  data.append("created", created);
+  data.append("file", file);
+
+  console.log("Auth token::", localStorage.getItem("authToken"));
+  let updateBlogConfig = {
+    method: "post",
+    url: `${baseUrl}/api/v1/portfolio/updateBlog?userId=${userId}&blogId=${blogId}&fileChg=${fileChg}`,
+    headers: {
+      authToken: localStorage.getItem("authToken"),
+    },
+    data: data,
+  };
+
+  try {
+    let updateBlogResponse = await axios(updateBlogConfig);
+    console.log("update blog success::", updateBlogResponse.data.message);
+    if (!updateBlogResponse.data.error) {
+      toast.success("Project Updated");
+    }
+    return updateBlogResponse.data.data;
+  } catch (error) {
+    console.warn("Update Blog Error::", error.response.data);
+    toast.error(error.response.data.message);
+    return error.response.data;
+  }
+};
+export const deleteBlog = async (blogInfo) => {
+  console.log("delete Project api", blogInfo);
+  const { blogId, userId } = blogInfo;
+  let deleteBlogConfig = {
+    method: "delete",
+    url: `${baseUrl}/api/v1/portfolio/deleteBlog?userId=${userId}&projectId=${blogId}`,
+    headers: {
+      authToken: localStorage.getItem("authToken"),
+    },
+  };
+
+  try {
+    let deleteBlogResponse = await axios(deleteBlogConfig);
+    console.log("delete blog success::", deleteBlogResponse.data.message);
+    if (!deleteBlogResponse.data.error) {
+      toast.success(deleteBlogResponse.data.message);
+    }
+    return blogId;
+  } catch (error) {
+    console.warn("Delete blog Error::", error.response.data);
+    toast.error(error.response.data.message);
+    return error.response.data;
+  }
+};
