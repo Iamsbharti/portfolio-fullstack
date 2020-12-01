@@ -15001,3 +15001,74 @@
 2020-12-01 10:58:25 info: GET /api/v1/portfolio/projects 304 237.229 ms - -
 2020-12-01 10:58:32 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
 2020-12-01 10:58:33 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 719.273 ms - -
+2020-12-01 10:59:30 info: Portfolio server running on-3001
+2020-12-01 10:59:31 info: DB CONNECTION SUCCESS
+2020-12-01 10:59:44 info: Portfolio server running on-3001
+2020-12-01 10:59:45 info: DB CONNECTION SUCCESS
+2020-12-01 10:59:55 info: Portfolio server running on-3001
+2020-12-01 10:59:56 info: DB CONNECTION SUCCESS
+2020-12-01 11:00:01 info: Portfolio server running on-3001
+2020-12-01 11:00:02 info: DB CONNECTION SUCCESS
+2020-12-01 11:00:19 info: Portfolio server running on-3001
+2020-12-01 11:00:20 info: DB CONNECTION SUCCESS
+2020-12-01 11:01:29 info: Portfolio server running on-3001
+2020-12-01 11:01:30 info: DB CONNECTION SUCCESS
+2020-12-01 11:01:54 info: Portfolio server running on-3001
+2020-12-01 11:01:55 info: DB CONNECTION SUCCESS
+2020-12-01 11:03:03 info: Portfolio server running on-3001
+2020-12-01 11:03:04 info: DB CONNECTION SUCCESS
+2020-12-01 11:03:34 info: Portfolio server running on-3001
+2020-12-01 11:03:35 info: DB CONNECTION SUCCESS
+2020-12-01 11:04:54 info: Portfolio server running on-3001
+2020-12-01 11:04:55 info: DB CONNECTION SUCCESS
+2020-12-01 11:05:06 info: Portfolio server running on-3001
+2020-12-01 11:05:07 info: DB CONNECTION SUCCESS
+2020-12-01 11:05:16 info: Portfolio server running on-3001
+2020-12-01 11:05:17 info: DB CONNECTION SUCCESS
+2020-12-01 11:05:34 info: Portfolio server running on-3001
+2020-12-01 11:05:35 info: DB CONNECTION SUCCESS
+2020-12-01 11:05:38 info: Portfolio server running on-3001
+2020-12-01 11:05:39 info: DB CONNECTION SUCCESS
+2020-12-01 11:06:22 info: Portfolio server running on-3001
+2020-12-01 11:06:23 info: DB CONNECTION SUCCESS
+2020-12-01 11:06:27 info: Portfolio server running on-3001
+2020-12-01 11:06:28 info: DB CONNECTION SUCCESS
+2020-12-01 11:06:35 info: Portfolio server running on-3001
+2020-12-01 11:06:36 info: DB CONNECTION SUCCESS
+2020-12-01 11:06:39 info: Portfolio server running on-3001
+2020-12-01 11:06:40 info: DB CONNECTION SUCCESS
+2020-12-01 11:06:51 info: Portfolio server running on-3001
+2020-12-01 11:06:52 info: DB CONNECTION SUCCESS
+2020-12-01 11:07:13 info: Portfolio server running on-3001
+2020-12-01 11:07:14 info: DB CONNECTION SUCCESS
+2020-12-01 11:07:19 info: Portfolio server running on-3001
+2020-12-01 11:07:20 info: DB CONNECTION SUCCESS
+2020-12-01 11:08:13 info: Portfolio server running on-3001
+2020-12-01 11:08:15 info: DB CONNECTION SUCCESS
+2020-12-01 11:08:18 info: Portfolio server running on-3001
+2020-12-01 11:08:19 info: DB CONNECTION SUCCESS
+2020-12-01 11:08:39 info: Portfolio server running on-3001
+2020-12-01 11:08:40 info: DB CONNECTION SUCCESS
+2020-12-01 11:08:44 info: Portfolio server running on-3001
+2020-12-01 11:08:45 info: DB CONNECTION SUCCESS
+2020-12-01 11:08:49 info: Portfolio server running on-3001
+2020-12-01 11:08:50 info: DB CONNECTION SUCCESS
+2020-12-01 11:09:02 info: Portfolio server running on-3001
+2020-12-01 11:09:03 info: DB CONNECTION SUCCESS
+2020-12-01 11:09:42 info: Portfolio server running on-3001
+2020-12-01 11:09:43 info: DB CONNECTION SUCCESS
+2020-12-01 11:09:51 info: Portfolio server running on-3001
+2020-12-01 11:09:52 info: DB CONNECTION SUCCESS
+2020-12-01 11:10:50 info: Portfolio server running on-3001
+2020-12-01 11:10:52 info: DB CONNECTION SUCCESS
+2020-12-01 11:11:02 info: Portfolio server running on-3001
+2020-12-01 11:11:03 info: DB CONNECTION SUCCESS
+2020-12-01 11:11:18 info: Portfolio server running on-3001
+2020-12-01 11:11:19 info: DB CONNECTION SUCCESS
+2020-12-01 11:11:22 info: Portfolio server running on-3001
+2020-12-01 11:11:23 info: DB CONNECTION SUCCESS
+2020-12-01 11:12:14 info: Portfolio server running on-3001
+2020-12-01 11:12:15 info: Portfolio server running on-3001
+2020-12-01 11:12:16 info: DB CONNECTION SUCCESS
+2020-12-01 11:12:48 info: Portfolio server running on-3001
+2020-12-01 11:12:49 info: DB CONNECTION SUCCESS
