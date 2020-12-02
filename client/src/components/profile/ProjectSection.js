@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect, useImperativeHandle } from "react";
 import "../../css/Project.css";
 import "../../css/Blogs.css";
 import TechStackSection from "../TechStackSection";
@@ -7,12 +7,14 @@ import {
   animateProjectCard1Intro,
   animateProjectIntro,
 } from "../Animation";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
 import { getAllProjectAction } from "../../redux/actions/projectAction";
 import { projectFilterCategory } from "../../redux/defaultStore";
 import { baseUrl } from "../../api/apis";
+
 const ProjectSection = ({ getAllProjectAction, projects }) => {
+  let history = useHistory();
   /**job profile */
   let card_sec = useRef(null);
   let card_stack = useRef(null);
@@ -101,9 +103,9 @@ const ProjectSection = ({ getAllProjectAction, projects }) => {
           >
             <h3>- AllProjects</h3>
             <p className="project__intro__desc">All my builds are live here</p>
-            <Link to="allProjects" className="project__intro__desc color">
-              Explore More
-            </Link>
+            <a href={"/projects"} target="_blank" rel="noopener noreferrer">
+              <p className="project__intro__desc color">Explore More</p>
+            </a>
           </div>
 
           {projects !== undefined && (

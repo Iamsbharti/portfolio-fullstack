@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../../css/Profile.css";
 import NavBar from "./NavBar";
 import { useHistory } from "react-router-dom";
+import ProjectSection from "./ProjectSection";
 import {
   nameIntro,
   intro,
@@ -191,6 +192,8 @@ const IntroSection = () => {
           sliderDiv = ele;
         }}
       ></div>
+
+      <ProjectSection />
     </div>
   );
 };

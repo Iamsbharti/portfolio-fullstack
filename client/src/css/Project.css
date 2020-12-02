@@ -163,6 +163,7 @@
 }
 .project__intro__desc {
   margin-left: 13px;
+  cursor: pointer;
 }
 .color {
   color: yellow;
