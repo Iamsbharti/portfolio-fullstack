@@ -15821,3 +15821,40 @@
 2020-12-02 11:12:50 info: DB CONNECTION SUCCESS
 2020-12-02 11:12:53 info: Get All Blog Control
 2020-12-02 11:12:54 info: GET /api/v1/portfolio/blogs 304 270.723 ms - -
+2020-12-02 11:13:51 info: Fetch Pictures833b67c6a80a95471cf49bd0ff225c90
+2020-12-02 11:13:53 info: GET /api/v1/project/picture?filename=833b67c6a80a95471cf49bd0ff225c90 200 1851.810 ms - -
+2020-12-02 11:16:03 info: Portfolio server running on-3001
+2020-12-02 11:16:04 info: DB CONNECTION SUCCESS
+2020-12-02 11:16:10 info: Get All Blog Control
+2020-12-02 11:16:10 info: GET /api/v1/portfolio/blogs 304 356.108 ms - -
+2020-12-02 11:16:13 info: Fetch Pictures833b67c6a80a95471cf49bd0ff225c90
+2020-12-02 11:16:15 info: GET /api/v1/project/picture?filename=833b67c6a80a95471cf49bd0ff225c90 200 2056.019 ms - -
+2020-12-02 11:16:32 info: Portfolio server running on-3001
+2020-12-02 11:16:33 info: DB CONNECTION SUCCESS
+2020-12-02 11:16:36 info: Get All Blog Control
+2020-12-02 11:16:36 info: GET /api/v1/portfolio/blogs 304 307.428 ms - -
+2020-12-02 11:16:39 info: Fetch Pictures833b67c6a80a95471cf49bd0ff225c90
+2020-12-02 11:16:40 info: GET /api/v1/project/picture?filename=833b67c6a80a95471cf49bd0ff225c90 200 1275.614 ms - -
+2020-12-02 11:18:34 info: Portfolio server running on-3001
+2020-12-02 11:18:35 info: DB CONNECTION SUCCESS
+2020-12-02 11:20:02 info: Portfolio server running on-3001
+2020-12-02 11:20:03 info: DB CONNECTION SUCCESS
+2020-12-02 11:20:05 info: Portfolio server running on-3001
+2020-12-02 11:20:06 info: DB CONNECTION SUCCESS
+2020-12-02 11:20:14 info: Portfolio server running on-3001
+2020-12-02 11:20:15 info: DB CONNECTION SUCCESS
+2020-12-02 11:20:40 info: Portfolio server running on-3001
+2020-12-02 11:20:41 info: Portfolio server running on-3001
+2020-12-02 11:20:42 info: DB CONNECTION SUCCESS
+2020-12-02 11:20:46 info: Get All Blog Control
+2020-12-02 11:20:46 info: GET /api/v1/portfolio/blogs 304 246.422 ms - -
+2020-12-02 11:20:48 info: Portfolio server running on-3001
+2020-12-02 11:20:50 info: DB CONNECTION SUCCESS
+2020-12-02 11:20:52 info: Fetch Pictures833b67c6a80a95471cf49bd0ff225c90
+2020-12-02 11:20:55 info: GET /api/v1/project/picture?filename=833b67c6a80a95471cf49bd0ff225c90 200 3104.430 ms - -
+2020-12-02 11:21:28 info: Portfolio server running on-3001
+2020-12-02 11:21:29 info: DB CONNECTION SUCCESS
+2020-12-02 11:21:33 info: Get All Blog Control
+2020-12-02 11:21:33 info: GET /api/v1/portfolio/blogs 304 362.496 ms - -
+2020-12-02 11:21:35 info: Fetch Pictures833b67c6a80a95471cf49bd0ff225c90
+2020-12-02 11:21:40 info: GET /api/v1/project/picture?filename=833b67c6a80a95471cf49bd0ff225c90 200 4502.041 ms - -

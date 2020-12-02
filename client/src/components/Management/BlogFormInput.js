@@ -19,7 +19,7 @@ import CloudUploadIcon from "@material-ui/icons/CloudUpload";
 import { connect } from "react-redux";
 import { techStackArray, projectTypeArray } from "../../redux/defaultStore";
 import ChipComponent from "./ChipComponent";
-import Divider from "@material-ui/core/Divider";
+import { dateFormat } from "./formatDate";
 import { baseUrl } from "../../api/apis";
 import "../../css/Management.css";
 const styles = makeStyles((theme) => ({
@@ -174,11 +174,12 @@ const BlogFormInput = ({ open, onCloseDialog, mode, blogToEdit, saveBlog }) => {
                   id="date-local"
                   label="Blog Creation Date"
                   type="date"
+                  format="yyyy-MM-dd"
                   className={formClasses.FormControl}
                   InputLabelProps={{
                     shrink: true,
                   }}
-                  value={created}
+                  value={dateFormat(created, "yyyy-dd-MM")}
                   onChange={(event) => setCreated(event.target.value)}
                 />
                 <TextField
