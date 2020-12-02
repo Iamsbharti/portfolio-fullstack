@@ -43,10 +43,15 @@ const Login = ({ error, message, adminLoginAction }) => {
       setTimeout(() => history.push("/manage"), 1200);
     }
   }, [message, error, history]);
+  const handleLoginByEnter = (event) => {
+    if (event.key === "Enter") {
+      handleLogin();
+    }
+  };
   return (
     <div className="login__page">
       <div className="login__content">
-        <form className="login__form">
+        <form className="login__form" onKeyDown={handleLoginByEnter}>
           <p>Are you Admin? Authenticate!!!</p>
           <label className="label" htmlFor="loginId">
             LoginId
