@@ -10,8 +10,9 @@ import {
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { getAllProjectAction } from "../../redux/actions/projectAction";
-
-const ProjectSection = ({ getAllProjectAction }) => {
+import { projectFilterCategory } from "../../redux/defaultStore";
+import { baseUrl } from "../../api/apis";
+const ProjectSection = ({ getAllProjectAction, projects }) => {
   /**job profile */
   let card_sec = useRef(null);
   let card_stack = useRef(null);
@@ -105,69 +106,72 @@ const ProjectSection = ({ getAllProjectAction }) => {
             </Link>
           </div>
 
-          <div
-            className="project1__card"
-            ref={(ele) => {
-              project_card_1 = ele;
-            }}
-          >
-            <p className="project__card__name">Twitter Clone</p>
-            <div>
-              <img
-                src={process.env.PUBLIC_URL + "/logo512.png"}
-                alt=""
-                className="project__image"
-              />
-            </div>
-            <code>- Built Tools</code>
-            <div className="project__card__techstack">
-              <div className="project__tech">
-                <p>
+          {projects !== undefined && (
+            <div
+              className="project1__card"
+              ref={(ele) => {
+                project_card_1 = ele;
+              }}
+            >
+              <p className="project__card__name">{projects[0].name}</p>
+              <div>
+                {projects[0].image && (
                   <img
-                    src={process.env.PUBLIC_URL + "/icons8-node-js-96.png"}
-                    className="icon_img"
-                    alt="NodeJs"
-                    title="NodeJs"
+                    src={`${baseUrl}/api/v1/project/picture?filename=${projects[0].image.filename}`}
+                    alt="demon"
+                    className="project__image"
                   />
-                </p>
-                <p>
-                  <img
-                    src={process.env.PUBLIC_URL + "/icons8-react-100.png"}
-                    className="icon_img"
-                    alt="ReactJs"
-                    title="ReactJs"
-                  />
-                </p>
-                <p>
-                  <img
-                    src={process.env.PUBLIC_URL + "/icons8-mongodb-96.png"}
-                    className="icon_img"
-                    alt="MongoDB"
-                    title="MongoDB"
-                  />
-                </p>
+                )}
               </div>
+              <code>- Built Tools</code>
+              <div className="project__card__techstack">
+                <div className="project__tech">
+                  {projects[0].newTechArray &&
+                    projects[0].newTechArray.map((tech, index) => (
+                      <p key={index}>
+                        <img
+                          src={process.env.PUBLIC_URL + tech.img}
+                          className="icon_img"
+                          alt={tech.name}
+                          title={tech.name}
+                        />
+                      </p>
+                    ))}
+                </div>
 
-              <div className="project__golive">
-                <p>
-                  <img
-                    src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
-                    className="icon_img"
-                    alt="github"
-                    title="SourceCode"
-                  />
-                </p>
-                <p>
-                  <img
-                    src={process.env.PUBLIC_URL + "/shuttle.png"}
-                    className="icon_img_shuttle"
-                    alt="live"
-                    title="Live"
-                  />
-                </p>
+                <div className="project__golive">
+                  <p>
+                    <a
+                      href={projects[0].code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
+                        className="icon_img"
+                        alt="github"
+                        title="SourceCode"
+                      />
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href={projects[0].demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={process.env.PUBLIC_URL + "/shuttle.png"}
+                        className="icon_img_shuttle"
+                        alt="live"
+                        title="Live"
+                      />
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
 
@@ -312,6 +316,35 @@ const ProjectSection = ({ getAllProjectAction }) => {
 };
 const mapStateToProps = ({ projects }) => {
   console.log("State projects::", projects);
+
+  const topProjectKeyWords = ["twitter clone", "kanbanboard", "itracker"];
+  // update state
+  let _projects = [];
+  projects.map((project) => {
+    let techArray = project.techstack;
+    let newTechArray = [];
+    projectFilterCategory.map((icon) =>
+      techArray.map((tech) => {
+        if (tech.toLowerCase() === icon.name.toLowerCase()) {
+          newTechArray.push({ name: tech, img: icon.img });
+        }
+        return (project = { ...project, newTechArray, showDescription: true });
+      })
+    );
+    return _projects.push(project);
+  });
+  console.log("updated project:", _projects);
+  // filter top 3 projects
+  const topProjects = [];
+  _projects.filter((project) => {
+    topProjectKeyWords.map((key) => {
+      if (project.name.toLowerCase().includes(key)) {
+        topProjects.push(project);
+      }
+    });
+  });
+  console.log("top 3 projects::", topProjects);
+  return { projects: topProjects.length > 0 ? topProjects : _projects };
 };
 const mapActionToProps = {
   getAllProjectAction,
