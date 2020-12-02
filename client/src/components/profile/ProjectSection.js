@@ -182,134 +182,141 @@ const ProjectSection = ({ getAllProjectAction, projects }) => {
           tech_satck_ref = ele;
         }}
       >
-        <div
-          className="project1__card project2__card__position"
-          ref={(ele) => {
-            project_card_2 = ele;
-          }}
-        >
-          <p className="project__card__name">KanbanBoard</p>
-          <div>
-            <img
-              src={process.env.PUBLIC_URL + "/logo512.png"}
-              alt="img"
-              className="project__image"
-            />
-          </div>
-          <code>- Built Tools</code>
-          <div className="project__card__techstack">
-            <div className="project__tech">
-              <p>
+        {projects !== undefined && (
+          <div
+            className="project1__card project2__card__position"
+            ref={(ele) => {
+              project_card_2 = ele;
+            }}
+          >
+            <p className="project__card__name">{projects[1].name}</p>
+            <div>
+              {projects[1].image && (
                 <img
-                  src={process.env.PUBLIC_URL + "/icons8-node-js-96.png"}
-                  className="icon_img"
-                  alt="NodeJs"
-                  title="NodeJs"
+                  src={`${baseUrl}/api/v1/project/picture?filename=${projects[1].image.filename}`}
+                  alt="demon"
+                  className="project__image"
                 />
-              </p>
-              <p>
-                <img
-                  src={process.env.PUBLIC_URL + "/icons8-react-100.png"}
-                  className="icon_img"
-                  alt="ReactJs"
-                  title="ReactJs"
-                />
-              </p>
-              <p>
-                <img
-                  src={process.env.PUBLIC_URL + "/icons8-mongodb-96.png"}
-                  className="icon_img"
-                  alt="MongoDB"
-                  title="MongoDB"
-                />
-              </p>
+              )}
             </div>
+            <code>- Built Tools</code>
+            <div className="project__card__techstack">
+              <div className="project__tech">
+                {projects[1].newTechArray &&
+                  projects[1].newTechArray.map((tech, index) => (
+                    <p key={index}>
+                      <img
+                        src={process.env.PUBLIC_URL + tech.img}
+                        className="icon_img"
+                        alt={tech.name}
+                        title={tech.name}
+                      />
+                    </p>
+                  ))}
+              </div>
 
-            <div className="project__golive">
-              <p>
-                <img
-                  src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
-                  className="icon_img"
-                  alt="github"
-                  title="SourceCode"
-                />
-              </p>
-              <p>
-                <img
-                  src={process.env.PUBLIC_URL + "/shuttle.png"}
-                  className="icon_img_shuttle"
-                  alt="live"
-                  title="Live"
-                />
-              </p>
+              <div className="project__golive">
+                <p>
+                  <a
+                    href={projects[1].code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
+                      className="icon_img"
+                      alt="github"
+                      title="SourceCode"
+                    />
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href={projects[1].demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={process.env.PUBLIC_URL + "/shuttle.png"}
+                      className="icon_img_shuttle"
+                      alt="live"
+                      title="Live"
+                    />
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        )}
         {/**peoject 3rd section */}
-        <div
-          className="project1__card project3__card__position"
-          ref={(ele) => {
-            project_card_3 = ele;
-          }}
-        >
-          <p className="project__card__name">KanbanBoard</p>
-          <div>
-            <img
-              src={process.env.PUBLIC_URL + "/logo512.png"}
-              alt=""
-              className="project__image"
-            />
-          </div>
-          <code>- Built Tools</code>
-          <div className="project__card__techstack">
-            <div className="project__tech">
-              <p>
+        {projects !== undefined && (
+          <div
+            className="project1__card project3__card__position"
+            ref={(ele) => {
+              project_card_3 = ele;
+            }}
+          >
+            <p className="project__card__name">{projects[2].name}</p>
+            <div>
+              {projects[2].image && (
                 <img
-                  src={process.env.PUBLIC_URL + "/icons8-node-js-96.png"}
-                  className="icon_img"
-                  alt="NodeJs"
-                  title="NodeJs"
+                  src={`${baseUrl}/api/v1/project/picture?filename=${projects[2].image.filename}`}
+                  alt="demon"
+                  className="project__image"
                 />
-              </p>
-              <p>
-                <img
-                  src={process.env.PUBLIC_URL + "/icons8-react-100.png"}
-                  className="icon_img"
-                  alt="ReactJs"
-                  title="ReactJs"
-                />
-              </p>
-              <p>
-                <img
-                  src={process.env.PUBLIC_URL + "/icons8-mongodb-96.png"}
-                  className="icon_img"
-                  alt="MongoDB"
-                  title="MongoDB"
-                />
-              </p>
+              )}
             </div>
+            <code>- Built Tools</code>
+            <div className="project__card__techstack">
+              <div className="project__tech">
+                {projects[2].newTechArray &&
+                  projects[2].newTechArray.map((tech, index) => (
+                    <p key={index}>
+                      <img
+                        src={process.env.PUBLIC_URL + tech.img}
+                        className="icon_img"
+                        alt={tech.name}
+                        title={tech.name}
+                      />
+                    </p>
+                  ))}
+              </div>
 
-            <div className="project__golive">
-              <p>
-                <img
-                  src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
-                  className="icon_img"
-                  alt="github"
-                  title="SourceCode"
-                />
-              </p>
-              <p>
-                <img
-                  src={process.env.PUBLIC_URL + "/shuttle.png"}
-                  className="icon_img_shuttle"
-                  alt="live"
-                  title="Live"
-                />
-              </p>
+              <div className="project__golive">
+                <p>
+                  <a
+                    href={projects[2].code}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
+                      className="icon_img"
+                      alt="github"
+                      title="SourceCode"
+                    />
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href={projects[2].demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={process.env.PUBLIC_URL + "/shuttle.png"}
+                      className="icon_img_shuttle"
+                      alt="live"
+                      title="Live"
+                    />
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
+
       <TechStackSection scrollTrigger="tech_satck_ref" />
     </>
   );
