@@ -84,10 +84,16 @@ export const createProject = async (projectInfo) => {
   try {
     let createProjectResponse = await axios(createProjectConfig);
     console.log("create project success::", createProjectResponse.data.message);
-    if (!createProjectResponse.data.error) {
-      toast.success("Project Created");
+    if (
+      !createProjectResponse.data.error !== undefined &&
+      !createProjectResponse.data.error
+    ) {
+      toast.success(createProjectResponse.data.message);
+      return createProjectResponse.data.data;
+    } else {
+      toast.error(createProjectResponse.data.message);
+      return {};
     }
-    return createProjectResponse.data.data;
   } catch (error) {
     console.warn("Create Project Error::", error.response.data);
     toast.error(error.response.data.message);
@@ -131,10 +137,16 @@ export const updateProject = async (projectInfo) => {
   try {
     let updateProjectResponse = await axios(updateProjectConfig);
     console.log("update project success::", updateProjectResponse.data.message);
-    if (!updateProjectResponse.data.error) {
-      toast.success("Project Updated");
+    if (
+      !updateProjectResponse.data.error !== undefined &&
+      !updateProjectResponse.data.error
+    ) {
+      toast.success(updateProjectResponse.data.message);
+      return updateProjectResponse.data.data;
+    } else {
+      toast.error(updateProjectResponse.data.message);
+      return {};
     }
-    return updateProjectResponse.data.data;
   } catch (error) {
     console.warn("Update Project Error::", error.response.data);
     toast.error(error.response.data.message);
@@ -200,11 +212,21 @@ export const createBlog = async (blogInfo) => {
 
   try {
     let createBlogResponse = await axios(createBlogConfig);
+
     console.log("create blog success::", createBlogResponse.data.message);
-    if (!createBlogResponse.data.error) {
+    console.log("condn check::", createBlogResponse.data.error);
+    if (
+      createBlogResponse.data.error !== undefined &&
+      !createBlogResponse.data.error
+    ) {
+      console.log("success condn");
       toast.success(createBlogResponse.data.message);
+      return createBlogResponse.data.data;
+    } else {
+      console.log("error");
+      toast.error(createBlogResponse.data.message);
+      return {};
     }
-    return createBlogResponse.data.data;
   } catch (error) {
     console.warn("Create Blog Error::", error.response.data);
     toast.error(error.response.data.message);
@@ -246,10 +268,16 @@ export const updateBlog = async (blogInfo) => {
   try {
     let updateBlogResponse = await axios(updateBlogConfig);
     console.log("update blog success::", updateBlogResponse.data.message);
-    if (!updateBlogResponse.data.error) {
+    if (
+      updateBlogResponse.data.error !== undefined &&
+      !updateBlogResponse.data.error
+    ) {
       toast.success(updateBlogResponse.data.message);
+      return updateBlogResponse.data.data;
+    } else {
+      toast.error(updateBlogResponse.data.message);
+      return {};
     }
-    return updateBlogResponse.data.data;
   } catch (error) {
     console.warn("Update Blog Error::", error.response.data);
     toast.error(error.response.data.message);

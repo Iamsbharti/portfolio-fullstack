@@ -169,7 +169,7 @@ const BlogFormInput = ({ open, onCloseDialog, mode, blogToEdit, saveBlog }) => {
                     updateChipContent={handleUpdateChipComponent}
                   />
                 </div>
-                <Divider />
+
                 <TextField
                   id="date-local"
                   label="Blog Creation Date"
@@ -178,8 +178,18 @@ const BlogFormInput = ({ open, onCloseDialog, mode, blogToEdit, saveBlog }) => {
                   InputLabelProps={{
                     shrink: true,
                   }}
-                  value={new Date().toDateString()}
+                  value={created}
                   onChange={(event) => setCreated(event.target.value)}
+                />
+                <TextField
+                  className={formClasses.FormControl}
+                  autoFocus
+                  name="link"
+                  label="Link"
+                  margin="dense"
+                  value={link}
+                  rowsMax={4}
+                  onChange={(e) => setLink(e.target.value)}
                 />
               </div>
             </div>

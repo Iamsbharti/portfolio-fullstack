@@ -10,7 +10,7 @@ export function blogReducer(_blogs = blogs, action) {
     case GET_BLOGS:
       return action.allBlogsResponse;
     case CREATE_BLOG:
-      return [..._blogs, action.newBlogs];
+      return [..._blogs, action.newBlog];
     case UPDATE_BLOG:
       const { blogId } = action.updatedBlog;
       return _blogs.map((blog) =>

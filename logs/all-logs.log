@@ -15677,3 +15677,147 @@
 2020-12-01 13:27:24 info: OPTIONS /api/v1/portfolio/deleteBlog?userId=3SJTd1d-m&projectId=adgR9-KOr 204 1.570 ms - 0
 2020-12-01 13:27:24 info: Authorizing user
 2020-12-01 13:27:24 info: Delete Blog Control
+2020-12-01 13:28:00 info: Portfolio server running on-3001
+2020-12-01 13:28:01 info: DB CONNECTION SUCCESS
+2020-12-01 13:28:04 info: Get All Blog Control
+2020-12-01 13:28:04 info: GET /api/v1/portfolio/blogs 304 231.270 ms - -
+2020-12-01 13:28:51 info: Portfolio server running on-3001
+2020-12-01 13:28:52 info: DB CONNECTION SUCCESS
+2020-12-01 13:28:55 info: Get All Blog Control
+2020-12-01 13:28:55 info: GET /api/v1/portfolio/blogs 304 269.680 ms - -
+2020-12-01 13:29:11 info: OPTIONS /api/v1/portfolio/createBlog?userId=3SJTd1d-m 204 0.760 ms - 0
+2020-12-01 13:29:11 info: Authorizing user
+2020-12-01 13:29:11 info: File Info:[object Object]
+2020-12-01 13:29:12 info: Create Blog Control
+2020-12-01 13:29:58 info: Portfolio server running on-3001
+2020-12-01 13:30:00 info: DB CONNECTION SUCCESS
+2020-12-01 13:30:01 info: Portfolio server running on-3001
+2020-12-01 13:30:02 info: DB CONNECTION SUCCESS
+2020-12-01 13:30:05 info: Get All Blog Control
+2020-12-01 13:30:06 info: GET /api/v1/portfolio/blogs 304 266.820 ms - -
+2020-12-01 13:30:24 info: Portfolio server running on-3001
+2020-12-01 13:30:25 info: DB CONNECTION SUCCESS
+2020-12-01 13:30:28 info: Get All Blog Control
+2020-12-01 13:30:28 info: GET /api/v1/portfolio/blogs 304 272.200 ms - -
+2020-12-01 13:30:48 info: OPTIONS /api/v1/portfolio/createBlog?userId=3SJTd1d-m 204 0.742 ms - 0
+2020-12-01 13:30:48 info: Authorizing user
+2020-12-01 13:30:48 info: File Info:[object Object]
+2020-12-01 13:30:48 info: Create Blog Control
+2020-12-01 13:30:49 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 787.253 ms - 528
+2020-12-02 10:46:35 info: DB CONNECTION SUCCESS
+2020-12-02 10:47:06 info: Portfolio server running on-3001
+2020-12-02 10:47:28 info: DB CONNECTION SUCCESS
+2020-12-02 10:47:28 info: Get All Blog Control
+2020-12-02 10:47:29 info: GET /api/v1/portfolio/blogs 200 765.140 ms - 2361
+2020-12-02 10:48:03 info: OPTIONS /api/v1/portfolio/createBlog?userId=3SJTd1d-m 204 0.724 ms - 0
+2020-12-02 10:48:03 info: Authorizing user
+2020-12-02 10:48:03 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 22.283 ms - 40
+2020-12-02 10:57:41 info: Portfolio server running on-3001
+2020-12-02 10:57:42 info: DB CONNECTION SUCCESS
+2020-12-02 10:57:55 info: Get All Blog Control
+2020-12-02 10:57:55 info: GET /api/v1/portfolio/blogs 304 265.349 ms - -
+2020-12-02 10:58:47 info: OPTIONS /api/v1/portfolio/createBlog?userId=3SJTd1d-m 204 0.890 ms - 0
+2020-12-02 10:58:47 info: Authorizing user
+2020-12-02 10:58:47 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 36.118 ms - 40
+2020-12-02 11:01:57 info: Portfolio server running on-3001
+2020-12-02 11:01:58 info: DB CONNECTION SUCCESS
+2020-12-02 11:02:02 info: Get All Blog Control
+2020-12-02 11:02:02 info: GET /api/v1/portfolio/blogs 304 259.183 ms - -
+2020-12-02 11:02:13 info: Portfolio server running on-3001
+2020-12-02 11:02:14 info: DB CONNECTION SUCCESS
+2020-12-02 11:02:17 info: Get All Blog Control
+2020-12-02 11:02:17 info: GET /api/v1/portfolio/blogs 304 294.999 ms - -
+2020-12-02 11:02:30 info: Portfolio server running on-3001
+2020-12-02 11:02:31 info: DB CONNECTION SUCCESS
+2020-12-02 11:02:36 info: Portfolio server running on-3001
+2020-12-02 11:02:37 info: DB CONNECTION SUCCESS
+2020-12-02 11:02:41 info: Get All Blog Control
+2020-12-02 11:02:41 info: GET /api/v1/portfolio/blogs 304 262.561 ms - -
+2020-12-02 11:03:40 info: OPTIONS /api/v1/portfolio/createBlog?userId=3SJTd1d-m 204 0.678 ms - 0
+2020-12-02 11:03:40 info: Authorizing user
+2020-12-02 11:03:40 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 27.473 ms - 40
+2020-12-02 11:04:54 info: Portfolio server running on-3001
+2020-12-02 11:04:55 info: DB CONNECTION SUCCESS
+2020-12-02 11:04:58 info: Get All Blog Control
+2020-12-02 11:04:59 info: GET /api/v1/portfolio/blogs 304 255.515 ms - -
+2020-12-02 11:05:02 info: Portfolio server running on-3001
+2020-12-02 11:05:03 info: DB CONNECTION SUCCESS
+2020-12-02 11:05:06 info: Get All Blog Control
+2020-12-02 11:05:06 info: GET /api/v1/portfolio/blogs 304 271.703 ms - -
+2020-12-02 11:05:10 info: Portfolio server running on-3001
+2020-12-02 11:05:11 info: DB CONNECTION SUCCESS
+2020-12-02 11:05:30 info: Portfolio server running on-3001
+2020-12-02 11:05:32 info: DB CONNECTION SUCCESS
+2020-12-02 11:05:34 info: Get All Blog Control
+2020-12-02 11:05:35 info: GET /api/v1/portfolio/blogs 304 698.909 ms - -
+2020-12-02 11:06:00 info: OPTIONS /api/v1/portfolio/createBlog?userId=3SJTd1d-m 204 0.678 ms - 0
+2020-12-02 11:06:00 info: Authorizing user
+2020-12-02 11:06:00 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 32.785 ms - 40
+2020-12-02 11:06:34 info: Portfolio server running on-3001
+2020-12-02 11:06:35 info: DB CONNECTION SUCCESS
+2020-12-02 11:06:38 info: Get All Blog Control
+2020-12-02 11:06:39 info: GET /api/v1/portfolio/blogs 304 254.983 ms - -
+2020-12-02 11:07:16 info: OPTIONS /api/v1/portfolio/createBlog?userId=3SJTd1d-m 204 0.708 ms - 0
+2020-12-02 11:07:16 info: Authorizing user
+2020-12-02 11:07:16 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 26.083 ms - 40
+2020-12-02 11:07:37 info: Portfolio server running on-3001
+2020-12-02 11:07:38 info: DB CONNECTION SUCCESS
+2020-12-02 11:07:42 info: Get All Blog Control
+2020-12-02 11:07:42 info: GET /api/v1/portfolio/blogs 304 259.365 ms - -
+2020-12-02 11:08:04 info: OPTIONS /api/v1/portfolio/createBlog?userId=3SJTd1d-m 204 0.920 ms - 0
+2020-12-02 11:08:04 info: Authorizing user
+2020-12-02 11:08:04 info: File Info:[object Object]
+2020-12-02 11:08:10 info: Create Blog Control
+2020-12-02 11:08:10 info: POST /api/v1/portfolio/createBlog?userId=3SJTd1d-m 200 5954.628 ms - 537
+2020-12-02 11:09:42 info: Portfolio server running on-3001
+2020-12-02 11:09:45 info: DB CONNECTION SUCCESS
+2020-12-02 11:09:47 info: Get All Blog Control
+2020-12-02 11:09:48 info: Portfolio server running on-3001
+2020-12-02 11:09:50 info: DB CONNECTION SUCCESS
+2020-12-02 11:09:53 info: Get All Blog Control
+2020-12-02 11:09:54 info: GET /api/v1/portfolio/blogs 200 430.919 ms - 2838
+2020-12-02 11:10:12 info: Portfolio server running on-3001
+2020-12-02 11:10:13 info: Portfolio server running on-3001
+2020-12-02 11:10:14 info: DB CONNECTION SUCCESS
+2020-12-02 11:10:18 info: Portfolio server running on-3001
+2020-12-02 11:10:19 info: Get All Blog Control
+2020-12-02 11:10:21 info: GET /api/v1/portfolio/blogs - - ms - -
+2020-12-02 11:10:21 info: DB CONNECTION SUCCESS
+2020-12-02 11:10:23 info: Get All Blog Control
+2020-12-02 11:10:23 info: GET /api/v1/portfolio/blogs 200 347.583 ms - 2838
+2020-12-02 11:10:40 info: Portfolio server running on-3001
+2020-12-02 11:10:41 info: DB CONNECTION SUCCESS
+2020-12-02 11:10:44 info: Get All Blog Control
+2020-12-02 11:10:44 info: GET /api/v1/portfolio/blogs 304 248.699 ms - -
+2020-12-02 11:10:45 info: Portfolio server running on-3001
+2020-12-02 11:10:47 info: DB CONNECTION SUCCESS
+2020-12-02 11:10:49 info: Get All Blog Control
+2020-12-02 11:10:49 info: GET /api/v1/portfolio/blogs 304 249.472 ms - -
+2020-12-02 11:10:55 info: Portfolio server running on-3001
+2020-12-02 11:10:57 info: DB CONNECTION SUCCESS
+2020-12-02 11:10:59 info: Get All Blog Control
+2020-12-02 11:11:00 info: GET /api/v1/portfolio/blogs 304 292.154 ms - -
+2020-12-02 11:11:14 info: Portfolio server running on-3001
+2020-12-02 11:11:15 info: DB CONNECTION SUCCESS
+2020-12-02 11:11:18 info: Get All Blog Control
+2020-12-02 11:11:19 info: GET /api/v1/portfolio/blogs 304 271.194 ms - -
+2020-12-02 11:11:20 info: Portfolio server running on-3001
+2020-12-02 11:11:22 info: DB CONNECTION SUCCESS
+2020-12-02 11:11:23 info: Get All Blog Control
+2020-12-02 11:11:25 info: GET /api/v1/portfolio/blogs 304 1397.806 ms - -
+2020-12-02 11:12:24 info: Portfolio server running on-3001
+2020-12-02 11:12:25 info: DB CONNECTION SUCCESS
+2020-12-02 11:12:28 info: Get All Blog Control
+2020-12-02 11:12:29 info: GET /api/v1/portfolio/blogs 304 248.187 ms - -
+2020-12-02 11:12:32 info: Portfolio server running on-3001
+2020-12-02 11:12:33 info: DB CONNECTION SUCCESS
+2020-12-02 11:12:35 info: Get All Blog Control
+2020-12-02 11:12:35 info: GET /api/v1/portfolio/blogs 304 302.058 ms - -
+2020-12-02 11:12:38 info: Portfolio server running on-3001
+2020-12-02 11:12:39 info: DB CONNECTION SUCCESS
+2020-12-02 11:12:41 info: Get All Blog Control
+2020-12-02 11:12:42 info: GET /api/v1/portfolio/blogs 304 270.249 ms - -
+2020-12-02 11:12:49 info: Portfolio server running on-3001
+2020-12-02 11:12:50 info: DB CONNECTION SUCCESS
+2020-12-02 11:12:53 info: Get All Blog Control
+2020-12-02 11:12:54 info: GET /api/v1/portfolio/blogs 304 270.723 ms - -
