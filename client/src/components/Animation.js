@@ -402,6 +402,30 @@ export const animateProjectIntro = (trigger, element) => {
     }
   );
 };
+export const animateProjectIntroMobile = (trigger, element) => {
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.core.globals("ScrollTrigger", ScrollTrigger);
+  let t2 = gsap.timeline({
+    paused: true,
+    scrollTrigger: {
+      trigger: trigger,
+      scrub: true,
+    },
+  });
+  t2.fromTo(
+    element,
+    { opacity: 0, xPercent: -10 },
+    {
+      opacity: 3,
+      xPercent: 0,
+      stagger: {
+        amount: 0.9,
+      },
+      duration: 2,
+      ease: Power3.easeInOut,
+    }
+  );
+};
 export const animateDivOnScrollIntro = (trigger, element, direction) => {
   console.log("widget animation");
   let axis;

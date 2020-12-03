@@ -6,6 +6,7 @@ import {
   jobProfileCardIntro,
   animateProjectCard1Intro,
   animateProjectIntro,
+  animateProjectIntroMobile,
 } from "../Animation";
 import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
@@ -26,6 +27,7 @@ const ProjectSection = ({ getAllProjectAction, projects }) => {
   let project_card_2 = useRef(null);
   let project_card_3 = useRef(null);
   let project_section_intro = useRef(null);
+  let project_section_intro__mobile = useRef(null);
   /**tech stack refs */
   let tech_satck_ref = useRef(null);
 
@@ -38,6 +40,7 @@ const ProjectSection = ({ getAllProjectAction, projects }) => {
       project_card_3
     );
     animateProjectIntro(project_section, project_section_intro);
+    animateProjectIntroMobile(project_section, project_section_intro__mobile);
   });
   useEffect(() => {
     console.log("call projects action");
@@ -216,7 +219,93 @@ const ProjectSection = ({ getAllProjectAction, projects }) => {
           )}
         </div>
       </div>
+      {/**Project section 1 mobile design start*/}
+      <div className="project__section__mobile">
+        <div className="projects__intro_p1__mobile">
+          <div
+            className="project__intro__mobile"
+            ref={(ele) => {
+              project_section_intro__mobile = ele;
+            }}
+          >
+            <h3>- AllProjects</h3>
+            <p className="project__intro__desc">All my builds are live here</p>
+            <a href={"/projects"} target="_blank" rel="noopener noreferrer">
+              <p className="project__intro__desc color">Explore More</p>
+            </a>
+          </div>
+        </div>
+        <div className="project__card__1__mobile">
+          {projects !== undefined && (
+            <div
+              className="project1__card"
+              ref={(ele) => {
+                project_card_1 = ele;
+              }}
+            >
+              <p className="project__card__name">{projects[0].name}</p>
+              <div>
+                {projects[0].image && (
+                  <img
+                    src={`${baseUrl}/api/v1/project/picture?filename=${projects[0].image.filename}`}
+                    alt="demon"
+                    className="project__image"
+                  />
+                )}
+              </div>
+              <code>- Built Tools</code>
+              <div className="project__card__techstack">
+                <div className="project__tech">
+                  {projects[0].newTechArray &&
+                    projects[0].newTechArray.map((tech, index) => (
+                      <p key={index}>
+                        <img
+                          src={process.env.PUBLIC_URL + tech.img}
+                          className="icon_img"
+                          alt={tech.name}
+                          title={tech.name}
+                        />
+                      </p>
+                    ))}
+                </div>
 
+                <div className="project__golive">
+                  <p>
+                    <a
+                      href={projects[0].code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
+                        className="icon_img"
+                        alt="github"
+                        title="SourceCode"
+                      />
+                    </a>
+                  </p>
+                  <p>
+                    <a
+                      href={projects[0].demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={process.env.PUBLIC_URL + "/shuttle.png"}
+                        className="icon_img_shuttle"
+                        alt="live"
+                        title="Live"
+                      />
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/**project section 1 mobile design end */}
       {/**project line 2 */}
       <div
         className="project__section2"

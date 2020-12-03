@@ -16886,3 +16886,209 @@
 2020-12-03 11:32:46 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 1234.667 ms - -
 2020-12-03 11:32:47 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 1482.955 ms - -
 2020-12-03 11:32:47 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 1982.508 ms - -
+2020-12-03 11:43:03 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 11:43:03 info: Get Project Control
+2020-12-03 11:43:04 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 818.311 ms - 64
+2020-12-03 11:43:04 info: GET /api/v1/portfolio/projects 304 752.510 ms - -
+2020-12-03 11:45:01 info: Portfolio server running on-3001
+2020-12-03 11:45:02 info: DB CONNECTION SUCCESS
+2020-12-03 11:45:05 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 11:45:05 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 116.070 ms - 64
+2020-12-03 11:45:06 info: Get Project Control
+2020-12-03 11:45:06 info: GET /api/v1/portfolio/projects 304 243.537 ms - -
+2020-12-03 11:45:06 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 11:45:06 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 11:45:06 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 11:45:07 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 994.072 ms - -
+2020-12-03 11:45:07 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 1006.236 ms - -
+2020-12-03 11:45:07 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 1245.551 ms - -
+2020-12-03 11:45:36 info: Portfolio server running on-3001
+2020-12-03 11:45:37 info: DB CONNECTION SUCCESS
+2020-12-03 11:45:39 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 11:45:39 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 154.373 ms - 64
+2020-12-03 11:45:39 info: Get Project Control
+2020-12-03 11:45:40 info: GET /api/v1/portfolio/projects 304 686.856 ms - -
+2020-12-03 11:45:40 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 11:45:40 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 11:45:40 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 11:45:41 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 1205.277 ms - -
+2020-12-03 11:45:41 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 1443.492 ms - -
+2020-12-03 11:45:41 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 1649.958 ms - -
+2020-12-03 11:54:34 info: Portfolio server running on-3001
+2020-12-03 11:54:35 info: DB CONNECTION SUCCESS
+2020-12-03 11:54:39 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 11:54:39 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 118.762 ms - 64
+2020-12-03 11:54:39 info: Get Project Control
+2020-12-03 11:54:40 info: GET /api/v1/portfolio/projects 304 267.047 ms - -
+2020-12-03 11:54:42 info: Portfolio server running on-3001
+2020-12-03 11:54:43 info: DB CONNECTION SUCCESS
+2020-12-03 11:54:46 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 11:54:46 info: Get Project Control
+2020-12-03 11:54:46 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 175.009 ms - 64
+2020-12-03 11:54:46 info: GET /api/v1/portfolio/projects 304 363.999 ms - -
+2020-12-03 11:54:47 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 11:54:47 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 11:54:47 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 11:54:48 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 769.464 ms - -
+2020-12-03 11:54:48 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 801.793 ms - -
+2020-12-03 11:54:48 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 1133.945 ms - -
+2020-12-03 11:55:43 info: Portfolio server running on-3001
+2020-12-03 11:55:45 info: DB CONNECTION SUCCESS
+2020-12-03 11:55:48 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 11:55:48 info: Get Project Control
+2020-12-03 11:55:48 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 141.917 ms - 64
+2020-12-03 11:55:48 info: GET /api/v1/portfolio/projects 304 465.423 ms - -
+2020-12-03 11:55:49 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 11:55:49 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 11:55:49 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 11:55:50 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 932.469 ms - -
+2020-12-03 11:55:50 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 947.515 ms - -
+2020-12-03 11:55:50 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 1314.724 ms - -
+2020-12-03 11:56:01 info: Portfolio server running on-3001
+2020-12-03 11:56:02 info: DB CONNECTION SUCCESS
+2020-12-03 11:56:05 info: Portfolio server running on-3001
+2020-12-03 11:56:06 info: DB CONNECTION SUCCESS
+2020-12-03 11:56:21 info: Portfolio server running on-3001
+2020-12-03 11:56:22 info: DB CONNECTION SUCCESS
+2020-12-03 11:56:29 info: Portfolio server running on-3001
+2020-12-03 11:56:30 info: DB CONNECTION SUCCESS
+2020-12-03 11:56:42 info: Portfolio server running on-3001
+2020-12-03 11:56:43 info: DB CONNECTION SUCCESS
+2020-12-03 11:56:58 info: Portfolio server running on-3001
+2020-12-03 11:56:59 info: DB CONNECTION SUCCESS
+2020-12-03 11:57:01 info: Portfolio server running on-3001
+2020-12-03 11:57:03 info: DB CONNECTION SUCCESS
+2020-12-03 11:57:12 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 11:57:12 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 124.099 ms - 64
+2020-12-03 11:57:12 info: Get Project Control
+2020-12-03 11:57:13 info: GET /api/v1/portfolio/projects 304 268.160 ms - -
+2020-12-03 11:57:13 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 11:57:13 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 11:57:13 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 11:57:14 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 1185.243 ms - -
+2020-12-03 11:57:14 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 1191.264 ms - -
+2020-12-03 11:57:15 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 1658.736 ms - -
+2020-12-03 11:59:22 info: Portfolio server running on-3001
+2020-12-03 11:59:23 info: DB CONNECTION SUCCESS
+2020-12-03 11:59:24 info: Portfolio server running on-3001
+2020-12-03 11:59:25 info: DB CONNECTION SUCCESS
+2020-12-03 11:59:30 info: Portfolio server running on-3001
+2020-12-03 11:59:31 info: DB CONNECTION SUCCESS
+2020-12-03 11:59:35 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 11:59:35 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 123.304 ms - 64
+2020-12-03 11:59:35 info: Get Project Control
+2020-12-03 11:59:35 info: GET /api/v1/portfolio/projects 304 278.948 ms - -
+2020-12-03 11:59:36 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 11:59:36 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 11:59:36 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 11:59:37 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 1532.908 ms - -
+2020-12-03 11:59:37 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 1572.904 ms - -
+2020-12-03 11:59:38 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 2533.920 ms - -
+2020-12-03 12:00:32 info: Portfolio server running on-3001
+2020-12-03 12:00:34 info: DB CONNECTION SUCCESS
+2020-12-03 12:00:42 info: Portfolio server running on-3001
+2020-12-03 12:00:43 info: DB CONNECTION SUCCESS
+2020-12-03 12:00:46 info: Portfolio server running on-3001
+2020-12-03 12:00:47 info: DB CONNECTION SUCCESS
+2020-12-03 12:00:50 info: Portfolio server running on-3001
+2020-12-03 12:00:52 info: DB CONNECTION SUCCESS
+2020-12-03 12:00:55 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 12:00:55 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 161.933 ms - 64
+2020-12-03 12:00:55 info: Get Project Control
+2020-12-03 12:00:55 info: GET /api/v1/portfolio/projects 304 315.001 ms - -
+2020-12-03 12:00:56 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 12:00:56 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 12:00:56 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 12:00:57 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 1518.018 ms - -
+2020-12-03 12:00:57 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 1535.685 ms - -
+2020-12-03 12:00:59 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 2819.258 ms - -
+2020-12-03 12:06:57 info: Portfolio server running on-3001
+2020-12-03 12:06:59 info: DB CONNECTION SUCCESS
+2020-12-03 12:07:15 info: Portfolio server running on-3001
+2020-12-03 12:07:16 info: DB CONNECTION SUCCESS
+2020-12-03 12:07:21 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 12:07:21 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 168.705 ms - 64
+2020-12-03 12:07:21 info: Get Project Control
+2020-12-03 12:07:21 info: GET /api/v1/portfolio/projects 304 288.790 ms - -
+2020-12-03 12:07:22 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 12:07:22 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 12:07:22 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 12:07:23 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 1089.252 ms - -
+2020-12-03 12:07:23 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 1218.086 ms - -
+2020-12-03 12:07:23 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 1518.091 ms - -
+2020-12-03 12:07:32 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 12:07:32 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 94.486 ms - 64
+2020-12-03 12:07:32 info: Get Project Control
+2020-12-03 12:07:32 info: GET /api/v1/portfolio/projects 304 210.722 ms - -
+2020-12-03 12:07:33 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 12:07:33 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 12:07:33 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 12:07:33 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 552.993 ms - -
+2020-12-03 12:07:33 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 585.667 ms - -
+2020-12-03 12:07:34 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 949.824 ms - -
+2020-12-03 12:07:55 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 12:07:55 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 93.646 ms - 64
+2020-12-03 12:07:55 info: Get Project Control
+2020-12-03 12:07:55 info: GET /api/v1/portfolio/projects 304 274.325 ms - -
+2020-12-03 12:07:56 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 12:07:56 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 12:07:56 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 12:07:56 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 528.542 ms - -
+2020-12-03 12:07:56 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 599.705 ms - -
+2020-12-03 12:07:57 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 967.543 ms - -
+2020-12-03 12:08:20 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 12:08:20 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 103.885 ms - 64
+2020-12-03 12:08:20 info: Get Project Control
+2020-12-03 12:08:20 info: GET /api/v1/portfolio/projects 304 193.822 ms - -
+2020-12-03 12:08:20 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 12:08:20 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 12:08:20 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 12:08:21 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 598.444 ms - -
+2020-12-03 12:08:21 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 648.786 ms - -
+2020-12-03 12:08:22 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 1059.935 ms - -
+2020-12-03 12:08:55 info: Portfolio server running on-3001
+2020-12-03 12:08:57 info: DB CONNECTION SUCCESS
+2020-12-03 12:09:06 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 12:09:06 info: Get Project Control
+2020-12-03 12:09:06 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 128.416 ms - 64
+2020-12-03 12:09:06 info: GET /api/v1/portfolio/projects 304 312.430 ms - -
+2020-12-03 12:09:06 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 12:09:06 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 12:09:06 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 12:09:08 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 1410.912 ms - -
+2020-12-03 12:09:08 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 1470.069 ms - -
+2020-12-03 12:09:08 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 1855.355 ms - -
+2020-12-03 12:09:47 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 12:09:47 info: Get Project Control
+2020-12-03 12:09:47 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 131.021 ms - 64
+2020-12-03 12:09:47 info: GET /api/v1/portfolio/projects 304 222.479 ms - -
+2020-12-03 12:09:47 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 12:09:48 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 12:09:48 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 12:09:48 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 564.199 ms - -
+2020-12-03 12:09:48 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 598.482 ms - -
+2020-12-03 12:09:49 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 1193.251 ms - -
+2020-12-03 12:10:36 info: Portfolio server running on-3001
+2020-12-03 12:10:38 info: DB CONNECTION SUCCESS
+2020-12-03 12:10:41 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 12:10:41 info: Get Project Control
+2020-12-03 12:10:41 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 153.125 ms - 64
+2020-12-03 12:10:41 info: GET /api/v1/portfolio/projects 304 363.457 ms - -
+2020-12-03 12:10:42 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 12:10:42 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 12:10:42 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 12:10:43 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 944.067 ms - -
+2020-12-03 12:10:43 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 1187.169 ms - -
+2020-12-03 12:10:43 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 1429.942 ms - -
+2020-12-03 12:12:24 info: Fetch Pictures9939b663d514c8e58def218b7a68b74c
+2020-12-03 12:12:24 info: Get Project Control
+2020-12-03 12:12:24 info: GET /api/v1/project/picture?filename=9939b663d514c8e58def218b7a68b74c 404 107.691 ms - 64
+2020-12-03 12:12:24 info: GET /api/v1/portfolio/projects 304 255.093 ms - -
+2020-12-03 12:12:24 info: Fetch Pictures328b57c47828f61d389ed89271e291eb
+2020-12-03 12:12:24 info: Fetch Pictures5a30e698339ebd6239e0352672825350
+2020-12-03 12:12:24 info: Fetch Pictures6cff1c7199ee1b573fa196ad5a0220e0
+2020-12-03 12:12:25 info: GET /api/v1/project/picture?filename=5a30e698339ebd6239e0352672825350 200 557.244 ms - -
+2020-12-03 12:12:25 info: GET /api/v1/project/picture?filename=6cff1c7199ee1b573fa196ad5a0220e0 200 580.171 ms - -
+2020-12-03 12:12:25 info: GET /api/v1/project/picture?filename=328b57c47828f61d389ed89271e291eb 200 872.966 ms - -
+2020-12-03 12:18:09 info: Portfolio server running on-3001
+2020-12-03 12:18:11 info: DB CONNECTION SUCCESS

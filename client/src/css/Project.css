@@ -149,6 +149,9 @@
   font-size: 14px;
   color: white;
 }
+.project__section__mobile {
+  display: none;
+}
 .project__section {
   display: flex;
   background-image: var(--bg-black-grad);
@@ -375,5 +378,29 @@ code {
   .job__profile__icons {
     font-size: 14px;
     color: white;
+  }
+  /**project page**/
+  .project__section {
+    display: none;
+  }
+  .project__section__mobile {
+    display: flex;
+    background-image: var(--bg-black-grad);
+    min-height: 80vh;
+  }
+  .project__intro__mobile {
+    width: 350px;
+    height: 350px;
+  }
+  .projects__intro_p1__mobile {
+    margin: 84px 62px 0px 57px !important;
+    color: white;
+  }
+  .project__intro__desc {
+    margin-left: 13px;
+    cursor: pointer;
+  }
+  .project__card__1__mobile {
+    margin: 10px 10px 10px 10px;
   }
 }
