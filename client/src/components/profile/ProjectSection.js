@@ -89,6 +89,46 @@ const ProjectSection = ({ getAllProjectAction, projects }) => {
             <h3>Machine Learning Enthuiast</h3>
           </div>
         </div>
+        {/**Mobile job profile start */}
+        <div className="project__job__profile__mobile">
+          <div
+            className="project__job__profile__card__mobile color__sec"
+            ref={(ele) => {
+              card_sec = ele;
+            }}
+          >
+            <i
+              className="fa fa-shield job__profile__icons"
+              aria-hidden="true"
+            ></i>
+            <h5>Security Consultant</h5>
+          </div>
+          <div
+            className="project__job__profile__card__mobile color__fs"
+            ref={(ele) => {
+              card_stack = ele;
+            }}
+          >
+            <i
+              className="fa fa-desktop job__profile__icons"
+              aria-hidden="true"
+            ></i>
+            <h5>Full Stack Developer</h5>
+          </div>
+        </div>
+        <div
+          className="project__job__profile__card__mobile color__ml position__2"
+          ref={(ele) => {
+            card_ml = ele;
+          }}
+        >
+          <i
+            className="fa fa-line-chart job__profile__icons"
+            aria-hidden="true"
+          ></i>
+          <h5>Machine Learning Enthuiast</h5>
+        </div>
+        {/**Mobile job profile end */}
       </div>
 
       {/**top 3 projects display */}
