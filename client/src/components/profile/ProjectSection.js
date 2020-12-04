@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useImperativeHandle } from "react";
+import React, { useRef, useEffect } from "react";
 import "../../css/Project.css";
 import "../../css/Blogs.css";
 import TechStackSection from "../TechStackSection";
@@ -13,6 +13,7 @@ import { connect } from "react-redux";
 import { getAllProjectAction } from "../../redux/actions/projectAction";
 import { projectFilterCategory } from "../../redux/defaultStore";
 import { baseUrl } from "../../api/apis";
+import ProjectCardsMobile from "./ProjectCardsMobile";
 
 const ProjectSection = ({ getAllProjectAction, projects }) => {
   let history = useHistory();
@@ -236,75 +237,7 @@ const ProjectSection = ({ getAllProjectAction, projects }) => {
           </div>
         </div>
       </div>
-      <div className="project__card__1__mobile">
-        {projects !== undefined && (
-          <div
-            className="project1__card__mobile"
-            ref={(ele) => {
-              project_card_1 = ele;
-            }}
-          >
-            <p className="project__card__name">{projects[0].name}</p>
-            <div>
-              {projects[0].image && (
-                <img
-                  src={`${baseUrl}/api/v1/project/picture?filename=${projects[0].image.filename}`}
-                  alt="demon"
-                  className="project__image"
-                />
-              )}
-            </div>
-            <code>- Built Tools</code>
-            <div className="project__card__techstack">
-              <div className="project__tech">
-                {projects[0].newTechArray &&
-                  projects[0].newTechArray.map((tech, index) => (
-                    <p key={index}>
-                      <img
-                        src={process.env.PUBLIC_URL + tech.img}
-                        className="icon_img"
-                        alt={tech.name}
-                        title={tech.name}
-                      />
-                    </p>
-                  ))}
-              </div>
-
-              <div className="project__golive">
-                <p>
-                  <a
-                    href={projects[0].code}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={process.env.PUBLIC_URL + "/icons8-github-144.png"}
-                      className="icon_img"
-                      alt="github"
-                      title="SourceCode"
-                    />
-                  </a>
-                </p>
-                <p>
-                  <a
-                    href={projects[0].demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img
-                      src={process.env.PUBLIC_URL + "/shuttle.png"}
-                      className="icon_img_shuttle"
-                      alt="live"
-                      title="Live"
-                    />
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-
+      <ProjectCardsMobile projects={projects} className="project__stack" />
       {/**project section 1 mobile design end */}
       {/**project line 2 */}
       <div
@@ -482,7 +415,7 @@ const mapStateToProps = ({ projects }) => {
     });
   });
   console.log("top 3 projects::", topProjects);
-  return { projects: topProjects.length > 0 ? topProjects : _projects };
+  return { projects: _projects };
 };
 const mapActionToProps = {
   getAllProjectAction,

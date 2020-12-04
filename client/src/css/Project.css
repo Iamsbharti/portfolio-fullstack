@@ -152,6 +152,9 @@
 .project__section__mobile {
   display: none;
 }
+.project__stack {
+  display: none;
+}
 .project__section {
   display: flex;
   background-image: var(--bg-black-grad);
@@ -389,14 +392,14 @@ code {
   .project__section__mobile {
     display: flex;
     background-image: var(--bg-black-grad);
-    min-height: 80vh;
+    margin-bottom: -257px;
   }
   .project__intro__mobile {
     width: 350px;
     height: 350px;
   }
   .projects__intro_p1__mobile {
-    margin: 84px 62px 0px 57px !important;
+    margin: 81px 62px 0px 57px !important;
     color: white;
   }
   .project__intro__desc {
@@ -406,20 +409,22 @@ code {
   .project__card__1__mobile {
     margin: -369px 10px 10px -137px;
   }
-  .project1__card__mobile {
+  .project__card {
     padding: 20px;
     box-sizing: border-box;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
+    box-shadow: 1px 1px 4px rgb(0 0 0);
     border-radius: 9px;
-    width: 206px;
-    height: 200px;
-    margin-left: 177px;
-    opacity: 0;
+    width: 240px;
+    height: auto;
+    margin-left: 18px;
+    margin-bottom: 15px;
+    align-self: flex-start;
   }
   .project__image {
     width: 130px;
     height: 130px;
   }
+
   .project__card__name {
     font-weight: 600;
     font-size: 1.1rem;
@@ -455,5 +460,11 @@ code {
     height: 20px;
     margin-left: 6px;
     cursor: pointer;
+  }
+  .react-multi-carousel-list > li {
+    background-image: var(--bg-black-grad) !important;
+  }
+  .react-multi-carousel-item {
+    width: 250px !important;
   }
 }
