@@ -383,6 +383,9 @@ code {
   .project__section {
     display: none;
   }
+  .project__section2 {
+    display: none;
+  }
   .project__section__mobile {
     display: flex;
     background-image: var(--bg-black-grad);
@@ -401,6 +404,56 @@ code {
     cursor: pointer;
   }
   .project__card__1__mobile {
-    margin: 10px 10px 10px 10px;
+    margin: -369px 10px 10px -137px;
+  }
+  .project1__card__mobile {
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 1.2);
+    border-radius: 9px;
+    width: 206px;
+    height: 200px;
+    margin-left: 177px;
+    opacity: 0;
+  }
+  .project__image {
+    width: 130px;
+    height: 130px;
+  }
+  .project__card__name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: white;
+  }
+  .project__card__techstack {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 18px;
+  }
+  code {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+  }
+  .icon_img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  .project__tech {
+    display: flex;
+    justify-content: space-between;
+  }
+  .project__golive {
+    display: flex;
+    justify-content: space-between;
+  }
+  .icon_img_shuttle {
+    margin-top: 4px;
+    width: 20px;
+    height: 20px;
+    margin-left: 6px;
+    cursor: pointer;
   }
 }
