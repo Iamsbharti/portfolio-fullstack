@@ -15,9 +15,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import ExpandMoreOutlinedIcon from "@material-ui/icons/ExpandMoreOutlined";
 import ExpandLessOutlinedIcon from "@material-ui/icons/ExpandLessOutlined";
 const ProjectCardsMobile = ({ projects }) => {
-  const [activeItemIndex, setActiveItemIndex] = useState(0);
   const [stateProjects, setStateProjects] = useState(projects);
-  const chevronWidth = 70;
+
   /**project card */
   let project_card_1 = useRef(null);
   let project_section = useRef(null);
@@ -94,7 +93,7 @@ const ProjectCardsMobile = ({ projects }) => {
     },
   };
   return (
-    <div>
+    <div className="project__card__mobile__carousel">
       <Carousel responsive={responsive}>
         {stateProjects.map((project, index) => (
           <div className="project__card" key={index}>

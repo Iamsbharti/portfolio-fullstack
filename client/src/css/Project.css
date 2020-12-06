@@ -468,4 +468,8 @@ code {
   .react-multi-carousel-item {
     width: 250px !important;
   }
+  .project__card__mobile__carousel {
+    background-image: var(--bg-black-grad) !important;
+    color: white;
+  }
 }
