@@ -42,12 +42,7 @@ const ProjectCardsMobile = ({ projects }) => {
     setStateProjects(projects);
     // eslint-disable-next-line
   }, [projects]);
-  /**  useEffect(() => {
-    console.log("Effect stateprojects");
-    setStateProjects(stateProjects);
-    // eslint-disable-next-line
-  }, [stateProjects]);
-**/
+
   const handleExpandIcon = (projectId) => {
     console.log("handle expand", projectId);
     // change global state
