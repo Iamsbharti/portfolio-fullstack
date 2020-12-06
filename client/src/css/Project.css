@@ -223,6 +223,7 @@ code {
 .project__tech {
   display: flex;
   justify-content: space-between;
+  margin-left: -14px;
 }
 .project__golive {
   display: flex;

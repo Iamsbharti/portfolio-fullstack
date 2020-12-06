@@ -70,17 +70,21 @@ const ProjectCardsMobile = ({ projects }) => {
             <code>- Built Tools</code>
             <div className="project__card__techstack">
               <div className="project__tech">
-                {projects[0].newTechArray &&
-                  projects[0].newTechArray.map((tech, index) => (
-                    <p key={index}>
-                      <img
-                        src={process.env.PUBLIC_URL + tech.img}
-                        className="icon_img"
-                        alt={tech.name}
-                        title={tech.name}
-                      />
-                    </p>
-                  ))}
+                {project.newTechArray &&
+                  project.newTechArray.map((tech, index) =>
+                    index < 3 ? (
+                      <p key={index}>
+                        <img
+                          src={process.env.PUBLIC_URL + tech.img}
+                          className="icon_img"
+                          alt={tech.name}
+                          title={tech.name}
+                        />
+                      </p>
+                    ) : (
+                      ""
+                    )
+                  )}
               </div>
 
               <div className="project__golive">
