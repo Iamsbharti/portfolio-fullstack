@@ -57,6 +57,17 @@ const BlogSection = () => {
           </div>
         </div>
       </div>
+      {/**Mobile design start */}
+      <div className="blog__section__mobile">
+        <div className="blog__section__content">
+          <div className="blog__section__left">
+            <p className="blog_text">- Blogs</p>
+            <p className="blog_info">My Blogs</p>
+          </div>
+        </div>
+      </div>
+      {/**Mobile design end */}
+
       <Certifications />
     </>
   );

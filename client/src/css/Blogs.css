@@ -1,3 +1,6 @@
+.blog__section__mobile {
+  display: none;
+}
 .blog__section {
   min-height: 40vh;
   background-image: var(--bg-gray-grad);
@@ -108,4 +111,16 @@
   position: absolute;
   width: auto;
   height: 191px;
+}
+
+/**Mobile styles**/
+@media (max-width: 800px) {
+  .blog__section {
+    display: none;
+  }
+  .blog__section__mobile {
+    min-height: 70vh;
+    background-image: var(--bg-gray-grad);
+    padding: 2rem 12rem;
+  }
 }
