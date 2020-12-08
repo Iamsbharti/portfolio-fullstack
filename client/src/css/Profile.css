@@ -217,6 +217,7 @@ a:active {
   display: flex;
   justify-content: space-between;
   color: #fbfcff;
+  flex-wrap: wrap;
 }
 .contact {
   width: 219px;
@@ -462,7 +463,8 @@ a:active {
 
   .profile_contact_section {
     padding: 0px 71px;
-    height: fit-content;
+    height: 52vh;
+    margin-top: -16px;
   }
   .contact_and_qoute {
     display: flex;
@@ -604,7 +606,7 @@ a:active {
     position: fixed;
     top: 6px;
     left: 17px;
-    right: 25px;
+    right: 374px;
     overflow: hidden;
   }
   .mobile_menu_bar img {
@@ -618,6 +620,13 @@ a:active {
     cursor: pointer;
     font-size: 2.4rem;
     color: #f3b61f;
+  }
+  /**contact mobile design start**/
+  .contact_and_qoute {
+    display: none;
+  }
+  .quote {
+    margin-left: 0px;
   }
 }
 .blog__section {

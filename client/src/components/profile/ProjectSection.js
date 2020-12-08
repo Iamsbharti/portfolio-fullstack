@@ -94,6 +94,7 @@ const ProjectSection = ({ getAllProjectAction, projects }) => {
           </div>
         </div>
         {/**Mobile job profile start */}
+
         <div className="project__job__profile__mobile">
           <div
             className="project__job__profile__card__mobile color__sec"
@@ -132,6 +133,7 @@ const ProjectSection = ({ getAllProjectAction, projects }) => {
           ></i>
           <h5>Machine Learning Enthuiast</h5>
         </div>
+
         {/**Mobile job profile end */}
       </div>
 
@@ -221,23 +223,27 @@ const ProjectSection = ({ getAllProjectAction, projects }) => {
         </div>
       </div>
       {/**Project section 1 mobile design start*/}
-      <div className="project__section__mobile">
-        <div className="projects__intro_p1__mobile">
-          <div
-            className="project__intro__mobile"
-            ref={(ele) => {
-              project_section_intro__mobile = ele;
-            }}
-          >
-            <h3>- AllProjects</h3>
-            <p className="project__intro__desc">All my builds are live here</p>
-            <a href={"/projects"} target="_blank" rel="noopener noreferrer">
-              <p className="project__intro__desc color">Explore More</p>
-            </a>
+      <div className="project__card__mobile__div">
+        <div className="project__section__mobile">
+          <div className="projects__intro_p1__mobile">
+            <div
+              className="project__intro__mobile"
+              ref={(ele) => {
+                project_section_intro__mobile = ele;
+              }}
+            >
+              <h3>- AllProjects</h3>
+              <p className="project__intro__desc">
+                All my builds are live here
+              </p>
+              <a href={"/projects"} target="_blank" rel="noopener noreferrer">
+                <p className="project__intro__desc color">Explore More</p>
+              </a>
+            </div>
           </div>
         </div>
+        <ProjectCardsMobile projects={projects} className="project__stack" />
       </div>
-      <ProjectCardsMobile projects={projects} className="project__stack" />
       {/**project section 1 mobile design end */}
       {/**project line 2 */}
       <div

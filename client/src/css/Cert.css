@@ -21,4 +21,8 @@
   .cert__section {
     padding: 3rem 10rem;
   }
+  .cert_text {
+    margin-left: -55px;
+    font-weight: 900;
+  }
 }

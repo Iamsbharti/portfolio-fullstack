@@ -110,6 +110,12 @@
 .project__job__profile__mobile {
   display: none;
 }
+.position__2 {
+  display: none;
+}
+.project__card__mobile__div {
+  display: none;
+}
 .project__job__profile {
   box-sizing: border-box;
   display: flex;
@@ -345,9 +351,14 @@ code {
     height: 100px !important;
     /** min-height: 20vh;*/
   }
+
   .project__job__profile {
     display: none;
   }
+  .project__card__mobile__div {
+    display: block;
+  }
+
   .project__job__profile__mobile {
     box-sizing: border-box;
     display: flex;

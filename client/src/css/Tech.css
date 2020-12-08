@@ -189,7 +189,7 @@
     position: relative;
     width: 357px !important;
     margin-right: -74px;
-    margin-left: 262px;
+    margin-left: 287px;
     top: 10px;
     left: -350px;
     --bg-color: #111;
@@ -201,7 +201,7 @@
     width: 365px;
     height: 0px;
     padding: 14px;
-    margin: 4px;
+    margin: 18px;
   }
   .techstack__technologies_2 {
     display: flex;
